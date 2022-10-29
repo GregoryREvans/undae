@@ -41,7 +41,12 @@ maker = evans.SegmentMaker(
         ),
         evans.MusicCommand(
             [("violin 1 voice", [_ for _ in range(4, 7)])],
-            evans.make_tied_notes(rewrite=-1),
+            evans.talea([5, 4, 5, 3, 6, 2], 8, rewrite=-1),
+            evans.PitchHandler(
+                [evans.ETPitch("a'", "7/4", 9, _) for _ in [0, 2, 1, 5, 4, 3]]
+            ),
+            evans.clean_cent_markup,
+            evans.annotate_hertz,
             undae.A_color,
         ),
         evans.MusicCommand(
@@ -62,7 +67,10 @@ maker = evans.SegmentMaker(
         ),
         evans.MusicCommand(
             [("violin 2 voice", [1])],
-            evans.make_tied_notes(rewrite=-1),
+            evans.talea([6], 8, rewrite=-1),
+            evans.PitchHandler([evans.ETPitch("a'", "7/4", 9, -1)]),
+            evans.clean_cent_markup,
+            evans.annotate_hertz,
             undae.A_color,
         ),
         evans.MusicCommand(
@@ -83,7 +91,12 @@ maker = evans.SegmentMaker(
         ),
         evans.MusicCommand(
             [("violin 2 voice", [6])],
-            evans.make_tied_notes(rewrite=-1),
+            evans.talea([6, 4, 6, 3, 5, 2], 8, rewrite=-1),
+            evans.PitchHandler(
+                [evans.ETPitch("a'", "7/4", 9, _) for _ in [-1, -2, 1, -3, 4, 3]]
+            ),
+            evans.clean_cent_markup,
+            evans.annotate_hertz,
             undae.A_color,
         ),
         evans.MusicCommand(
@@ -104,7 +117,12 @@ maker = evans.SegmentMaker(
         ),
         evans.MusicCommand(
             [("viola voice", [_ for _ in range(5, 7)])],
-            evans.make_tied_notes(rewrite=-1),
+            evans.talea([6, 4, 6, 3, 5, 2], 8, rewrite=-1),
+            evans.PitchHandler(
+                [evans.ETPitch("a'", "7/4", 9, _) for _ in [-9, -7, -8, 3, -10, -8]]
+            ),
+            evans.clean_cent_markup,
+            evans.annotate_hertz,
             undae.A_color,
         ),
         evans.MusicCommand(
@@ -125,7 +143,12 @@ maker = evans.SegmentMaker(
         ),
         evans.MusicCommand(
             [("cello voice", [_ for _ in range(4, 7)])],
-            evans.make_tied_notes(rewrite=-1),
+            evans.talea([6, 4, 6, 3, 5, 2], 8, rewrite=-1),
+            evans.PitchHandler(
+                [evans.ETPitch("a'", "7/4", 9, _) for _ in [-11, -12, -9, -13, -6, -7]]
+            ),
+            evans.clean_cent_markup,
+            evans.annotate_hertz,
             undae.A_color,
         ),
         evans.call(

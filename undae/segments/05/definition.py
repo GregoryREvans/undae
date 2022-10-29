@@ -25,17 +25,28 @@ maker = evans.SegmentMaker(
     commands=[
         evans.MusicCommand(
             [("violin 1 voice", [2, 3])],
-            evans.make_tied_notes(rewrite=-1),
+            evans.note(),
+            evans.PitchHandler(["g'"]),
+            evans.PitchHandler(["5/4", "7/6"], as_ratios=True),
+            evans.force_accidentals,
             undae.A_color,
         ),
         evans.MusicCommand(
             [("violin 1 voice", [5, 6, 7, 8, 9])],
-            evans.make_tied_notes(rewrite=-1),
+            evans.note(),
+            evans.PitchHandler(["g'"]),
+            evans.PitchHandler(
+                ["6/5", "16/15", "6/5", "16/15", "55/54"], as_ratios=True
+            ),
+            evans.force_accidentals,
             undae.A_color,
         ),
         evans.MusicCommand(
             [("violin 1 voice", [11, 12, 13])],
-            evans.make_tied_notes(rewrite=-1),
+            evans.note(),
+            evans.PitchHandler(["g'"]),
+            evans.PitchHandler(["55/54", "112/117", "224/243"], as_ratios=True),
+            evans.force_accidentals,
             undae.A_color,
         ),
         evans.MusicCommand(
@@ -56,12 +67,20 @@ maker = evans.SegmentMaker(
         ),
         evans.MusicCommand(
             [("violin 2 voice", [2, 3])],
-            evans.make_tied_notes(rewrite=-1),
+            evans.note(),
+            evans.PitchHandler(["g'"]),
+            evans.PitchHandler(["1/1"], as_ratios=True),
+            evans.force_accidentals,
             undae.A_color,
         ),
         evans.MusicCommand(
             [("violin 2 voice", [5, 6, 7, 8, 9])],
-            evans.make_tied_notes(rewrite=-1),
+            evans.note(),
+            evans.PitchHandler(["g'"]),
+            evans.PitchHandler(
+                ["1/1", "14/15", "1/1", "14/15", "25/27"], as_ratios=True
+            ),
+            evans.force_accidentals,
             undae.A_color,
         ),
         evans.MusicCommand(
@@ -71,7 +90,10 @@ maker = evans.SegmentMaker(
         ),
         evans.MusicCommand(
             [("violin 2 voice", [11, 12, 13])],
-            evans.make_tied_notes(rewrite=-1),
+            evans.note(),
+            evans.PitchHandler(["g'"]),
+            evans.PitchHandler(["25/27", "448/351", "896/729"], as_ratios=True),
+            evans.force_accidentals,
             undae.A_color,
         ),
         evans.MusicCommand(
@@ -98,7 +120,10 @@ maker = evans.SegmentMaker(
         ),
         evans.MusicCommand(
             [("viola voice", [2, 3])],
-            evans.make_tied_notes(rewrite=-1),
+            evans.note(),
+            evans.PitchHandler(["g"]),
+            evans.PitchHandler(["3/2", "5/3"], as_ratios=True),
+            evans.force_accidentals,
             undae.A_color,
         ),
         evans.MusicCommand(
@@ -108,12 +133,18 @@ maker = evans.SegmentMaker(
         ),
         evans.MusicCommand(
             [("viola voice", [5, 6, 7, 8, 9])],
-            evans.make_tied_notes(rewrite=-1),
+            evans.note(),
+            evans.PitchHandler(["g"]),
+            evans.PitchHandler(["8/5", "8/5", "8/5", "8/5", "5/3"], as_ratios=True),
+            evans.force_accidentals,
             undae.A_color,
         ),
         evans.MusicCommand(
             [("viola voice", [11, 12, 13])],
-            evans.make_tied_notes(rewrite=-1),
+            evans.note(),
+            evans.PitchHandler(["g"]),
+            evans.PitchHandler(["5/3", "3584/3159", "7168/6561"], as_ratios=True),
+            evans.force_accidentals,
             undae.A_color,
         ),
         evans.MusicCommand(
@@ -193,6 +224,8 @@ maker = evans.SegmentMaker(
     mm_rests=False,
     extra_rewrite=False,
     print_clock_time=True,
+    # tempo=((1, 4), 93),
 )
 
 maker.build_segment()
+# maker._make_sc_file()

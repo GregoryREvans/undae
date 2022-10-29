@@ -25,8 +25,49 @@ maker = evans.SegmentMaker(
     commands=[
         evans.MusicCommand(
             [("violin 1 voice", [_ for _ in range(5)])],
-            evans.make_tied_notes(rewrite=-1),
+            evans.talea([5, 9], 4, rewrite=-1),
+            evans.PitchHandler(["ef,,,"]),
+            evans.PitchHandler(["28/1", "20/1"], as_ratios=True),
+            evans.force_accidentals,
             undae.A_color,
+        ),
+        evans.MusicCommand(
+            [("violin 1 voice", [_ for _ in range(18, 25)])],
+            evans.talea([5, 9], 4, rewrite=-1),
+            evans.PitchHandler(["ef,,,"]),
+            evans.PitchHandler(["28/1", "20/1"], as_ratios=True),
+            evans.force_accidentals,
+            undae.A_color,
+        ),
+        evans.MusicCommand(
+            [("violin 2 voice", [_ for _ in range(5)])],
+            evans.talea([7, 5], 4, rewrite=-1),
+            evans.PitchHandler(["ef,,,"]),
+            evans.PitchHandler(["32/1", "21/1"], as_ratios=True),
+            evans.force_accidentals,
+            undae.A_color,
+        ),
+        evans.MusicCommand(
+            [("violin 2 voice", [_ for _ in range(18, 25)])],
+            evans.talea([6, 7, 5], 4, rewrite=-1),
+            evans.PitchHandler(["ef,,,"]),
+            evans.PitchHandler(["32/1", "21/1"], as_ratios=True),
+            evans.force_accidentals,
+            undae.A_color,
+        ),
+        evans.MusicCommand(
+            [("cello voice", [23, 24])],
+            evans.talea([6], 4, rewrite=-1),
+            evans.PitchHandler(["ef,,,"]),
+            evans.PitchHandler(["29/1", "25/1"], as_ratios=True),
+            evans.force_accidentals,
+            abjad.Clef("treble"),
+            undae.A_color,
+        ),
+        evans.call(
+            "score",
+            evans.annotate_concurrent_ratios,
+            lambda _: abjad.select.components(_, abjad.Score),
         ),
         evans.MusicCommand(
             [("violin 1 voice", [_ for _ in range(5, 11)])],
@@ -44,16 +85,6 @@ maker = evans.SegmentMaker(
             undae.B_color,
         ),
         evans.MusicCommand(
-            [("violin 1 voice", [_ for _ in range(18, 25)])],
-            evans.make_tied_notes(rewrite=-1),
-            undae.A_color,
-        ),
-        evans.MusicCommand(
-            [("violin 2 voice", [_ for _ in range(5)])],
-            evans.make_tied_notes(rewrite=-1),
-            undae.A_color,
-        ),
-        evans.MusicCommand(
             [("violin 2 voice", [_ for _ in range(5, 11)])],
             evans.make_tied_notes(rewrite=-1),
             undae.B_color,
@@ -67,11 +98,6 @@ maker = evans.SegmentMaker(
             [("violin 2 voice", [16, 17])],
             evans.make_tied_notes(rewrite=-1),
             undae.B_color,
-        ),
-        evans.MusicCommand(
-            [("violin 2 voice", [_ for _ in range(18, 25)])],
-            evans.make_tied_notes(rewrite=-1),
-            undae.A_color,
         ),
         evans.MusicCommand(
             [("viola voice", [_ for _ in range(5)])],
@@ -112,11 +138,6 @@ maker = evans.SegmentMaker(
             [("cello voice", [_ for _ in range(18, 23)])],
             evans.make_tied_notes(rewrite=-1),
             undae.C_color,
-        ),
-        evans.MusicCommand(
-            [("cello voice", [23, 24])],
-            evans.make_tied_notes(rewrite=-1),
-            undae.A_color,
         ),
         evans.call(
             "score",

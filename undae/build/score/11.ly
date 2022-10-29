@@ -403,31 +403,34 @@
                                         % [violin 1 voice measure 10]
                                           %! MATERIAL_COLOR
                                         \staffHighlight #(rgb-color 0.6 0.6 1)
-                                        c'2.
+                                        af'2.
+                                        \tweak color #red
+                                        _ \markup \center-align 417.2
+                                        ^ \markup \center-align { \center-column { "+8" } }
                                         ~
 
-                                        c'2
+                                        af'2
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 11]
-                                        c'2.
+                                        af'2.
                                         ~
 
-                                        c'2
+                                        af'2
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 12]
-                                        c'2.
+                                        af'2.
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 13]
-                                        c'1
+                                        af'1
                                           %! MATERIAL_COLOR
                                         \stopStaffHighlight
 
@@ -856,22 +859,25 @@
                                         % [violin 2 voice measure 13]
                                           %! MATERIAL_COLOR
                                         \staffHighlight #(rgb-color 0.6 0.6 1)
-                                        c'1
+                                        fs'1
+                                        \tweak color #red
+                                        _ \markup \center-align 375.0
+                                        ^ \markup \center-align { \center-column { "+23" } }
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 14]
-                                        c'1
+                                        fs'1
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 15]
-                                        c'2.
+                                        fs'2.
                                         ~
 
-                                        c'2
+                                        fs'2
                                           %! MATERIAL_COLOR
                                         \stopStaffHighlight
 
@@ -1071,28 +1077,31 @@
                                 % [viola voice measure 7]
                                   %! MATERIAL_COLOR
                                 \staffHighlight #(rgb-color 0.6 0.6 1)
-                                c'2.
+                                e'2.
+                                \tweak color #red
+                                _ \markup \center-align 337.2
+                                ^ \markup \center-align { \center-column { "+39" } }
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 8]
-                                c'2.
+                                e'2.
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 9]
-                                c'2.
+                                e'2.
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 10]
-                                c'2.
+                                e'2.
                                 ~
 
-                                c'2
+                                e'2
                                   %! MATERIAL_COLOR
                                 \stopStaffHighlight
 
@@ -1228,22 +1237,25 @@
                                 % [viola voice measure 15]
                                   %! MATERIAL_COLOR
                                 \staffHighlight #(rgb-color 0.6 0.6 1)
-                                c'2.
+                                ef'2.
+                                \tweak color #red
+                                _ \markup \center-align 303.1
+                                ^ \markup \center-align { \center-column { "-45" } }
                                 ~
 
-                                c'2
+                                ef'2
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 16]
-                                c'2.
+                                ef'2.
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 17]
-                                c'2.
+                                ef'2.
                                   %! MATERIAL_COLOR
                                 \stopStaffHighlight
 
@@ -1470,64 +1482,67 @@
                                 % [cello voice measure 10]
                                   %! MATERIAL_COLOR
                                 \staffHighlight #(rgb-color 0.6 0.6 1)
-                                c'2.
+                                cs'2.
+                                \tweak color #red
+                                _ \markup \center-align 272.5
+                                ^ \markup \center-align { \center-column { "-30" } }
                                 ~
 
-                                c'2
+                                cs'2
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 11]
-                                c'2.
+                                cs'2.
                                 ~
 
-                                c'2
+                                cs'2
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 12]
-                                c'2.
+                                cs'2.
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 13]
-                                c'1
+                                cs'1
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 14]
-                                c'1
+                                cs'1
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 15]
-                                c'2.
+                                cs'2.
                                 ~
 
-                                c'2
+                                cs'2
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 16]
-                                c'2.
+                                cs'2.
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 17]
-                                c'2.
+                                cs'2.
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 18]
-                                c'2
+                                cs'2
                                 \bar "||"
                                   %! MATERIAL_COLOR
                                 \stopStaffHighlight

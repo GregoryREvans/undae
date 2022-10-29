@@ -133,55 +133,202 @@
                                         \set Staff.shortInstrumentName = \markup { \hcenter-in #12 "vn. I" }
                                           %! MATERIAL_COLOR
                                         \staffHighlight #(rgb-color 0.6 0.6 1)
-                                        c'1
+                                        \clef "treble"
+                                        bf4
+                                        \tweak color #red
+                                        _ \markup \center-align 232.3
+                                        ^ \markup \center-align { \center-column { "-6" } }
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        bf8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'8
+                                        \tweak color #red
+                                        _ \markup \center-align 258.4
+                                        ^ \markup \center-align { \center-column { "-22" } }
+                                        ]
+                                        ~
+
+                                        c'4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        d'8
+                                        \tweak color #red
+                                        _ \markup \center-align 287.4
+                                        ^ \markup \center-align { \center-column { "-37" } }
+                                        ]
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 2]
-                                        c'1
+                                        d'2
+
+                                        ef'2
+                                        \tweak color #red
+                                        _ \markup \center-align 319.7
+                                        ^ \markup \center-align { \center-column { "+47" } }
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 3]
-                                        c'1
+                                        ef'4
+
+                                        e'2
+                                        \tweak color #red
+                                        _ \markup \center-align 337.2
+                                        ^ \markup \center-align { \center-column { "+39" } }
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        e'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        f'8
+                                        \tweak color #red
+                                        _ \markup \center-align 355.6
+                                        ^ \markup \center-align { \center-column { "+31" } }
+                                        ]
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 4]
-                                        c'1
+                                        f'4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        f'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        fs'8
+                                        \tweak color #red
+                                        _ \markup \center-align 375.0
+                                        ^ \markup \center-align { \center-column { "+23" } }
+                                        ]
+                                        ~
+
+                                        fs'4
+
+                                        af'4
+                                        \tweak color #red
+                                        _ \markup \center-align 417.2
+                                        ^ \markup \center-align { \center-column { "+8" } }
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 5]
-                                        c'1
+                                        af'4
+
+                                        a'2
+                                        \tweak color #red
+                                        _ \markup \center-align 440.0
+                                        ^ \markup \center-align { \center-column { "+0" } }
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        a'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        cs''8
+                                        \tweak color #red
+                                        _ \markup \center-align 544.4
+                                        ^ \markup \center-align { \center-column { "-31" } }
+                                        ]
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 6]
-                                        c'1
+                                        cs''2
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        cs''8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        e''8
+                                        \tweak color #red
+                                        _ \markup \center-align 673.7
+                                        ^ \markup \center-align { \center-column { "+37" } }
+                                        ]
+                                        ~
+
+                                        e''4
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 7]
-                                        c'1
+                                        e''4
+
+                                        ef''2
+                                        \tweak color #red
+                                        _ \markup \center-align 605.6
+                                        ^ \markup \center-align { \center-column { "-47" } }
+
+                                        d''4
+                                        \tweak color #red
+                                        _ \markup \center-align 574.2
+                                        ^ \markup \center-align { \center-column { "-39" } }
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 8]
-                                        c'1
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        d''8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        cs''8
+                                        \tweak color #red
+                                        _ \markup \center-align 544.4
+                                        ^ \markup \center-align { \center-column { "-31" } }
+                                        ]
+                                        ~
+
+                                        cs''4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        cs''8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c''8
+                                        \tweak color #red
+                                        _ \markup \center-align 516.2
+                                        ^ \markup \center-align { \center-column { "-23" } }
+                                        ]
+                                        ~
+
+                                        c''4
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 9]
-                                        c'1
+                                        c''4
+
+                                        b'2.
+                                        \tweak color #red
+                                        _ \markup \center-align 489.4
+                                        ^ \markup \center-align { \center-column { "-16" } }
                                           %! MATERIAL_COLOR
                                         \stopStaffHighlight
 
@@ -217,55 +364,194 @@
                                         \set Staff.shortInstrumentName = \markup { \hcenter-in #12 "vn. II" }
                                           %! MATERIAL_COLOR
                                         \staffHighlight #(rgb-color 0.6 0.6 1)
-                                        c'1
+                                        \clef "treble"
+                                        a'2
+                                        \tweak color #red
+                                        _ \markup \center-align 440.0
+                                        ^ \markup \center-align { \center-column { "+0" } }
+
+                                        ef'2
+                                        \tweak color #red
+                                        _ \markup \center-align 319.7
+                                        ^ \markup \center-align { \center-column { "+47" } }
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 2]
-                                        c'1
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        ef'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        d'8
+                                        \tweak color #red
+                                        _ \markup \center-align 287.4
+                                        ^ \markup \center-align { \center-column { "-37" } }
+                                        ]
+                                        ~
+
+                                        d'2
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        d'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        ef'8
+                                        \tweak color #red
+                                        _ \markup \center-align 303.1
+                                        ^ \markup \center-align { \center-column { "-45" } }
+                                        ]
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 3]
-                                        c'1
-                                        ~
+                                        ef'2
+
+                                        cs'2
+                                        \tweak color #red
+                                        _ \markup \center-align 272.5
+                                        ^ \markup \center-align { \center-column { "-30" } }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 4]
-                                        c'1
+                                        bf'4
+                                        \tweak color #red
+                                        _ \markup \center-align 464.1
+                                        ^ \markup \center-align { \center-column { "-8" } }
                                         ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        bf'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        af'8
+                                        \tweak color #red
+                                        _ \markup \center-align 417.2
+                                        ^ \markup \center-align { \center-column { "+8" } }
+                                        ]
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        af'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'8
+                                        \tweak color #red
+                                        _ \markup \center-align 258.4
+                                        ^ \markup \center-align { \center-column { "-22" } }
+                                        ]
+                                        ~
+
+                                        c'4
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 5]
-                                        c'1
+                                        af2
+                                        \tweak color #red
+                                        _ \markup \center-align 208.8
+                                        ^ \markup \center-align { \center-column { "+10" } }
+
+                                        a'2
+                                        \tweak color #red
+                                        _ \markup \center-align 440.0
+                                        ^ \markup \center-align { \center-column { "+0" } }
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 6]
-                                        c'1
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        a'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        ef'8
+                                        \tweak color #red
+                                        _ \markup \center-align 319.7
+                                        ^ \markup \center-align { \center-column { "+47" } }
+                                        ]
+                                        ~
+
+                                        ef'2
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        ef'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        d'8
+                                        \tweak color #red
+                                        _ \markup \center-align 287.4
+                                        ^ \markup \center-align { \center-column { "-37" } }
+                                        ]
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 7]
-                                        c'1
-                                        ~
+                                        d'2
+
+                                        ef'2
+                                        \tweak color #red
+                                        _ \markup \center-align 303.1
+                                        ^ \markup \center-align { \center-column { "-45" } }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 8]
-                                        c'1
+                                        cs'4
+                                        \tweak color #red
+                                        _ \markup \center-align 272.5
+                                        ^ \markup \center-align { \center-column { "-30" } }
                                         ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        cs'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        bf'8
+                                        \tweak color #red
+                                        _ \markup \center-align 464.1
+                                        ^ \markup \center-align { \center-column { "-8" } }
+                                        ]
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        bf'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        af'8
+                                        \tweak color #red
+                                        _ \markup \center-align 417.2
+                                        ^ \markup \center-align { \center-column { "+8" } }
+                                        ]
+                                        ~
+
+                                        af'4
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 9]
-                                        c'1
+                                        c'2
+                                        \tweak color #red
+                                        _ \markup \center-align 258.4
+                                        ^ \markup \center-align { \center-column { "-22" } }
+
+                                        af2
+                                        \tweak color #red
+                                        _ \markup \center-align 208.8
+                                        ^ \markup \center-align { \center-column { "+10" } }
                                           %! MATERIAL_COLOR
                                         \stopStaffHighlight
 
@@ -305,55 +591,187 @@
                                 \set Staff.shortInstrumentName = \markup { \hcenter-in #12 "va." }
                                   %! MATERIAL_COLOR
                                 \staffHighlight #(rgb-color 0.6 0.6 1)
-                                c'1
+                                \clef "alto"
+                                cs2.
+                                \tweak color #red
+                                _ \markup \center-align 136.4
+                                ^ \markup \center-align { \center-column { "-28" } }
+
+                                d4
+                                \tweak color #red
+                                _ \markup \center-align 143.8
+                                ^ \markup \center-align { \center-column { "-36" } }
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 2]
-                                c'1
+                                d4
+                                ~
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                d8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                ef8
+                                \tweak color #red
+                                _ \markup \center-align 151.7
+                                ^ \markup \center-align { \center-column { "-43" } }
+                                ]
+                                ~
+
+                                ef4
+                                ~
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                ef8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                e8
+                                \tweak color #red
+                                _ \markup \center-align 168.7
+                                ^ \markup \center-align { \center-column { "+41" } }
+                                ]
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 3]
-                                c'1
+                                e4
+
+                                fs2
+                                \tweak color #red
+                                _ \markup \center-align 187.7
+                                ^ \markup \center-align { \center-column { "+25" } }
+
+                                f4
+                                \tweak color #red
+                                _ \markup \center-align 178.0
+                                ^ \markup \center-align { \center-column { "+33" } }
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 4]
-                                c'1
+                                f4
+                                ~
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                f8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                cs8
+                                \tweak color #red
+                                _ \markup \center-align 136.4
+                                ^ \markup \center-align { \center-column { "-28" } }
+                                ]
+                                ~
+
+                                cs2
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 5]
-                                c'1
+                                \override Staff.Stem.stemlet-length = 0.75
+                                cs8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                d8
+                                \tweak color #red
+                                _ \markup \center-align 143.8
+                                ^ \markup \center-align { \center-column { "-36" } }
+                                ]
                                 ~
+
+                                d2.
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 6]
-                                c'1
+                                ef2.
+                                \tweak color #red
+                                _ \markup \center-align 151.7
+                                ^ \markup \center-align { \center-column { "-43" } }
+
+                                e4
+                                \tweak color #red
+                                _ \markup \center-align 168.7
+                                ^ \markup \center-align { \center-column { "+41" } }
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 7]
-                                c'1
+                                e4
+                                ~
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                e8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                fs8
+                                \tweak color #red
+                                _ \markup \center-align 187.7
+                                ^ \markup \center-align { \center-column { "+25" } }
+                                ]
+                                ~
+
+                                fs4
+                                ~
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                fs8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                f8
+                                \tweak color #red
+                                _ \markup \center-align 178.0
+                                ^ \markup \center-align { \center-column { "+33" } }
+                                ]
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 8]
-                                c'1
+                                f4
+
+                                cs2
+                                \tweak color #red
+                                _ \markup \center-align 136.4
+                                ^ \markup \center-align { \center-column { "-28" } }
+
+                                d4
+                                \tweak color #red
+                                _ \markup \center-align 143.8
+                                ^ \markup \center-align { \center-column { "-36" } }
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 9]
-                                c'1
+                                d4
+                                ~
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                d8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                ef8
+                                \tweak color #red
+                                _ \markup \center-align 151.7
+                                ^ \markup \center-align { \center-column { "-43" } }
+                                ]
+                                ~
+
+                                ef2
                                   %! MATERIAL_COLOR
                                 \stopStaffHighlight
 
@@ -389,55 +807,164 @@
                                 \set Staff.shortInstrumentName = \markup { \hcenter-in #12 "vc." }
                                   %! MATERIAL_COLOR
                                 \staffHighlight #(rgb-color 0.6 0.6 1)
-                                c'1
+                                \clef "bass"
+                                b,2
+                                \tweak color #red
+                                _ \markup \center-align 122.6
+                                ^ \markup \center-align { \center-column { "-12" } }
+
+                                a,2
+                                \tweak color #red
+                                _ \markup \center-align 110.2
+                                ^ \markup \center-align { \center-column { "+3" } }
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 2]
-                                c'1
+                                \override Staff.Stem.stemlet-length = 0.75
+                                a,8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                bf,8
+                                \tweak color #red
+                                _ \markup \center-align 116.2
+                                ^ \markup \center-align { \center-column { "-4" } }
+                                ]
+                                ~
+
+                                bf,2
+                                ~
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                bf,8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                a,8
+                                \tweak color #red
+                                _ \markup \center-align 110.2
+                                ^ \markup \center-align { \center-column { "+3" } }
+                                ]
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 3]
-                                c'1
+                                a,2.
+
+                                g,4
+                                \tweak color #red
+                                _ \markup \center-align 99.1
+                                ^ \markup \center-align { \center-column { "+19" } }
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 4]
-                                c'1
+                                g,2.
+
+                                b,4
+                                \tweak color #red
+                                _ \markup \center-align 122.6
+                                ^ \markup \center-align { \center-column { "-12" } }
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 5]
-                                c'1
+                                b,2
+                                ~
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                b,8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                c8
+                                \tweak color #red
+                                _ \markup \center-align 129.3
+                                ^ \markup \center-align { \center-column { "-20" } }
+                                ]
+                                ~
+
+                                c4
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 6]
-                                c'1
+                                c4
                                 ~
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                b,8
+                                \tweak color #red
+                                _ \markup \center-align 122.6
+                                ^ \markup \center-align { \center-column { "-12" } }
+                                ]
+                                ~
+
+                                b,2
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 7]
-                                c'1
+                                a,2
+                                \tweak color #red
+                                _ \markup \center-align 110.2
+                                ^ \markup \center-align { \center-column { "+3" } }
+
+                                bf,2
+                                \tweak color #red
+                                _ \markup \center-align 116.2
+                                ^ \markup \center-align { \center-column { "-4" } }
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 8]
-                                c'1
+                                \override Staff.Stem.stemlet-length = 0.75
+                                bf,8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                a,8
+                                \tweak color #red
+                                _ \markup \center-align 110.2
+                                ^ \markup \center-align { \center-column { "+3" } }
+                                ]
+                                ~
+
+                                a,2
+                                ~
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                a,8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                g,8
+                                \tweak color #red
+                                _ \markup \center-align 99.1
+                                ^ \markup \center-align { \center-column { "+19" } }
+                                ]
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 9]
-                                c'1
+                                g,2.
+
+                                b,4
+                                \tweak color #red
+                                _ \markup \center-align 122.6
+                                ^ \markup \center-align { \center-column { "-12" } }
                                   %! MATERIAL_COLOR
                                 \stopStaffHighlight
 

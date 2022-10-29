@@ -4,6 +4,7 @@ __pycache__/
 *$py.class
 *.wav
 *.DS_Store
+*.scd
 
 *.old.ly
 

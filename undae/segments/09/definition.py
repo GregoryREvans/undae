@@ -47,7 +47,10 @@ maker = evans.SegmentMaker(
         ),
         evans.MusicCommand(
             [("violin 1 voice", [8])],
-            evans.make_tied_notes(rewrite=-1),
+            evans.note(rewrite=-1),
+            evans.PitchHandler([evans.ETPitch("a'", "5/2", 13, _) for _ in [0]]),
+            evans.clean_cent_markup,
+            evans.annotate_hertz,
             undae.A_color,
         ),
         evans.MusicCommand(
@@ -57,7 +60,10 @@ maker = evans.SegmentMaker(
         ),
         evans.MusicCommand(
             [("violin 1 voice", [11, 12])],
-            evans.make_tied_notes(rewrite=-1),
+            evans.note(rewrite=-1),
+            evans.PitchHandler([evans.ETPitch("a'", "5/2", 13, _) for _ in [-1, -3]]),
+            evans.clean_cent_markup,
+            evans.annotate_hertz,
             undae.A_color,
         ),
         evans.MusicCommand(
@@ -67,7 +73,10 @@ maker = evans.SegmentMaker(
         ),
         evans.MusicCommand(
             [("violin 1 voice", [14, 15])],
-            evans.make_tied_notes(rewrite=-1),
+            evans.note(rewrite=-1),
+            evans.PitchHandler([evans.ETPitch("a'", "5/2", 13, _) for _ in [-2, -4]]),
+            evans.clean_cent_markup,
+            evans.annotate_hertz,
             undae.A_color,
         ),
         evans.MusicCommand(
@@ -77,7 +86,10 @@ maker = evans.SegmentMaker(
         ),
         evans.MusicCommand(
             [("violin 2 voice", [8])],
-            evans.make_tied_notes(rewrite=-1),
+            evans.note(rewrite=-1),
+            evans.PitchHandler([evans.ETPitch("a'", "5/2", 13, _) for _ in [2]]),
+            evans.clean_cent_markup,
+            evans.annotate_hertz,
             undae.A_color,
         ),
         evans.MusicCommand(
@@ -87,7 +99,10 @@ maker = evans.SegmentMaker(
         ),
         evans.MusicCommand(
             [("violin 2 voice", [11, 12])],
-            evans.make_tied_notes(rewrite=-1),
+            evans.note(rewrite=-1),
+            evans.PitchHandler([evans.ETPitch("a'", "5/2", 13, _) for _ in [-1, 1]]),
+            evans.clean_cent_markup,
+            evans.annotate_hertz,
             undae.A_color,
         ),
         evans.MusicCommand(
@@ -97,7 +112,10 @@ maker = evans.SegmentMaker(
         ),
         evans.MusicCommand(
             [("violin 2 voice", [14, 15])],
-            evans.make_tied_notes(rewrite=-1),
+            evans.note(rewrite=-1),
+            evans.PitchHandler([evans.ETPitch("a'", "5/2", 13, _) for _ in [-4, -6]]),
+            evans.clean_cent_markup,
+            evans.annotate_hertz,
             undae.A_color,
         ),
         evans.MusicCommand(
@@ -107,7 +125,10 @@ maker = evans.SegmentMaker(
         ),
         evans.MusicCommand(
             [("viola voice", [8])],
-            evans.make_tied_notes(rewrite=-1),
+            evans.note(rewrite=-1),
+            evans.PitchHandler([evans.ETPitch("a'", "5/2", 13, _) for _ in [-2]]),
+            evans.clean_cent_markup,
+            evans.annotate_hertz,
             undae.A_color,
         ),
         evans.MusicCommand(
@@ -117,7 +138,10 @@ maker = evans.SegmentMaker(
         ),
         evans.MusicCommand(
             [("viola voice", [11, 12])],
-            evans.make_tied_notes(rewrite=-1),
+            evans.note(rewrite=-1),
+            evans.PitchHandler([evans.ETPitch("a'", "5/2", 13, _) for _ in [-5, -7]]),
+            evans.clean_cent_markup,
+            evans.annotate_hertz,
             undae.A_color,
         ),
         evans.MusicCommand(
@@ -127,7 +151,10 @@ maker = evans.SegmentMaker(
         ),
         evans.MusicCommand(
             [("viola voice", [14, 15])],
-            evans.make_tied_notes(rewrite=-1),
+            evans.note(rewrite=-1),
+            evans.PitchHandler([evans.ETPitch("a'", "5/2", 13, _) for _ in [-5, -6]]),
+            evans.clean_cent_markup,
+            evans.annotate_hertz,
             undae.A_color,
         ),
         evans.MusicCommand(
@@ -153,7 +180,10 @@ maker = evans.SegmentMaker(
         ),
         evans.MusicCommand(
             [("cello voice", [8])],
-            evans.make_tied_notes(rewrite=-1),
+            evans.note(rewrite=-1),
+            evans.PitchHandler([evans.ETPitch("a'", "5/2", 13, _) for _ in [-4]]),
+            evans.clean_cent_markup,
+            evans.annotate_hertz,
             undae.A_color,
         ),
         evans.MusicCommand(
@@ -163,7 +193,10 @@ maker = evans.SegmentMaker(
         ),
         evans.MusicCommand(
             [("cello voice", [11, 12])],
-            evans.make_tied_notes(rewrite=-1),
+            evans.note(rewrite=-1),
+            evans.PitchHandler([evans.ETPitch("a'", "5/2", 13, _) for _ in [-11, -9]]),
+            evans.clean_cent_markup,
+            evans.annotate_hertz,
             undae.A_color,
         ),
         evans.MusicCommand(
@@ -173,7 +206,10 @@ maker = evans.SegmentMaker(
         ),
         evans.MusicCommand(
             [("cello voice", [14, 15])],
-            evans.make_tied_notes(rewrite=-1),
+            evans.note(rewrite=-1),
+            evans.PitchHandler([evans.ETPitch("a'", "5/2", 13, _) for _ in [-7, -8]]),
+            evans.clean_cent_markup,
+            evans.annotate_hertz,
             undae.A_color,
         ),
         evans.call(
@@ -214,6 +250,8 @@ maker = evans.SegmentMaker(
     mm_rests=False,
     extra_rewrite=False,
     print_clock_time=True,
+    # tempo=((1, 4), 111),
 )
 
 maker.build_segment()
+# maker._make_sc_file()

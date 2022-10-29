@@ -191,73 +191,143 @@
                                         \set Staff.shortInstrumentName = \markup { \hcenter-in #12 "vn. I" }
                                           %! MATERIAL_COLOR
                                         \staffHighlight #(rgb-color 0.6 0.6 1)
-                                        c'1
+                                        \clef "treble"
+                                        \tweak Accidental.stencil #ly:text-interface::print
+                                        \tweak Accidental.text \markup { \one-twenty-nine-limit-comma-up  }
+                                        c''!1
+                                        \tweak color #red
+                                        _ \markup \center-align \concat { "violin 2  "\fraction 29 52 }
+                                        ^ \markup \center-align { \concat { +30 } }
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 2]
-                                        c'1
+                                        \tweak Accidental.stencil #ly:text-interface::print
+                                        \tweak Accidental.text \markup { \one-twenty-nine-limit-comma-up  }
+                                        c''1
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 3]
-                                        c'1
+                                        \tweak Accidental.stencil #ly:text-interface::print
+                                        \tweak Accidental.text \markup { \one-twenty-nine-limit-comma-up  }
+                                        c''1
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 4]
-                                        c'1
+                                        \tweak Accidental.stencil #ly:text-interface::print
+                                        \tweak Accidental.text \markup { \one-twenty-nine-limit-comma-up  }
+                                        c''2
+
+                                        \tweak Accidental.stencil #ly:text-interface::print
+                                        \tweak Accidental.text \markup { \one-undecimal-quarter-tone-up  }
+                                        d''!2
+                                        \tweak color #red
+                                        _ \markup \center-align \concat { "viola  "\fraction 11 14 }
+                                        ^ \markup \center-align { \concat { E\raise #0.5 { \teeny \flat } -47 } }
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 5]
-                                        c'1
+                                        \tweak Accidental.stencil #ly:text-interface::print
+                                        \tweak Accidental.text \markup { \one-undecimal-quarter-tone-up  }
+                                        d''2
+
+                                        \tweak Accidental.stencil #ly:text-interface::print
+                                        \tweak Accidental.text \markup { \one-undecimal-quarter-tone-up  }
+                                        g!2
+                                        \tweak color #red
+                                        _ \markup \center-align \concat { "viola  "\fraction 11 21 }
+                                        ^ \markup \center-align { \concat { A\raise #0.5 { \teeny \flat } -49 } }
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 6]
-                                        c'1
+                                        \tweak Accidental.stencil #ly:text-interface::print
+                                        \tweak Accidental.text \markup { \one-undecimal-quarter-tone-up  }
+                                        g1
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 7]
-                                        c'1
+                                        \tweak Accidental.stencil #ly:text-interface::print
+                                        \tweak Accidental.text \markup { \one-undecimal-quarter-tone-up  }
+                                        g2
+
+                                        \tweak Accidental.stencil #ly:text-interface::print
+                                        \tweak Accidental.text \markup { \abjad-natural  }
+                                        e'!2
+                                        \tweak color #red
+                                        _ \markup \center-align \concat { "cello  "\fraction 3 2 }
+                                        ^ \markup \center-align { \concat { +4 } }
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 8]
-                                        c'1
+                                        \tweak Accidental.stencil #ly:text-interface::print
+                                        \tweak Accidental.text \markup { \abjad-natural  }
+                                        e'2
+
+                                        \tweak Accidental.stencil #ly:text-interface::print
+                                        \tweak Accidental.text \markup { \abjad-natural  }
+                                        d'!2
+                                        \tweak color #red
+                                        _ \markup \center-align \concat { "cello  "\fraction 4 3 }
+                                        ^ \markup \center-align { \concat { +0 } }
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 9]
-                                        c'1
+                                        \tweak Accidental.stencil #ly:text-interface::print
+                                        \tweak Accidental.text \markup { \abjad-natural  }
+                                        d'2
+
+                                        \tweak Accidental.stencil #ly:text-interface::print
+                                        \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
+                                        cs'!2
+                                        \tweak color #red
+                                        _ \markup \center-align \concat { "violin 2  "\fraction 15 17 }
+                                        ^ \markup \center-align { \concat { -12 } }
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 10]
-                                        c'1
+                                        \tweak Accidental.stencil #ly:text-interface::print
+                                        \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
+                                        cs'1
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 11]
-                                        c'1
+                                        \tweak Accidental.stencil #ly:text-interface::print
+                                        \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
+                                        cs'2
+
+                                        \tweak Accidental.stencil #ly:text-interface::print
+                                        \tweak Accidental.text \markup { \one-tridecimal-third-tone-down  }
+                                        b!2
+                                        \tweak color #red
+                                        _ \markup \center-align \concat { "viola  "\fraction 13 14 }
+                                        ^ \markup \center-align { \concat { B\raise #0.5 { \teeny \flat } +41 } }
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 12]
-                                        c'1
+                                        \tweak Accidental.stencil #ly:text-interface::print
+                                        \tweak Accidental.text \markup { \one-tridecimal-third-tone-down  }
+                                        b1
                                           %! MATERIAL_COLOR
                                         \stopStaffHighlight
 
@@ -281,7 +351,12 @@
                                         % [violin 1 voice measure 15]
                                           %! MATERIAL_COLOR
                                         \staffHighlight #(rgb-color 0.6 0.6 1)
-                                        c'1
+                                        \tweak Accidental.stencil #ly:text-interface::print
+                                        \tweak Accidental.text \markup { \one-septimal-comma-down  }
+                                        g'!1
+                                        \tweak color #red
+                                        _ \markup \center-align \concat { "viola  "\fraction 3 2 }
+                                        ^ \markup \center-align { \concat { -29 } }
                                           %! MATERIAL_COLOR
                                         \stopStaffHighlight
 
@@ -331,55 +406,99 @@
                                         \set Staff.shortInstrumentName = \markup { \hcenter-in #12 "vn. II" }
                                           %! MATERIAL_COLOR
                                         \staffHighlight #(rgb-color 0.6 0.6 1)
-                                        c'1
+                                        r2
+
+                                        \clef "treble"
+                                        \tweak Accidental.stencil #ly:text-interface::print
+                                        \tweak Accidental.text \markup { \one-tridecimal-third-tone-down  }
+                                        b''!2
+                                        \tweak color #red
+                                        _ \markup \center-align \concat { "violin 1  "\fraction 52 29 }
+                                        ^ \markup \center-align { \concat { B\raise #0.5 { \teeny \flat } +41 } }
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 2]
-                                        c'1
+                                        \tweak Accidental.stencil #ly:text-interface::print
+                                        \tweak Accidental.text \markup { \one-tridecimal-third-tone-down  }
+                                        b''1
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 3]
-                                        c'1
+                                        \tweak Accidental.stencil #ly:text-interface::print
+                                        \tweak Accidental.text \markup { \one-tridecimal-third-tone-down  }
+                                        b''1
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 4]
-                                        c'1
+                                        \tweak Accidental.stencil #ly:text-interface::print
+                                        \tweak Accidental.text \markup { \one-tridecimal-third-tone-down  }
+                                        b''4
+
+                                        \tweak Accidental.stencil #ly:text-interface::print
+                                        \tweak Accidental.text \markup { \one-nineteen-limit-schisma-up  }
+                                        f''!2.
+                                        \tweak color #red
+                                        _ \markup \center-align \concat { "viola  "\fraction 19 21 }
+                                        ^ \markup \center-align { \concat { -2 } }
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 5]
-                                        c'1
+                                        \tweak Accidental.stencil #ly:text-interface::print
+                                        \tweak Accidental.text \markup { \one-nineteen-limit-schisma-up  }
+                                        f''2
+
+                                        \tweak Accidental.stencil #ly:text-interface::print
+                                        \tweak Accidental.text \markup { \abjad-natural  }
+                                        e'!2
+                                        \tweak color #red
+                                        _ \markup \center-align \concat { "viola  "\fraction 6 7 }
+                                        ^ \markup \center-align { \concat { +4 } }
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 6]
-                                        c'1
-                                        ~
+                                        \tweak Accidental.stencil #ly:text-interface::print
+                                        \tweak Accidental.text \markup { \abjad-natural  }
+                                        e'1
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 7]
-                                        c'1
-                                        ~
+                                        \tweak Accidental.stencil #ly:text-interface::print
+                                        \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
+                                        cs'!1
+                                        \tweak color #red
+                                        _ \markup \center-align \concat { "violin 1  "\fraction 15 11 }
+                                        ^ \markup \center-align { \concat { -12 } }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 8]
-                                        c'1
-                                        ~
+                                        \tweak Accidental.stencil #ly:text-interface::print
+                                        \tweak Accidental.text \markup { \one-tridecimal-third-tone-down  }
+                                        b!1
+                                        \tweak color #red
+                                        _ \markup \center-align \concat { "cello  "\fraction 13 12 }
+                                        ^ \markup \center-align { \concat { B\raise #0.5 { \teeny \flat } +41 } }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 9]
-                                        c'1
+                                        \tweak Accidental.stencil #ly:text-interface::print
+                                        \tweak Accidental.text \markup \concat { \one-seventeen-limit-schisma-down \hspace #0.125 \abjad-sharp  }
+                                        ds'!1
+                                        \tweak color #red
+                                        _ \markup \center-align \concat { "violin 1  "\fraction 17 16 }
+                                        ^ \markup \center-align { \concat { +5 } }
                                           %! MATERIAL_COLOR
                                         \stopStaffHighlight
 
@@ -421,25 +540,50 @@
                                         % [violin 2 voice measure 15]
                                           %! MATERIAL_COLOR
                                         \staffHighlight #(rgb-color 0.6 0.6 1)
-                                        c'1
+                                        \tweak Accidental.stencil #ly:text-interface::print
+                                        \tweak Accidental.text \markup { \abjad-natural  }
+                                        e'!1
+                                        \tweak color #red
+                                        _ \markup \center-align \concat { "cello  "\fraction 3 1 }
+                                        ^ \markup \center-align { \concat { +4 } }
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 16]
-                                        c'1
+                                        \tweak Accidental.stencil #ly:text-interface::print
+                                        \tweak Accidental.text \markup { \abjad-natural  }
+                                        e'2
+
+                                        \tweak Accidental.stencil #ly:text-interface::print
+                                        \tweak Accidental.text \markup \concat { \one-seventeen-limit-schisma-down \hspace #0.125 \abjad-sharp  }
+                                        ds'!2
+                                        \tweak color #red
+                                        _ \markup \center-align \concat { "cello  "\fraction 17 6 }
+                                        ^ \markup \center-align { \concat { +5 } }
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 17]
-                                        c'1
+                                        \tweak Accidental.stencil #ly:text-interface::print
+                                        \tweak Accidental.text \markup \concat { \one-seventeen-limit-schisma-down \hspace #0.125 \abjad-sharp  }
+                                        ds'2.
+
+                                        \tweak Accidental.stencil #ly:text-interface::print
+                                        \tweak Accidental.text \markup { \abjad-natural  }
+                                        d'!4
+                                        \tweak color #red
+                                        _ \markup \center-align \concat { "viola  "\fraction 8 5 }
+                                        ^ \markup \center-align { \concat { +0 } }
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 18]
-                                        c'1
+                                        \tweak Accidental.stencil #ly:text-interface::print
+                                        \tweak Accidental.text \markup { \abjad-natural  }
+                                        d'1
                                         \bar "||"
                                           %! MATERIAL_COLOR
                                         \stopStaffHighlight
@@ -472,43 +616,83 @@
                                 \set Staff.shortInstrumentName = \markup { \hcenter-in #12 "va." }
                                   %! MATERIAL_COLOR
                                 \staffHighlight #(rgb-color 0.6 0.6 1)
-                                c'1
-                                ~
+                                r1
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 2]
-                                c'1
+                                r2.
+
+                                \clef "alto"
+                                \tweak Accidental.stencil #ly:text-interface::print
+                                \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
+                                gs''!4
+                                \tweak color #red
+                                _ \markup \center-align \concat { "violin 1  "\fraction 45 29 }
+                                ^ \markup \center-align { \concat { -10 } }
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 3]
-                                c'1
+                                \tweak Accidental.stencil #ly:text-interface::print
+                                \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
+                                gs''2
+
+                                \tweak Accidental.stencil #ly:text-interface::print
+                                \tweak Accidental.text \markup { \one-septimal-comma-down  }
+                                g''!2
+                                \tweak color #red
+                                _ \markup \center-align \concat { "cello  "\fraction 6 5 }
+                                ^ \markup \center-align { \concat { -29 } }
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 4]
-                                c'1
+                                \tweak Accidental.stencil #ly:text-interface::print
+                                \tweak Accidental.text \markup { \one-septimal-comma-down  }
+                                g''2.
+
+                                \tweak Accidental.stencil #ly:text-interface::print
+                                \tweak Accidental.text \markup { \abjad-natural  }
+                                a'!4
+                                \tweak color #red
+                                _ \markup \center-align \concat { "violin 1  "\fraction 8 11 }
+                                ^ \markup \center-align { \concat { +2 } }
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 5]
-                                c'1
+                                \tweak Accidental.stencil #ly:text-interface::print
+                                \tweak Accidental.text \markup { \abjad-natural  }
+                                a'4
+
+                                \tweak Accidental.stencil #ly:text-interface::print
+                                \tweak Accidental.text \markup { \one-septimal-comma-down  }
+                                g'!2.
+                                \tweak color #red
+                                _ \markup \center-align \concat { "violin 1  "\fraction 7 11 }
+                                ^ \markup \center-align { \concat { -29 } }
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 6]
-                                c'1
-                                ~
+                                \tweak Accidental.stencil #ly:text-interface::print
+                                \tweak Accidental.text \markup { \one-septimal-comma-down  }
+                                g'1
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 7]
-                                c'1
+                                \tweak Accidental.stencil #ly:text-interface::print
+                                \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
+                                fs!1
+                                \tweak color #red
+                                _ \markup \center-align \concat { "violin 1  "\fraction 10 11 }
+                                ^ \markup \center-align { \concat { -14 } }
                                   %! MATERIAL_COLOR
                                 \stopStaffHighlight
 
@@ -538,7 +722,12 @@
                                 % [viola voice measure 11]
                                   %! MATERIAL_COLOR
                                 \staffHighlight #(rgb-color 0.6 0.6 1)
-                                c'1
+                                \tweak Accidental.stencil #ly:text-interface::print
+                                \tweak Accidental.text \markup { \one-septimal-comma-down  }
+                                c'!1
+                                \tweak color #red
+                                _ \markup \center-align \concat { "violin 1  "\fraction 14 15 }
+                                ^ \markup \center-align { \concat { -31 } }
                                   %! MATERIAL_COLOR
                                 \stopStaffHighlight
 
@@ -556,37 +745,63 @@
                                 % [viola voice measure 13]
                                   %! MATERIAL_COLOR
                                 \staffHighlight #(rgb-color 0.6 0.6 1)
-                                c'1
-                                ~
+                                \tweak Accidental.stencil #ly:text-interface::print
+                                \tweak Accidental.text \markup { \abjad-natural  }
+                                e!1
+                                \tweak color #red
+                                _ \markup \center-align \concat { "cello  "\fraction 3 2 }
+                                ^ \markup \center-align { \concat { +4 } }
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 14]
-                                c'1
+                                \tweak Accidental.stencil #ly:text-interface::print
+                                \tweak Accidental.text \markup { \one-septimal-comma-down  }
+                                c'!1
+                                \tweak color #red
+                                _ \markup \center-align \concat { "cello  "\fraction 7 3 }
+                                ^ \markup \center-align { \concat { -31 } }
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 15]
+                                \tweak Accidental.stencil #ly:text-interface::print
+                                \tweak Accidental.text \markup { \one-septimal-comma-down  }
                                 c'1
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 16]
-                                c'1
+                                \tweak Accidental.stencil #ly:text-interface::print
+                                \tweak Accidental.text \markup { \one-septimal-comma-down  }
+                                c'4
+
+                                \tweak Accidental.stencil #ly:text-interface::print
+                                \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
+                                fs!2.
+                                \tweak color #red
+                                _ \markup \center-align \concat { "cello  "\fraction 5 3 }
+                                ^ \markup \center-align { \concat { -14 } }
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 17]
-                                c'1
-                                ~
+                                \tweak Accidental.stencil #ly:text-interface::print
+                                \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
+                                fs1
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 18]
-                                c'1
+                                \tweak Accidental.stencil #ly:text-interface::print
+                                \tweak Accidental.text \markup { \abjad-natural  }
+                                e!1
+                                \tweak color #red
+                                _ \markup \center-align \concat { "cello  "\fraction 9 5 }
+                                ^ \markup \center-align { \concat { +4 } }
                                 \bar "||"
                                   %! MATERIAL_COLOR
                                 \stopStaffHighlight
@@ -615,49 +830,104 @@
                                 \set Staff.shortInstrumentName = \markup { \hcenter-in #12 "vc." }
                                   %! MATERIAL_COLOR
                                 \staffHighlight #(rgb-color 0.6 0.6 1)
-                                c'1
-                                ~
+                                r1
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 2]
-                                c'1
-                                ~
+                                r1
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 3]
-                                c'1
+                                \override Staff.Stem.stemlet-length = 0.75
+                                r8
+                                [
+
+                                \clef "treble"
+                                \revert Staff.Stem.stemlet-length
+                                \tweak Accidental.stencil #ly:text-interface::print
+                                \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \natural-one-syntonic-comma-down  }
+                                e''!8
+                                \tweak color #red
+                                _ \markup \center-align \concat { "viola  "\fraction 7 9 }
+                                ^ \markup \center-align { \concat { -45 } }
+                                ]
+                                ~
+
+                                \tweak Accidental.stencil #ly:text-interface::print
+                                \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \natural-one-syntonic-comma-down  }
+                                e''2.
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 4]
-                                c'1
+                                \tweak Accidental.stencil #ly:text-interface::print
+                                \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \natural-one-syntonic-comma-down  }
+                                e''4
+                                ~
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                \tweak Accidental.stencil #ly:text-interface::print
+                                \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \natural-one-syntonic-comma-down  }
+                                e''8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                \tweak Accidental.stencil #ly:text-interface::print
+                                \tweak Accidental.text \markup { \one-tridecimal-third-tone-down  }
+                                b'!8
+                                \tweak color #red
+                                _ \markup \center-align \concat { "violin 2  "\fraction 13 19 }
+                                ^ \markup \center-align { \concat { B\raise #0.5 { \teeny \flat } +41 } }
+                                ]
+                                ~
+
+                                \tweak Accidental.stencil #ly:text-interface::print
+                                \tweak Accidental.text \markup { \one-tridecimal-third-tone-down  }
+                                b'2
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 5]
-                                c'1
+                                \tweak Accidental.stencil #ly:text-interface::print
+                                \tweak Accidental.text \markup { \one-tridecimal-third-tone-down  }
+                                b'2
+
+                                \tweak Accidental.stencil #ly:text-interface::print
+                                \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
+                                cs''!2
+                                \tweak color #red
+                                _ \markup \center-align \concat { "viola  "\fraction 10 7 }
+                                ^ \markup \center-align { \concat { -12 } }
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 6]
-                                c'1
-                                ~
+                                \tweak Accidental.stencil #ly:text-interface::print
+                                \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
+                                cs''1
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 7]
-                                c'1
+                                \tweak Accidental.stencil #ly:text-interface::print
+                                \tweak Accidental.text \markup { \abjad-natural  }
+                                a!1
+                                \tweak color #red
+                                _ \markup \center-align \concat { "violin 1  "\fraction 12 11 }
+                                ^ \markup \center-align { \concat { +2 } }
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 8]
-                                c'1
+                                \tweak Accidental.stencil #ly:text-interface::print
+                                \tweak Accidental.text \markup { \abjad-natural  }
+                                a1
                                   %! MATERIAL_COLOR
                                 \stopStaffHighlight
 
@@ -693,37 +963,67 @@
                                 % [cello voice measure 13]
                                   %! MATERIAL_COLOR
                                 \staffHighlight #(rgb-color 0.6 0.6 1)
-                                c'1
+                                \clef "bass"
+                                \tweak Accidental.stencil #ly:text-interface::print
+                                \tweak Accidental.text \markup { \abjad-natural  }
+                                a,!1
+                                \tweak color #red
+                                _ \markup \center-align \concat { "viola  "\fraction 2 3 }
+                                ^ \markup \center-align { \concat { +2 } }
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 14]
-                                c'1
+                                \tweak Accidental.stencil #ly:text-interface::print
+                                \tweak Accidental.text \markup { \abjad-natural  }
+                                a,1
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 15]
-                                c'1
+                                \tweak Accidental.stencil #ly:text-interface::print
+                                \tweak Accidental.text \markup { \abjad-natural  }
+                                a,1
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 16]
-                                c'1
+                                \tweak Accidental.stencil #ly:text-interface::print
+                                \tweak Accidental.text \markup { \abjad-natural  }
+                                a,2.
+
+                                \tweak Accidental.stencil #ly:text-interface::print
+                                \tweak Accidental.text \markup { \one-septimal-comma-down  }
+                                c!4
+                                \tweak color #red
+                                _ \markup \center-align \concat { "viola  "\fraction 7 10 }
+                                ^ \markup \center-align { \concat { -31 } }
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 17]
-                                c'1
+                                \tweak Accidental.stencil #ly:text-interface::print
+                                \tweak Accidental.text \markup { \one-septimal-comma-down  }
+                                c2.
+
+                                \tweak Accidental.stencil #ly:text-interface::print
+                                \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
+                                fs,!4
+                                \tweak color #red
+                                _ \markup \center-align \concat { "viola  "\fraction 1 2 }
+                                ^ \markup \center-align { \concat { -14 } }
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 18]
-                                c'1
+                                \tweak Accidental.stencil #ly:text-interface::print
+                                \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
+                                fs,1
                                 \bar "||"
                                   %! MATERIAL_COLOR
                                 \stopStaffHighlight

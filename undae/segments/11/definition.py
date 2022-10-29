@@ -47,6 +47,9 @@ maker = evans.SegmentMaker(
         evans.MusicCommand(
             ("violin 1 voice", [_ for _ in range(9, 13)]),
             evans.make_tied_notes(rewrite=-1),
+            evans.PitchHandler([evans.ETPitch("a'", "11/4", 19, -1)]),
+            evans.clean_cent_markup,
+            evans.annotate_hertz,
             undae.A_color,
         ),
         evans.MusicCommand(
@@ -110,6 +113,9 @@ maker = evans.SegmentMaker(
         evans.MusicCommand(
             ("violin 2 voice", [12, 13, 14]),
             evans.make_tied_notes(rewrite=-1),
+            evans.PitchHandler([evans.ETPitch("a'", "11/4", 19, -3)]),
+            evans.clean_cent_markup,
+            evans.annotate_hertz,
             undae.A_color,
         ),
         evans.MusicCommand(
@@ -173,6 +179,9 @@ maker = evans.SegmentMaker(
         evans.MusicCommand(
             ("viola voice", [6, 7, 8, 9]),
             evans.make_tied_notes(rewrite=-1),
+            evans.PitchHandler([evans.ETPitch("a'", "11/4", 19, -5)]),
+            evans.clean_cent_markup,
+            evans.annotate_hertz,
             undae.A_color,
         ),
         evans.MusicCommand(
@@ -194,6 +203,9 @@ maker = evans.SegmentMaker(
         evans.MusicCommand(
             ("viola voice", [14, 15, 16]),
             evans.make_tied_notes(rewrite=-1),
+            evans.PitchHandler([evans.ETPitch("a'", "11/4", 19, -7)]),
+            evans.clean_cent_markup,
+            evans.annotate_hertz,
             undae.A_color,
         ),
         evans.MusicCommand(
@@ -257,6 +269,9 @@ maker = evans.SegmentMaker(
         evans.MusicCommand(
             ("cello voice", [_ for _ in range(9, 18)]),
             evans.make_tied_notes(rewrite=-1),
+            evans.PitchHandler([evans.ETPitch("a'", "11/4", 19, -9)]),
+            evans.clean_cent_markup,
+            evans.annotate_hertz,
             undae.A_color,
         ),
         evans.call(
@@ -317,6 +332,8 @@ maker = evans.SegmentMaker(
     mm_rests=False,
     extra_rewrite=False,
     print_clock_time=True,
+    # tempo=((1, 4), 111),
 )
 
+# maker._make_sc_file()
 maker.build_segment()

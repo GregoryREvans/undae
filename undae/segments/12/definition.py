@@ -26,22 +26,58 @@ maker = evans.SegmentMaker(
     commands=[
         evans.MusicCommand(
             ("violin 1 voice", [_ for _ in range(9)]),
-            evans.make_tied_notes(rewrite=-1),
+            evans.talea([3, 4, 5, 6, 5, 4], 8, rewrite=-1),
+            evans.PitchHandler(
+                [
+                    evans.ETPitch("a'", "11/4", 19, _)
+                    for _ in [-12, -10, -8, -6, -5, -4, -3, -1, 0, 4, 8, 6, 5, 4, 3, 2]
+                ]
+            ),
+            evans.clean_cent_markup,
+            evans.annotate_hertz,
+            abjad.Clef("treble"),
             undae.A_color,
         ),
         evans.MusicCommand(
             ("violin 2 voice", [_ for _ in range(9)]),
-            evans.make_tied_notes(rewrite=-1),
+            evans.talea([4, 5, 6, 5, 4, 3, 2, 3], 8, rewrite=-1),
+            evans.PitchHandler(
+                [
+                    evans.ETPitch("a'", "11/4", 19, _)
+                    for _ in [0, -6, -8, -7, -9, 1, -1, -10, -14]
+                ]
+            ),
+            evans.clean_cent_markup,
+            evans.annotate_hertz,
+            abjad.Clef("treble"),
             undae.A_color,
         ),
         evans.MusicCommand(
             ("viola voice", [_ for _ in range(9)]),
-            evans.make_tied_notes(rewrite=-1),
+            evans.talea([6, 5, 4, 3, 4, 5, 6, 7], 8, rewrite=-1),
+            evans.PitchHandler(
+                [
+                    evans.ETPitch("a'", "11/4", 19, _)
+                    for _ in [-22, -21, -20, -18, -16, -17]
+                ]
+            ),
+            evans.clean_cent_markup,
+            evans.annotate_hertz,
+            abjad.Clef("alto"),
             undae.A_color,
         ),
         evans.MusicCommand(
             ("cello voice", [_ for _ in range(9)]),
-            evans.make_tied_notes(rewrite=-1),
+            evans.talea([4, 5, 6, 7, 8, 7, 6, 5], 8, rewrite=-1),
+            evans.PitchHandler(
+                [
+                    evans.ETPitch("a'", "11/4", 19, _)
+                    for _ in [-24, -26, -25, -26, -28, -24, -23]
+                ]
+            ),
+            evans.clean_cent_markup,
+            evans.annotate_hertz,
+            abjad.Clef("bass"),
             undae.A_color,
         ),
         evans.call(
@@ -101,6 +137,8 @@ maker = evans.SegmentMaker(
     mm_rests=False,
     extra_rewrite=False,
     print_clock_time=True,
+    # tempo=((1, 4), 40),
 )
 
 maker.build_segment()
+# maker._make_sc_file()
