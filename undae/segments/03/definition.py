@@ -37,6 +37,13 @@ maker = evans.SegmentMaker(
         evans.MusicCommand(
             [("violin 1 voice", [9])],
             evans.talea([1], 16, extra_counts=[8], treat_tuplets=False),
+            evans.loop([0, 1, 2, 3], [1, 2, -1, 3, -1]),
+            abjad.LilyPondLiteral(r"\harmonicsOn", site="before"),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\harmonicsOff", site="after"),
+                selector=lambda _: abjad.select.leaf(_, -1),
+            ),
+            evans.slur([4]),
             undae.D_color,
         ),
         evans.MusicCommand(
@@ -53,6 +60,13 @@ maker = evans.SegmentMaker(
                 preprocessor=evans.make_preprocessor(quarters=True),
                 rewrite=-1,
             ),
+            evans.loop([0, 1, 2, 3], [1, 2, -1, 3, -1]),
+            abjad.LilyPondLiteral(r"\half-harmonic", site="before"),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\revert-noteheads", site="after"),
+                selector=lambda _: abjad.select.leaf(_, -1),
+            ),
+            evans.slur([4]),
             undae.D_color,
         ),
         evans.MusicCommand(
@@ -63,6 +77,13 @@ maker = evans.SegmentMaker(
         evans.MusicCommand(
             [("violin 2 voice", [9])],
             evans.talea([1], 16, extra_counts=[8], treat_tuplets=False),
+            evans.loop([0, 1, 2, 3, 4], [1, 2, -1, 3, -1]),
+            abjad.LilyPondLiteral(r"\half-harmonic", site="before"),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\revert-noteheads", site="after"),
+                selector=lambda _: abjad.select.leaf(_, -1),
+            ),
+            evans.slur([5], direction=abjad.UP),
             undae.D_color,
         ),
         evans.MusicCommand(
@@ -81,6 +102,13 @@ maker = evans.SegmentMaker(
                 ),
                 rewrite=-1,
             ),
+            evans.loop([1, 2, 3], [-1, 2, -2, 3, -1]),
+            abjad.LilyPondLiteral(r"\harmonicsOn", site="before"),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\harmonicsOff", site="after"),
+                selector=lambda _: abjad.select.leaf(_, -1),
+            ),
+            evans.slur([3]),
             undae.D_color,
         ),
         evans.MusicCommand(
@@ -89,11 +117,19 @@ maker = evans.SegmentMaker(
                 preprocessor=evans.make_preprocessor(sum=True, quarters=True),
                 rewrite=-1,
             ),
+            abjad.Clef("alto"),
             undae.B_color,
         ),
         evans.MusicCommand(
             [("viola voice", [9])],
             evans.talea([1], 16, extra_counts=[8], treat_tuplets=False),
+            evans.loop([-6, -7, -8, -9, -10, -11], [2, -1, -1, 3, -2, 1]),
+            abjad.LilyPondLiteral(r"\harmonicsOn", site="before"),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\harmonicsOff", site="after"),
+                selector=lambda _: abjad.select.leaf(_, -1),
+            ),
+            evans.slur([6], direction=abjad.UP),
             undae.D_color,
         ),
         evans.MusicCommand(
@@ -110,16 +146,31 @@ maker = evans.SegmentMaker(
                 preprocessor=evans.make_preprocessor(quarters=True),
                 rewrite=-1,
             ),
+            evans.loop([-6, -7, -8, -9, -10, -11], [2, -1, -1, 3, -2, 1]),
+            abjad.LilyPondLiteral(r"\half-harmonic", site="before"),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\revert-noteheads", site="after"),
+                selector=lambda _: abjad.select.leaf(_, -1),
+            ),
+            evans.slur([6]),
             undae.D_color,
         ),
         evans.MusicCommand(
             [("cello voice", (0, 9))],
             evans.make_tied_notes(rewrite=-1),
+            abjad.Clef("bass"),
             undae.B_color,
         ),
         evans.MusicCommand(
             [("cello voice", [9])],
             evans.talea([1], 16, extra_counts=[8], treat_tuplets=False),
+            evans.loop([-7, -8, -9, -10, -11], [1, -3, -1, 3, -2, 1]),
+            abjad.LilyPondLiteral(r"\harmonicsOn", site="before"),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\harmonicsOff", site="after"),
+                selector=lambda _: abjad.select.leaf(_, -1),
+            ),
+            evans.slur([5]),
             undae.D_color,
         ),
         evans.MusicCommand(
@@ -138,6 +189,13 @@ maker = evans.SegmentMaker(
                 ),
                 rewrite=-1,
             ),
+            evans.loop([-7, -8, -9, -10, -11], [1, -3, -1, 3, -2, 1]),
+            abjad.LilyPondLiteral(r"\half-harmonic", site="before"),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\revert-noteheads", site="after"),
+                selector=lambda _: abjad.select.leaf(_, -1),
+            ),
+            evans.slur([5]),
             undae.D_color,
         ),
         evans.call(

@@ -179,22 +179,183 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 1]
+                                        \half-harmonic
                                           %! applying staff names and clefs
                                         \set Staff.instrumentName = \markup { \hcenter-in #14 "Violin I" }
                                           %! applying staff names and clefs
                                         \set Staff.shortInstrumentName = \markup { \hcenter-in #12 "vn. I" }
                                           %! MATERIAL_COLOR
                                         \staffHighlight #(rgb-color 1 0.2 0.2)
-                                        c'2.
-                                        ~
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        b'16
+                                        [
+                                        (
 
-                                        c'2
-                                        ~
+                                        a'16
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 1 voice measure 2]
-                                        c'1
+                                        g'16
+
+                                        \revert Staff.Stem.stemlet-length
+                                        fs'16
+                                        )
+                                        ]
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            cs''16
+                                            [
+                                            (
+
+                                            b'16
+
+                                            a'16
+
+                                            af'16
+                                            )
+
+                                            c''16
+                                            (
+
+                                            \revert Staff.Stem.stemlet-length
+                                            bf'16
+                                            ]
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        af'16
+                                        [
+
+                                        g'16
+                                        )
+
+                                        b'16
+                                        (
+
+                                        \revert Staff.Stem.stemlet-length
+                                        a'16
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        g'16
+                                        [
+
+                                        fs'16
+                                        )
+
+                                        d''16
+                                        (
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c''16
+                                        ]
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            bf'16
+                                            [
+
+                                            a'16
+                                            )
+
+                                            c''16
+                                            (
+
+                                            bf'16
+
+                                            af'16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            g'16
+                                            )
+                                            ]
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 2]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            cs''16
+                                            [
+                                            (
+
+                                            b'16
+
+                                            a'16
+
+                                            af'16
+                                            )
+
+                                            \revert Staff.Stem.stemlet-length
+                                            ef''16
+                                            ]
+                                            (
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        cs''16
+                                        [
+
+                                        b'16
+
+                                        bf'16
+                                        )
+
+                                        \revert Staff.Stem.stemlet-length
+                                        d''16
+                                        ]
+                                        (
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c''32
+                                            [
+
+                                            bf'32
+
+                                            a'32
+                                            )
+
+                                            cs''32
+                                            (
+
+                                            b'32
+
+                                            a'32
+
+                                            \revert Staff.Stem.stemlet-length
+                                            af'32
+                                            )
+                                            ]
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        e''16
+                                        [
+                                        (
+
+                                        d''16
+
+                                        c''16
+
+                                        \revert Staff.Stem.stemlet-length
+                                        b'16
+                                        )
+                                        ]
+                                        \revert-noteheads
                                           %! MATERIAL_COLOR
                                         \stopStaffHighlight
 
@@ -616,39 +777,377 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 1]
+                                        \harmonicsOn
                                           %! applying staff names and clefs
                                         \set Staff.instrumentName = \markup { \hcenter-in #14 "Violin II" }
                                           %! applying staff names and clefs
                                         \set Staff.shortInstrumentName = \markup { \hcenter-in #12 "vn. II" }
                                           %! MATERIAL_COLOR
                                         \staffHighlight #(rgb-color 1 0.2 0.2)
-                                        c'2.
-                                        ~
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        af16
+                                        [
+                                        (
 
-                                        c'2
-                                        ~
+                                        a16
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 2]
-                                        c'1
-                                        ~
+                                        bf16
+                                        )
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 3]
-                                        c'2.
-                                        ~
+                                        \revert Staff.Stem.stemlet-length
+                                        b16
+                                        ]
+                                        (
 
-                                        c'2
-                                        ~
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            bf16
+                                            [
+
+                                            a16
+                                            )
+
+                                            bf16
+                                            (
+
+                                            b16
+
+                                            c'16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            cs'16
+                                            )
+                                            ]
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        bf16
+                                        [
+                                        (
+
+                                        b16
+
+                                        c'16
+                                        )
+
+                                        \revert Staff.Stem.stemlet-length
+                                        cs'16
+                                        ]
+                                        (
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'16
+                                        [
+
+                                        b16
+                                        )
+
+                                        c'16
+                                        (
+
+                                        \revert Staff.Stem.stemlet-length
+                                        cs'16
+                                        ]
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d'16
+                                            [
+
+                                            ef'16
+                                            )
+
+                                            cs'16
+                                            (
+
+                                            d'16
+
+                                            ef'16
+                                            )
+
+                                            \revert Staff.Stem.stemlet-length
+                                            e'16
+                                            ]
+                                            (
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 2]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            ef'16
+                                            [
+
+                                            d'16
+                                            )
+
+                                            ef'16
+                                            (
+
+                                            e'16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            f'16
+                                            ]
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        fs'16
+                                        )
+                                        [
+
+                                        ef'16
+                                        (
+
+                                        e'16
+
+                                        \revert Staff.Stem.stemlet-length
+                                        f'16
+                                        )
+                                        ]
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            fs'32
+                                            [
+                                            (
+
+                                            f'32
+
+                                            e'32
+                                            )
+
+                                            f'32
+                                            (
+
+                                            fs'32
+
+                                            g'32
+
+                                            \revert Staff.Stem.stemlet-length
+                                            af'32
+                                            )
+                                            ]
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'16
+                                        [
+                                        (
+
+                                        cs'16
+
+                                        d'16
+                                        )
+
+                                        \revert Staff.Stem.stemlet-length
+                                        ef'16
+                                        ]
+                                        (
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 3]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d'16
+                                            [
+
+                                            cs'16
+                                            )
+
+                                            d'16
+                                            (
+
+                                            ef'16
+
+                                            e'16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            f'16
+                                            )
+                                            ]
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        d'16
+                                        [
+                                        (
+
+                                        ef'16
+
+                                        e'16
+                                        )
+
+                                        \revert Staff.Stem.stemlet-length
+                                        f'16
+                                        ]
+                                        (
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        e'16
+                                        [
+
+                                        ef'16
+                                        )
+
+                                        e'16
+                                        (
+
+                                        \revert Staff.Stem.stemlet-length
+                                        f'16
+                                        ]
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            fs'16
+                                            [
+
+                                            g'16
+                                            )
+
+                                            f'16
+                                            (
+
+                                            fs'16
+
+                                            g'16
+                                            )
+
+                                            \revert Staff.Stem.stemlet-length
+                                            af'16
+                                            ]
+                                            (
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            g'16
+                                            [
+
+                                            fs'16
+                                            )
+
+                                            g'16
+                                            (
+
+                                            af'16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a'16
+                                            ]
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 4]
-                                        c'1
-                                          %! MATERIAL_COLOR
-                                        \stopStaffHighlight
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        bf'16
+                                        )
+                                        [
+
+                                        g'16
+                                        (
+
+                                        af'16
+
+                                        \revert Staff.Stem.stemlet-length
+                                        a'16
+                                        )
+                                        ]
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            bf'32
+                                            [
+                                            (
+
+                                            a'32
+
+                                            af'32
+                                            )
+
+                                            a'32
+                                            (
+
+                                            bf'32
+
+                                            b'32
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c''32
+                                            )
+                                            ]
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        e'16
+                                        [
+                                        (
+
+                                        f'16
+
+                                        fs'16
+                                        )
+
+                                        \revert Staff.Stem.stemlet-length
+                                        g'16
+                                        ]
+                                        (
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            fs'16
+                                            [
+
+                                            f'16
+                                            )
+
+                                            fs'16
+                                            (
+
+                                            g'16
+
+                                            af'16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a'16
+                                            )
+                                            ]
+                                            \harmonicsOff
+                                              %! MATERIAL_COLOR
+                                            \stopStaffHighlight
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -746,26 +1245,214 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 8]
+                                        \harmonicsOn
                                           %! MATERIAL_COLOR
                                         \staffHighlight #(rgb-color 1 0.2 0.2)
-                                        c'2.
-                                        ~
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        af16
+                                        [
+                                        (
+
+                                        a16
+
+                                        bf16
+                                        )
+
+                                        \revert Staff.Stem.stemlet-length
+                                        b16
+                                        ]
+                                        (
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        bf16
+                                        [
+
+                                        a16
+                                        )
+
+                                        bf16
+                                        (
+
+                                        \revert Staff.Stem.stemlet-length
+                                        b16
+                                        ]
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'16
+                                            [
+
+                                            cs'16
+                                            )
+
+                                            bf16
+                                            (
+
+                                            b16
+
+                                            c'16
+                                            )
+
+                                            \revert Staff.Stem.stemlet-length
+                                            cs'16
+                                            ]
+                                            (
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 9]
-                                        c'2.
-                                        ~
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'16
+                                        [
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 10]
-                                        c'2.
-                                        ~
+                                        b16
+                                        )
 
-                                        c'2
-                                          %! MATERIAL_COLOR
-                                        \stopStaffHighlight
+                                        c'16
+                                        (
+
+                                        \revert Staff.Stem.stemlet-length
+                                        cs'16
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        d'16
+                                        [
+
+                                        ef'16
+                                        )
+
+                                        cs'16
+                                        (
+
+                                        \revert Staff.Stem.stemlet-length
+                                        d'16
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        ef'16
+                                        )
+                                        [
+
+                                        e'16
+                                        (
+
+                                        ef'16
+
+                                        \revert Staff.Stem.stemlet-length
+                                        d'16
+                                        )
+                                        ]
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 10]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            ef'16
+                                            [
+                                            (
+
+                                            e'16
+
+                                            f'16
+
+                                            fs'16
+                                            )
+
+                                            ef'16
+                                            (
+
+                                            \revert Staff.Stem.stemlet-length
+                                            e'16
+                                            ]
+
+                                        }
+
+                                        \times 8/9
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            f'16
+                                            )
+                                            [
+
+                                            fs'16
+                                            (
+
+                                            f'16
+
+                                            e'16
+                                            )
+
+                                            f'16
+                                            (
+
+                                            fs'16
+
+                                            g'16
+
+                                            af'16
+                                            )
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'16
+                                            ]
+                                            (
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        cs'16
+                                        [
+
+                                        d'16
+                                        )
+
+                                        ef'16
+                                        (
+
+                                        \revert Staff.Stem.stemlet-length
+                                        d'16
+                                        ]
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            cs'32
+                                            )
+                                            [
+
+                                            d'32
+                                            (
+
+                                            ef'32
+
+                                            e'32
+
+                                            f'32
+                                            )
+
+                                            d'32
+                                            (
+
+                                            \revert Staff.Stem.stemlet-length
+                                            ef'32
+                                            )
+                                            ]
+                                            \harmonicsOff
+                                              %! MATERIAL_COLOR
+                                            \stopStaffHighlight
+
+                                        }
 
                                         \times 2/3
                                         {
@@ -961,24 +1648,168 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 1]
+                                \harmonicsOn
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup { \hcenter-in #14 "Viola" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup { \hcenter-in #12 "va." }
                                   %! MATERIAL_COLOR
                                 \staffHighlight #(rgb-color 1 0.2 0.2)
-                                c'2.
-                                ~
+                                \clef "alto"
+                                \override Staff.Stem.stemlet-length = 0.75
+                                cs''16
+                                [
+                                (
 
-                                c'2
-                                ~
+                                c''16
+
+                                b'16
+
+                                \revert Staff.Stem.stemlet-length
+                                bf'16
+                                )
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c''16
+                                [
+                                (
+
+                                b'16
+
+                                bf'16
+
+                                \revert Staff.Stem.stemlet-length
+                                a'16
+                                )
+                                ]
+
+                                \times 2/3
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    bf'16
+                                    [
+                                    (
+
+                                    a'16
+
+                                    af'16
+
+                                    g'16
+                                    )
+
+                                    g'16
+                                    (
+
+                                    \revert Staff.Stem.stemlet-length
+                                    fs'16
+                                    ]
+
+                                }
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                f'16
+                                [
+
+                                e'16
+                                )
+
+                                ef'16
+                                (
+
+                                \revert Staff.Stem.stemlet-length
+                                d'16
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                cs'16
+                                [
+
+                                c'16
+                                )
+
+                                d'16
+                                (
+
+                                \revert Staff.Stem.stemlet-length
+                                cs'16
+                                ]
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 2]
-                                c'1
-                                  %! MATERIAL_COLOR
-                                \stopStaffHighlight
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c'16
+                                [
+
+                                b16
+                                )
+
+                                c'16
+                                (
+
+                                \revert Staff.Stem.stemlet-length
+                                b16
+                                ]
+
+                                \times 2/3
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    bf16
+                                    [
+
+                                    a16
+                                    )
+
+                                    a16
+                                    (
+
+                                    af16
+
+                                    g16
+
+                                    \revert Staff.Stem.stemlet-length
+                                    fs16
+                                    )
+                                    ]
+
+                                }
+
+                                \times 8/9
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    f16
+                                    [
+                                    (
+
+                                    e16
+
+                                    ef16
+
+                                    d16
+                                    )
+
+                                    e16
+                                    (
+
+                                    ef16
+
+                                    d16
+
+                                    cs16
+                                    )
+
+                                    \revert Staff.Stem.stemlet-length
+                                    d16
+                                    ]
+                                    \harmonicsOff
+                                      %! MATERIAL_COLOR
+                                    \stopStaffHighlight
+
+                                }
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
@@ -1049,9 +1880,76 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 5]
+                                \harmonicsOn
                                   %! MATERIAL_COLOR
                                 \staffHighlight #(rgb-color 1 0.2 0.2)
-                                c'1
+                                \override Staff.Stem.stemlet-length = 0.75
+                                cs''16
+                                [
+                                (
+
+                                c''16
+
+                                b'16
+
+                                \revert Staff.Stem.stemlet-length
+                                bf'16
+                                )
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c''16
+                                [
+                                (
+
+                                b'16
+
+                                bf'16
+
+                                \revert Staff.Stem.stemlet-length
+                                a'16
+                                )
+                                ]
+
+                                \times 2/3
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    bf'16
+                                    [
+                                    (
+
+                                    a'16
+
+                                    af'16
+
+                                    g'16
+                                    )
+
+                                    g'16
+                                    (
+
+                                    \revert Staff.Stem.stemlet-length
+                                    fs'16
+                                    ]
+
+                                }
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                f'16
+                                [
+
+                                e'16
+                                )
+
+                                ef'16
+                                (
+
+                                \revert Staff.Stem.stemlet-length
+                                d'16
+                                )
+                                ]
+                                \harmonicsOff
                                   %! MATERIAL_COLOR
                                 \stopStaffHighlight
 
@@ -1295,22 +2193,162 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 1]
+                                \harmonicsOn
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup { \hcenter-in #14 "Violoncello" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup { \hcenter-in #12 "vc." }
                                   %! MATERIAL_COLOR
                                 \staffHighlight #(rgb-color 1 0.2 0.2)
-                                c'2.
-                                ~
+                                \clef "bass"
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c16
+                                [
+                                (
 
-                                c'2
-                                ~
+                                b,16
 
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [cello voice measure 2]
-                                c'1
+                                bf,16
+
+                                \revert Staff.Stem.stemlet-length
+                                a,16
+                                )
+                                ]
+
+                                \times 4/5
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    b,16
+                                    [
+                                    (
+
+                                    bf,16
+
+                                    a,16
+
+                                    af,16
+                                    )
+
+                                    cs16
+                                    (
+
+                                    c16
+
+                                    b,16
+
+                                    bf,16
+                                    )
+
+                                    bf,16
+                                    (
+
+                                    \revert Staff.Stem.stemlet-length
+                                    a,16
+                                    ]
+
+                                }
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                af,16
+                                [
+
+                                g,16
+                                )
+
+                                d16
+                                (
+
+                                \revert Staff.Stem.stemlet-length
+                                cs16
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c16
+                                [
+
+                                b,16
+                                )
+
+                                cs16
+                                (
+
+                                \revert Staff.Stem.stemlet-length
+                                c16
+                                ]
+
+                                \times 4/5
+                                {
+
+                                      %! COMMENT_MEASURE_NUMBERS
+                                      %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [cello voice measure 2]
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    b,16
+                                    [
+
+                                    bf,16
+                                    )
+
+                                    ef16
+                                    (
+
+                                    d16
+
+                                    cs16
+
+                                    c16
+                                    )
+
+                                    c16
+                                    (
+
+                                    b,16
+
+                                    bf,16
+
+                                    \revert Staff.Stem.stemlet-length
+                                    a,16
+                                    )
+                                    ]
+
+                                }
+
+                                \times 4/5
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    e16
+                                    [
+                                    (
+
+                                    ef16
+
+                                    d16
+
+                                    cs16
+                                    )
+
+                                    \revert Staff.Stem.stemlet-length
+                                    ef16
+                                    ]
+                                    (
+
+                                }
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                d16
+                                [
+
+                                cs16
+
+                                c16
+                                )
+
+                                \revert Staff.Stem.stemlet-length
+                                f16
+                                ]
+                                \harmonicsOff
                                   %! MATERIAL_COLOR
                                 \stopStaffHighlight
 
@@ -1368,17 +2406,139 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 4]
+                                \half-harmonic
                                   %! MATERIAL_COLOR
                                 \staffHighlight #(rgb-color 1 0.2 0.2)
-                                c'1
-                                ~
+                                \override Staff.Stem.stemlet-length = 0.75
+                                d16
+                                [
+                                (
+
+                                cs16
+
+                                d16
+
+                                \revert Staff.Stem.stemlet-length
+                                cs16
+                                ]
+
+                                \times 4/5
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    d16
+                                    [
+
+                                    cs16
+                                    )
+
+                                    d16
+                                    (
+
+                                    cs16
+
+                                    d16
+
+                                    cs16
+
+                                    d16
+
+                                    cs16
+                                    )
+
+                                    d16
+                                    (
+
+                                    \revert Staff.Stem.stemlet-length
+                                    cs16
+                                    ]
+
+                                }
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                d16
+                                [
+
+                                cs16
+
+                                d16
+
+                                \revert Staff.Stem.stemlet-length
+                                cs16
+                                )
+                                ]
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 5]
-                                c'1
-                                  %! MATERIAL_COLOR
-                                \stopStaffHighlight
+                                \override Staff.Stem.stemlet-length = 0.75
+                                d16
+                                [
+                                (
+
+                                cs16
+
+                                d16
+
+                                \revert Staff.Stem.stemlet-length
+                                cs16
+                                ]
+
+                                \times 4/5
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    d16
+                                    [
+
+                                    cs16
+                                    )
+
+                                    d16
+                                    (
+
+                                    cs16
+
+                                    d16
+
+                                    cs16
+
+                                    d16
+
+                                    cs16
+                                    )
+
+                                    d16
+                                    (
+
+                                    \revert Staff.Stem.stemlet-length
+                                    cs16
+                                    ]
+
+                                }
+
+                                \times 4/5
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    d16
+                                    [
+
+                                    cs16
+
+                                    d16
+
+                                    cs16
+                                    )
+
+                                    \revert Staff.Stem.stemlet-length
+                                    d16
+                                    ]
+                                    \revert-noteheads
+                                      %! MATERIAL_COLOR
+                                    \stopStaffHighlight
+
+                                }
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
