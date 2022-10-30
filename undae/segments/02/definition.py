@@ -32,21 +32,37 @@ maker = evans.SegmentMaker(
                 extra_counts=[1],
                 preprocessor=evans.make_preprocessor(sum=True),
             ),
+            evans.PitchHandler(["f'"]),
             undae.B_color,
         ),
         evans.MusicCommand(
             [("violin 1 voice", (1, 8))],
-            evans.make_tied_notes(rewrite=0),
+            evans.tuplet(
+                [(5, 3), (2, 1, 1)],
+                rewrite=-1,
+                preprocessor=evans.make_preprocessor(fuse_counts=[4, 2]),
+            ),
+            evans.PitchHandler(["f'"]),
+            evans.bcp(["0/9", "1/9", "2/9", "3/9", "2/9"], padding=2.5),
             undae.C_color,
         ),
         evans.MusicCommand(
             [("violin 1 voice", [8, 9])],
             evans.note(preprocessor=evans.make_preprocessor(quarters=True)),
+            evans.PitchHandler(["bf", "b", "b", "b", "bf", ["ef'", "gf'"]]),
             undae.B_color,
         ),
         evans.MusicCommand(
             [("violin 1 voice", (10, 20))],
-            evans.make_tied_notes(rewrite=0),
+            evans.talea(
+                [9, 10, 8, 11],
+                16,
+                extra_counts=[1, 2, 0, 3],
+                rewrite=-1,
+                preprocessor=evans.make_preprocessor(quarters=True),
+            ),
+            evans.PitchHandler(["bf"]),
+            evans.bcp(["0/9", "1/9", "2/9", "1/9", "3/9", "2/9"], padding=2.5),
             undae.C_color,
         ),
         evans.MusicCommand(
@@ -57,21 +73,47 @@ maker = evans.SegmentMaker(
                 extra_counts=[1],
                 preprocessor=evans.make_preprocessor(sum=True),
             ),
+            evans.PitchHandler([["bf", "ef'"]]),
             undae.B_color,
         ),
         evans.MusicCommand(
             [("violin 2 voice", (1, 8))],
-            evans.make_tied_notes(rewrite=0),
+            evans.tuplet(
+                [(6, 1, 1), (2, 1, 1)],
+                rewrite=-1,
+                preprocessor=evans.make_preprocessor(fuse_counts=[4, 2]),
+            ),
+            evans.PitchHandler([["bf", "ef'"]]),
+            evans.bcp(["0/9", "1/9", "2/9", "3/9", "2/9"], padding=2.5),
             undae.C_color,
         ),
         evans.MusicCommand(
             [("violin 2 voice", [8, 9])],
             evans.note(preprocessor=evans.make_preprocessor(quarters=True)),
+            evans.PitchHandler(
+                [
+                    ["bf", "ef'"],
+                    ["bf", "ef'"],
+                    ["bf", "ef'"],
+                    ["ef'", "f'"],
+                    ["ef'", "f'"],
+                ]
+            ),
             undae.B_color,
         ),
         evans.MusicCommand(
             [("violin 2 voice", (10, 20))],
-            evans.make_tied_notes(rewrite=0),
+            evans.talea(
+                [10, 8, 11, 9],
+                16,
+                extra_counts=[3, 1, 2, 0],
+                rewrite=-1,
+                preprocessor=evans.make_preprocessor(quarters=True),
+            ),
+            evans.PitchHandler(
+                [["ef'", "f'"], ["ef'", "f'"], ["ef'", "f'"], "bf", "bf", "bf", "bf"]
+            ),
+            evans.bcp(["0/9", "1/9", "2/9", "1/9", "3/9", "2/9"], padding=2.5),
             undae.C_color,
         ),
         evans.MusicCommand(
@@ -82,21 +124,33 @@ maker = evans.SegmentMaker(
                 extra_counts=[1],
                 preprocessor=evans.make_preprocessor(sum=True),
             ),
+            evans.PitchHandler(["gf"]),
+            abjad.Clef("alto"),
             undae.B_color,
         ),
         evans.MusicCommand(
             [("viola voice", (1, 8))],
-            evans.make_tied_notes(rewrite=0),
+            evans.tuplet(
+                [(1, 7), (2, 1, 1)],
+                rewrite=-1,
+                preprocessor=evans.make_preprocessor(fuse_counts=[4, 2]),
+            ),
+            evans.PitchHandler(["gf"]),
+            evans.bcp(["0/9", "1/9", "2/9", "3/9", "2/9"], padding=2.5),
             undae.C_color,
         ),
         evans.MusicCommand(
             [("viola voice", [8, 9])],
             evans.note(preprocessor=evans.make_preprocessor(quarters=True)),
+            evans.PitchHandler(["gf"]),
             undae.B_color,
         ),
         evans.MusicCommand(
             [("viola voice", (10, 20))],
-            evans.make_tied_notes(rewrite=0),
+            evans.talea([9, 10, 8, 11], 8, rewrite=-1),
+            evans.PitchHandler(["gf"]),
+            evans.trill(alteration="+P5", harmonic=True, padding=7),
+            evans.bcp(["0/9", "1/9", "2/9", "1/9", "3/9", "2/9"], padding=2.5),
             undae.C_color,
         ),
         evans.MusicCommand(
@@ -107,11 +161,19 @@ maker = evans.SegmentMaker(
                 extra_counts=[1],
                 preprocessor=evans.make_preprocessor(sum=True),
             ),
+            evans.PitchHandler([["c,", "g,"]]),
+            abjad.Clef("bass"),
             undae.B_color,
         ),
         evans.MusicCommand(
             [("cello voice", (1, 8))],
-            evans.make_tied_notes(rewrite=0),
+            evans.tuplet(
+                [(7, 1), (2, 1, 1)],
+                rewrite=-1,
+                preprocessor=evans.make_preprocessor(fuse_counts=[4, 2]),
+            ),
+            evans.PitchHandler([["c,", "g,"]]),
+            evans.bcp(["0/9", "1/9", "2/9", "3/9", "2/9"], padding=2.5),
             undae.C_color,
         ),
         evans.MusicCommand(
@@ -123,11 +185,15 @@ maker = evans.SegmentMaker(
                 preprocessor=evans.make_preprocessor(quarters=True),
                 # rewrite=-1,
             ),
+            evans.PitchHandler([["c,", "g,"], ["c,", "g,"], ["ef,", "bf,", "f"]]),
             undae.B_color,
         ),
         evans.MusicCommand(
             [("cello voice", (10, 20))],
-            evans.make_tied_notes(rewrite=0),
+            evans.talea([9, 10, 8, 11], 8, rewrite=-1),
+            evans.PitchHandler(["c,", "g,"]),
+            evans.trill(alteration="+P5", harmonic=True, padding=7),
+            evans.bcp(["0/9", "1/9", "2/9", "1/9", "3/9", "2/9"], padding=2.5),
             undae.C_color,
         ),
         evans.attach(

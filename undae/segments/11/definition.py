@@ -39,6 +39,14 @@ maker = evans.SegmentMaker(
                 selector=lambda _: abjad.select.leaf(_, -1),
             ),
             evans.slur([4]),
+            evans.text_span(
+                [r"\half-diamond-notehead-markup", r"\diamond-notehead-markup"],
+                "=>",
+                [8],
+                padding=2,
+                id=1,
+            ),
+            evans.text_span([r"T", r"P"], "=>", [16], padding=4, id=2),
             undae.D_color,
         ),
         evans.MusicCommand(
@@ -55,6 +63,7 @@ maker = evans.SegmentMaker(
                 ),
                 rewrite=-1,
             ),
+            undae.potamia_pitches(transposition=0, columns=False, retrograde=False),
             undae.E_color,
         ),
         evans.MusicCommand(
@@ -79,6 +88,7 @@ maker = evans.SegmentMaker(
                 ),
                 rewrite=-1,
             ),
+            undae.potamia_pitches(transposition=1, columns=False, retrograde=False),
             undae.E_color,
         ),
         evans.MusicCommand(
@@ -97,6 +107,14 @@ maker = evans.SegmentMaker(
                 selector=lambda _: abjad.select.leaf(_, -1),
             ),
             evans.slur([3, 3, 4]),
+            evans.text_span(
+                [r"\half-diamond-notehead-markup", r"\diamond-notehead-markup"],
+                "=>",
+                [6, 6, 8],
+                padding=2,
+                id=1,
+            ),
+            evans.text_span([r"T", r"P"], "=>", [12, 12, 16], padding=4, id=2),
             undae.D_color,
         ),
         evans.MusicCommand(
@@ -113,6 +131,7 @@ maker = evans.SegmentMaker(
                 ),
                 rewrite=-1,
             ),
+            undae.potamia_pitches(transposition=0, columns=False, retrograde=False),
             undae.E_color,
         ),
         evans.MusicCommand(
@@ -133,6 +152,18 @@ maker = evans.SegmentMaker(
                 selector=lambda _: abjad.select.leaf(_, -1),
             ),
             evans.slur([3, 3, 4]),
+            evans.text_span(
+                [
+                    r"\half-diamond-notehead-markup",
+                    r"\diamond-notehead-markup",
+                    r"\default-notehead-markup",
+                ],
+                "=>",
+                [5, 10],
+                padding=2,
+                id=1,
+            ),
+            evans.text_span([r"T", r"P"], "=>", [10, 5], padding=4, id=2),
             undae.D_color,
         ),
         evans.MusicCommand(
@@ -149,6 +180,7 @@ maker = evans.SegmentMaker(
                 ),
                 rewrite=-1,
             ),
+            undae.potamia_pitches(transposition=1, columns=False, retrograde=False),
             undae.E_color,
         ),
         evans.MusicCommand(
@@ -173,6 +205,7 @@ maker = evans.SegmentMaker(
                 ),
                 rewrite=-1,
             ),
+            undae.potamia_pitches(transposition=2, columns=False, retrograde=False),
             undae.E_color,
         ),
         evans.MusicCommand(
@@ -195,6 +228,14 @@ maker = evans.SegmentMaker(
                 selector=lambda _: abjad.select.leaf(_, -1),
             ),
             evans.slur([4]),
+            evans.text_span(
+                [r"\diamond-notehead-markup", r"\default-notehead-markup"],
+                "=>",
+                [8],
+                padding=2,
+                id=1,
+            ),
+            evans.text_span([r"T", r"P"], "=>", [16], padding=4, id=2),
             abjad.Clef("alto"),
             undae.D_color,
         ),
@@ -212,6 +253,7 @@ maker = evans.SegmentMaker(
                 ),
                 rewrite=-1,
             ),
+            undae.potamia_pitches(transposition=0, columns=True, retrograde=True),
             undae.E_color,
         ),
         evans.MusicCommand(
@@ -234,6 +276,14 @@ maker = evans.SegmentMaker(
                 selector=lambda _: abjad.select.leaf(_, -1),
             ),
             evans.slur([4]),
+            evans.text_span(
+                [r"\diamond-notehead-markup", r"\default-notehead-markup"],
+                "=>",
+                [16],
+                padding=2,
+                id=1,
+            ),
+            evans.text_span([r"T", r"P"], "=>", [8], padding=4, id=2),
             undae.D_color,
         ),
         evans.MusicCommand(
@@ -250,6 +300,7 @@ maker = evans.SegmentMaker(
                 ),
                 rewrite=-1,
             ),
+            undae.potamia_pitches(transposition=-1, columns=True, retrograde=True),
             undae.E_color,
         ),
         evans.MusicCommand(
@@ -274,6 +325,7 @@ maker = evans.SegmentMaker(
                 ),
                 rewrite=-1,
             ),
+            undae.potamia_pitches(transposition=-2, columns=True, retrograde=True),
             undae.E_color,
         ),
         evans.MusicCommand(
@@ -298,6 +350,7 @@ maker = evans.SegmentMaker(
                 ),
                 rewrite=-1,
             ),
+            undae.potamia_pitches(transposition=-3, columns=True, retrograde=True),
             undae.E_color,
         ),
         evans.MusicCommand(
@@ -320,6 +373,14 @@ maker = evans.SegmentMaker(
                 selector=lambda _: abjad.select.leaf(_, -1),
             ),
             evans.slur([4]),
+            evans.text_span(
+                [r"\diamond-notehead-markup", r"\default-notehead-markup"],
+                "=>",
+                [8],
+                padding=2,
+                id=1,
+            ),
+            evans.text_span([r"T", r"P"], "=>", [16], padding=4, id=2),
             abjad.Clef("bass"),
             undae.D_color,
         ),
@@ -337,6 +398,7 @@ maker = evans.SegmentMaker(
                 ),
                 rewrite=-1,
             ),
+            undae.potamia_pitches(transposition=0, columns=True, retrograde=True),
             undae.E_color,
         ),
         evans.MusicCommand(
@@ -359,6 +421,14 @@ maker = evans.SegmentMaker(
                 selector=lambda _: abjad.select.leaf(_, -1),
             ),
             evans.slur([6]),
+            evans.text_span(
+                [r"\diamond-notehead-markup", r"\default-notehead-markup"],
+                "=>",
+                [24],
+                padding=2,
+                id=1,
+            ),
+            evans.text_span([r"T", r"P"], "=>", [12], padding=4, id=2),
             undae.D_color,
         ),
         evans.MusicCommand(
@@ -375,6 +445,7 @@ maker = evans.SegmentMaker(
                 ),
                 rewrite=-1,
             ),
+            undae.potamia_pitches(transposition=-1, columns=True, retrograde=True),
             undae.E_color,
         ),
         evans.MusicCommand(

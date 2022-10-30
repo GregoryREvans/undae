@@ -173,81 +173,81 @@
                                             \staffHighlight #(rgb-color 0.6 0.8 1)
                                             c'4
 
-                                            c'8
+                                            cqs'8
 
                                         }
 
-                                        c'2.
+                                        bf'2.
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 2]
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        c'16
+                                        dqf'16
                                         [
 
-                                        c'16
+                                        b'16
 
                                         c'16
 
                                         \revert Staff.Stem.stemlet-length
-                                        c'16
+                                        af'16
                                         ]
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        c'8
+                                        dqs'8
                                         [
 
-                                        c'16
+                                        e'16
 
                                         \revert Staff.Stem.stemlet-length
-                                        c'16
+                                        eqs'16
                                         ]
 
-                                        c'4
+                                        f'4
 
-                                        c'4
+                                        ef'4
                                         ~
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        c'8
+                                        ef'8
                                         [
 
                                         \revert Staff.Stem.stemlet-length
-                                        c'8
+                                        dqs'8
                                         ]
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 3]
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        c'16
+                                        eqs'16
                                         [
 
-                                        c'16
+                                        e'16
 
-                                        c'16
+                                        eqf'16
 
                                         \revert Staff.Stem.stemlet-length
-                                        c'16
+                                        d'16
                                         ]
 
                                         \times 2/3
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            c'8
+                                            gqs'8
                                             [
 
-                                            c'8
+                                            bqs'8
 
                                             \revert Staff.Stem.stemlet-length
-                                            c'8
+                                            bqf'8
                                             ]
 
                                         }
 
-                                        c'2
+                                        cs'2
 
                                         \times 2/3
                                         {
@@ -255,19 +255,19 @@
                                               %! COMMENT_MEASURE_NUMBERS
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 4]
-                                            c'2
+                                            aqs'2
 
                                             c'4
 
                                         }
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        c'16
+                                        bqs'16
                                         [
 
-                                        c'16
+                                        d'16
 
-                                        c'16
+                                        dqs'16
 
                                         \revert Staff.Stem.stemlet-length
                                         c'16
@@ -277,13 +277,13 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            c'8
+                                            eqf'8
                                             [
 
-                                            c'16
+                                            cs'16
 
                                             \revert Staff.Stem.stemlet-length
-                                            c'8
+                                            d'8
                                             ]
 
                                         }
@@ -291,39 +291,39 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 5]
-                                        c'2
+                                        bf'2
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 6]
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        c'8
+                                        eqs'8
                                         [
 
                                         \revert Staff.Stem.stemlet-length
-                                        c'8
+                                        fs'8
                                         ]
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        c'16
+                                        gqf'16
                                         [
 
-                                        c'16
+                                        g'16
 
-                                        c'16
+                                        f'16
 
                                         \revert Staff.Stem.stemlet-length
-                                        c'16
+                                        dqf'16
                                         ]
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        c'8
+                                        eqf'8
                                         [
 
-                                        c'16
+                                        ef'16
 
                                         \revert Staff.Stem.stemlet-length
-                                        c'16
+                                        dqs'16
                                         ]
                                           %! MATERIAL_COLOR
                                         \stopStaffHighlight
@@ -331,15 +331,66 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 7]
+                                        \half-harmonic
                                           %! MATERIAL_COLOR
                                         \staffHighlight #(rgb-color 0.2 1 0.592)
+                                        \vibrato #'(0 1 4 2) #2 #0.2
                                         c'2.
+                                          %! baca.bcps(6)
+                                        - \tweak self-alignment-X #left
+                                          %! baca.bcps(6)
+                                        - \tweak staff-padding 4.5
+                                          %! baca.bcps(6)
+                                        - \downbow
+                                          %! baca.bcps(2)
+                                        - \tweak staff-padding 2.5
+                                          %! baca.bcps(2)
+                                        - \abjad-solid-line-with-arrow
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-left-text #0 #9
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-right-text #1 #9
+                                          %! baca.bcps(2)
+                                        \bacaStartTextSpanBCP
                                         ~
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        - \tweak staff-padding 6
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        \startTrillSpan
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 8]
-                                        c'2.
+                                        c'2
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'8
+                                        [
+
+                                        \vibrato #'(6 5 0 1 4) #3 #0.2
+                                        \revert Staff.Stem.stemlet-length
+                                        d'8
+                                          %! baca.bcps(1)
+                                        \bacaStopTextSpanBCP
+                                          %! SPANNER_STOP
+                                          %! baca._do_spanner_indicator_command(2)
+                                          %! baca.trill_spanner()
+                                        \stopTrillSpan
+                                        ]
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        - \tweak staff-padding 6
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        \startTrillSpan
+                                        \revert-noteheads
                                           %! MATERIAL_COLOR
                                         \stopStaffHighlight
 
@@ -352,6 +403,7 @@
                                         \tweak color #red
                                         _ \markup \center-align 440.0
                                         ^ \markup \center-align { \center-column { "+0" } }
+                                        \stopTrillSpan
                                         ~
 
                                         a'2
@@ -361,10 +413,34 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 10]
+                                        \half-harmonic
                                           %! MATERIAL_COLOR
                                         \staffHighlight #(rgb-color 0.2 1 0.592)
+                                        \vibrato #'(0 1 4 2) #2 #0.2
                                         c'2.
+                                          %! baca.bcps(6)
+                                        - \tweak self-alignment-X #left
+                                          %! baca.bcps(6)
+                                        - \tweak staff-padding 4.5
+                                          %! baca.bcps(6)
+                                        - \downbow
+                                          %! baca.bcps(2)
+                                        - \tweak staff-padding 2.5
+                                          %! baca.bcps(2)
+                                        - \abjad-solid-line-with-arrow
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-left-text #0 #9
+                                          %! baca.bcps(2)
+                                        \bacaStartTextSpanBCP
                                         ~
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        - \tweak staff-padding 6
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        \startTrillSpan
 
                                         c'2
                                         ~
@@ -372,7 +448,56 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 11]
-                                        c'2.
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'8
+                                        [
+
+                                        \vibrato #'(6 5 0 1 4) #3 #0.2
+                                        \revert Staff.Stem.stemlet-length
+                                        d'8
+                                          %! baca.bcps(3)
+                                        \bacaStopTextSpanBCP
+                                          %! SPANNER_STOP
+                                          %! baca._do_spanner_indicator_command(2)
+                                          %! baca.trill_spanner()
+                                        \stopTrillSpan
+                                        ]
+                                          %! baca.bcps(2)
+                                        - \tweak staff-padding 2.5
+                                          %! baca.bcps(2)
+                                        - \abjad-solid-line-with-arrow
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-left-text #1 #9
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-right-text #2 #9
+                                          %! baca.bcps(2)
+                                        \bacaStartTextSpanBCP
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        - \tweak staff-padding 6
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        \startTrillSpan
+
+                                        \vibrato #'(2 6 5 0 1 4) #5 #0.2
+                                        d'2
+                                          %! baca.bcps(1)
+                                        \bacaStopTextSpanBCP
+                                          %! SPANNER_STOP
+                                          %! baca._do_spanner_indicator_command(2)
+                                          %! baca.trill_spanner()
+                                        \stopTrillSpan
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        - \tweak staff-padding 6
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        \startTrillSpan
+                                        \revert-noteheads
                                           %! MATERIAL_COLOR
                                         \stopStaffHighlight
 
@@ -385,6 +510,7 @@
                                         \tweak color #red
                                         _ \markup \center-align 410.1
                                         ^ \markup \center-align { \center-column { "-22" } }
+                                        \stopTrillSpan
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -399,12 +525,53 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 14]
+                                        \half-harmonic
                                           %! MATERIAL_COLOR
                                         \staffHighlight #(rgb-color 0.2 1 0.592)
+                                        \vibrato #'(0 1 4 2) #2 #0.2
                                         c'2.
-                                        ~
+                                          %! baca.bcps(6)
+                                        - \tweak self-alignment-X #left
+                                          %! baca.bcps(6)
+                                        - \tweak staff-padding 4.5
+                                          %! baca.bcps(6)
+                                        - \downbow
+                                          %! baca.bcps(2)
+                                        - \tweak staff-padding 2.5
+                                          %! baca.bcps(2)
+                                        - \abjad-solid-line-with-arrow
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-left-text #0 #9
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-right-text #1 #9
+                                          %! baca.bcps(2)
+                                        \bacaStartTextSpanBCP
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        - \tweak staff-padding 6
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        \startTrillSpan
 
+                                        \vibrato #'(6 5 0 1 4) #3 #0.2
                                         c'2
+                                          %! baca.bcps(1)
+                                        \bacaStopTextSpanBCP
+                                          %! SPANNER_STOP
+                                          %! baca._do_spanner_indicator_command(2)
+                                          %! baca.trill_spanner()
+                                        \stopTrillSpan
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        - \tweak staff-padding 6
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        \startTrillSpan
+                                        \revert-noteheads
                                           %! MATERIAL_COLOR
                                         \stopStaffHighlight
 
@@ -417,6 +584,7 @@
                                         \tweak color #red
                                         _ \markup \center-align 382.1
                                         ^ \markup \center-align { \center-column { "-44" } }
+                                        \stopTrillSpan
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -447,58 +615,253 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 1]
+                                        \half-harmonic
                                           %! applying staff names and clefs
                                         \set Staff.instrumentName = \markup { \hcenter-in #14 "Violin II" }
                                           %! applying staff names and clefs
                                         \set Staff.shortInstrumentName = \markup { \hcenter-in #12 "vn. II" }
                                           %! MATERIAL_COLOR
                                         \staffHighlight #(rgb-color 0.2 1 0.592)
+                                        \vibrato #'(0 1 4 2) #2 #0.2
                                         c'1
+                                          %! baca.bcps(6)
+                                        - \tweak self-alignment-X #left
+                                          %! baca.bcps(6)
+                                        - \tweak staff-padding 4.5
+                                          %! baca.bcps(6)
+                                        - \downbow
+                                          %! baca.bcps(2)
+                                        - \tweak staff-padding 2.5
+                                          %! baca.bcps(2)
+                                        - \abjad-solid-line-with-arrow
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-left-text #0 #9
+                                          %! baca.bcps(2)
+                                        \bacaStartTextSpanBCP
                                         ~
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        - \tweak staff-padding 6
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        \startTrillSpan
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 2]
-                                        c'2.
+                                        c'4
                                         ~
 
-                                        c'2
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'8
+                                        [
+
+                                        \vibrato #'(6 5 0 1 4) #3 #0.2
+                                        \revert Staff.Stem.stemlet-length
+                                        d'8
+                                          %! baca.bcps(3)
+                                        \bacaStopTextSpanBCP
+                                          %! SPANNER_STOP
+                                          %! baca._do_spanner_indicator_command(2)
+                                          %! baca.trill_spanner()
+                                        \stopTrillSpan
+                                        ]
+                                          %! baca.bcps(2)
+                                        - \tweak staff-padding 2.5
+                                          %! baca.bcps(2)
+                                        - \abjad-solid-line-with-arrow
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-left-text #1 #9
+                                          %! baca.bcps(2)
+                                        \bacaStartTextSpanBCP
+                                        ~
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        - \tweak staff-padding 6
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        \startTrillSpan
+
+                                        d'2.
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 3]
-                                        c'1
+                                        d'4
+
+                                        \vibrato #'(2 6 5 0 1 4) #5 #0.2
+                                        dqs'2.
+                                          %! baca.bcps(7)
+                                        - \tweak self-alignment-X #left
+                                          %! baca.bcps(7)
+                                        - \tweak staff-padding 4.5
+                                          %! baca.bcps(7)
+                                        - \upbow
+                                          %! baca.bcps(3)
+                                        \bacaStopTextSpanBCP
+                                          %! SPANNER_STOP
+                                          %! baca._do_spanner_indicator_command(2)
+                                          %! baca.trill_spanner()
+                                        \stopTrillSpan
+                                          %! baca.bcps(2)
+                                        - \tweak staff-padding 2.5
+                                          %! baca.bcps(2)
+                                        - \abjad-solid-line-with-arrow
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-left-text #2 #9
+                                          %! baca.bcps(2)
+                                        \bacaStartTextSpanBCP
                                         ~
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        - \tweak staff-padding 6
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        \startTrillSpan
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 4]
-                                        c'1
+                                        dqs'2
+
+                                        \vibrato #'(2 6 5 0) #3 #0.2
+                                        ef'2
+                                          %! baca.bcps(8)
+                                        - \tweak self-alignment-X #left
+                                          %! baca.bcps(8)
+                                        - \tweak staff-padding 4.5
+                                          %! baca.bcps(8)
+                                        - \downbow
+                                          %! baca.bcps(3)
+                                        \bacaStopTextSpanBCP
+                                          %! SPANNER_STOP
+                                          %! baca._do_spanner_indicator_command(2)
+                                          %! baca.trill_spanner()
+                                        \stopTrillSpan
+                                          %! baca.bcps(2)
+                                        - \tweak staff-padding 2.5
+                                          %! baca.bcps(2)
+                                        - \abjad-solid-line-with-arrow
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-left-text #1 #9
+                                          %! baca.bcps(2)
+                                        \bacaStartTextSpanBCP
                                         ~
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        - \tweak staff-padding 6
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        \startTrillSpan
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 5]
-                                        c'2
-                                        ~
+                                        ef'2
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 6]
-                                        c'2.
+                                        \vibrato #'(1 4 2 6 5) #2 #0.2
+                                        dqf'2.
+                                          %! baca.bcps(7)
+                                        - \tweak self-alignment-X #left
+                                          %! baca.bcps(7)
+                                        - \tweak staff-padding 4.5
+                                          %! baca.bcps(7)
+                                        - \upbow
+                                          %! baca.bcps(3)
+                                        \bacaStopTextSpanBCP
+                                          %! SPANNER_STOP
+                                          %! baca._do_spanner_indicator_command(2)
+                                          %! baca.trill_spanner()
+                                        \stopTrillSpan
+                                          %! baca.bcps(2)
+                                        - \tweak staff-padding 2.5
+                                          %! baca.bcps(2)
+                                        - \abjad-solid-line-with-arrow
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-left-text #3 #9
+                                          %! baca.bcps(2)
+                                        \bacaStartTextSpanBCP
                                         ~
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        - \tweak staff-padding 6
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        \startTrillSpan
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 7]
-                                        c'2.
+                                        dqf'2
                                         ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        dqf'8
+                                        [
+
+                                        \vibrato #'(0 1 4 2 6 5) #3 #0.2
+                                        \revert Staff.Stem.stemlet-length
+                                        aqf8
+                                          %! baca.bcps(3)
+                                        \bacaStopTextSpanBCP
+                                          %! SPANNER_STOP
+                                          %! baca._do_spanner_indicator_command(2)
+                                          %! baca.trill_spanner()
+                                        \stopTrillSpan
+                                        ]
+                                          %! baca.bcps(2)
+                                        - \tweak staff-padding 2.5
+                                          %! baca.bcps(2)
+                                        - \abjad-solid-line-with-arrow
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-left-text #2 #9
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-right-text #0 #9
+                                          %! baca.bcps(2)
+                                        \bacaStartTextSpanBCP
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        - \tweak staff-padding 6
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        \startTrillSpan
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 8]
-                                        c'2.
+                                        \vibrato #'(0 1 4 2) #5 #0.2
+                                        aqf2.
+                                          %! baca.bcps(1)
+                                        \bacaStopTextSpanBCP
+                                          %! SPANNER_STOP
+                                          %! baca._do_spanner_indicator_command(2)
+                                          %! baca.trill_spanner()
+                                        \stopTrillSpan
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        - \tweak staff-padding 6
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        \startTrillSpan
+                                        \revert-noteheads
                                           %! MATERIAL_COLOR
                                         \stopStaffHighlight
 
@@ -511,6 +874,7 @@
                                         \tweak color #red
                                         _ \markup \center-align 506.6
                                         ^ \markup \center-align { \center-column { "+44" } }
+                                        \stopTrillSpan
                                         ~
 
                                         b'2
@@ -520,10 +884,34 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 10]
+                                        \half-harmonic
                                           %! MATERIAL_COLOR
                                         \staffHighlight #(rgb-color 0.2 1 0.592)
+                                        \vibrato #'(0 1 4 2) #2 #0.2
                                         c'2.
+                                          %! baca.bcps(6)
+                                        - \tweak self-alignment-X #left
+                                          %! baca.bcps(6)
+                                        - \tweak staff-padding 4.5
+                                          %! baca.bcps(6)
+                                        - \downbow
+                                          %! baca.bcps(2)
+                                        - \tweak staff-padding 2.5
+                                          %! baca.bcps(2)
+                                        - \abjad-solid-line-with-arrow
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-left-text #0 #9
+                                          %! baca.bcps(2)
+                                        \bacaStartTextSpanBCP
                                         ~
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        - \tweak staff-padding 6
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        \startTrillSpan
 
                                         c'2
                                         ~
@@ -531,7 +919,56 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 11]
-                                        c'2.
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'8
+                                        [
+
+                                        \vibrato #'(6 5 0 1 4) #3 #0.2
+                                        \revert Staff.Stem.stemlet-length
+                                        d'8
+                                          %! baca.bcps(3)
+                                        \bacaStopTextSpanBCP
+                                          %! SPANNER_STOP
+                                          %! baca._do_spanner_indicator_command(2)
+                                          %! baca.trill_spanner()
+                                        \stopTrillSpan
+                                        ]
+                                          %! baca.bcps(2)
+                                        - \tweak staff-padding 2.5
+                                          %! baca.bcps(2)
+                                        - \abjad-solid-line-with-arrow
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-left-text #1 #9
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-right-text #2 #9
+                                          %! baca.bcps(2)
+                                        \bacaStartTextSpanBCP
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        - \tweak staff-padding 6
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        \startTrillSpan
+
+                                        \vibrato #'(2 6 5 0 1 4) #5 #0.2
+                                        d'2
+                                          %! baca.bcps(1)
+                                        \bacaStopTextSpanBCP
+                                          %! SPANNER_STOP
+                                          %! baca._do_spanner_indicator_command(2)
+                                          %! baca.trill_spanner()
+                                        \stopTrillSpan
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        - \tweak staff-padding 6
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        \startTrillSpan
+                                        \revert-noteheads
                                           %! MATERIAL_COLOR
                                         \stopStaffHighlight
 
@@ -544,6 +981,7 @@
                                         \tweak color #red
                                         _ \markup \center-align 410.1
                                         ^ \markup \center-align { \center-column { "-22" } }
+                                        \stopTrillSpan
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -558,12 +996,53 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 14]
+                                        \half-harmonic
                                           %! MATERIAL_COLOR
                                         \staffHighlight #(rgb-color 0.2 1 0.592)
+                                        \vibrato #'(0 1 4 2) #2 #0.2
                                         c'2.
-                                        ~
+                                          %! baca.bcps(6)
+                                        - \tweak self-alignment-X #left
+                                          %! baca.bcps(6)
+                                        - \tweak staff-padding 4.5
+                                          %! baca.bcps(6)
+                                        - \downbow
+                                          %! baca.bcps(2)
+                                        - \tweak staff-padding 2.5
+                                          %! baca.bcps(2)
+                                        - \abjad-solid-line-with-arrow
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-left-text #0 #9
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-right-text #1 #9
+                                          %! baca.bcps(2)
+                                        \bacaStartTextSpanBCP
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        - \tweak staff-padding 6
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        \startTrillSpan
 
+                                        \vibrato #'(6 5 0 1 4) #3 #0.2
                                         c'2
+                                          %! baca.bcps(1)
+                                        \bacaStopTextSpanBCP
+                                          %! SPANNER_STOP
+                                          %! baca._do_spanner_indicator_command(2)
+                                          %! baca.trill_spanner()
+                                        \stopTrillSpan
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        - \tweak staff-padding 6
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        \startTrillSpan
+                                        \revert-noteheads
                                           %! MATERIAL_COLOR
                                         \stopStaffHighlight
 
@@ -576,6 +1055,7 @@
                                         \tweak color #red
                                         _ \markup \center-align 331.9
                                         ^ \markup \center-align { \center-column { "+12" } }
+                                        \stopTrillSpan
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -610,58 +1090,253 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 1]
+                                \half-harmonic
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup { \hcenter-in #14 "Viola" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup { \hcenter-in #12 "va." }
                                   %! MATERIAL_COLOR
                                 \staffHighlight #(rgb-color 0.2 1 0.592)
+                                \vibrato #'(0 1 4 2) #2 #0.2
                                 c'1
+                                  %! baca.bcps(6)
+                                - \tweak self-alignment-X #left
+                                  %! baca.bcps(6)
+                                - \tweak staff-padding 4.5
+                                  %! baca.bcps(6)
+                                - \downbow
+                                  %! baca.bcps(2)
+                                - \tweak staff-padding 2.5
+                                  %! baca.bcps(2)
+                                - \abjad-solid-line-with-arrow
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-left-text #0 #9
+                                  %! baca.bcps(2)
+                                \bacaStartTextSpanBCP
                                 ~
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak staff-padding 6
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \startTrillSpan
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 2]
-                                c'2.
+                                c'4
                                 ~
 
-                                c'2
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c'8
+                                [
+
+                                \vibrato #'(6 5 0 1 4) #3 #0.2
+                                \revert Staff.Stem.stemlet-length
+                                d'8
+                                  %! baca.bcps(3)
+                                \bacaStopTextSpanBCP
+                                  %! SPANNER_STOP
+                                  %! baca._do_spanner_indicator_command(2)
+                                  %! baca.trill_spanner()
+                                \stopTrillSpan
+                                ]
+                                  %! baca.bcps(2)
+                                - \tweak staff-padding 2.5
+                                  %! baca.bcps(2)
+                                - \abjad-solid-line-with-arrow
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-left-text #1 #9
+                                  %! baca.bcps(2)
+                                \bacaStartTextSpanBCP
+                                ~
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak staff-padding 6
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \startTrillSpan
+
+                                d'2.
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 3]
-                                c'1
+                                d'4
+
+                                \vibrato #'(2 6 5 0 1 4) #5 #0.2
+                                dqs'2.
+                                  %! baca.bcps(7)
+                                - \tweak self-alignment-X #left
+                                  %! baca.bcps(7)
+                                - \tweak staff-padding 4.5
+                                  %! baca.bcps(7)
+                                - \upbow
+                                  %! baca.bcps(3)
+                                \bacaStopTextSpanBCP
+                                  %! SPANNER_STOP
+                                  %! baca._do_spanner_indicator_command(2)
+                                  %! baca.trill_spanner()
+                                \stopTrillSpan
+                                  %! baca.bcps(2)
+                                - \tweak staff-padding 2.5
+                                  %! baca.bcps(2)
+                                - \abjad-solid-line-with-arrow
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-left-text #2 #9
+                                  %! baca.bcps(2)
+                                \bacaStartTextSpanBCP
                                 ~
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak staff-padding 6
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \startTrillSpan
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 4]
-                                c'1
+                                dqs'2
+
+                                \vibrato #'(2 6 5 0) #3 #0.2
+                                ef'2
+                                  %! baca.bcps(8)
+                                - \tweak self-alignment-X #left
+                                  %! baca.bcps(8)
+                                - \tweak staff-padding 4.5
+                                  %! baca.bcps(8)
+                                - \downbow
+                                  %! baca.bcps(3)
+                                \bacaStopTextSpanBCP
+                                  %! SPANNER_STOP
+                                  %! baca._do_spanner_indicator_command(2)
+                                  %! baca.trill_spanner()
+                                \stopTrillSpan
+                                  %! baca.bcps(2)
+                                - \tweak staff-padding 2.5
+                                  %! baca.bcps(2)
+                                - \abjad-solid-line-with-arrow
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-left-text #1 #9
+                                  %! baca.bcps(2)
+                                \bacaStartTextSpanBCP
                                 ~
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak staff-padding 6
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \startTrillSpan
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 5]
-                                c'2
-                                ~
+                                ef'2
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 6]
-                                c'2.
+                                \vibrato #'(1 4 2 6 5) #2 #0.2
+                                dqf'2.
+                                  %! baca.bcps(7)
+                                - \tweak self-alignment-X #left
+                                  %! baca.bcps(7)
+                                - \tweak staff-padding 4.5
+                                  %! baca.bcps(7)
+                                - \upbow
+                                  %! baca.bcps(3)
+                                \bacaStopTextSpanBCP
+                                  %! SPANNER_STOP
+                                  %! baca._do_spanner_indicator_command(2)
+                                  %! baca.trill_spanner()
+                                \stopTrillSpan
+                                  %! baca.bcps(2)
+                                - \tweak staff-padding 2.5
+                                  %! baca.bcps(2)
+                                - \abjad-solid-line-with-arrow
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-left-text #3 #9
+                                  %! baca.bcps(2)
+                                \bacaStartTextSpanBCP
                                 ~
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak staff-padding 6
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \startTrillSpan
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 7]
-                                c'2.
+                                dqf'2
                                 ~
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                dqf'8
+                                [
+
+                                \vibrato #'(0 1 4 2 6 5) #3 #0.2
+                                \revert Staff.Stem.stemlet-length
+                                aqf8
+                                  %! baca.bcps(3)
+                                \bacaStopTextSpanBCP
+                                  %! SPANNER_STOP
+                                  %! baca._do_spanner_indicator_command(2)
+                                  %! baca.trill_spanner()
+                                \stopTrillSpan
+                                ]
+                                  %! baca.bcps(2)
+                                - \tweak staff-padding 2.5
+                                  %! baca.bcps(2)
+                                - \abjad-solid-line-with-arrow
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-left-text #2 #9
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-right-text #0 #9
+                                  %! baca.bcps(2)
+                                \bacaStartTextSpanBCP
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak staff-padding 6
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \startTrillSpan
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 8]
-                                c'2.
+                                \vibrato #'(0 1 4 2) #5 #0.2
+                                aqf2.
+                                  %! baca.bcps(1)
+                                \bacaStopTextSpanBCP
+                                  %! SPANNER_STOP
+                                  %! baca._do_spanner_indicator_command(2)
+                                  %! baca.trill_spanner()
+                                \stopTrillSpan
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak staff-padding 6
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \startTrillSpan
+                                \revert-noteheads
                                   %! MATERIAL_COLOR
                                 \stopStaffHighlight
 
@@ -674,6 +1349,7 @@
                                 \tweak color #red
                                 _ \markup \center-align 382.1
                                 ^ \markup \center-align { \center-column { "-44" } }
+                                \stopTrillSpan
                                 ~
 
                                 g'2
@@ -683,10 +1359,34 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 10]
+                                \half-harmonic
                                   %! MATERIAL_COLOR
                                 \staffHighlight #(rgb-color 0.2 1 0.592)
+                                \vibrato #'(0 1 4 2) #2 #0.2
                                 c'2.
+                                  %! baca.bcps(6)
+                                - \tweak self-alignment-X #left
+                                  %! baca.bcps(6)
+                                - \tweak staff-padding 4.5
+                                  %! baca.bcps(6)
+                                - \downbow
+                                  %! baca.bcps(2)
+                                - \tweak staff-padding 2.5
+                                  %! baca.bcps(2)
+                                - \abjad-solid-line-with-arrow
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-left-text #0 #9
+                                  %! baca.bcps(2)
+                                \bacaStartTextSpanBCP
                                 ~
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak staff-padding 6
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \startTrillSpan
 
                                 c'2
                                 ~
@@ -694,7 +1394,56 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 11]
-                                c'2.
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c'8
+                                [
+
+                                \vibrato #'(6 5 0 1 4) #3 #0.2
+                                \revert Staff.Stem.stemlet-length
+                                d'8
+                                  %! baca.bcps(3)
+                                \bacaStopTextSpanBCP
+                                  %! SPANNER_STOP
+                                  %! baca._do_spanner_indicator_command(2)
+                                  %! baca.trill_spanner()
+                                \stopTrillSpan
+                                ]
+                                  %! baca.bcps(2)
+                                - \tweak staff-padding 2.5
+                                  %! baca.bcps(2)
+                                - \abjad-solid-line-with-arrow
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-left-text #1 #9
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-right-text #2 #9
+                                  %! baca.bcps(2)
+                                \bacaStartTextSpanBCP
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak staff-padding 6
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \startTrillSpan
+
+                                \vibrato #'(2 6 5 0 1 4) #5 #0.2
+                                d'2
+                                  %! baca.bcps(1)
+                                \bacaStopTextSpanBCP
+                                  %! SPANNER_STOP
+                                  %! baca._do_spanner_indicator_command(2)
+                                  %! baca.trill_spanner()
+                                \stopTrillSpan
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak staff-padding 6
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \startTrillSpan
+                                \revert-noteheads
                                   %! MATERIAL_COLOR
                                 \stopStaffHighlight
 
@@ -707,6 +1456,7 @@
                                 \tweak color #red
                                 _ \markup \center-align 309.3
                                 ^ \markup \center-align { \center-column { "-10" } }
+                                \stopTrillSpan
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
@@ -721,12 +1471,53 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 14]
+                                \half-harmonic
                                   %! MATERIAL_COLOR
                                 \staffHighlight #(rgb-color 0.2 1 0.592)
+                                \vibrato #'(0 1 4 2) #2 #0.2
                                 c'2.
-                                ~
+                                  %! baca.bcps(6)
+                                - \tweak self-alignment-X #left
+                                  %! baca.bcps(6)
+                                - \tweak staff-padding 4.5
+                                  %! baca.bcps(6)
+                                - \downbow
+                                  %! baca.bcps(2)
+                                - \tweak staff-padding 2.5
+                                  %! baca.bcps(2)
+                                - \abjad-solid-line-with-arrow
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-left-text #0 #9
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-right-text #1 #9
+                                  %! baca.bcps(2)
+                                \bacaStartTextSpanBCP
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak staff-padding 6
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \startTrillSpan
 
+                                \vibrato #'(6 5 0 1 4) #3 #0.2
                                 c'2
+                                  %! baca.bcps(1)
+                                \bacaStopTextSpanBCP
+                                  %! SPANNER_STOP
+                                  %! baca._do_spanner_indicator_command(2)
+                                  %! baca.trill_spanner()
+                                \stopTrillSpan
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak staff-padding 6
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \startTrillSpan
+                                \revert-noteheads
                                   %! MATERIAL_COLOR
                                 \stopStaffHighlight
 
@@ -739,6 +1530,7 @@
                                 \tweak color #red
                                 _ \markup \center-align 309.3
                                 ^ \markup \center-align { \center-column { "-10" } }
+                                \stopTrillSpan
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
@@ -776,68 +1568,68 @@
                                   %! MATERIAL_COLOR
                                 \staffHighlight #(rgb-color 0.6 0.8 1)
                                 \override Staff.Stem.stemlet-length = 0.75
-                                c'8
+                                eqf'8
                                 [
 
-                                c'16
+                                e'16
 
                                 \revert Staff.Stem.stemlet-length
-                                c'16
+                                d'16
                                 ]
 
                                 \times 2/3
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    c'8
+                                    ef'8
                                     [
 
-                                    c'16
+                                    e'16
 
-                                    c'16
+                                    g'16
 
                                     \times 2/3
                                     {
 
-                                        c'8
+                                        gqf'8
 
-                                        c'8
+                                        bf'8
 
                                         \revert Staff.Stem.stemlet-length
-                                        c'8
+                                        f'8
                                         ]
 
                                     }
 
-                                    c'4
+                                    a'4
 
-                                    c'8
+                                    fs'8
 
-                                    c'4
+                                    b'4
 
                                 }
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 2]
-                                c'4
+                                e'4
 
                                 \times 2/3
                                 {
 
-                                    c'4
+                                    b'4
 
-                                    c'8
+                                    d'8
 
                                 }
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                c'16
+                                bf'16
                                 [
 
-                                c'16
+                                ef'16
 
-                                c'16
+                                bqs'16
 
                                 \revert Staff.Stem.stemlet-length
                                 c'16
@@ -846,49 +1638,49 @@
                                 \times 2/3
                                 {
 
-                                    c'4
+                                    a'4
 
-                                    c'4
+                                    af'4
 
-                                    c'4
+                                    g'4
 
                                 }
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 3]
-                                c'4
+                                a'4
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                c'8.
+                                aqf'8.
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                c'16
+                                fqs'16
                                 ]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                c'16
+                                fs'16
                                 [
 
-                                c'16
+                                e'16
 
-                                c'16
+                                f'16
 
                                 \revert Staff.Stem.stemlet-length
-                                c'16
+                                fs'16
                                 ]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                c'16
+                                a'16
                                 [
 
-                                c'16
+                                aqf'16
 
                                 c'16
 
                                 \revert Staff.Stem.stemlet-length
-                                c'16
+                                g'16
                                 ]
 
                                 \times 4/5
@@ -897,22 +1689,22 @@
                                       %! COMMENT_MEASURE_NUMBERS
                                       %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 4]
-                                    c'4
+                                    b'4
 
-                                    c'8
+                                    af'8
 
-                                    c'4
+                                    cs'4
 
                                 }
 
-                                c'4
+                                f'4
 
                                 \times 2/3
                                 {
 
                                     c'4
 
-                                    c'8
+                                    ef'8
 
                                 }
 
@@ -920,50 +1712,50 @@
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 5]
                                 \override Staff.Stem.stemlet-length = 0.75
-                                c'16
+                                b'16
                                 [
 
-                                c'16
+                                e'16
 
-                                c'16
+                                cqs'16
 
                                 \revert Staff.Stem.stemlet-length
-                                c'16
+                                cs'16
                                 ]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                c'16
+                                bf'16
                                 [
 
-                                c'16
+                                a'16
 
-                                c'16
+                                af'16
 
                                 \revert Staff.Stem.stemlet-length
-                                c'16
+                                bf'16
                                 ]
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 6]
                                 \override Staff.Stem.stemlet-length = 0.75
-                                c'8
+                                aqs'8
                                 [
 
-                                c'16
+                                eqs'16
 
                                 \revert Staff.Stem.stemlet-length
-                                c'16
+                                f'16
                                 ]
 
-                                c'4
+                                ef'4
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                c'8
+                                e'8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                c'8
+                                f'8
                                 ]
                                   %! MATERIAL_COLOR
                                 \stopStaffHighlight
@@ -971,15 +1763,66 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 7]
+                                \half-harmonic
                                   %! MATERIAL_COLOR
                                 \staffHighlight #(rgb-color 0.2 1 0.592)
+                                \vibrato #'(0 1 4 2) #2 #0.2
                                 c'2.
+                                  %! baca.bcps(6)
+                                - \tweak self-alignment-X #left
+                                  %! baca.bcps(6)
+                                - \tweak staff-padding 4.5
+                                  %! baca.bcps(6)
+                                - \downbow
+                                  %! baca.bcps(2)
+                                - \tweak staff-padding 2.5
+                                  %! baca.bcps(2)
+                                - \abjad-solid-line-with-arrow
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-left-text #0 #9
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-right-text #1 #9
+                                  %! baca.bcps(2)
+                                \bacaStartTextSpanBCP
                                 ~
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak staff-padding 6
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \startTrillSpan
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 8]
-                                c'2.
+                                c'2
+                                ~
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c'8
+                                [
+
+                                \vibrato #'(6 5 0 1 4) #3 #0.2
+                                \revert Staff.Stem.stemlet-length
+                                d'8
+                                  %! baca.bcps(1)
+                                \bacaStopTextSpanBCP
+                                  %! SPANNER_STOP
+                                  %! baca._do_spanner_indicator_command(2)
+                                  %! baca.trill_spanner()
+                                \stopTrillSpan
+                                ]
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak staff-padding 6
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \startTrillSpan
+                                \revert-noteheads
                                   %! MATERIAL_COLOR
                                 \stopStaffHighlight
 
@@ -992,6 +1835,7 @@
                                 \tweak color #red
                                 _ \markup \center-align 331.9
                                 ^ \markup \center-align { \center-column { "+12" } }
+                                \stopTrillSpan
                                 ~
 
                                 e'2
@@ -1001,10 +1845,34 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 10]
+                                \half-harmonic
                                   %! MATERIAL_COLOR
                                 \staffHighlight #(rgb-color 0.2 1 0.592)
+                                \vibrato #'(0 1 4 2) #2 #0.2
                                 c'2.
+                                  %! baca.bcps(6)
+                                - \tweak self-alignment-X #left
+                                  %! baca.bcps(6)
+                                - \tweak staff-padding 4.5
+                                  %! baca.bcps(6)
+                                - \downbow
+                                  %! baca.bcps(2)
+                                - \tweak staff-padding 2.5
+                                  %! baca.bcps(2)
+                                - \abjad-solid-line-with-arrow
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-left-text #0 #9
+                                  %! baca.bcps(2)
+                                \bacaStartTextSpanBCP
                                 ~
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak staff-padding 6
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \startTrillSpan
 
                                 c'2
                                 ~
@@ -1012,7 +1880,56 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 11]
-                                c'2.
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c'8
+                                [
+
+                                \vibrato #'(6 5 0 1 4) #3 #0.2
+                                \revert Staff.Stem.stemlet-length
+                                d'8
+                                  %! baca.bcps(3)
+                                \bacaStopTextSpanBCP
+                                  %! SPANNER_STOP
+                                  %! baca._do_spanner_indicator_command(2)
+                                  %! baca.trill_spanner()
+                                \stopTrillSpan
+                                ]
+                                  %! baca.bcps(2)
+                                - \tweak staff-padding 2.5
+                                  %! baca.bcps(2)
+                                - \abjad-solid-line-with-arrow
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-left-text #1 #9
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-right-text #2 #9
+                                  %! baca.bcps(2)
+                                \bacaStartTextSpanBCP
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak staff-padding 6
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \startTrillSpan
+
+                                \vibrato #'(2 6 5 0 1 4) #5 #0.2
+                                d'2
+                                  %! baca.bcps(1)
+                                \bacaStopTextSpanBCP
+                                  %! SPANNER_STOP
+                                  %! baca._do_spanner_indicator_command(2)
+                                  %! baca.trill_spanner()
+                                \stopTrillSpan
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak staff-padding 6
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \startTrillSpan
+                                \revert-noteheads
                                   %! MATERIAL_COLOR
                                 \stopStaffHighlight
 
@@ -1025,6 +1942,7 @@
                                 \tweak color #red
                                 _ \markup \center-align 202.6
                                 ^ \markup \center-align { \center-column { "-42" } }
+                                \stopTrillSpan
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
@@ -1039,12 +1957,53 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 14]
+                                \half-harmonic
                                   %! MATERIAL_COLOR
                                 \staffHighlight #(rgb-color 0.2 1 0.592)
+                                \vibrato #'(0 1 4 2) #2 #0.2
                                 c'2.
-                                ~
+                                  %! baca.bcps(6)
+                                - \tweak self-alignment-X #left
+                                  %! baca.bcps(6)
+                                - \tweak staff-padding 4.5
+                                  %! baca.bcps(6)
+                                - \downbow
+                                  %! baca.bcps(2)
+                                - \tweak staff-padding 2.5
+                                  %! baca.bcps(2)
+                                - \abjad-solid-line-with-arrow
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-left-text #0 #9
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-right-text #1 #9
+                                  %! baca.bcps(2)
+                                \bacaStartTextSpanBCP
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak staff-padding 6
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \startTrillSpan
 
+                                \vibrato #'(6 5 0 1 4) #3 #0.2
                                 c'2
+                                  %! baca.bcps(1)
+                                \bacaStopTextSpanBCP
+                                  %! SPANNER_STOP
+                                  %! baca._do_spanner_indicator_command(2)
+                                  %! baca.trill_spanner()
+                                \stopTrillSpan
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak staff-padding 6
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \startTrillSpan
+                                \revert-noteheads
                                   %! MATERIAL_COLOR
                                 \stopStaffHighlight
 
@@ -1057,6 +2016,7 @@
                                 \tweak color #red
                                 _ \markup \center-align 268.6
                                 ^ \markup \center-align { \center-column { "+46" } }
+                                \stopTrillSpan
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()

@@ -199,11 +199,11 @@
                                             \set Staff.shortInstrumentName = \markup { \hcenter-in #12 "vn. I" }
                                               %! MATERIAL_COLOR
                                             \staffHighlight #(rgb-color 0.961 0.961 0.406)
-                                            c'4
+                                            f'4
 
-                                            c'4
+                                            f'4
 
-                                            c'8
+                                            f'8
                                               %! MATERIAL_COLOR
                                             \stopStaffHighlight
 
@@ -214,43 +214,145 @@
                                         % [violin 1 voice measure 2]
                                           %! MATERIAL_COLOR
                                         \staffHighlight #(rgb-color 0.2 1 0.592)
-                                        c'1
+                                        f'1
+                                          %! baca.bcps(6)
+                                        - \tweak self-alignment-X #left
+                                          %! baca.bcps(6)
+                                        - \tweak staff-padding 4.5
+                                          %! baca.bcps(6)
+                                        - \downbow
+                                          %! baca.bcps(2)
+                                        - \tweak staff-padding 2.5
+                                          %! baca.bcps(2)
+                                        - \abjad-solid-line-with-arrow
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-left-text #0 #9
+                                          %! baca.bcps(2)
+                                        \bacaStartTextSpanBCP
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 3]
-                                        c'1
+                                        f'1
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 4]
-                                        c'1
+                                        f'2
+
+                                        f'2
+                                          %! baca.bcps(3)
+                                        \bacaStopTextSpanBCP
+                                          %! baca.bcps(2)
+                                        - \tweak staff-padding 2.5
+                                          %! baca.bcps(2)
+                                        - \abjad-solid-line-with-arrow
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-left-text #1 #9
+                                          %! baca.bcps(2)
+                                        \bacaStartTextSpanBCP
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 5]
-                                        c'1
-                                        ~
+                                        f'1
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 6]
-                                        c'1
-                                        ~
+                                        f'1
+                                          %! baca.bcps(3)
+                                        \bacaStopTextSpanBCP
+                                          %! baca.bcps(2)
+                                        - \tweak staff-padding 2.5
+                                          %! baca.bcps(2)
+                                        - \abjad-solid-line-with-arrow
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-left-text #2 #9
+                                          %! baca.bcps(2)
+                                        \bacaStartTextSpanBCP
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 7]
-                                        c'1
-                                        ~
+                                        f'2
+                                          %! baca.bcps(7)
+                                        - \tweak self-alignment-X #left
+                                          %! baca.bcps(7)
+                                        - \tweak staff-padding 4.5
+                                          %! baca.bcps(7)
+                                        - \upbow
+                                          %! baca.bcps(3)
+                                        \bacaStopTextSpanBCP
+                                          %! baca.bcps(2)
+                                        - \tweak staff-padding 2.5
+                                          %! baca.bcps(2)
+                                        - \abjad-solid-line-with-arrow
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-left-text #3 #9
+                                          %! baca.bcps(2)
+                                        \bacaStartTextSpanBCP
+
+                                        f'2
+                                          %! baca.bcps(3)
+                                        \bacaStopTextSpanBCP
+                                          %! baca.bcps(2)
+                                        - \tweak staff-padding 2.5
+                                          %! baca.bcps(2)
+                                        - \abjad-solid-line-with-arrow
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-left-text #2 #9
+                                          %! baca.bcps(2)
+                                        \bacaStartTextSpanBCP
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 8]
-                                        c'1
+                                        f'2
+                                          %! baca.bcps(8)
+                                        - \tweak self-alignment-X #left
+                                          %! baca.bcps(8)
+                                        - \tweak staff-padding 4.5
+                                          %! baca.bcps(8)
+                                        - \downbow
+                                          %! baca.bcps(3)
+                                        \bacaStopTextSpanBCP
+                                          %! baca.bcps(2)
+                                        - \tweak staff-padding 2.5
+                                          %! baca.bcps(2)
+                                        - \abjad-solid-line-with-arrow
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-left-text #0 #9
+                                          %! baca.bcps(2)
+                                        \bacaStartTextSpanBCP
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        f'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        f'8
+                                          %! baca.bcps(3)
+                                        \bacaStopTextSpanBCP
+                                        ]
+                                          %! baca.bcps(2)
+                                        - \tweak staff-padding 2.5
+                                          %! baca.bcps(2)
+                                        - \abjad-solid-line-with-arrow
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-left-text #1 #9
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-right-text #2 #9
+                                          %! baca.bcps(2)
+                                        \bacaStartTextSpanBCP
+
+                                        f'4
+                                          %! baca.bcps(1)
+                                        \bacaStopTextSpanBCP
                                           %! MATERIAL_COLOR
                                         \stopStaffHighlight
 
@@ -259,26 +361,26 @@
                                         % [violin 1 voice measure 9]
                                           %! MATERIAL_COLOR
                                         \staffHighlight #(rgb-color 0.961 0.961 0.406)
-                                        c'4
+                                        bf4
 
-                                        c'4
+                                        b4
 
-                                        c'4
+                                        b4
 
-                                        c'8
+                                        b8
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 10]
-                                        c'4
+                                        bf4
 
-                                        c'4
+                                        <ef' gf'>4
 
-                                        c'4
+                                        bf4
 
-                                        c'4
+                                        b4
 
-                                        c'4
+                                        b4
                                           %! MATERIAL_COLOR
                                         \stopStaffHighlight
 
@@ -287,63 +389,668 @@
                                         % [violin 1 voice measure 11]
                                           %! MATERIAL_COLOR
                                         \staffHighlight #(rgb-color 0.2 1 0.592)
-                                        c'1
+                                        bf4
+                                          %! baca.bcps(6)
+                                        - \tweak self-alignment-X #left
+                                          %! baca.bcps(6)
+                                        - \tweak staff-padding 4.5
+                                          %! baca.bcps(6)
+                                        - \downbow
+                                          %! baca.bcps(2)
+                                        - \tweak staff-padding 2.5
+                                          %! baca.bcps(2)
+                                        - \abjad-solid-line-with-arrow
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-left-text #0 #9
+                                          %! baca.bcps(2)
+                                        \bacaStartTextSpanBCP
                                         ~
+
+                                        \times 2/3
+                                        {
+
+                                            bf4
+
+                                            bf8
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 2.5
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #1 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+                                            ~
+
+                                        }
+
+                                        bf4
+                                        ~
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            bf8
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            bf16.
+                                              %! baca.bcps(7)
+                                            - \tweak self-alignment-X #left
+                                              %! baca.bcps(7)
+                                            - \tweak staff-padding 4.5
+                                              %! baca.bcps(7)
+                                            - \upbow
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                            ]
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 2.5
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #2 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+                                            ~
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 12]
-                                        c'1
+                                        bf4
+
+                                        bf2
+                                          %! baca.bcps(8)
+                                        - \tweak self-alignment-X #left
+                                          %! baca.bcps(8)
+                                        - \tweak staff-padding 4.5
+                                          %! baca.bcps(8)
+                                        - \downbow
+                                          %! baca.bcps(3)
+                                        \bacaStopTextSpanBCP
+                                          %! baca.bcps(2)
+                                        - \tweak staff-padding 2.5
+                                          %! baca.bcps(2)
+                                        - \abjad-solid-line-with-arrow
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-left-text #1 #9
+                                          %! baca.bcps(2)
+                                        \bacaStartTextSpanBCP
                                         ~
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 1 voice measure 13]
-                                        c'1
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            bf32
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            bf8.
+                                              %! baca.bcps(7)
+                                            - \tweak self-alignment-X #left
+                                              %! baca.bcps(7)
+                                            - \tweak staff-padding 4.5
+                                              %! baca.bcps(7)
+                                            - \upbow
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                            ]
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 2.5
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #3 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+                                            ~
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 13]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            bf8.
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            bf8
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                            ]
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 2.5
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #2 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+                                            ~
+
+                                        }
+
+                                        bf4
                                         ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        bf8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        bf8
+                                          %! baca.bcps(8)
+                                        - \tweak self-alignment-X #left
+                                          %! baca.bcps(8)
+                                        - \tweak staff-padding 4.5
+                                          %! baca.bcps(8)
+                                        - \downbow
+                                          %! baca.bcps(3)
+                                        \bacaStopTextSpanBCP
+                                        ]
+                                          %! baca.bcps(2)
+                                        - \tweak staff-padding 2.5
+                                          %! baca.bcps(2)
+                                        - \abjad-solid-line-with-arrow
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-left-text #0 #9
+                                          %! baca.bcps(2)
+                                        \bacaStartTextSpanBCP
+                                        ~
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            bf8.
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            bf32
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                            ]
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 2.5
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #1 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+                                            ~
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 14]
-                                        c'1
+                                        bf4
                                         ~
+
+                                        \times 2/3
+                                        {
+
+                                            bf4
+                                            ~
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            bf16
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            bf16
+                                              %! baca.bcps(7)
+                                            - \tweak self-alignment-X #left
+                                              %! baca.bcps(7)
+                                            - \tweak staff-padding 4.5
+                                              %! baca.bcps(7)
+                                            - \upbow
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                            ]
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 2.5
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #2 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+                                            ~
+
+                                        }
+
+                                        bf4
+                                        ~
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            bf8
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            bf16.
+                                              %! baca.bcps(8)
+                                            - \tweak self-alignment-X #left
+                                              %! baca.bcps(8)
+                                            - \tweak staff-padding 4.5
+                                              %! baca.bcps(8)
+                                            - \downbow
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                            ]
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 2.5
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #1 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+                                            ~
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 15]
-                                        c'1
+                                        bf4
                                         ~
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 1 voice measure 16]
-                                        c'1
+                                        \times 2/3
+                                        {
+
+                                            bf8
+
+                                            bf4
+                                              %! baca.bcps(7)
+                                            - \tweak self-alignment-X #left
+                                              %! baca.bcps(7)
+                                            - \tweak staff-padding 4.5
+                                              %! baca.bcps(7)
+                                            - \upbow
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 2.5
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #3 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+                                            ~
+
+                                        }
+
+                                        bf4
+
+                                        bf4
+                                          %! baca.bcps(3)
+                                        \bacaStopTextSpanBCP
+                                          %! baca.bcps(2)
+                                        - \tweak staff-padding 2.5
+                                          %! baca.bcps(2)
+                                        - \abjad-solid-line-with-arrow
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-left-text #2 #9
+                                          %! baca.bcps(2)
+                                        \bacaStartTextSpanBCP
                                         ~
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 1 voice measure 17]
-                                        c'1
+                                        \times 4/5
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 16]
+                                            bf4
+
+                                            bf16
+                                              %! baca.bcps(8)
+                                            - \tweak self-alignment-X #left
+                                              %! baca.bcps(8)
+                                            - \tweak staff-padding 4.5
+                                              %! baca.bcps(8)
+                                            - \downbow
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 2.5
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #0 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+                                            ~
+
+                                        }
+
+                                        bf4
                                         ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        bf8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        bf8
+                                          %! baca.bcps(3)
+                                        \bacaStopTextSpanBCP
+                                        ]
+                                          %! baca.bcps(2)
+                                        - \tweak staff-padding 2.5
+                                          %! baca.bcps(2)
+                                        - \abjad-solid-line-with-arrow
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-left-text #1 #9
+                                          %! baca.bcps(2)
+                                        \bacaStartTextSpanBCP
+                                        ~
+
+                                        bf4
+                                        ~
+
+                                        \times 4/5
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 17]
+                                            bf16
+
+                                            bf4
+                                              %! baca.bcps(7)
+                                            - \tweak self-alignment-X #left
+                                              %! baca.bcps(7)
+                                            - \tweak staff-padding 4.5
+                                              %! baca.bcps(7)
+                                            - \upbow
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 2.5
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #2 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+                                            ~
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            bf4
+
+                                            bf8
+                                              %! baca.bcps(8)
+                                            - \tweak self-alignment-X #left
+                                              %! baca.bcps(8)
+                                            - \tweak staff-padding 4.5
+                                              %! baca.bcps(8)
+                                            - \downbow
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 2.5
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #1 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+                                            ~
+
+                                        }
+
+                                        bf4
+                                        ~
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            bf8
+                                            [
+                                            ~
+
+                                            bf32
+
+                                            \revert Staff.Stem.stemlet-length
+                                            bf16
+                                              %! baca.bcps(7)
+                                            - \tweak self-alignment-X #left
+                                              %! baca.bcps(7)
+                                            - \tweak staff-padding 4.5
+                                              %! baca.bcps(7)
+                                            - \upbow
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                            ]
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 2.5
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #3 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+                                            ~
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 18]
-                                        c'1
+                                        bf4
                                         ~
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 1 voice measure 19]
-                                        c'1
+                                        \times 2/3
+                                        {
+
+                                            bf8
+
+                                            bf4
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 2.5
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #2 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+                                            ~
+
+                                        }
+
+                                        bf4
                                         ~
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 1 voice measure 20]
-                                        c'1
-                                          %! MATERIAL_COLOR
-                                        \stopStaffHighlight
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            bf16
+                                            [
+
+                                            bf8
+                                              %! baca.bcps(8)
+                                            - \tweak self-alignment-X #left
+                                              %! baca.bcps(8)
+                                            - \tweak staff-padding 4.5
+                                              %! baca.bcps(8)
+                                            - \downbow
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 2.5
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #0 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+                                            ~
+
+                                            \revert Staff.Stem.stemlet-length
+                                            bf32
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 19]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            bf8.
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            bf8
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                            ]
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 2.5
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #1 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+                                            ~
+
+                                        }
+
+                                        bf4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        bf8.
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        bf16
+                                          %! baca.bcps(7)
+                                        - \tweak self-alignment-X #left
+                                          %! baca.bcps(7)
+                                        - \tweak staff-padding 4.5
+                                          %! baca.bcps(7)
+                                        - \upbow
+                                          %! baca.bcps(3)
+                                        \bacaStopTextSpanBCP
+                                        ]
+                                          %! baca.bcps(2)
+                                        - \tweak staff-padding 2.5
+                                          %! baca.bcps(2)
+                                        - \abjad-solid-line-with-arrow
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-left-text #2 #9
+                                          %! baca.bcps(2)
+                                        \bacaStartTextSpanBCP
+                                        ~
+
+                                        bf4
+                                        ~
+
+                                        \times 4/5
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 20]
+                                            bf16
+
+                                            bf4
+                                              %! baca.bcps(8)
+                                            - \tweak self-alignment-X #left
+                                              %! baca.bcps(8)
+                                            - \tweak staff-padding 4.5
+                                              %! baca.bcps(8)
+                                            - \downbow
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 2.5
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #1 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+                                            ~
+
+                                        }
+
+                                        bf4
+
+                                        bf4
+                                          %! baca.bcps(7)
+                                        - \tweak self-alignment-X #left
+                                          %! baca.bcps(7)
+                                        - \tweak staff-padding 4.5
+                                          %! baca.bcps(7)
+                                        - \upbow
+                                          %! baca.bcps(3)
+                                        \bacaStopTextSpanBCP
+                                          %! baca.bcps(2)
+                                        - \tweak staff-padding 2.5
+                                          %! baca.bcps(2)
+                                        - \abjad-solid-line-with-arrow
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-left-text #3 #9
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-right-text #2 #9
+                                          %! baca.bcps(2)
+                                        \bacaStartTextSpanBCP
+                                        ~
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            bf8
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            bf16.
+                                              %! baca.bcps(1)
+                                            \bacaStopTextSpanBCP
+                                            ]
+                                              %! MATERIAL_COLOR
+                                            \stopStaffHighlight
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -381,11 +1088,11 @@
                                             \set Staff.shortInstrumentName = \markup { \hcenter-in #12 "vn. II" }
                                               %! MATERIAL_COLOR
                                             \staffHighlight #(rgb-color 0.961 0.961 0.406)
-                                            c'4
+                                            <bf ef'>4
 
-                                            c'4
+                                            <bf ef'>4
 
-                                            c'8
+                                            <bf ef'>8
                                               %! MATERIAL_COLOR
                                             \stopStaffHighlight
 
@@ -396,43 +1103,151 @@
                                         % [violin 2 voice measure 2]
                                           %! MATERIAL_COLOR
                                         \staffHighlight #(rgb-color 0.2 1 0.592)
-                                        c'1
+                                        <bf ef'>1
+                                          %! baca.bcps(6)
+                                        - \tweak self-alignment-X #left
+                                          %! baca.bcps(6)
+                                        - \tweak staff-padding 4.5
+                                          %! baca.bcps(6)
+                                        - \downbow
+                                          %! baca.bcps(2)
+                                        - \tweak staff-padding 2.5
+                                          %! baca.bcps(2)
+                                        - \abjad-solid-line-with-arrow
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-left-text #0 #9
+                                          %! baca.bcps(2)
+                                        \bacaStartTextSpanBCP
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 3]
-                                        c'1
+                                        <bf ef'>1
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 4]
-                                        c'1
-                                        ~
+                                        <bf ef'>1
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 5]
-                                        c'1
-                                        ~
+                                        <bf ef'>2
+                                          %! baca.bcps(3)
+                                        \bacaStopTextSpanBCP
+                                          %! baca.bcps(2)
+                                        - \tweak staff-padding 2.5
+                                          %! baca.bcps(2)
+                                        - \abjad-solid-line-with-arrow
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-left-text #1 #9
+                                          %! baca.bcps(2)
+                                        \bacaStartTextSpanBCP
+
+                                        <bf ef'>2
+                                          %! baca.bcps(3)
+                                        \bacaStopTextSpanBCP
+                                          %! baca.bcps(2)
+                                        - \tweak staff-padding 2.5
+                                          %! baca.bcps(2)
+                                        - \abjad-solid-line-with-arrow
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-left-text #2 #9
+                                          %! baca.bcps(2)
+                                        \bacaStartTextSpanBCP
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 6]
-                                        c'1
-                                        ~
+                                        <bf ef'>1
+                                          %! baca.bcps(7)
+                                        - \tweak self-alignment-X #left
+                                          %! baca.bcps(7)
+                                        - \tweak staff-padding 4.5
+                                          %! baca.bcps(7)
+                                        - \upbow
+                                          %! baca.bcps(3)
+                                        \bacaStopTextSpanBCP
+                                          %! baca.bcps(2)
+                                        - \tweak staff-padding 2.5
+                                          %! baca.bcps(2)
+                                        - \abjad-solid-line-with-arrow
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-left-text #3 #9
+                                          %! baca.bcps(2)
+                                        \bacaStartTextSpanBCP
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 7]
-                                        c'1
-                                        ~
+                                        <bf ef'>2
+                                          %! baca.bcps(3)
+                                        \bacaStopTextSpanBCP
+                                          %! baca.bcps(2)
+                                        - \tweak staff-padding 2.5
+                                          %! baca.bcps(2)
+                                        - \abjad-solid-line-with-arrow
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-left-text #2 #9
+                                          %! baca.bcps(2)
+                                        \bacaStartTextSpanBCP
+
+                                        <bf ef'>2
+                                          %! baca.bcps(8)
+                                        - \tweak self-alignment-X #left
+                                          %! baca.bcps(8)
+                                        - \tweak staff-padding 4.5
+                                          %! baca.bcps(8)
+                                        - \downbow
+                                          %! baca.bcps(3)
+                                        \bacaStopTextSpanBCP
+                                          %! baca.bcps(2)
+                                        - \tweak staff-padding 2.5
+                                          %! baca.bcps(2)
+                                        - \abjad-solid-line-with-arrow
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-left-text #0 #9
+                                          %! baca.bcps(2)
+                                        \bacaStartTextSpanBCP
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 8]
-                                        c'1
+                                        <bf ef'>2.
+                                          %! baca.bcps(3)
+                                        \bacaStopTextSpanBCP
+                                          %! baca.bcps(2)
+                                        - \tweak staff-padding 2.5
+                                          %! baca.bcps(2)
+                                        - \abjad-solid-line-with-arrow
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-left-text #1 #9
+                                          %! baca.bcps(2)
+                                        \bacaStartTextSpanBCP
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        <bf ef'>8
+                                          %! baca.bcps(3)
+                                        \bacaStopTextSpanBCP
+                                        [
+                                          %! baca.bcps(2)
+                                        - \tweak staff-padding 2.5
+                                          %! baca.bcps(2)
+                                        - \abjad-solid-line-with-arrow
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-left-text #2 #9
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-right-text #3 #9
+                                          %! baca.bcps(2)
+                                        \bacaStartTextSpanBCP
+
+                                        \revert Staff.Stem.stemlet-length
+                                        <bf ef'>8
+                                          %! baca.bcps(1)
+                                        \bacaStopTextSpanBCP
+                                        ]
                                           %! MATERIAL_COLOR
                                         \stopStaffHighlight
 
@@ -441,26 +1256,26 @@
                                         % [violin 2 voice measure 9]
                                           %! MATERIAL_COLOR
                                         \staffHighlight #(rgb-color 0.961 0.961 0.406)
-                                        c'4
+                                        <bf ef'>4
 
-                                        c'4
+                                        <bf ef'>4
 
-                                        c'4
+                                        <bf ef'>4
 
-                                        c'8
+                                        <ef' f'>8
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 10]
-                                        c'4
+                                        <ef' f'>4
 
-                                        c'4
+                                        <bf ef'>4
 
-                                        c'4
+                                        <bf ef'>4
 
-                                        c'4
+                                        <bf ef'>4
 
-                                        c'4
+                                        <ef' f'>4
                                           %! MATERIAL_COLOR
                                         \stopStaffHighlight
 
@@ -469,61 +1284,657 @@
                                         % [violin 2 voice measure 11]
                                           %! MATERIAL_COLOR
                                         \staffHighlight #(rgb-color 0.2 1 0.592)
-                                        c'1
+                                        <ef' f'>4
+                                          %! baca.bcps(6)
+                                        - \tweak self-alignment-X #left
+                                          %! baca.bcps(6)
+                                        - \tweak staff-padding 4.5
+                                          %! baca.bcps(6)
+                                        - \downbow
+                                          %! baca.bcps(2)
+                                        - \tweak staff-padding 2.5
+                                          %! baca.bcps(2)
+                                        - \abjad-solid-line-with-arrow
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-left-text #0 #9
+                                          %! baca.bcps(2)
+                                        \bacaStartTextSpanBCP
+                                        ~
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            <ef' f'>8.
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            <ef' f'>8
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                            ]
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 2.5
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #1 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+                                            ~
+
+                                        }
+
+                                        <ef' f'>4
+
+                                        <ef' f'>4
+                                          %! baca.bcps(7)
+                                        - \tweak self-alignment-X #left
+                                          %! baca.bcps(7)
+                                        - \tweak staff-padding 4.5
+                                          %! baca.bcps(7)
+                                        - \upbow
+                                          %! baca.bcps(3)
+                                        \bacaStopTextSpanBCP
+                                          %! baca.bcps(2)
+                                        - \tweak staff-padding 2.5
+                                          %! baca.bcps(2)
+                                        - \abjad-solid-line-with-arrow
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-left-text #2 #9
+                                          %! baca.bcps(2)
+                                        \bacaStartTextSpanBCP
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 12]
-                                        c'1
+                                        <ef' f'>4
+
+                                        bf4
+                                          %! baca.bcps(8)
+                                        - \tweak self-alignment-X #left
+                                          %! baca.bcps(8)
+                                        - \tweak staff-padding 4.5
+                                          %! baca.bcps(8)
+                                        - \downbow
+                                          %! baca.bcps(3)
+                                        \bacaStopTextSpanBCP
+                                          %! baca.bcps(2)
+                                        - \tweak staff-padding 2.5
+                                          %! baca.bcps(2)
+                                        - \abjad-solid-line-with-arrow
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-left-text #1 #9
+                                          %! baca.bcps(2)
+                                        \bacaStartTextSpanBCP
                                         ~
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 13]
-                                        c'1
+                                        \times 2/3
+                                        {
+
+                                            bf4
+
+                                            bf8
+                                              %! baca.bcps(7)
+                                            - \tweak self-alignment-X #left
+                                              %! baca.bcps(7)
+                                            - \tweak staff-padding 4.5
+                                              %! baca.bcps(7)
+                                            - \upbow
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 2.5
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #3 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+                                            ~
+
+                                        }
+
+                                        bf4
                                         ~
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 14]
-                                        c'1
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 13]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            bf8
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            bf16.
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                            ]
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 2.5
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #2 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+                                            ~
+
+                                        }
+
+                                        bf4
+
+                                        bf2
+                                          %! baca.bcps(8)
+                                        - \tweak self-alignment-X #left
+                                          %! baca.bcps(8)
+                                        - \tweak staff-padding 4.5
+                                          %! baca.bcps(8)
+                                        - \downbow
+                                          %! baca.bcps(3)
+                                        \bacaStopTextSpanBCP
+                                          %! baca.bcps(2)
+                                        - \tweak staff-padding 2.5
+                                          %! baca.bcps(2)
+                                        - \abjad-solid-line-with-arrow
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-left-text #0 #9
+                                          %! baca.bcps(2)
+                                        \bacaStartTextSpanBCP
                                         ~
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 15]
-                                        c'1
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 14]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            bf32
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            <ef' f'>8.
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                            ]
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 2.5
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #1 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+                                            ~
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            <ef' f'>8.
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            <ef' f'>8
+                                              %! baca.bcps(7)
+                                            - \tweak self-alignment-X #left
+                                              %! baca.bcps(7)
+                                            - \tweak staff-padding 4.5
+                                              %! baca.bcps(7)
+                                            - \upbow
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                            ]
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 2.5
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #2 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+                                            ~
+
+                                        }
+
+                                        <ef' f'>4
                                         ~
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 16]
-                                        c'1
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        <ef' f'>8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        <ef' f'>8
+                                          %! baca.bcps(8)
+                                        - \tweak self-alignment-X #left
+                                          %! baca.bcps(8)
+                                        - \tweak staff-padding 4.5
+                                          %! baca.bcps(8)
+                                        - \downbow
+                                          %! baca.bcps(3)
+                                        \bacaStopTextSpanBCP
+                                        ]
+                                          %! baca.bcps(2)
+                                        - \tweak staff-padding 2.5
+                                          %! baca.bcps(2)
+                                        - \abjad-solid-line-with-arrow
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-left-text #1 #9
+                                          %! baca.bcps(2)
+                                        \bacaStartTextSpanBCP
                                         ~
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 15]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            <ef' f'>8.
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            bf32
+                                              %! baca.bcps(7)
+                                            - \tweak self-alignment-X #left
+                                              %! baca.bcps(7)
+                                            - \tweak staff-padding 4.5
+                                              %! baca.bcps(7)
+                                            - \upbow
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                            ]
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 2.5
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #3 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+                                            ~
+
+                                        }
+
+                                        bf4
+                                        ~
+
+                                        \times 2/3
+                                        {
+
+                                            bf4
+                                            ~
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            bf16
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            bf16
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                            ]
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 2.5
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #2 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+                                            ~
+
+                                        }
+
+                                        bf4
+                                        ~
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 16]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            bf8
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            bf16.
+                                              %! baca.bcps(8)
+                                            - \tweak self-alignment-X #left
+                                              %! baca.bcps(8)
+                                            - \tweak staff-padding 4.5
+                                              %! baca.bcps(8)
+                                            - \downbow
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                            ]
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 2.5
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #0 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+                                            ~
+
+                                        }
+
+                                        bf4
+                                        ~
+
+                                        \times 2/3
+                                        {
+
+                                            bf8
+
+                                            bf4
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 2.5
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #1 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+                                            ~
+
+                                        }
+
+                                        bf4
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 17]
-                                        c'1
+                                        <ef' f'>4
+                                          %! baca.bcps(7)
+                                        - \tweak self-alignment-X #left
+                                          %! baca.bcps(7)
+                                        - \tweak staff-padding 4.5
+                                          %! baca.bcps(7)
+                                        - \upbow
+                                          %! baca.bcps(3)
+                                        \bacaStopTextSpanBCP
+                                          %! baca.bcps(2)
+                                        - \tweak staff-padding 2.5
+                                          %! baca.bcps(2)
+                                        - \abjad-solid-line-with-arrow
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-left-text #2 #9
+                                          %! baca.bcps(2)
+                                        \bacaStartTextSpanBCP
+                                        ~
+
+                                        \times 4/5
+                                        {
+
+                                            <ef' f'>4
+
+                                            <ef' f'>16
+                                              %! baca.bcps(8)
+                                            - \tweak self-alignment-X #left
+                                              %! baca.bcps(8)
+                                            - \tweak staff-padding 4.5
+                                              %! baca.bcps(8)
+                                            - \downbow
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 2.5
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #1 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+                                            ~
+
+                                        }
+
+                                        <ef' f'>4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        <ef' f'>8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        <ef' f'>8
+                                          %! baca.bcps(7)
+                                        - \tweak self-alignment-X #left
+                                          %! baca.bcps(7)
+                                        - \tweak staff-padding 4.5
+                                          %! baca.bcps(7)
+                                        - \upbow
+                                          %! baca.bcps(3)
+                                        \bacaStopTextSpanBCP
+                                        ]
+                                          %! baca.bcps(2)
+                                        - \tweak staff-padding 2.5
+                                          %! baca.bcps(2)
+                                        - \abjad-solid-line-with-arrow
+                                          %! baca.bcps(2)
+                                        - \baca-bcp-spanner-left-text #3 #9
+                                          %! baca.bcps(2)
+                                        \bacaStartTextSpanBCP
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 18]
-                                        c'1
+                                        <ef' f'>4
                                         ~
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 19]
-                                        c'1
+                                        \times 4/5
+                                        {
+
+                                            <ef' f'>16
+
+                                            bf4
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 2.5
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #2 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+                                            ~
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            bf4
+
+                                            bf8
+                                              %! baca.bcps(8)
+                                            - \tweak self-alignment-X #left
+                                              %! baca.bcps(8)
+                                            - \tweak staff-padding 4.5
+                                              %! baca.bcps(8)
+                                            - \downbow
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 2.5
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #0 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+                                            ~
+
+                                        }
+
+                                        bf4
                                         ~
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 20]
-                                        c'1
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 19]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            bf8
+                                            [
+                                            ~
+
+                                            bf32
+
+                                            \revert Staff.Stem.stemlet-length
+                                            bf16
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                            ]
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 2.5
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #1 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+                                            ~
+
+                                        }
+
+                                        bf4
+                                        ~
+
+                                        \times 2/3
+                                        {
+
+                                            bf8
+
+                                            bf4
+                                              %! baca.bcps(7)
+                                            - \tweak self-alignment-X #left
+                                              %! baca.bcps(7)
+                                            - \tweak staff-padding 4.5
+                                              %! baca.bcps(7)
+                                            - \upbow
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 2.5
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #2 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+                                            ~
+
+                                        }
+
+                                        bf4
+                                        ~
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 20]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            bf16
+                                            [
+
+                                            <ef' f'>8
+                                              %! baca.bcps(8)
+                                            - \tweak self-alignment-X #left
+                                              %! baca.bcps(8)
+                                            - \tweak staff-padding 4.5
+                                              %! baca.bcps(8)
+                                            - \downbow
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 2.5
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #1 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+                                            ~
+
+                                            \revert Staff.Stem.stemlet-length
+                                            <ef' f'>32
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            <ef' f'>8.
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            <ef' f'>8
+                                              %! baca.bcps(7)
+                                            - \tweak self-alignment-X #left
+                                              %! baca.bcps(7)
+                                            - \tweak staff-padding 4.5
+                                              %! baca.bcps(7)
+                                            - \upbow
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                            ]
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 2.5
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #3 #9
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-right-text #2 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+                                            ~
+
+                                        }
+
+                                        <ef' f'>4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        <ef' f'>8.
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        <ef' f'>16
+                                          %! baca.bcps(1)
+                                        \bacaStopTextSpanBCP
+                                        ]
                                           %! MATERIAL_COLOR
                                         \stopStaffHighlight
 
@@ -567,11 +1978,12 @@
                                     \set Staff.shortInstrumentName = \markup { \hcenter-in #12 "va." }
                                       %! MATERIAL_COLOR
                                     \staffHighlight #(rgb-color 0.961 0.961 0.406)
-                                    c'4
+                                    \clef "alto"
+                                    gf4
 
-                                    c'4
+                                    gf4
 
-                                    c'8
+                                    gf8
                                       %! MATERIAL_COLOR
                                     \stopStaffHighlight
 
@@ -582,43 +1994,142 @@
                                 % [viola voice measure 2]
                                   %! MATERIAL_COLOR
                                 \staffHighlight #(rgb-color 0.2 1 0.592)
-                                c'1
+                                gf2
+                                  %! baca.bcps(6)
+                                - \tweak self-alignment-X #left
+                                  %! baca.bcps(6)
+                                - \tweak staff-padding 4.5
+                                  %! baca.bcps(6)
+                                - \downbow
+                                  %! baca.bcps(2)
+                                - \tweak staff-padding 2.5
+                                  %! baca.bcps(2)
+                                - \abjad-solid-line-with-arrow
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-left-text #0 #9
+                                  %! baca.bcps(2)
+                                \bacaStartTextSpanBCP
+
+                                gf2
+                                  %! baca.bcps(3)
+                                \bacaStopTextSpanBCP
+                                  %! baca.bcps(2)
+                                - \tweak staff-padding 2.5
+                                  %! baca.bcps(2)
+                                - \abjad-solid-line-with-arrow
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-left-text #1 #9
+                                  %! baca.bcps(2)
+                                \bacaStartTextSpanBCP
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 3]
-                                c'1
+                                gf1
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 4]
-                                c'1
+                                gf1
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 5]
-                                c'1
-                                ~
+                                gf1
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 6]
-                                c'1
-                                ~
+                                gf1
+                                  %! baca.bcps(3)
+                                \bacaStopTextSpanBCP
+                                  %! baca.bcps(2)
+                                - \tweak staff-padding 2.5
+                                  %! baca.bcps(2)
+                                - \abjad-solid-line-with-arrow
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-left-text #2 #9
+                                  %! baca.bcps(2)
+                                \bacaStartTextSpanBCP
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 7]
-                                c'1
-                                ~
+                                gf2
+                                  %! baca.bcps(7)
+                                - \tweak self-alignment-X #left
+                                  %! baca.bcps(7)
+                                - \tweak staff-padding 4.5
+                                  %! baca.bcps(7)
+                                - \upbow
+                                  %! baca.bcps(3)
+                                \bacaStopTextSpanBCP
+                                  %! baca.bcps(2)
+                                - \tweak staff-padding 2.5
+                                  %! baca.bcps(2)
+                                - \abjad-solid-line-with-arrow
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-left-text #3 #9
+                                  %! baca.bcps(2)
+                                \bacaStartTextSpanBCP
+
+                                gf2
+                                  %! baca.bcps(3)
+                                \bacaStopTextSpanBCP
+                                  %! baca.bcps(2)
+                                - \tweak staff-padding 2.5
+                                  %! baca.bcps(2)
+                                - \abjad-solid-line-with-arrow
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-left-text #2 #9
+                                  %! baca.bcps(2)
+                                \bacaStartTextSpanBCP
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 8]
-                                c'1
+                                \override Staff.Stem.stemlet-length = 0.75
+                                gf8
+                                  %! baca.bcps(8)
+                                - \tweak self-alignment-X #left
+                                  %! baca.bcps(8)
+                                - \tweak staff-padding 4.5
+                                  %! baca.bcps(8)
+                                - \downbow
+                                  %! baca.bcps(3)
+                                \bacaStopTextSpanBCP
+                                [
+                                  %! baca.bcps(2)
+                                - \tweak staff-padding 2.5
+                                  %! baca.bcps(2)
+                                - \abjad-solid-line-with-arrow
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-left-text #0 #9
+                                  %! baca.bcps(2)
+                                \bacaStartTextSpanBCP
+
+                                \revert Staff.Stem.stemlet-length
+                                gf8
+                                  %! baca.bcps(3)
+                                \bacaStopTextSpanBCP
+                                ]
+                                  %! baca.bcps(2)
+                                - \tweak staff-padding 2.5
+                                  %! baca.bcps(2)
+                                - \abjad-solid-line-with-arrow
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-left-text #1 #9
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-right-text #2 #9
+                                  %! baca.bcps(2)
+                                \bacaStartTextSpanBCP
+
+                                gf2.
+                                  %! baca.bcps(1)
+                                \bacaStopTextSpanBCP
                                   %! MATERIAL_COLOR
                                 \stopStaffHighlight
 
@@ -627,26 +2138,26 @@
                                 % [viola voice measure 9]
                                   %! MATERIAL_COLOR
                                 \staffHighlight #(rgb-color 0.961 0.961 0.406)
-                                c'4
+                                gf4
 
-                                c'4
+                                gf4
 
-                                c'4
+                                gf4
 
-                                c'8
+                                gf8
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 10]
-                                c'4
+                                gf4
 
-                                c'4
+                                gf4
 
-                                c'4
+                                gf4
 
-                                c'4
+                                gf4
 
-                                c'4
+                                gf4
                                   %! MATERIAL_COLOR
                                 \stopStaffHighlight
 
@@ -655,61 +2166,413 @@
                                 % [viola voice measure 11]
                                   %! MATERIAL_COLOR
                                 \staffHighlight #(rgb-color 0.2 1 0.592)
-                                c'1
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \pitchedTrill
+                                gf1
+                                  %! baca.bcps(6)
+                                - \tweak self-alignment-X #left
+                                  %! baca.bcps(6)
+                                - \tweak staff-padding 4.5
+                                  %! baca.bcps(6)
+                                - \downbow
+                                  %! baca.bcps(2)
+                                - \tweak staff-padding 2.5
+                                  %! baca.bcps(2)
+                                - \abjad-solid-line-with-arrow
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-left-text #0 #9
+                                  %! baca.bcps(2)
+                                \bacaStartTextSpanBCP
                                 ~
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak TrillPitchHead.stencil #(lambda (grob) (grob-interpret-markup grob #{ \markup \musicglyph #"noteheads.s0harmonic" #}))
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak staff-padding 7
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \startTrillSpan df'
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 12]
-                                c'1
+                                \override Staff.Stem.stemlet-length = 0.75
+                                gf8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \pitchedTrill
+                                gf8
+                                  %! baca.bcps(3)
+                                \bacaStopTextSpanBCP
+                                  %! SPANNER_STOP
+                                  %! baca._do_spanner_indicator_command(2)
+                                  %! baca.trill_spanner()
+                                \stopTrillSpan
+                                ]
+                                  %! baca.bcps(2)
+                                - \tweak staff-padding 2.5
+                                  %! baca.bcps(2)
+                                - \abjad-solid-line-with-arrow
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-left-text #1 #9
+                                  %! baca.bcps(2)
+                                \bacaStartTextSpanBCP
+                                ~
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak TrillPitchHead.stencil #(lambda (grob) (grob-interpret-markup grob #{ \markup \musicglyph #"noteheads.s0harmonic" #}))
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak staff-padding 7
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \startTrillSpan df'
+
+                                gf2.
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 13]
-                                c'1
+                                gf4
+                                ~
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                gf8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \pitchedTrill
+                                gf8
+                                  %! baca.bcps(7)
+                                - \tweak self-alignment-X #left
+                                  %! baca.bcps(7)
+                                - \tweak staff-padding 4.5
+                                  %! baca.bcps(7)
+                                - \upbow
+                                  %! baca.bcps(3)
+                                \bacaStopTextSpanBCP
+                                  %! SPANNER_STOP
+                                  %! baca._do_spanner_indicator_command(2)
+                                  %! baca.trill_spanner()
+                                \stopTrillSpan
+                                ]
+                                  %! baca.bcps(2)
+                                - \tweak staff-padding 2.5
+                                  %! baca.bcps(2)
+                                - \abjad-solid-line-with-arrow
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-left-text #2 #9
+                                  %! baca.bcps(2)
+                                \bacaStartTextSpanBCP
+                                ~
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak TrillPitchHead.stencil #(lambda (grob) (grob-interpret-markup grob #{ \markup \musicglyph #"noteheads.s0harmonic" #}))
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak staff-padding 7
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \startTrillSpan df'
+
+                                gf2
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 14]
-                                c'1
+                                gf4
+                                ~
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                gf8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \pitchedTrill
+                                gf8
+                                  %! baca.bcps(8)
+                                - \tweak self-alignment-X #left
+                                  %! baca.bcps(8)
+                                - \tweak staff-padding 4.5
+                                  %! baca.bcps(8)
+                                - \downbow
+                                  %! baca.bcps(3)
+                                \bacaStopTextSpanBCP
+                                  %! SPANNER_STOP
+                                  %! baca._do_spanner_indicator_command(2)
+                                  %! baca.trill_spanner()
+                                \stopTrillSpan
+                                ]
+                                  %! baca.bcps(2)
+                                - \tweak staff-padding 2.5
+                                  %! baca.bcps(2)
+                                - \abjad-solid-line-with-arrow
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-left-text #1 #9
+                                  %! baca.bcps(2)
+                                \bacaStartTextSpanBCP
+                                ~
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak TrillPitchHead.stencil #(lambda (grob) (grob-interpret-markup grob #{ \markup \musicglyph #"noteheads.s0harmonic" #}))
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak staff-padding 7
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \startTrillSpan df'
+
+                                gf2
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 15]
-                                c'1
+                                gf2.
+
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \pitchedTrill
+                                gf4
+                                  %! baca.bcps(7)
+                                - \tweak self-alignment-X #left
+                                  %! baca.bcps(7)
+                                - \tweak staff-padding 4.5
+                                  %! baca.bcps(7)
+                                - \upbow
+                                  %! baca.bcps(3)
+                                \bacaStopTextSpanBCP
+                                  %! SPANNER_STOP
+                                  %! baca._do_spanner_indicator_command(2)
+                                  %! baca.trill_spanner()
+                                \stopTrillSpan
+                                  %! baca.bcps(2)
+                                - \tweak staff-padding 2.5
+                                  %! baca.bcps(2)
+                                - \abjad-solid-line-with-arrow
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-left-text #3 #9
+                                  %! baca.bcps(2)
+                                \bacaStartTextSpanBCP
                                 ~
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak TrillPitchHead.stencil #(lambda (grob) (grob-interpret-markup grob #{ \markup \musicglyph #"noteheads.s0harmonic" #}))
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak staff-padding 7
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \startTrillSpan df'
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 16]
-                                c'1
+                                gf2.
                                 ~
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                gf8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \pitchedTrill
+                                gf8
+                                  %! baca.bcps(3)
+                                \bacaStopTextSpanBCP
+                                  %! SPANNER_STOP
+                                  %! baca._do_spanner_indicator_command(2)
+                                  %! baca.trill_spanner()
+                                \stopTrillSpan
+                                ]
+                                  %! baca.bcps(2)
+                                - \tweak staff-padding 2.5
+                                  %! baca.bcps(2)
+                                - \abjad-solid-line-with-arrow
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-left-text #2 #9
+                                  %! baca.bcps(2)
+                                \bacaStartTextSpanBCP
+                                ~
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak TrillPitchHead.stencil #(lambda (grob) (grob-interpret-markup grob #{ \markup \musicglyph #"noteheads.s0harmonic" #}))
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak staff-padding 7
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \startTrillSpan df'
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 17]
-                                c'1
+                                gf1
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 18]
-                                c'1
+                                \override Staff.Stem.stemlet-length = 0.75
+                                gf8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \pitchedTrill
+                                gf8
+                                  %! baca.bcps(8)
+                                - \tweak self-alignment-X #left
+                                  %! baca.bcps(8)
+                                - \tweak staff-padding 4.5
+                                  %! baca.bcps(8)
+                                - \downbow
+                                  %! baca.bcps(3)
+                                \bacaStopTextSpanBCP
+                                  %! SPANNER_STOP
+                                  %! baca._do_spanner_indicator_command(2)
+                                  %! baca.trill_spanner()
+                                \stopTrillSpan
+                                ]
+                                  %! baca.bcps(2)
+                                - \tweak staff-padding 2.5
+                                  %! baca.bcps(2)
+                                - \abjad-solid-line-with-arrow
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-left-text #0 #9
+                                  %! baca.bcps(2)
+                                \bacaStartTextSpanBCP
+                                ~
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak TrillPitchHead.stencil #(lambda (grob) (grob-interpret-markup grob #{ \markup \musicglyph #"noteheads.s0harmonic" #}))
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak staff-padding 7
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \startTrillSpan df'
+
+                                gf2.
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 19]
-                                c'1
+                                \override Staff.Stem.stemlet-length = 0.75
+                                gf8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \pitchedTrill
+                                gf8
+                                  %! baca.bcps(3)
+                                \bacaStopTextSpanBCP
+                                  %! SPANNER_STOP
+                                  %! baca._do_spanner_indicator_command(2)
+                                  %! baca.trill_spanner()
+                                \stopTrillSpan
+                                ]
+                                  %! baca.bcps(2)
+                                - \tweak staff-padding 2.5
+                                  %! baca.bcps(2)
+                                - \abjad-solid-line-with-arrow
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-left-text #1 #9
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-right-text #2 #9
+                                  %! baca.bcps(2)
+                                \bacaStartTextSpanBCP
+                                ~
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak TrillPitchHead.stencil #(lambda (grob) (grob-interpret-markup grob #{ \markup \musicglyph #"noteheads.s0harmonic" #}))
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak staff-padding 7
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \startTrillSpan df'
+
+                                gf2.
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 20]
-                                c'1
+                                gf2
+
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \pitchedTrill
+                                gf2
+                                  %! baca.bcps(1)
+                                \bacaStopTextSpanBCP
+                                  %! SPANNER_STOP
+                                  %! baca._do_spanner_indicator_command(2)
+                                  %! baca.trill_spanner()
+                                \stopTrillSpan
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak TrillPitchHead.stencil #(lambda (grob) (grob-interpret-markup grob #{ \markup \musicglyph #"noteheads.s0harmonic" #}))
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak staff-padding 7
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \startTrillSpan df'
                                   %! MATERIAL_COLOR
                                 \stopStaffHighlight
 
@@ -719,6 +2582,10 @@
                                 \once \override MultiMeasureRest.transparent = ##t
                                 \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                 R1 * 1/4
+                                  %! SPANNER_STOP
+                                  %! baca._do_spanner_indicator_command(2)
+                                  %! baca.trill_spanner()
+                                \stopTrillSpan
                                 \bar "||"
                                 \stopStaff \startStaff
 
@@ -749,11 +2616,12 @@
                                     \set Staff.shortInstrumentName = \markup { \hcenter-in #12 "vc." }
                                       %! MATERIAL_COLOR
                                     \staffHighlight #(rgb-color 0.961 0.961 0.406)
-                                    c'4
+                                    \clef "bass"
+                                    <c, g,>4
 
-                                    c'4
+                                    <c, g,>4
 
-                                    c'8
+                                    <c, g,>8
                                       %! MATERIAL_COLOR
                                     \stopStaffHighlight
 
@@ -764,43 +2632,133 @@
                                 % [cello voice measure 2]
                                   %! MATERIAL_COLOR
                                 \staffHighlight #(rgb-color 0.2 1 0.592)
-                                c'1
+                                <c, g,>1
+                                  %! baca.bcps(6)
+                                - \tweak self-alignment-X #left
+                                  %! baca.bcps(6)
+                                - \tweak staff-padding 4.5
+                                  %! baca.bcps(6)
+                                - \downbow
+                                  %! baca.bcps(2)
+                                - \tweak staff-padding 2.5
+                                  %! baca.bcps(2)
+                                - \abjad-solid-line-with-arrow
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-left-text #0 #9
+                                  %! baca.bcps(2)
+                                \bacaStartTextSpanBCP
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 3]
-                                c'1
+                                <c, g,>1
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 4]
-                                c'1
+                                <c, g,>1
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 5]
-                                c'1
-                                ~
+                                <c, g,>2
+
+                                <c, g,>2
+                                  %! baca.bcps(3)
+                                \bacaStopTextSpanBCP
+                                  %! baca.bcps(2)
+                                - \tweak staff-padding 2.5
+                                  %! baca.bcps(2)
+                                - \abjad-solid-line-with-arrow
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-left-text #1 #9
+                                  %! baca.bcps(2)
+                                \bacaStartTextSpanBCP
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 6]
-                                c'1
-                                ~
+                                <c, g,>1
+                                  %! baca.bcps(3)
+                                \bacaStopTextSpanBCP
+                                  %! baca.bcps(2)
+                                - \tweak staff-padding 2.5
+                                  %! baca.bcps(2)
+                                - \abjad-solid-line-with-arrow
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-left-text #2 #9
+                                  %! baca.bcps(2)
+                                \bacaStartTextSpanBCP
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 7]
-                                c'1
-                                ~
+                                <c, g,>2
+                                  %! baca.bcps(7)
+                                - \tweak self-alignment-X #left
+                                  %! baca.bcps(7)
+                                - \tweak staff-padding 4.5
+                                  %! baca.bcps(7)
+                                - \upbow
+                                  %! baca.bcps(3)
+                                \bacaStopTextSpanBCP
+                                  %! baca.bcps(2)
+                                - \tweak staff-padding 2.5
+                                  %! baca.bcps(2)
+                                - \abjad-solid-line-with-arrow
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-left-text #3 #9
+                                  %! baca.bcps(2)
+                                \bacaStartTextSpanBCP
+
+                                <c, g,>2
+                                  %! baca.bcps(3)
+                                \bacaStopTextSpanBCP
+                                  %! baca.bcps(2)
+                                - \tweak staff-padding 2.5
+                                  %! baca.bcps(2)
+                                - \abjad-solid-line-with-arrow
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-left-text #2 #9
+                                  %! baca.bcps(2)
+                                \bacaStartTextSpanBCP
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 8]
-                                c'1
+                                <c, g,>2.
+                                  %! baca.bcps(8)
+                                - \tweak self-alignment-X #left
+                                  %! baca.bcps(8)
+                                - \tweak staff-padding 4.5
+                                  %! baca.bcps(8)
+                                - \downbow
+                                  %! baca.bcps(3)
+                                \bacaStopTextSpanBCP
+                                  %! baca.bcps(2)
+                                - \tweak staff-padding 2.5
+                                  %! baca.bcps(2)
+                                - \abjad-solid-line-with-arrow
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-left-text #0 #9
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-right-text #1 #9
+                                  %! baca.bcps(2)
+                                \bacaStartTextSpanBCP
+                                ~
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                <c, g,>8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                <c, g,>8
+                                  %! baca.bcps(1)
+                                \bacaStopTextSpanBCP
+                                ]
                                   %! MATERIAL_COLOR
                                 \stopStaffHighlight
 
@@ -809,21 +2767,21 @@
                                 % [cello voice measure 9]
                                   %! MATERIAL_COLOR
                                 \staffHighlight #(rgb-color 0.961 0.961 0.406)
-                                c'4
+                                <c, g,>4
 
-                                c'4
+                                <c, g,>4
 
                                 \times 2/3
                                 {
 
-                                    c'4
+                                    <ef, bf, f>4
 
-                                    c'8
+                                    <c, g,>8
                                     ~
 
                                 }
 
-                                c'8
+                                <c, g,>8
 
                                 \times 2/3
                                 {
@@ -831,41 +2789,41 @@
                                       %! COMMENT_MEASURE_NUMBERS
                                       %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 10]
-                                    c'4
+                                    <c, g,>4
 
-                                    c'8
+                                    <ef, bf, f>8
                                     ~
 
                                 }
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                c'8
+                                <ef, bf, f>8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                c'8
+                                <c, g,>8
                                 ]
                                 ~
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                c'8
+                                <c, g,>8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                c'8
+                                <c, g,>8
                                 ]
                                 ~
 
                                 \times 2/3
                                 {
 
-                                    c'8
+                                    <c, g,>8
 
-                                    c'4
+                                    <ef, bf, f>4
 
                                 }
 
-                                c'4
+                                <c, g,>4
                                   %! MATERIAL_COLOR
                                 \stopStaffHighlight
 
@@ -874,61 +2832,413 @@
                                 % [cello voice measure 11]
                                   %! MATERIAL_COLOR
                                 \staffHighlight #(rgb-color 0.2 1 0.592)
-                                c'1
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \pitchedTrill
+                                c,1
+                                  %! baca.bcps(6)
+                                - \tweak self-alignment-X #left
+                                  %! baca.bcps(6)
+                                - \tweak staff-padding 4.5
+                                  %! baca.bcps(6)
+                                - \downbow
+                                  %! baca.bcps(2)
+                                - \tweak staff-padding 2.5
+                                  %! baca.bcps(2)
+                                - \abjad-solid-line-with-arrow
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-left-text #0 #9
+                                  %! baca.bcps(2)
+                                \bacaStartTextSpanBCP
                                 ~
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak TrillPitchHead.stencil #(lambda (grob) (grob-interpret-markup grob #{ \markup \musicglyph #"noteheads.s0harmonic" #}))
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak staff-padding 7
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \startTrillSpan g,
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 12]
-                                c'1
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c,8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \pitchedTrill
+                                g,8
+                                  %! baca.bcps(3)
+                                \bacaStopTextSpanBCP
+                                  %! SPANNER_STOP
+                                  %! baca._do_spanner_indicator_command(2)
+                                  %! baca.trill_spanner()
+                                \stopTrillSpan
+                                ]
+                                  %! baca.bcps(2)
+                                - \tweak staff-padding 2.5
+                                  %! baca.bcps(2)
+                                - \abjad-solid-line-with-arrow
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-left-text #1 #9
+                                  %! baca.bcps(2)
+                                \bacaStartTextSpanBCP
+                                ~
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak TrillPitchHead.stencil #(lambda (grob) (grob-interpret-markup grob #{ \markup \musicglyph #"noteheads.s0harmonic" #}))
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak staff-padding 7
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \startTrillSpan d
+
+                                g,2.
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 13]
-                                c'1
+                                g,4
+                                ~
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                g,8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \pitchedTrill
+                                c,8
+                                  %! baca.bcps(7)
+                                - \tweak self-alignment-X #left
+                                  %! baca.bcps(7)
+                                - \tweak staff-padding 4.5
+                                  %! baca.bcps(7)
+                                - \upbow
+                                  %! baca.bcps(3)
+                                \bacaStopTextSpanBCP
+                                  %! SPANNER_STOP
+                                  %! baca._do_spanner_indicator_command(2)
+                                  %! baca.trill_spanner()
+                                \stopTrillSpan
+                                ]
+                                  %! baca.bcps(2)
+                                - \tweak staff-padding 2.5
+                                  %! baca.bcps(2)
+                                - \abjad-solid-line-with-arrow
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-left-text #2 #9
+                                  %! baca.bcps(2)
+                                \bacaStartTextSpanBCP
+                                ~
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak TrillPitchHead.stencil #(lambda (grob) (grob-interpret-markup grob #{ \markup \musicglyph #"noteheads.s0harmonic" #}))
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak staff-padding 7
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \startTrillSpan g,
+
+                                c,2
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 14]
-                                c'1
+                                c,4
+                                ~
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c,8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \pitchedTrill
+                                g,8
+                                  %! baca.bcps(8)
+                                - \tweak self-alignment-X #left
+                                  %! baca.bcps(8)
+                                - \tweak staff-padding 4.5
+                                  %! baca.bcps(8)
+                                - \downbow
+                                  %! baca.bcps(3)
+                                \bacaStopTextSpanBCP
+                                  %! SPANNER_STOP
+                                  %! baca._do_spanner_indicator_command(2)
+                                  %! baca.trill_spanner()
+                                \stopTrillSpan
+                                ]
+                                  %! baca.bcps(2)
+                                - \tweak staff-padding 2.5
+                                  %! baca.bcps(2)
+                                - \abjad-solid-line-with-arrow
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-left-text #1 #9
+                                  %! baca.bcps(2)
+                                \bacaStartTextSpanBCP
+                                ~
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak TrillPitchHead.stencil #(lambda (grob) (grob-interpret-markup grob #{ \markup \musicglyph #"noteheads.s0harmonic" #}))
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak staff-padding 7
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \startTrillSpan d
+
+                                g,2
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 15]
-                                c'1
+                                g,2.
+
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \pitchedTrill
+                                c,4
+                                  %! baca.bcps(7)
+                                - \tweak self-alignment-X #left
+                                  %! baca.bcps(7)
+                                - \tweak staff-padding 4.5
+                                  %! baca.bcps(7)
+                                - \upbow
+                                  %! baca.bcps(3)
+                                \bacaStopTextSpanBCP
+                                  %! SPANNER_STOP
+                                  %! baca._do_spanner_indicator_command(2)
+                                  %! baca.trill_spanner()
+                                \stopTrillSpan
+                                  %! baca.bcps(2)
+                                - \tweak staff-padding 2.5
+                                  %! baca.bcps(2)
+                                - \abjad-solid-line-with-arrow
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-left-text #3 #9
+                                  %! baca.bcps(2)
+                                \bacaStartTextSpanBCP
                                 ~
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak TrillPitchHead.stencil #(lambda (grob) (grob-interpret-markup grob #{ \markup \musicglyph #"noteheads.s0harmonic" #}))
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak staff-padding 7
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \startTrillSpan g,
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 16]
-                                c'1
+                                c,2.
                                 ~
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c,8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \pitchedTrill
+                                g,8
+                                  %! baca.bcps(3)
+                                \bacaStopTextSpanBCP
+                                  %! SPANNER_STOP
+                                  %! baca._do_spanner_indicator_command(2)
+                                  %! baca.trill_spanner()
+                                \stopTrillSpan
+                                ]
+                                  %! baca.bcps(2)
+                                - \tweak staff-padding 2.5
+                                  %! baca.bcps(2)
+                                - \abjad-solid-line-with-arrow
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-left-text #2 #9
+                                  %! baca.bcps(2)
+                                \bacaStartTextSpanBCP
+                                ~
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak TrillPitchHead.stencil #(lambda (grob) (grob-interpret-markup grob #{ \markup \musicglyph #"noteheads.s0harmonic" #}))
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak staff-padding 7
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \startTrillSpan d
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 17]
-                                c'1
+                                g,1
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 18]
-                                c'1
+                                \override Staff.Stem.stemlet-length = 0.75
+                                g,8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \pitchedTrill
+                                c,8
+                                  %! baca.bcps(8)
+                                - \tweak self-alignment-X #left
+                                  %! baca.bcps(8)
+                                - \tweak staff-padding 4.5
+                                  %! baca.bcps(8)
+                                - \downbow
+                                  %! baca.bcps(3)
+                                \bacaStopTextSpanBCP
+                                  %! SPANNER_STOP
+                                  %! baca._do_spanner_indicator_command(2)
+                                  %! baca.trill_spanner()
+                                \stopTrillSpan
+                                ]
+                                  %! baca.bcps(2)
+                                - \tweak staff-padding 2.5
+                                  %! baca.bcps(2)
+                                - \abjad-solid-line-with-arrow
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-left-text #0 #9
+                                  %! baca.bcps(2)
+                                \bacaStartTextSpanBCP
+                                ~
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak TrillPitchHead.stencil #(lambda (grob) (grob-interpret-markup grob #{ \markup \musicglyph #"noteheads.s0harmonic" #}))
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak staff-padding 7
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \startTrillSpan g,
+
+                                c,2.
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 19]
-                                c'1
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c,8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \pitchedTrill
+                                g,8
+                                  %! baca.bcps(3)
+                                \bacaStopTextSpanBCP
+                                  %! SPANNER_STOP
+                                  %! baca._do_spanner_indicator_command(2)
+                                  %! baca.trill_spanner()
+                                \stopTrillSpan
+                                ]
+                                  %! baca.bcps(2)
+                                - \tweak staff-padding 2.5
+                                  %! baca.bcps(2)
+                                - \abjad-solid-line-with-arrow
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-left-text #1 #9
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-right-text #2 #9
+                                  %! baca.bcps(2)
+                                \bacaStartTextSpanBCP
+                                ~
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak TrillPitchHead.stencil #(lambda (grob) (grob-interpret-markup grob #{ \markup \musicglyph #"noteheads.s0harmonic" #}))
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak staff-padding 7
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \startTrillSpan d
+
+                                g,2.
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 20]
-                                c'1
+                                g,2
+
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \pitchedTrill
+                                c,2
+                                  %! baca.bcps(1)
+                                \bacaStopTextSpanBCP
+                                  %! SPANNER_STOP
+                                  %! baca._do_spanner_indicator_command(2)
+                                  %! baca.trill_spanner()
+                                \stopTrillSpan
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak TrillPitchHead.stencil #(lambda (grob) (grob-interpret-markup grob #{ \markup \musicglyph #"noteheads.s0harmonic" #}))
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak staff-padding 7
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \startTrillSpan g,
                                   %! MATERIAL_COLOR
                                 \stopStaffHighlight
 
@@ -938,6 +3248,10 @@
                                 \once \override MultiMeasureRest.transparent = ##t
                                 \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                 R1 * 1/4
+                                  %! SPANNER_STOP
+                                  %! baca._do_spanner_indicator_command(2)
+                                  %! baca.trill_spanner()
+                                \stopTrillSpan
                                 \bar "||"
                                 \stopStaff \startStaff
 

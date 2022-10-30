@@ -95,3 +95,57 @@ Segment runtime: 1 seconds
  Pre-handlers runtime: 0 seconds
  Handlers runtime: 0 seconds
  Post-handlers runtime: 1 second
+
+2022-10-30 13:05:53
+Segment runtime: 1 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 0 seconds
+ Post-handlers runtime: 1 second
+
+2022-10-30 13:09:51
+Segment runtime: 1 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 0 seconds
+ Post-handlers runtime: 1 second
+
+2022-10-30 13:18:38
+Segment runtime: 1 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 0 seconds
+ Post-handlers runtime: 1 second
+
+2022-10-30 14:17:35
+Segment runtime: 3 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 1 second
+ Post-handlers runtime: 2 seconds
+
+2022-10-30 14:18:14
+Segment runtime: 3 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 1 second
+ Post-handlers runtime: 2 seconds
+
+2022-10-30 14:18:57
+Segment runtime: 3 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 1 second
+ Post-handlers runtime: 2 seconds
+
+2022-10-30 14:19:09
+Segment runtime: 3 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 1 second
+ Post-handlers runtime: 2 seconds
+
+2022-10-30 14:51:37
+Segment runtime: 3 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 1 second
+ Post-handlers runtime: 2 seconds
+
+2022-10-30 14:52:06
+Segment runtime: 3 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 1 second
+ Post-handlers runtime: 2 seconds

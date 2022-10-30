@@ -38,11 +38,26 @@ maker = evans.SegmentMaker(
                 ),
                 rewrite=-1,
             ),
+            undae.potamia_pitches(transposition=0, columns=False, retrograde=False),
             undae.E_color,
         ),
         evans.MusicCommand(
             [("violin 1 voice", [6, 7])],
-            evans.make_tied_notes(rewrite=-1),
+            evans.talea([11, 9, 10, 8], 8, rewrite=-1),
+            evans.PitchHandler([0, 2, 2.5, 3, 1.5, -3.5, -3, 1, 0.5]),
+            evans.bcp(["0/9", "1/9", "2/9", "1/9", "3/9", "2/9"], padding=2.5),
+            evans.vibrato_spanner(
+                peaks=[0, 1, 4, 2, 6, 5],
+                wavelengths=[2, 3, 5, 3],
+                thickness=0.2,
+                divisions=[4, 5, 6],
+                padding=6,
+            ),
+            abjad.LilyPondLiteral(r"\half-harmonic", site="before"),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\revert-noteheads", site="after"),
+                selector=lambda _: abjad.select.leaf(_, -1),
+            ),
             undae.C_color,
         ),
         evans.MusicCommand(
@@ -55,7 +70,21 @@ maker = evans.SegmentMaker(
         ),
         evans.MusicCommand(
             [("violin 1 voice", [9, 10])],
-            evans.make_tied_notes(rewrite=-1),
+            evans.talea([11, 9, 10, 8], 8, rewrite=-1),
+            evans.PitchHandler([0, 2, 2.5, 3, 1.5, -3.5, -3, 1, 0.5]),
+            evans.bcp(["0/9", "1/9", "2/9", "1/9", "3/9", "2/9"], padding=2.5),
+            evans.vibrato_spanner(
+                peaks=[0, 1, 4, 2, 6, 5],
+                wavelengths=[2, 3, 5, 3],
+                thickness=0.2,
+                divisions=[4, 5, 6],
+                padding=6,
+            ),
+            abjad.LilyPondLiteral(r"\half-harmonic", site="before"),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\revert-noteheads", site="after"),
+                selector=lambda _: abjad.select.leaf(_, -1),
+            ),
             undae.C_color,
         ),
         evans.MusicCommand(
@@ -68,7 +97,21 @@ maker = evans.SegmentMaker(
         ),
         evans.MusicCommand(
             [("violin 1 voice", [13])],
-            evans.make_tied_notes(rewrite=-1),
+            evans.talea([11, 9, 10, 8], 8, rewrite=-1),
+            evans.PitchHandler([0, 2, 2.5, 3, 1.5, -3.5, -3, 1, 0.5]),
+            evans.bcp(["0/9", "1/9", "2/9", "1/9", "3/9", "2/9"], padding=2.5),
+            evans.vibrato_spanner(
+                peaks=[0, 1, 4, 2, 6, 5],
+                wavelengths=[2, 3, 5, 3],
+                thickness=0.2,
+                divisions=[4, 5, 6],
+                padding=6,
+            ),
+            abjad.LilyPondLiteral(r"\half-harmonic", site="before"),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\revert-noteheads", site="after"),
+                selector=lambda _: abjad.select.leaf(_, -1),
+            ),
             undae.C_color,
         ),
         evans.MusicCommand(
@@ -81,7 +124,21 @@ maker = evans.SegmentMaker(
         ),
         evans.MusicCommand(
             [("violin 2 voice", [_ for _ in range(8)])],
-            evans.make_tied_notes(rewrite=-1),
+            evans.talea([11, 9, 10, 8], 8, rewrite=-1),
+            evans.PitchHandler([0, 2, 2.5, 3, 1.5, -3.5, -3, 1, 0.5]),
+            evans.bcp(["0/9", "1/9", "2/9", "1/9", "3/9", "2/9"], padding=2.5),
+            evans.vibrato_spanner(
+                peaks=[0, 1, 4, 2, 6, 5],
+                wavelengths=[2, 3, 5, 3],
+                thickness=0.2,
+                divisions=[4, 5, 6],
+                padding=6,
+            ),
+            abjad.LilyPondLiteral(r"\half-harmonic", site="before"),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\revert-noteheads", site="after"),
+                selector=lambda _: abjad.select.leaf(_, -1),
+            ),
             undae.C_color,
         ),
         evans.MusicCommand(
@@ -94,7 +151,21 @@ maker = evans.SegmentMaker(
         ),
         evans.MusicCommand(
             [("violin 2 voice", [9, 10])],
-            evans.make_tied_notes(rewrite=-1),
+            evans.talea([11, 9, 10, 8], 8, rewrite=-1),
+            evans.PitchHandler([0, 2, 2.5, 3, 1.5, -3.5, -3, 1, 0.5]),
+            evans.bcp(["0/9", "1/9", "2/9", "1/9", "3/9", "2/9"], padding=2.5),
+            evans.vibrato_spanner(
+                peaks=[0, 1, 4, 2, 6, 5],
+                wavelengths=[2, 3, 5, 3],
+                thickness=0.2,
+                divisions=[4, 5, 6],
+                padding=6,
+            ),
+            abjad.LilyPondLiteral(r"\half-harmonic", site="before"),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\revert-noteheads", site="after"),
+                selector=lambda _: abjad.select.leaf(_, -1),
+            ),
             undae.C_color,
         ),
         evans.MusicCommand(
@@ -107,7 +178,21 @@ maker = evans.SegmentMaker(
         ),
         evans.MusicCommand(
             [("violin 2 voice", [13])],
-            evans.make_tied_notes(rewrite=-1),
+            evans.talea([11, 9, 10, 8], 8, rewrite=-1),
+            evans.PitchHandler([0, 2, 2.5, 3, 1.5, -3.5, -3, 1, 0.5]),
+            evans.bcp(["0/9", "1/9", "2/9", "1/9", "3/9", "2/9"], padding=2.5),
+            evans.vibrato_spanner(
+                peaks=[0, 1, 4, 2, 6, 5],
+                wavelengths=[2, 3, 5, 3],
+                thickness=0.2,
+                divisions=[4, 5, 6],
+                padding=6,
+            ),
+            abjad.LilyPondLiteral(r"\half-harmonic", site="before"),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\revert-noteheads", site="after"),
+                selector=lambda _: abjad.select.leaf(_, -1),
+            ),
             undae.C_color,
         ),
         evans.MusicCommand(
@@ -120,7 +205,21 @@ maker = evans.SegmentMaker(
         ),
         evans.MusicCommand(
             [("viola voice", [_ for _ in range(8)])],
-            evans.make_tied_notes(rewrite=-1),
+            evans.talea([11, 9, 10, 8], 8, rewrite=-1),
+            evans.PitchHandler([0, 2, 2.5, 3, 1.5, -3.5, -3, 1, 0.5]),
+            evans.bcp(["0/9", "1/9", "2/9", "1/9", "3/9", "2/9"], padding=2.5),
+            evans.vibrato_spanner(
+                peaks=[0, 1, 4, 2, 6, 5],
+                wavelengths=[2, 3, 5, 3],
+                thickness=0.2,
+                divisions=[4, 5, 6],
+                padding=6,
+            ),
+            abjad.LilyPondLiteral(r"\half-harmonic", site="before"),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\revert-noteheads", site="after"),
+                selector=lambda _: abjad.select.leaf(_, -1),
+            ),
             undae.C_color,
         ),
         evans.MusicCommand(
@@ -133,7 +232,21 @@ maker = evans.SegmentMaker(
         ),
         evans.MusicCommand(
             [("viola voice", [9, 10])],
-            evans.make_tied_notes(rewrite=-1),
+            evans.talea([11, 9, 10, 8], 8, rewrite=-1),
+            evans.PitchHandler([0, 2, 2.5, 3, 1.5, -3.5, -3, 1, 0.5]),
+            evans.bcp(["0/9", "1/9", "2/9", "1/9", "3/9", "2/9"], padding=2.5),
+            evans.vibrato_spanner(
+                peaks=[0, 1, 4, 2, 6, 5],
+                wavelengths=[2, 3, 5, 3],
+                thickness=0.2,
+                divisions=[4, 5, 6],
+                padding=6,
+            ),
+            abjad.LilyPondLiteral(r"\half-harmonic", site="before"),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\revert-noteheads", site="after"),
+                selector=lambda _: abjad.select.leaf(_, -1),
+            ),
             undae.C_color,
         ),
         evans.MusicCommand(
@@ -146,7 +259,21 @@ maker = evans.SegmentMaker(
         ),
         evans.MusicCommand(
             [("viola voice", [13])],
-            evans.make_tied_notes(rewrite=-1),
+            evans.talea([11, 9, 10, 8], 8, rewrite=-1),
+            evans.PitchHandler([0, 2, 2.5, 3, 1.5, -3.5, -3, 1, 0.5]),
+            evans.bcp(["0/9", "1/9", "2/9", "1/9", "3/9", "2/9"], padding=2.5),
+            evans.vibrato_spanner(
+                peaks=[0, 1, 4, 2, 6, 5],
+                wavelengths=[2, 3, 5, 3],
+                thickness=0.2,
+                divisions=[4, 5, 6],
+                padding=6,
+            ),
+            abjad.LilyPondLiteral(r"\half-harmonic", site="before"),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\revert-noteheads", site="after"),
+                selector=lambda _: abjad.select.leaf(_, -1),
+            ),
             undae.C_color,
         ),
         evans.MusicCommand(
@@ -171,11 +298,26 @@ maker = evans.SegmentMaker(
                 ),
                 rewrite=-1,
             ),
+            undae.potamia_pitches(transposition=-13, columns=False, retrograde=True),
             undae.E_color,
         ),
         evans.MusicCommand(
             [("cello voice", [6, 7])],
-            evans.make_tied_notes(rewrite=-1),
+            evans.talea([11, 9, 10, 8], 8, rewrite=-1),
+            evans.PitchHandler([0, 2, 2.5, 3, 1.5, -3.5, -3, 1, 0.5]),
+            evans.bcp(["0/9", "1/9", "2/9", "1/9", "3/9", "2/9"], padding=2.5),
+            evans.vibrato_spanner(
+                peaks=[0, 1, 4, 2, 6, 5],
+                wavelengths=[2, 3, 5, 3],
+                thickness=0.2,
+                divisions=[4, 5, 6],
+                padding=6,
+            ),
+            abjad.LilyPondLiteral(r"\half-harmonic", site="before"),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\revert-noteheads", site="after"),
+                selector=lambda _: abjad.select.leaf(_, -1),
+            ),
             undae.C_color,
         ),
         evans.MusicCommand(
@@ -188,7 +330,21 @@ maker = evans.SegmentMaker(
         ),
         evans.MusicCommand(
             [("cello voice", [9, 10])],
-            evans.make_tied_notes(rewrite=-1),
+            evans.talea([11, 9, 10, 8], 8, rewrite=-1),
+            evans.PitchHandler([0, 2, 2.5, 3, 1.5, -3.5, -3, 1, 0.5]),
+            evans.bcp(["0/9", "1/9", "2/9", "1/9", "3/9", "2/9"], padding=2.5),
+            evans.vibrato_spanner(
+                peaks=[0, 1, 4, 2, 6, 5],
+                wavelengths=[2, 3, 5, 3],
+                thickness=0.2,
+                divisions=[4, 5, 6],
+                padding=6,
+            ),
+            abjad.LilyPondLiteral(r"\half-harmonic", site="before"),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\revert-noteheads", site="after"),
+                selector=lambda _: abjad.select.leaf(_, -1),
+            ),
             undae.C_color,
         ),
         evans.MusicCommand(
@@ -201,7 +357,21 @@ maker = evans.SegmentMaker(
         ),
         evans.MusicCommand(
             [("cello voice", [13])],
-            evans.make_tied_notes(rewrite=-1),
+            evans.talea([11, 9, 10, 8], 8, rewrite=-1),
+            evans.PitchHandler([0, 2, 2.5, 3, 1.5, -3.5, -3, 1, 0.5]),
+            evans.bcp(["0/9", "1/9", "2/9", "1/9", "3/9", "2/9"], padding=2.5),
+            evans.vibrato_spanner(
+                peaks=[0, 1, 4, 2, 6, 5],
+                wavelengths=[2, 3, 5, 3],
+                thickness=0.2,
+                divisions=[4, 5, 6],
+                padding=6,
+            ),
+            abjad.LilyPondLiteral(r"\half-harmonic", site="before"),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\revert-noteheads", site="after"),
+                selector=lambda _: abjad.select.leaf(_, -1),
+            ),
             undae.C_color,
         ),
         evans.MusicCommand(

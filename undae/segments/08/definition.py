@@ -37,6 +37,7 @@ maker = evans.SegmentMaker(
                 ),
                 rewrite=-2,
             ),
+            undae.potamia_pitches(transposition=1, columns=False, retrograde=False),
             undae.E_color,
         ),
         evans.MusicCommand(
@@ -63,6 +64,7 @@ maker = evans.SegmentMaker(
                 ),
                 rewrite=-2,
             ),
+            undae.potamia_pitches(transposition=2, columns=True, retrograde=False),
             undae.E_color,
         ),
         evans.MusicCommand(
@@ -87,6 +89,7 @@ maker = evans.SegmentMaker(
                 ),
                 rewrite=-2,
             ),
+            undae.potamia_pitches(transposition=-1, columns=False, retrograde=True),
             undae.E_color,
         ),
         evans.MusicCommand(
@@ -113,6 +116,7 @@ maker = evans.SegmentMaker(
                 ),
                 rewrite=-2,
             ),
+            undae.potamia_pitches(transposition=-2, columns=True, retrograde=True),
             undae.E_color,
         ),
         evans.MusicCommand(
@@ -139,6 +143,7 @@ maker = evans.SegmentMaker(
                 ),
                 rewrite=-2,
             ),
+            undae.potamia_pitches(transposition=-6, columns=True, retrograde=False),
             undae.E_color,
         ),
         evans.MusicCommand(

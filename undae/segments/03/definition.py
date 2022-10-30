@@ -32,6 +32,15 @@ maker = evans.SegmentMaker(
                 rewrite=-1,
                 preprocessor=evans.make_preprocessor(quarters=True),
             ),
+            evans.PitchHandler(
+                [
+                    ["bf'", "f''"],
+                    ["cs'''", "g'''"],
+                    ["cs'''", "g'''"],
+                    ["cs'''", "g'''"],
+                    ["bf'", "f''"],
+                ]
+            ),
             undae.B_color,
         ),
         evans.MusicCommand(
@@ -44,11 +53,20 @@ maker = evans.SegmentMaker(
                 selector=lambda _: abjad.select.leaf(_, -1),
             ),
             evans.slur([4]),
+            evans.text_span(
+                [r"\diamond-notehead-markup", r"\default-notehead-markup"],
+                "=>",
+                [4],
+                padding=2,
+                id=1,
+            ),
+            evans.text_span([r"norm.", r"scr."], "=>", padding=4, id=2),
             undae.D_color,
         ),
         evans.MusicCommand(
             [("violin 1 voice", [10])],
             evans.make_tied_notes(rewrite=-1),
+            evans.PitchHandler([["bf'", "f''"]]),
             undae.B_color,
         ),
         evans.MusicCommand(
@@ -67,11 +85,20 @@ maker = evans.SegmentMaker(
                 selector=lambda _: abjad.select.leaf(_, -1),
             ),
             evans.slur([4]),
+            evans.text_span(
+                [r"\half-diamond-notehead-markup", r"\default-notehead-markup"],
+                "=>",
+                [4],
+                padding=2,
+                id=1,
+            ),
+            evans.text_span([r"norm.", r"scr."], "=>", padding=4, id=2),
             undae.D_color,
         ),
         evans.MusicCommand(
             [("violin 2 voice", (0, 9))],
             evans.note(preprocessor=evans.make_preprocessor(quarters=True)),
+            evans.PitchHandler([["a", "gs'"], ["ef''", "d'''"]]),
             undae.B_color,
         ),
         evans.MusicCommand(
@@ -84,11 +111,22 @@ maker = evans.SegmentMaker(
                 selector=lambda _: abjad.select.leaf(_, -1),
             ),
             evans.slur([5], direction=abjad.UP),
+            evans.text_span(
+                [r"\half-diamond-notehead-markup", r"\default-notehead-markup"],
+                "=>",
+                [5],
+                padding=2,
+                id=1,
+            ),
+            evans.text_span(
+                [r"norm.", r"\markup { \fraction 1 2 scr. }"], "=>", padding=5, id=2
+            ),
             undae.D_color,
         ),
         evans.MusicCommand(
             [("violin 2 voice", [10])],
             evans.make_tied_notes(rewrite=-1),
+            evans.PitchHandler([["ef''", "d'''"]]),
             undae.B_color,
         ),
         evans.MusicCommand(
@@ -109,6 +147,14 @@ maker = evans.SegmentMaker(
                 selector=lambda _: abjad.select.leaf(_, -1),
             ),
             evans.slur([3]),
+            evans.text_span(
+                [r"\diamond-notehead-markup", r"\default-notehead-markup"],
+                "=>",
+                [3],
+                padding=2,
+                id=1,
+            ),
+            evans.text_span([r"norm.", r"\markup scr."], "=>", padding=4, id=2),
             undae.D_color,
         ),
         evans.MusicCommand(
@@ -116,6 +162,9 @@ maker = evans.SegmentMaker(
             evans.note(
                 preprocessor=evans.make_preprocessor(sum=True, quarters=True),
                 rewrite=-1,
+            ),
+            evans.PitchHandler(
+                [["fs'", "c''"], ["fs'", "c''"], ["fs'", "as'"], ["e", "b"], ["e", "b"]]
             ),
             abjad.Clef("alto"),
             undae.B_color,
@@ -130,11 +179,20 @@ maker = evans.SegmentMaker(
                 selector=lambda _: abjad.select.leaf(_, -1),
             ),
             evans.slur([6], direction=abjad.UP),
+            evans.text_span(
+                [r"\default-notehead-markup", r"\diamond-notehead-markup"],
+                "=>",
+                [6],
+                padding=2,
+                id=1,
+            ),
+            evans.text_span([r"norm.", r"\markup scr."], "=>", padding=4, id=2),
             undae.D_color,
         ),
         evans.MusicCommand(
             [("viola voice", [10, 11])],
             evans.make_tied_notes(rewrite=-1),
+            evans.PitchHandler([["e", "b"]]),
             undae.B_color,
         ),
         evans.MusicCommand(
@@ -153,11 +211,20 @@ maker = evans.SegmentMaker(
                 selector=lambda _: abjad.select.leaf(_, -1),
             ),
             evans.slur([6]),
+            evans.text_span(
+                [r"\default-notehead-markup", r"\half-diamond-notehead-markup"],
+                "=>",
+                [12],
+                padding=2,
+                id=1,
+            ),
+            evans.text_span([r"P", r"T"], "=>", [6], padding=4, id=2),
             undae.D_color,
         ),
         evans.MusicCommand(
             [("cello voice", (0, 9))],
             evans.make_tied_notes(rewrite=-1),
+            evans.PitchHandler([["c,", "b,"]]),
             abjad.Clef("bass"),
             undae.B_color,
         ),
@@ -171,11 +238,20 @@ maker = evans.SegmentMaker(
                 selector=lambda _: abjad.select.leaf(_, -1),
             ),
             evans.slur([5]),
+            evans.text_span(
+                [r"\half-diamond-notehead-markup", r"\diamond-notehead-markup"],
+                "=>",
+                [5],
+                padding=2,
+                id=1,
+            ),
+            evans.text_span([r"T", r"P"], "=>", padding=4, id=2),
             undae.D_color,
         ),
         evans.MusicCommand(
             [("cello voice", [10, 11, 12, 13])],
             evans.make_tied_notes(rewrite=-1),
+            evans.PitchHandler([["a", "g'"]]),
             undae.B_color,
         ),
         evans.MusicCommand(
@@ -196,6 +272,14 @@ maker = evans.SegmentMaker(
                 selector=lambda _: abjad.select.leaf(_, -1),
             ),
             evans.slur([5]),
+            evans.text_span(
+                [r"\diamond-notehead-markup", r"\half-diamond-notehead-markup"],
+                "=>",
+                [10],
+                padding=2,
+                id=1,
+            ),
+            evans.text_span([r"T", r"P"], "=>", [5], padding=4, id=2),
             undae.D_color,
         ),
         evans.call(

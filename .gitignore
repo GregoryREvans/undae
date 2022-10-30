@@ -5,6 +5,8 @@ __pycache__/
 *.wav
 *.DS_Store
 *.scd
+*.midi
+*.mid
 
 *.old.ly
 
