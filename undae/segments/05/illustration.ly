@@ -207,11 +207,11 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 3]
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 0.6 0.6 1)
                                         \tweak Accidental.stencil #ly:text-interface::print
                                         \tweak Accidental.text \markup { \natural-one-syntonic-comma-down  }
                                         b'!1
+                                        - \espressivo
+                                        \mf
                                         ^ \markup \center-align { \concat { -14 } }
 
                                           %! COMMENT_MEASURE_NUMBERS
@@ -220,9 +220,8 @@
                                         \tweak Accidental.stencil #ly:text-interface::print
                                         \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \abjad-flat  }
                                         bf'!2..
+                                        - \espressivo
                                         ^ \markup \center-align { \concat { -33 } }
-                                          %! MATERIAL_COLOR
-                                        \stopStaffHighlight
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -232,11 +231,11 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 6]
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 0.6 0.6 1)
                                         \tweak Accidental.stencil #ly:text-interface::print
                                         \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                                         bf'!2
+                                        - \espressivo
+                                        \mp
                                         ^ \markup \center-align { \concat { +16 } }
                                         ~
 
@@ -250,6 +249,7 @@
                                         \tweak Accidental.stencil #ly:text-interface::print
                                         \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                                         af'!2
+                                        - \espressivo
                                         ^ \markup \center-align { \concat { +12 } }
 
                                           %! COMMENT_MEASURE_NUMBERS
@@ -258,6 +258,7 @@
                                         \tweak Accidental.stencil #ly:text-interface::print
                                         \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                                         bf'!1
+                                        - \espressivo
                                         ^ \markup \center-align { \concat { +16 } }
                                         ~
 
@@ -271,6 +272,7 @@
                                         \tweak Accidental.stencil #ly:text-interface::print
                                         \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                                         af'!1
+                                        - \espressivo
                                         ^ \markup \center-align { \concat { +12 } }
 
                                           %! COMMENT_MEASURE_NUMBERS
@@ -279,14 +281,13 @@
                                         \tweak Accidental.stencil #ly:text-interface::print
                                         \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-up \hspace #0.125 \natural-one-syntonic-comma-down  }
                                         g'!1
+                                        - \espressivo
                                         ^ \markup \center-align { \concat { +32 } }
                                         ~
 
                                         \tweak Accidental.stencil #ly:text-interface::print
                                         \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-up \hspace #0.125 \natural-one-syntonic-comma-down  }
                                         g'4
-                                          %! MATERIAL_COLOR
-                                        \stopStaffHighlight
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -296,11 +297,11 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 12]
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 0.6 0.6 1)
                                         \tweak Accidental.stencil #ly:text-interface::print
                                         \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-up \hspace #0.125 \natural-one-syntonic-comma-down  }
                                         g'!2..
+                                        - \espressivo
+                                        \mf
                                         ^ \markup \center-align { \concat { +32 } }
 
                                           %! COMMENT_MEASURE_NUMBERS
@@ -309,6 +310,7 @@
                                         \tweak Accidental.stencil #ly:text-interface::print
                                         \tweak Accidental.text \markup \concat { \one-tridecimal-third-tone-up \hspace #0.125 \one-septimal-comma-down \hspace #0.125 \abjad-flat  }
                                         gf'!2.
+                                        - \espressivo
                                         ^ \markup \center-align { \concat { +24 } }
 
                                           %! COMMENT_MEASURE_NUMBERS
@@ -317,20 +319,17 @@
                                         \tweak Accidental.stencil #ly:text-interface::print
                                         \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \abjad-flat  }
                                         gf'!1
+                                        - \espressivo
                                         ^ \markup \center-align { \concat { -41 } }
                                         ~
 
                                         \tweak Accidental.stencil #ly:text-interface::print
                                         \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \abjad-flat  }
                                         gf'8
-                                          %! MATERIAL_COLOR
-                                        \stopStaffHighlight
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 15]
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 0.2 1 0.592)
                                           %! SPANNER_START
                                           %! baca._do_spanner_indicator_command(1)
                                           %! baca.trill_spanner()
@@ -342,6 +341,7 @@
                                         - \tweak staff-padding 4.5
                                           %! baca.bcps(6)
                                         - \downbow
+                                        \mp
                                           %! baca.bcps(2)
                                         - \tweak staff-padding 2.5
                                           %! baca.bcps(2)
@@ -376,7 +376,13 @@
                                           %! baca._do_spanner_indicator_command(1)
                                           %! baca.trill_spanner()
                                         \pitchedTrill
-                                        c'8
+                                        b8
+                                          %! baca.bcps(7)
+                                        - \tweak self-alignment-X #left
+                                          %! baca.bcps(7)
+                                        - \tweak staff-padding 4.5
+                                          %! baca.bcps(7)
+                                        - \upbow
                                           %! baca.bcps(3)
                                         \bacaStopTextSpanBCP
                                           %! SPANNER_STOP
@@ -404,19 +410,19 @@
                                           %! SPANNER_START
                                           %! baca._do_spanner_indicator_command(1)
                                           %! baca.trill_spanner()
-                                        \startTrillSpan g'
+                                        \startTrillSpan fs'
 
-                                        c'2
+                                        b2
                                         ~
 
-                                        c'2
+                                        b2
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 17]
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        c'8
+                                        b8
                                         [
 
                                         \revert Staff.Stem.stemlet-length
@@ -424,13 +430,13 @@
                                           %! baca._do_spanner_indicator_command(1)
                                           %! baca.trill_spanner()
                                         \pitchedTrill
-                                        c'8
-                                          %! baca.bcps(7)
+                                        a8
+                                          %! baca.bcps(8)
                                         - \tweak self-alignment-X #left
-                                          %! baca.bcps(7)
+                                          %! baca.bcps(8)
                                         - \tweak staff-padding 4.5
-                                          %! baca.bcps(7)
-                                        - \upbow
+                                          %! baca.bcps(8)
+                                        - \downbow
                                           %! baca.bcps(3)
                                         \bacaStopTextSpanBCP
                                           %! SPANNER_STOP
@@ -443,9 +449,9 @@
                                           %! baca.bcps(2)
                                         - \abjad-solid-line-with-arrow
                                           %! baca.bcps(2)
-                                        - \baca-bcp-spanner-left-text #2 #7
+                                        - \baca-bcp-spanner-left-text #0 #7
                                           %! baca.bcps(2)
-                                        - \baca-bcp-spanner-right-text #1 #7
+                                        - \baca-bcp-spanner-right-text #7 #7
                                           %! baca.bcps(2)
                                         \bacaStartTextSpanBCP
                                           %! SPANNER_START
@@ -459,13 +465,11 @@
                                           %! SPANNER_START
                                           %! baca._do_spanner_indicator_command(1)
                                           %! baca.trill_spanner()
-                                        \startTrillSpan g'
+                                        \startTrillSpan e'
 
-                                        c'2.
+                                        a2.
                                           %! baca.bcps(1)
                                         \bacaStopTextSpanBCP
-                                          %! MATERIAL_COLOR
-                                        \stopStaffHighlight
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -480,10 +484,12 @@
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 19]
                                         \harmonicsOn
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 1 0.2 0.2)
                                         \override Staff.Stem.stemlet-length = 0.75
                                         b'16
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \p
                                         [
                                         (
                                           %! SPANNER_START
@@ -497,7 +503,7 @@
                                           %! SPANNER_START
                                           %! baca.PiecewiseCommand._call(2)
                                           %! baca.text_spanner()
-                                        - \tweak staff-padding 2
+                                        - \tweak staff-padding 3.5
                                           %! SPANNER_START
                                           %! baca.PiecewiseCommand._call(2)
                                           %! baca.text_spanner()
@@ -525,7 +531,7 @@
                                           %! SPANNER_START
                                           %! baca.PiecewiseCommand._call(2)
                                           %! baca.text_spanner()
-                                        - \tweak staff-padding 4
+                                        - \tweak staff-padding 5.5
                                           %! SPANNER_START
                                           %! baca.PiecewiseCommand._call(2)
                                           %! baca.text_spanner()
@@ -542,6 +548,14 @@
                                           %! baca.PiecewiseCommand._call(2)
                                           %! baca.text_spanner()
                                         \startTextSpanTwo
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        - \tweak stencil #abjad-flared-hairpin
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \<
 
                                         a'16
 
@@ -558,6 +572,14 @@
                                         (
 
                                         b'16
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \f
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \>
 
                                         a'16
 
@@ -577,6 +599,18 @@
                                             bf'16
 
                                             af'16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \p
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            - \tweak stencil #abjad-flared-hairpin
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \<
 
                                             g'16
                                             )
@@ -598,7 +632,15 @@
                                         [
 
                                         fs'16
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \f
                                         )
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \>
 
                                         d''16
                                         (
@@ -615,7 +657,19 @@
                                         )
 
                                         c''16
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \p
                                         (
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        - \tweak stencil #abjad-flared-hairpin
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \<
 
                                         \revert Staff.Stem.stemlet-length
                                         bf'16
@@ -635,6 +689,14 @@
                                             (
 
                                             b'16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \f
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \>
 
                                             a'16
 
@@ -647,6 +709,10 @@
                                             cs''16
 
                                             b'16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \p
 
                                             \revert Staff.Stem.stemlet-length
                                             bf'16
@@ -662,8 +728,6 @@
                                             ]
                                             \bar "||"
                                             \harmonicsOff
-                                              %! MATERIAL_COLOR
-                                            \stopStaffHighlight
 
                                         }
 
@@ -701,11 +765,11 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 3]
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 0.6 0.6 1)
                                         \tweak Accidental.stencil #ly:text-interface::print
                                         \tweak Accidental.text \markup { \abjad-natural  }
                                         g'!1
+                                        - \espressivo
+                                        \mf
                                         ^ \markup \center-align { \concat { +0 } }
 
                                           %! COMMENT_MEASURE_NUMBERS
@@ -714,9 +778,8 @@
                                         \tweak Accidental.stencil #ly:text-interface::print
                                         \tweak Accidental.text \markup { \abjad-natural  }
                                         g'!2..
+                                        - \espressivo
                                         ^ \markup \center-align { \concat { +0 } }
-                                          %! MATERIAL_COLOR
-                                        \stopStaffHighlight
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -726,11 +789,11 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 6]
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 0.6 0.6 1)
                                         \tweak Accidental.stencil #ly:text-interface::print
                                         \tweak Accidental.text \markup { \abjad-natural  }
                                         g'!2
+                                        - \espressivo
+                                        \mp
                                         ^ \markup \center-align { \concat { +0 } }
                                         ~
 
@@ -744,6 +807,7 @@
                                         \tweak Accidental.stencil #ly:text-interface::print
                                         \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
                                         gf'!2
+                                        - \espressivo
                                         ^ \markup \center-align { \concat { -19 } }
 
                                           %! COMMENT_MEASURE_NUMBERS
@@ -752,6 +816,7 @@
                                         \tweak Accidental.stencil #ly:text-interface::print
                                         \tweak Accidental.text \markup { \abjad-natural  }
                                         g'!1
+                                        - \espressivo
                                         ^ \markup \center-align { \concat { +0 } }
                                         ~
 
@@ -765,6 +830,7 @@
                                         \tweak Accidental.stencil #ly:text-interface::print
                                         \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
                                         gf'!1
+                                        - \espressivo
                                         ^ \markup \center-align { \concat { -19 } }
 
                                           %! COMMENT_MEASURE_NUMBERS
@@ -773,26 +839,40 @@
                                         \tweak Accidental.stencil #ly:text-interface::print
                                         \tweak Accidental.text \markup { \sharp-two-syntonic-comma-down  }
                                         fs'!1
+                                        - \espressivo
                                         ^ \markup \center-align { \concat { -33 } }
                                         ~
 
                                         \tweak Accidental.stencil #ly:text-interface::print
                                         \tweak Accidental.text \markup { \sharp-two-syntonic-comma-down  }
                                         fs'4
-                                          %! MATERIAL_COLOR
-                                        \stopStaffHighlight
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 11]
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 0.2 1 0.592)
                                           %! SPANNER_START
                                           %! baca._do_spanner_indicator_command(1)
                                           %! baca.trill_spanner()
                                         \pitchedTrill
                                         c'1
-                                        ^ \markup scr.
+                                        \sf
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak staff-padding 2
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-dashed-line-with-hook
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "scr."
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpan
+                                        \>
                                           %! SPANNER_START
                                           %! baca._do_spanner_indicator_command(1)
                                           %! baca.trill_spanner()
@@ -800,23 +880,25 @@
                                           %! SPANNER_START
                                           %! baca._do_spanner_indicator_command(1)
                                           %! baca.trill_spanner()
-                                        - \tweak staff-padding 7
+                                        - \tweak staff-padding 4
                                           %! SPANNER_START
                                           %! baca._do_spanner_indicator_command(1)
                                           %! baca.trill_spanner()
                                         \startTrillSpan f'
-                                          %! MATERIAL_COLOR
-                                        \stopStaffHighlight
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 12]
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 0.6 0.6 1)
                                         \tweak Accidental.stencil #ly:text-interface::print
                                         \tweak Accidental.text \markup { \sharp-two-syntonic-comma-down  }
                                         fs'!2..
+                                        - \espressivo
+                                        \mf
                                         ^ \markup \center-align { \concat { -33 } }
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(4)
+                                          %! baca.text_spanner()
+                                        \stopTextSpan
                                         \stopTrillSpan
 
                                           %! COMMENT_MEASURE_NUMBERS
@@ -825,6 +907,7 @@
                                         \tweak Accidental.stencil #ly:text-interface::print
                                         \tweak Accidental.text \markup \concat { \one-tridecimal-third-tone-up \hspace #0.125 \one-septimal-comma-down \hspace #0.125 \abjad-flat  }
                                         cf''!2.
+                                        - \espressivo
                                         ^ \markup \center-align { \concat { +22 } }
 
                                           %! COMMENT_MEASURE_NUMBERS
@@ -833,14 +916,13 @@
                                         \tweak Accidental.stencil #ly:text-interface::print
                                         \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \abjad-flat  }
                                         cf''!1
+                                        - \espressivo
                                         ^ \markup \center-align { \concat { -43 } }
                                         ~
 
                                         \tweak Accidental.stencil #ly:text-interface::print
                                         \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \abjad-flat  }
                                         cf''8
-                                          %! MATERIAL_COLOR
-                                        \stopStaffHighlight
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -854,10 +936,12 @@
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 16]
                                             \harmonicsOn
-                                              %! MATERIAL_COLOR
-                                            \staffHighlight #(rgb-color 1 0.2 0.2)
                                             \override Staff.Stem.stemlet-length = 0.75
                                             a'16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \p
                                             [
                                               %! SPANNER_START
                                               %! baca.PiecewiseCommand._call(2)
@@ -870,7 +954,7 @@
                                               %! SPANNER_START
                                               %! baca.PiecewiseCommand._call(2)
                                               %! baca.text_spanner()
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 3.5
                                               %! SPANNER_START
                                               %! baca.PiecewiseCommand._call(2)
                                               %! baca.text_spanner()
@@ -898,7 +982,7 @@
                                               %! SPANNER_START
                                               %! baca.PiecewiseCommand._call(2)
                                               %! baca.text_spanner()
-                                            - \tweak staff-padding 4
+                                            - \tweak staff-padding 5.5
                                               %! SPANNER_START
                                               %! baca.PiecewiseCommand._call(2)
                                               %! baca.text_spanner()
@@ -915,6 +999,10 @@
                                               %! baca.PiecewiseCommand._call(2)
                                               %! baca.text_spanner()
                                             \startTextSpanTwo
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \<
                                             ^ (
 
                                             g'16
@@ -932,6 +1020,14 @@
                                             ^ (
 
                                             a'16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \f
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \>
 
                                             af'16
 
@@ -957,7 +1053,15 @@
 
                                         \override Staff.Stem.stemlet-length = 0.75
                                         f'16
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \p
                                         [
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \<
 
                                         ef'16
 
@@ -979,6 +1083,10 @@
 
                                         \revert Staff.Stem.stemlet-length
                                         e'16
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \f
                                         )
                                           %! SPANNER_STOP
                                           %! baca.PiecewiseCommand._call(3)
@@ -990,8 +1098,6 @@
                                         \stopTextSpanTwo
                                         ]
                                         \harmonicsOff
-                                          %! MATERIAL_COLOR
-                                        \stopStaffHighlight
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -1002,10 +1108,12 @@
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 18]
                                         \harmonicsOn
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 1 0.2 0.2)
                                         \override Staff.Stem.stemlet-length = 0.75
                                         a'16
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \p
                                         [
                                           %! SPANNER_START
                                           %! baca.PiecewiseCommand._call(2)
@@ -1018,7 +1126,7 @@
                                           %! SPANNER_START
                                           %! baca.PiecewiseCommand._call(2)
                                           %! baca.text_spanner()
-                                        - \tweak staff-padding 2
+                                        - \tweak staff-padding 3.5
                                           %! SPANNER_START
                                           %! baca.PiecewiseCommand._call(2)
                                           %! baca.text_spanner()
@@ -1046,7 +1154,7 @@
                                           %! SPANNER_START
                                           %! baca.PiecewiseCommand._call(2)
                                           %! baca.text_spanner()
-                                        - \tweak staff-padding 4
+                                        - \tweak staff-padding 5.5
                                           %! SPANNER_START
                                           %! baca.PiecewiseCommand._call(2)
                                           %! baca.text_spanner()
@@ -1063,6 +1171,14 @@
                                           %! baca.PiecewiseCommand._call(2)
                                           %! baca.text_spanner()
                                         \startTextSpanTwo
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        - \tweak stencil #abjad-flared-hairpin
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \<
                                         ^ (
 
                                         g'16
@@ -1071,7 +1187,15 @@
 
                                         \revert Staff.Stem.stemlet-length
                                         e'16
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \f
                                         ]
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \>
                                         ~
 
                                         e'4.
@@ -1084,6 +1208,18 @@
                                         )
 
                                         b'16
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \p
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        - \tweak stencil #abjad-flared-hairpin
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \<
                                         ^ (
 
                                         \revert Staff.Stem.stemlet-length
@@ -1104,6 +1240,14 @@
                                             [
 
                                             fs'16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \f
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \>
 
                                             \revert Staff.Stem.stemlet-length
                                             e'16
@@ -1123,6 +1267,18 @@
                                         [
 
                                         af'16
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \p
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        - \tweak stencil #abjad-flared-hairpin
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \<
                                         ^ (
 
                                         fs'16
@@ -1135,6 +1291,14 @@
                                         {
 
                                             ef'4..
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \f
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \>
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             cs'16
@@ -1144,6 +1308,10 @@
                                             )
 
                                             a'16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \p
                                             ^ (
 
                                             \revert Staff.Stem.stemlet-length
@@ -1165,8 +1333,6 @@
                                         \stopTextSpanTwo
                                         \bar "||"
                                         \harmonicsOff
-                                          %! MATERIAL_COLOR
-                                        \stopStaffHighlight
 
                                     }
 
@@ -1206,11 +1372,11 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 3]
-                                  %! MATERIAL_COLOR
-                                \staffHighlight #(rgb-color 0.6 0.6 1)
                                 \tweak Accidental.stencil #ly:text-interface::print
                                 \tweak Accidental.text \markup { \abjad-natural  }
                                 d'!1
+                                - \espressivo
+                                \mf
                                 ^ \markup \center-align { \concat { +2 } }
 
                                   %! COMMENT_MEASURE_NUMBERS
@@ -1219,21 +1385,19 @@
                                 \tweak Accidental.stencil #ly:text-interface::print
                                 \tweak Accidental.text \markup { \natural-one-syntonic-comma-down  }
                                 e'!2..
+                                - \espressivo
                                 ^ \markup \center-align { \concat { -16 } }
-                                  %! MATERIAL_COLOR
-                                \stopStaffHighlight
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 5]
-                                  %! MATERIAL_COLOR
-                                \staffHighlight #(rgb-color 0.2 1 0.592)
                                   %! SPANNER_START
                                   %! baca._do_spanner_indicator_command(1)
                                   %! baca.trill_spanner()
                                 \pitchedTrill
                                 c'2.
-                                ^ \markup scr.
+                                \sf
+                                \>
                                   %! SPANNER_START
                                   %! baca._do_spanner_indicator_command(1)
                                   %! baca.trill_spanner()
@@ -1241,22 +1405,20 @@
                                   %! SPANNER_START
                                   %! baca._do_spanner_indicator_command(1)
                                   %! baca.trill_spanner()
-                                - \tweak staff-padding 2
+                                - \tweak staff-padding 4
                                   %! SPANNER_START
                                   %! baca._do_spanner_indicator_command(1)
                                   %! baca.trill_spanner()
                                 \startTrillSpan e'
-                                  %! MATERIAL_COLOR
-                                \stopStaffHighlight
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 6]
-                                  %! MATERIAL_COLOR
-                                \staffHighlight #(rgb-color 0.6 0.6 1)
                                 \tweak Accidental.stencil #ly:text-interface::print
                                 \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                                 ef'!2
+                                - \espressivo
+                                \mp
                                 ^ \markup \center-align { \concat { +14 } }
                                 \stopTrillSpan
                                 ~
@@ -1271,6 +1433,7 @@
                                 \tweak Accidental.stencil #ly:text-interface::print
                                 \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                                 ef'!2
+                                - \espressivo
                                 ^ \markup \center-align { \concat { +14 } }
 
                                   %! COMMENT_MEASURE_NUMBERS
@@ -1279,6 +1442,7 @@
                                 \tweak Accidental.stencil #ly:text-interface::print
                                 \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                                 ef'!1
+                                - \espressivo
                                 ^ \markup \center-align { \concat { +14 } }
                                 ~
 
@@ -1292,6 +1456,7 @@
                                 \tweak Accidental.stencil #ly:text-interface::print
                                 \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                                 ef'!1
+                                - \espressivo
                                 ^ \markup \center-align { \concat { +14 } }
 
                                   %! COMMENT_MEASURE_NUMBERS
@@ -1300,14 +1465,13 @@
                                 \tweak Accidental.stencil #ly:text-interface::print
                                 \tweak Accidental.text \markup { \natural-one-syntonic-comma-down  }
                                 e'!1
+                                - \espressivo
                                 ^ \markup \center-align { \concat { -16 } }
                                 ~
 
                                 \tweak Accidental.stencil #ly:text-interface::print
                                 \tweak Accidental.text \markup { \natural-one-syntonic-comma-down  }
                                 e'4
-                                  %! MATERIAL_COLOR
-                                \stopStaffHighlight
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
@@ -1317,11 +1481,11 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 12]
-                                  %! MATERIAL_COLOR
-                                \staffHighlight #(rgb-color 0.6 0.6 1)
                                 \tweak Accidental.stencil #ly:text-interface::print
                                 \tweak Accidental.text \markup { \natural-one-syntonic-comma-down  }
                                 e'!2..
+                                - \espressivo
+                                \mf
                                 ^ \markup \center-align { \concat { -16 } }
 
                                   %! COMMENT_MEASURE_NUMBERS
@@ -1330,6 +1494,7 @@
                                 \tweak Accidental.stencil #ly:text-interface::print
                                 \tweak Accidental.text \markup \concat { \one-tridecimal-third-tone-up \hspace #0.125 \one-septimal-comma-down \hspace #0.125 \double-flat  }
                                 bff!2.
+                                - \espressivo
                                 ^ \markup \center-align { \concat { +19 } }
 
                                   %! COMMENT_MEASURE_NUMBERS
@@ -1338,14 +1503,13 @@
                                 \tweak Accidental.stencil #ly:text-interface::print
                                 \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \double-flat  }
                                 bff!1
+                                - \espressivo
                                 ^ \markup \center-align { \concat { -47 } }
                                 ~
 
                                 \tweak Accidental.stencil #ly:text-interface::print
                                 \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \double-flat  }
                                 bff8
-                                  %! MATERIAL_COLOR
-                                \stopStaffHighlight
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
@@ -1356,10 +1520,12 @@
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 16]
                                 \harmonicsOn
-                                  %! MATERIAL_COLOR
-                                \staffHighlight #(rgb-color 1 0.2 0.2)
                                 \override Staff.Stem.stemlet-length = 0.75
                                 a'16
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \p
                                 [
                                 (
                                   %! SPANNER_START
@@ -1373,7 +1539,7 @@
                                   %! SPANNER_START
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.text_spanner()
-                                - \tweak staff-padding 2
+                                - \tweak staff-padding 3.5
                                   %! SPANNER_START
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.text_spanner()
@@ -1401,7 +1567,7 @@
                                   %! SPANNER_START
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.text_spanner()
-                                - \tweak staff-padding 4
+                                - \tweak staff-padding 5.5
                                   %! SPANNER_START
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.text_spanner()
@@ -1418,6 +1584,10 @@
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.text_spanner()
                                 \startTextSpanTwo
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \<
 
                                 g'16
 
@@ -1431,7 +1601,15 @@
 
                                 \override Staff.Stem.stemlet-length = 0.75
                                 fs'16
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \f
                                 [
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \>
 
                                 g'16
                                 )
@@ -1448,8 +1626,16 @@
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     af'16
+                                      %! SPANNER_STOP
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \p
                                     )
                                     [
+                                      %! SPANNER_START
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \<
 
                                     g'16
                                     (
@@ -1460,7 +1646,15 @@
                                     )
 
                                     af'16
+                                      %! SPANNER_STOP
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \f
                                     (
+                                      %! SPANNER_START
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \>
 
                                     fs'16
 
@@ -1471,6 +1665,14 @@
                                     (
 
                                     f'16
+                                      %! SPANNER_STOP
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \p
+                                      %! SPANNER_START
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \<
 
                                     \revert Staff.Stem.stemlet-length
                                     fs'16
@@ -1490,6 +1692,10 @@
                                     g'16
 
                                     fs'16
+                                      %! SPANNER_STOP
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \f
                                     )
 
                                     f'16
@@ -1508,8 +1714,6 @@
                                     \stopTextSpanTwo
                                     ]
                                     \harmonicsOff
-                                      %! MATERIAL_COLOR
-                                    \stopStaffHighlight
 
                                 }
 
@@ -1522,10 +1726,12 @@
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 18]
                                 \half-harmonic
-                                  %! MATERIAL_COLOR
-                                \staffHighlight #(rgb-color 1 0.2 0.2)
                                 \override Staff.Stem.stemlet-length = 0.75
                                 a'16
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \p
                                 [
                                 (
                                   %! SPANNER_START
@@ -1539,7 +1745,7 @@
                                   %! SPANNER_START
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.text_spanner()
-                                - \tweak staff-padding 2
+                                - \tweak staff-padding 3.5
                                   %! SPANNER_START
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.text_spanner()
@@ -1567,7 +1773,7 @@
                                   %! SPANNER_START
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.text_spanner()
-                                - \tweak staff-padding 4
+                                - \tweak staff-padding 5.5
                                   %! SPANNER_START
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.text_spanner()
@@ -1584,6 +1790,14 @@
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.text_spanner()
                                 \startTextSpanTwo
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                - \tweak stencil #abjad-flared-hairpin
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \<
 
                                 g'16
 
@@ -1603,7 +1817,15 @@
                                     [
 
                                     g'16
+                                      %! SPANNER_STOP
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \f
                                     )
+                                      %! SPANNER_START
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \>
 
                                     b'16
                                     (
@@ -1625,7 +1847,19 @@
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     af'16
+                                      %! SPANNER_STOP
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \p
                                     [
+                                      %! SPANNER_START
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    - \tweak stencil #abjad-flared-hairpin
+                                      %! SPANNER_START
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \<
 
                                     a'16
                                     )
@@ -1644,8 +1878,16 @@
 
                                 \override Staff.Stem.stemlet-length = 0.75
                                 e'16
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \f
                                 [
                                 (
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \>
 
                                 \revert Staff.Stem.stemlet-length
                                 f'16
@@ -1669,7 +1911,19 @@
                                     g'32
 
                                     fs'32
+                                      %! SPANNER_STOP
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \p
                                     )
+                                      %! SPANNER_START
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    - \tweak stencil #abjad-flared-hairpin
+                                      %! SPANNER_START
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \<
 
                                     f'32
                                     (
@@ -1689,6 +1943,14 @@
                                 (
 
                                 af'16
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \f
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \>
 
                                 g'16
                                 )
@@ -1709,7 +1971,19 @@
                                     )
 
                                     af'16
+                                      %! SPANNER_STOP
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \p
                                     (
+                                      %! SPANNER_START
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    - \tweak stencil #abjad-flared-hairpin
+                                      %! SPANNER_START
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \<
 
                                     fs'16
 
@@ -1731,7 +2005,15 @@
                                 [
 
                                 fs'16
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \f
                                 )
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \>
 
                                 g'16
                                 (
@@ -1749,6 +2031,18 @@
                                 (
 
                                 e'16
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \p
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                - \tweak stencil #abjad-flared-hairpin
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \<
 
                                 \revert Staff.Stem.stemlet-length
                                 f'16
@@ -1769,7 +2063,15 @@
                                     )
 
                                     f'16
+                                      %! SPANNER_STOP
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \f
                                     (
+                                      %! SPANNER_START
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \>
 
                                     fs'16
 
@@ -1791,6 +2093,10 @@
                                     e'16
 
                                     ef'16
+                                      %! SPANNER_STOP
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \p
                                     )
 
                                     d'16
@@ -1810,8 +2116,6 @@
                                     ]
                                     \bar "||"
                                     \revert-noteheads
-                                      %! MATERIAL_COLOR
-                                    \stopStaffHighlight
 
                                 }
 
@@ -1838,16 +2142,15 @@
                                 \set Staff.instrumentName = \markup { \hcenter-in #14 "Violoncello" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup { \hcenter-in #12 "vc." }
-                                  %! MATERIAL_COLOR
-                                \staffHighlight #(rgb-color 0.2 1 0.592)
                                 \vibrato #'(0 1 4 2) #2 #0.2
-                                c'4.
+                                c4.
                                   %! baca.bcps(6)
                                 - \tweak self-alignment-X #left
                                   %! baca.bcps(6)
                                 - \tweak staff-padding 4.5
                                   %! baca.bcps(6)
                                 - \downbow
+                                \mp
                                   %! baca.bcps(2)
                                 - \tweak staff-padding 2.5
                                   %! baca.bcps(2)
@@ -1866,24 +2169,24 @@
                                   %! baca.trill_spanner()
                                 \startTrillSpan
 
-                                c'4
+                                c4
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 2]
-                                c'2
+                                c2
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 3]
-                                c'4
+                                c4
                                   %! abjad.glissando(7)
                                 \glissando
 
                                 \vibrato #'(6 5 0 1 4) #3 #0.2
-                                d'2.
+                                d2.
                                   %! baca.bcps(3)
                                 \bacaStopTextSpanBCP
                                   %! SPANNER_STOP
@@ -1911,12 +2214,12 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 4]
-                                d'4.
+                                d4.
                                   %! abjad.glissando(7)
                                 \glissando
 
                                 \vibrato #'(2 6 5 0 1 4) #5 #0.2
-                                dqs'2
+                                ef2
                                   %! baca.bcps(7)
                                 - \tweak self-alignment-X #left
                                   %! baca.bcps(7)
@@ -1934,7 +2237,7 @@
                                   %! baca.bcps(2)
                                 - \abjad-solid-line-with-arrow
                                   %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #8
+                                - \baca-bcp-spanner-left-text #8 #8
                                   %! baca.bcps(2)
                                 \bacaStartTextSpanBCP
                                 ~
@@ -1950,7 +2253,7 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 5]
-                                dqs'2.
+                                ef2.
                                   %! abjad.glissando(7)
                                 \glissando
 
@@ -1958,19 +2261,102 @@
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 6]
                                 \vibrato #'(2 6 5 0) #3 #0.2
-                                ef'4.
-                                  %! baca.bcps(8)
-                                - \tweak self-alignment-X #left
-                                  %! baca.bcps(8)
-                                - \tweak staff-padding 4.5
-                                  %! baca.bcps(8)
-                                - \downbow
+                                a,4.
                                   %! baca.bcps(3)
                                 \bacaStopTextSpanBCP
                                   %! SPANNER_STOP
                                   %! baca._do_spanner_indicator_command(2)
                                   %! baca.trill_spanner()
                                 \stopTrillSpan
+                                  %! baca.bcps(2)
+                                - \tweak staff-padding 2.5
+                                  %! baca.bcps(2)
+                                - \abjad-solid-line-with-arrow
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-left-text #7 #8
+                                  %! baca.bcps(2)
+                                \bacaStartTextSpanBCP
+                                ~
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak staff-padding 6
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \startTrillSpan
+
+                                a,4
+                                ~
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [cello voice measure 7]
+                                a,4
+                                ~
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                a,8
+                                [
+                                  %! abjad.glissando(7)
+                                \glissando
+
+                                \vibrato #'(1 4 2 6 5) #2 #0.2
+                                \revert Staff.Stem.stemlet-length
+                                bf,8
+                                  %! baca.bcps(3)
+                                \bacaStopTextSpanBCP
+                                  %! SPANNER_STOP
+                                  %! baca._do_spanner_indicator_command(2)
+                                  %! baca.trill_spanner()
+                                \stopTrillSpan
+                                ]
+                                  %! baca.bcps(2)
+                                - \tweak staff-padding 2.5
+                                  %! baca.bcps(2)
+                                - \abjad-solid-line-with-arrow
+                                  %! baca.bcps(2)
+                                - \baca-bcp-spanner-left-text #6 #8
+                                  %! baca.bcps(2)
+                                \bacaStartTextSpanBCP
+                                ~
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                - \tweak staff-padding 6
+                                  %! SPANNER_START
+                                  %! baca._do_spanner_indicator_command(1)
+                                  %! baca.trill_spanner()
+                                \startTrillSpan
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [cello voice measure 8]
+                                bf,2.
+                                ~
+
+                                bf,4.
+                                ~
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [cello voice measure 9]
+                                \override Staff.Stem.stemlet-length = 0.75
+                                bf,8
+                                [
+                                  %! abjad.glissando(7)
+                                \glissando
+
+                                \vibrato #'(0 1 4 2 6 5) #3 #0.2
+                                \revert Staff.Stem.stemlet-length
+                                c8
+                                  %! baca.bcps(3)
+                                \bacaStopTextSpanBCP
+                                  %! SPANNER_STOP
+                                  %! baca._do_spanner_indicator_command(2)
+                                  %! baca.trill_spanner()
+                                \stopTrillSpan
+                                ]
                                   %! baca.bcps(2)
                                 - \tweak staff-padding 2.5
                                   %! baca.bcps(2)
@@ -1989,113 +2375,18 @@
                                   %! baca.trill_spanner()
                                 \startTrillSpan
 
-                                ef'4
-                                ~
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [cello voice measure 7]
-                                ef'4
-                                ~
-
-                                \override Staff.Stem.stemlet-length = 0.75
-                                ef'8
-                                [
-                                  %! abjad.glissando(7)
-                                \glissando
-
-                                \vibrato #'(1 4 2 6 5) #2 #0.2
-                                \revert Staff.Stem.stemlet-length
-                                dqf'8
-                                  %! baca.bcps(7)
-                                - \tweak self-alignment-X #left
-                                  %! baca.bcps(7)
-                                - \tweak staff-padding 4.5
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! SPANNER_STOP
-                                  %! baca._do_spanner_indicator_command(2)
-                                  %! baca.trill_spanner()
-                                \stopTrillSpan
-                                ]
-                                  %! baca.bcps(2)
-                                - \tweak staff-padding 2.5
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #8
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-                                ~
-                                  %! SPANNER_START
-                                  %! baca._do_spanner_indicator_command(1)
-                                  %! baca.trill_spanner()
-                                - \tweak staff-padding 6
-                                  %! SPANNER_START
-                                  %! baca._do_spanner_indicator_command(1)
-                                  %! baca.trill_spanner()
-                                \startTrillSpan
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [cello voice measure 8]
-                                dqf'2.
-                                ~
-
-                                dqf'4.
-                                ~
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [cello voice measure 9]
-                                \override Staff.Stem.stemlet-length = 0.75
-                                dqf'8
-                                [
-                                  %! abjad.glissando(7)
-                                \glissando
-
-                                \vibrato #'(0 1 4 2 6 5) #3 #0.2
-                                \revert Staff.Stem.stemlet-length
-                                aqf8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! SPANNER_STOP
-                                  %! baca._do_spanner_indicator_command(2)
-                                  %! baca.trill_spanner()
-                                \stopTrillSpan
-                                ]
-                                  %! baca.bcps(2)
-                                - \tweak staff-padding 2.5
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #8
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-                                ~
-                                  %! SPANNER_START
-                                  %! baca._do_spanner_indicator_command(1)
-                                  %! baca.trill_spanner()
-                                - \tweak staff-padding 6
-                                  %! SPANNER_START
-                                  %! baca._do_spanner_indicator_command(1)
-                                  %! baca.trill_spanner()
-                                \startTrillSpan
-
-                                aqf2.
+                                c2.
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 10]
-                                aqf4
+                                c4
                                   %! abjad.glissando(7)
                                 \glissando
 
                                 \vibrato #'(0 1 4 2) #5 #0.2
-                                a1
+                                cs1
                                   %! baca.bcps(8)
                                 - \tweak self-alignment-X #left
                                   %! baca.bcps(8)
@@ -2129,12 +2420,12 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 11]
-                                a4
+                                cs4
                                   %! abjad.glissando(7)
                                 \glissando
 
                                 \vibrato #'(6 5 0 1 4) #3 #0.2
-                                cs'2.
+                                g,2.
                                   %! baca.bcps(3)
                                 \bacaStopTextSpanBCP
                                   %! SPANNER_STOP
@@ -2162,12 +2453,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 12]
-                                cs'4
-                                  %! abjad.glissando(7)
-                                \glissando
+                                g,4
 
                                 \vibrato #'(2 6 5 0 1 4) #2 #0.2
-                                cqs'8
+                                g,8
                                   %! baca.bcps(7)
                                 - \tweak self-alignment-X #left
                                   %! baca.bcps(7)
@@ -2185,7 +2474,7 @@
                                   %! baca.bcps(2)
                                 - \abjad-solid-line-with-arrow
                                   %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #8
+                                - \baca-bcp-spanner-left-text #8 #8
                                   %! baca.bcps(2)
                                 \bacaStartTextSpanBCP
                                 ~
@@ -2198,13 +2487,13 @@
                                   %! baca.trill_spanner()
                                 \startTrillSpan
 
-                                cqs'2
+                                g,2
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 13]
-                                cqs'2.
+                                g,2.
                                   %! abjad.glissando(7)
                                 \glissando
 
@@ -2212,13 +2501,7 @@
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 14]
                                 \vibrato #'(2 6 5 0) #3 #0.2
-                                c'2.
-                                  %! baca.bcps(8)
-                                - \tweak self-alignment-X #left
-                                  %! baca.bcps(8)
-                                - \tweak staff-padding 4.5
-                                  %! baca.bcps(8)
-                                - \downbow
+                                a,2.
                                   %! baca.bcps(3)
                                 \bacaStopTextSpanBCP
                                   %! SPANNER_STOP
@@ -2230,7 +2513,7 @@
                                   %! baca.bcps(2)
                                 - \abjad-solid-line-with-arrow
                                   %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #8
+                                - \baca-bcp-spanner-left-text #7 #8
                                   %! baca.bcps(2)
                                 \bacaStartTextSpanBCP
                                 ~
@@ -2243,7 +2526,7 @@
                                   %! baca.trill_spanner()
                                 \startTrillSpan
 
-                                c'4.
+                                a,4.
                                   %! abjad.glissando(7)
                                 \glissando
 
@@ -2251,13 +2534,7 @@
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 15]
                                 \vibrato #'(1 4 2 6 5) #5 #0.2
-                                d'1
-                                  %! baca.bcps(7)
-                                - \tweak self-alignment-X #left
-                                  %! baca.bcps(7)
-                                - \tweak staff-padding 4.5
-                                  %! baca.bcps(7)
-                                - \upbow
+                                bf,1
                                   %! baca.bcps(3)
                                 \bacaStopTextSpanBCP
                                   %! SPANNER_STOP
@@ -2269,7 +2546,7 @@
                                   %! baca.bcps(2)
                                 - \abjad-solid-line-with-arrow
                                   %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #8
+                                - \baca-bcp-spanner-left-text #6 #8
                                   %! baca.bcps(2)
                                 \bacaStartTextSpanBCP
                                 ~
@@ -2285,12 +2562,12 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 16]
-                                d'4
+                                bf,4
                                   %! abjad.glissando(7)
                                 \glissando
 
                                 \vibrato #'(0 1 4 2 6 5) #3 #0.2
-                                dqs'1
+                                e,1
                                   %! baca.bcps(3)
                                 \bacaStopTextSpanBCP
                                   %! SPANNER_STOP
@@ -2302,7 +2579,7 @@
                                   %! baca.bcps(2)
                                 - \abjad-solid-line-with-arrow
                                   %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #8
+                                - \baca-bcp-spanner-left-text #1 #8
                                   %! baca.bcps(2)
                                 \bacaStartTextSpanBCP
                                   %! abjad.glissando(7)
@@ -2320,7 +2597,7 @@
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 17]
                                 \vibrato #'(0 1 4 2) #2 #0.2
-                                ef'1
+                                f,1
                                   %! baca.bcps(8)
                                 - \tweak self-alignment-X #left
                                   %! baca.bcps(8)
@@ -2356,12 +2633,12 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 18]
-                                ef'4.
+                                f,4.
                                   %! abjad.glissando(7)
                                 \glissando
 
                                 \vibrato #'(6 5 0 1 4) #3 #0.2
-                                dqf'2
+                                g,2
                                   %! baca.bcps(1)
                                 \bacaStopTextSpanBCP
                                   %! SPANNER_STOP
@@ -2377,8 +2654,6 @@
                                   %! baca.trill_spanner()
                                 \startTrillSpan
                                 \revert-noteheads
-                                  %! MATERIAL_COLOR
-                                \stopStaffHighlight
 
                                 \times 8/9
                                 {
@@ -2387,12 +2662,15 @@
                                       %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 19]
                                     \harmonicsOn
-                                      %! MATERIAL_COLOR
-                                    \staffHighlight #(rgb-color 1 0.2 0.2)
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    a'16
+                                    a16
+                                      %! SPANNER_STOP
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \p
                                     \stopTrillSpan
                                     [
+                                    (
                                       %! SPANNER_START
                                       %! baca.PiecewiseCommand._call(2)
                                       %! baca.text_spanner()
@@ -2404,7 +2682,7 @@
                                       %! SPANNER_START
                                       %! baca.PiecewiseCommand._call(2)
                                       %! baca.text_spanner()
-                                    - \tweak staff-padding 2
+                                    - \tweak staff-padding 3.5
                                       %! SPANNER_START
                                       %! baca.PiecewiseCommand._call(2)
                                       %! baca.text_spanner()
@@ -2432,7 +2710,7 @@
                                       %! SPANNER_START
                                       %! baca.PiecewiseCommand._call(2)
                                       %! baca.text_spanner()
-                                    - \tweak staff-padding 4
+                                    - \tweak staff-padding 5.5
                                       %! SPANNER_START
                                       %! baca.PiecewiseCommand._call(2)
                                       %! baca.text_spanner()
@@ -2449,41 +2727,76 @@
                                       %! baca.PiecewiseCommand._call(2)
                                       %! baca.text_spanner()
                                     \startTextSpanTwo
-                                    ^ (
+                                      %! SPANNER_START
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    - \tweak stencil #abjad-flared-hairpin
+                                      %! SPANNER_START
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \<
 
-                                    g'16
+                                    g16
 
-                                    fs'16
+                                    fs16
 
-                                    e'16
+                                    e16
 
-                                    d'16
+                                    d16
+                                      %! SPANNER_STOP
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \f
+                                      %! SPANNER_START
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \>
 
-                                    c'16
+                                    c16
 
-                                    b16
+                                    b,16
                                     )
 
-                                    b'16
-                                    ^ (
+                                    b16
+                                    (
 
                                     \revert Staff.Stem.stemlet-length
-                                    a'16
+                                    a16
+                                      %! SPANNER_STOP
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \p
                                     ]
+                                      %! SPANNER_START
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    - \tweak stencil #abjad-flared-hairpin
+                                      %! SPANNER_START
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \<
 
                                 }
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                af'16
+                                af16
                                 [
 
-                                fs'16
+                                fs16
 
-                                e'16
+                                e16
 
                                 \revert Staff.Stem.stemlet-length
-                                d'16
+                                d16
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \f
                                 ]
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \>
 
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 8/7
@@ -2493,68 +2806,112 @@
                                       %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 20]
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    cs'32
+                                    cs32
                                     )
                                     [
 
-                                    bf'32
-                                    ^ (
+                                    bf32
+                                    (
 
-                                    af'32
+                                    af32
 
-                                    g'32
+                                    g32
+                                      %! SPANNER_STOP
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \p
+                                      %! SPANNER_START
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    - \tweak stencil #abjad-flared-hairpin
+                                      %! SPANNER_START
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \<
 
-                                    f'32
+                                    f32
 
-                                    ef'32
+                                    ef32
 
                                     \revert Staff.Stem.stemlet-length
-                                    cs'32
+                                    cs32
                                     ]
 
                                 }
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                c'16
+                                c16
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \f
                                 )
                                 [
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \>
 
-                                a'16
-                                ^ (
+                                a16
+                                (
 
-                                g'16
+                                g16
 
                                 \revert Staff.Stem.stemlet-length
-                                fs'16
+                                fs16
                                 ]
 
                                 \times 4/5
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    e'16
+                                    e16
+                                      %! SPANNER_STOP
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \p
                                     [
+                                      %! SPANNER_START
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    - \tweak stencil #abjad-flared-hairpin
+                                      %! SPANNER_START
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \<
 
-                                    d'16
+                                    d16
 
-                                    c'16
+                                    c16
 
-                                    b16
+                                    b,16
                                     )
 
-                                    c''16
-                                    ^ (
+                                    c'16
+                                      %! SPANNER_STOP
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \f
+                                    (
+                                      %! SPANNER_START
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \>
 
-                                    bf'16
+                                    bf16
 
-                                    a'16
+                                    a16
 
-                                    g'16
+                                    g16
 
-                                    f'16
+                                    f16
+                                      %! SPANNER_STOP
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \p
 
                                     \revert Staff.Stem.stemlet-length
-                                    ef'16
+                                    ef16
                                     )
                                       %! SPANNER_STOP
                                       %! baca.PiecewiseCommand._call(3)
@@ -2567,8 +2924,6 @@
                                     ]
                                     \bar "||"
                                     \harmonicsOff
-                                      %! MATERIAL_COLOR
-                                    \stopStaffHighlight
 
                                 }
 

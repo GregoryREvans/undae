@@ -1,7 +1,7 @@
 \version "2.22.1"  %2.23.2
 \language "english" %! LilyPondFile
 
-\include "../score_stylesheet.ily"                                      %! LilyPondFile
+\include "../parts_stylesheet.ily"                                      %! LilyPondFile
 \include "abjad.ily" %! LilyPondFile
 
 \header { %! LilyPondFile
@@ -24,6 +24,7 @@
             \include "10.ly"
             \include "11.ly"
             \include "12.ly"
+            \include "13.ly"
     	}
     >>
 %{ \midi{} %}

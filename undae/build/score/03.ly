@@ -155,256 +155,548 @@
                                         \set Staff.instrumentName = \markup { \hcenter-in #14 "Violin I" }
                                           %! applying staff names and clefs
                                         \set Staff.shortInstrumentName = \markup { \hcenter-in #12 "vn. I" }
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 0.961 0.961 0.406)
-                                        <bf' f''>4
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        \tweak NoteHead.style #'harmonic
+                                        d'16
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \p
+                                        [
+                                        (
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \<
 
-                                        <cs''' g'''>4
+                                        \tweak NoteHead.style #'harmonic
+                                        bf'16
 
-                                        \times 2/3
+                                        \tweak NoteHead.style #'harmonic
+                                        fs''16
+
+                                        \revert Staff.Stem.stemlet-length
+                                        \tweak NoteHead.style #'harmonic
+                                        d'''16
+                                        )
+                                        ]
+
+                                        \times 4/5
                                         {
 
-                                            <cs''' g'''>4
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak NoteHead.style #'harmonic
+                                            d'''16
+                                            [
+                                            (
 
-                                            <cs''' g'''>8
-                                            ~
+                                            \tweak NoteHead.style #'harmonic
+                                            fs''16
+
+                                            \tweak NoteHead.style #'harmonic
+                                            bf'16
+
+                                            \tweak NoteHead.style #'harmonic
+                                            d'16
+                                            )
+
+                                            \revert Staff.Stem.stemlet-length
+                                            ef'16
+                                            ]
+                                            (
 
                                         }
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        <cs''' g'''>8
+                                        \tweak NoteHead.style #'harmonic
+                                        b'16
                                         [
 
-                                        \revert Staff.Stem.stemlet-length
-                                        <bf' f''>8
-                                        ]
-                                        ~
+                                        \tweak NoteHead.style #'harmonic
+                                        g''16
 
-                                        \times 4/5
+                                        \tweak NoteHead.style #'harmonic
+                                        ef'''16
+                                        )
+
+                                        \revert Staff.Stem.stemlet-length
+                                        \tweak NoteHead.style #'harmonic
+                                        ef'''16
+                                        ]
+                                        (
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        \tweak NoteHead.style #'harmonic
+                                        g''16
+                                        [
+
+                                        \tweak NoteHead.style #'harmonic
+                                        b'16
+
+                                        ef'16
+                                        )
+
+                                        \revert Staff.Stem.stemlet-length
+                                        fs'16
+                                        ]
+                                        (
+
+                                        \times 2/3
                                         {
 
                                               %! COMMENT_MEASURE_NUMBERS
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 2]
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            <bf' f''>8
+                                            \tweak NoteHead.style #'harmonic
+                                            d''16
                                             [
 
+                                            \tweak NoteHead.style #'harmonic
+                                            bf''16
+
+                                            \tweak NoteHead.style #'harmonic
+                                            fs'''16
+                                            )
+
+                                            \tweak NoteHead.style #'harmonic
+                                            fs'''16
+                                            (
+
+                                            \tweak NoteHead.style #'harmonic
+                                            bf''16
+
                                             \revert Staff.Stem.stemlet-length
-                                            <bf' f''>8.
+                                            \tweak NoteHead.style #'harmonic
+                                            d''16
                                             ]
-                                            ~
 
                                         }
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        <bf' f''>16
+                                        fs'16
+                                        )
                                         [
 
                                         \revert Staff.Stem.stemlet-length
-                                        <cs''' g'''>16
+                                        \tweak NoteHead.style #'harmonic
+                                        e'16
                                         ]
-                                        ~
+                                        (
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        <cs''' g'''>8
-                                        [
-                                        ~
-
-                                        <cs''' g'''>16
-
-                                        \revert Staff.Stem.stemlet-length
-                                        <cs''' g'''>16
-                                        ]
-                                        ~
-
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        <cs''' g'''>8
-                                        [
-                                        ~
-
-                                        <cs''' g'''>16
-
-                                        \revert Staff.Stem.stemlet-length
-                                        <cs''' g'''>16
-                                        ]
-                                        ~
-
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 1 voice measure 3]
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        <cs''' g'''>8.
+                                        \tweak NoteHead.style #'harmonic
+                                        c''16
                                         [
 
                                         \revert Staff.Stem.stemlet-length
-                                        <bf' f''>16
+                                        \tweak NoteHead.style #'harmonic
+                                        af''16
                                         ]
-                                        ~
 
                                         \times 4/5
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            <bf' f''>8.
+                                            \tweak NoteHead.style #'harmonic
+                                            e'''16
+                                            )
                                             [
 
+                                            \tweak NoteHead.style #'harmonic
+                                            e'''16
+                                            (
+
+                                            \tweak NoteHead.style #'harmonic
+                                            af''16
+
+                                            \tweak NoteHead.style #'harmonic
+                                            c''16
+
                                             \revert Staff.Stem.stemlet-length
-                                            <bf' f''>8
+                                            \tweak NoteHead.style #'harmonic
+                                            e'16
+                                            )
                                             ]
-                                            ~
 
                                         }
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        <bf' f''>8
+                                        f'16
                                         [
+                                        (
 
                                         \revert Staff.Stem.stemlet-length
-                                        <cs''' g'''>8
+                                        \tweak NoteHead.style #'harmonic
+                                        cs''16
                                         ]
-                                        ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 1 voice measure 4]
+                                        % [violin 1 voice measure 3]
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        <cs''' g'''>8
+                                        \tweak NoteHead.style #'harmonic
+                                        a''16
                                         [
 
+                                        \tweak NoteHead.style #'harmonic
+                                        f'''16
+                                        )
+
+                                        \tweak NoteHead.style #'harmonic
+                                        f'''16
+                                        (
+
                                         \revert Staff.Stem.stemlet-length
-                                        <cs''' g'''>8
+                                        \tweak NoteHead.style #'harmonic
+                                        a''16
                                         ]
-                                        ~
 
                                         \times 2/3
                                         {
 
-                                            <cs''' g'''>8
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak NoteHead.style #'harmonic
+                                            cs''16
+                                            [
 
-                                            <cs''' g'''>4
+                                            f'16
+                                            )
+
+                                            g'16
+                                            (
+
+                                            \tweak NoteHead.style #'harmonic
+                                            ef''16
+
+                                            \tweak NoteHead.style #'harmonic
+                                            b''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak NoteHead.style #'harmonic
+                                            g'''16
+                                            )
+                                            ]
 
                                         }
 
-                                        <bf' f''>8
-                                        ~
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        \tweak NoteHead.style #'harmonic
+                                        g'''16
+                                        [
+                                        (
+
+                                        \tweak NoteHead.style #'harmonic
+                                        b''16
+
+                                        \tweak NoteHead.style #'harmonic
+                                        ef''16
+
+                                        \revert Staff.Stem.stemlet-length
+                                        g'16
+                                        )
+                                        ]
 
                                         \times 4/5
                                         {
 
                                               %! COMMENT_MEASURE_NUMBERS
                                               %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 4]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak NoteHead.style #'harmonic
+                                            af'16
+                                            [
+                                            (
+
+                                            \tweak NoteHead.style #'harmonic
+                                            e''16
+
+                                            \tweak NoteHead.style #'harmonic
+                                            c'''16
+
+                                            \tweak NoteHead.style #'harmonic
+                                            af'''16
+                                            )
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak NoteHead.style #'harmonic
+                                            af'''16
+                                            ]
+                                            (
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        \tweak NoteHead.style #'harmonic
+                                        c'''16
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        \tweak NoteHead.style #'harmonic
+                                        e''16
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        \tweak NoteHead.style #'harmonic
+                                        af'16
+                                        )
+                                        [
+
+                                        f'16
+                                        (
+
+                                        \tweak NoteHead.style #'harmonic
+                                        cs''16
+
+                                        \revert Staff.Stem.stemlet-length
+                                        \tweak NoteHead.style #'harmonic
+                                        a''16
+                                        ]
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 5]
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            <bf' f''>8
+                                            \tweak NoteHead.style #'harmonic
+                                            f'''16
+                                            )
                                             [
 
+                                            \tweak NoteHead.style #'harmonic
+                                            f'''16
+                                            (
+
+                                            \tweak NoteHead.style #'harmonic
+                                            a''16
+
+                                            \tweak NoteHead.style #'harmonic
+                                            cs''16
+
+                                            f'16
+                                            )
+
                                             \revert Staff.Stem.stemlet-length
-                                            <bf' f''>8.
+                                            a'16
                                             ]
-                                            ~
+                                            (
 
                                         }
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        <bf' f''>16
+                                        \tweak NoteHead.style #'harmonic
+                                        f''16
                                         [
 
-                                        \revert Staff.Stem.stemlet-length
-                                        <cs''' g'''>8.
-                                        ]
-                                        ~
+                                        \tweak NoteHead.style #'harmonic
+                                        cs'''16
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 1 voice measure 6]
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        <cs''' g'''>16
-                                        [
-
-                                        <cs''' g'''>16
-                                        ~
+                                        \tweak NoteHead.style #'harmonic
+                                        a'''16
+                                        )
 
                                         \revert Staff.Stem.stemlet-length
-                                        <cs''' g'''>8
+                                        \tweak NoteHead.style #'harmonic
+                                        a'''16
                                         ]
-                                        ~
-
-                                        \times 2/3
-                                        {
-
-                                            <cs''' g'''>16
-
-                                            <cs''' g'''>4
-
-                                            <bf' f''>16
-                                            ~
-
-                                        }
-
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        <bf' f''>8
-                                        [
-                                        ~
-
-                                        <bf' f''>16
-
-                                        \revert Staff.Stem.stemlet-length
-                                        <bf' f''>16
-                                        ]
-                                        ~
+                                        (
 
                                         \times 4/5
                                         {
 
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 6]
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            <bf' f''>8.
+                                            \tweak NoteHead.style #'harmonic
+                                            cs'''16
                                             [
 
+                                            \tweak NoteHead.style #'harmonic
+                                            f''16
+
+                                            a'16
+                                            )
+
+                                            \tweak NoteHead.style #'harmonic
+                                            bf'16
+                                            (
+
                                             \revert Staff.Stem.stemlet-length
-                                            <cs''' g'''>8
+                                            \tweak NoteHead.style #'harmonic
+                                            fs''16
                                             ]
-                                            ~
-
-                                        }
-
-                                        <cs''' g'''>8
-
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 1 voice measure 7]
-                                        <cs''' g'''>4
-
-                                        \times 2/3
-                                        {
-
-                                            <cs''' g'''>4
-
-                                            <bf' f''>8
-                                            ~
 
                                         }
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        <bf' f''>8
+                                        \tweak NoteHead.style #'harmonic
+                                        d'''16
                                         [
 
                                         \revert Staff.Stem.stemlet-length
-                                        <bf' f''>8
+                                        \tweak NoteHead.style #'harmonic
+                                        bf'''16
+                                        )
                                         ]
-                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        \tweak NoteHead.style #'harmonic
+                                        bf'''16
+                                        [
+                                        (
+
+                                        \tweak NoteHead.style #'harmonic
+                                        d'''16
+
+                                        \tweak NoteHead.style #'harmonic
+                                        fs''16
+
+                                        \tweak NoteHead.style #'harmonic
+                                        bf'16
+                                        )
+
+                                        cs''16
+                                        (
+
+                                        \revert Staff.Stem.stemlet-length
+                                        \tweak NoteHead.style #'harmonic
+                                        a''16
+                                        ]
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak NoteHead.style #'harmonic
+                                            f'''16
+                                            [
+
+                                            \tweak NoteHead.style #'harmonic
+                                            cs''''16
+                                            )
+
+                                            \tweak NoteHead.style #'harmonic
+                                            cs''''16
+                                            (
+
+                                            \tweak NoteHead.style #'harmonic
+                                            f'''16
+
+                                            \tweak NoteHead.style #'harmonic
+                                            a''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            cs''16
+                                            )
+                                            ]
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        b'16
+                                        [
+                                        (
+
+                                        \revert Staff.Stem.stemlet-length
+                                        \tweak NoteHead.style #'harmonic
+                                        g''16
+                                        ]
 
                                         \times 4/5
                                         {
 
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 7]
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            <bf' f''>8
+                                            \tweak NoteHead.style #'harmonic
+                                            ef'''16
                                             [
 
+                                            \tweak NoteHead.style #'harmonic
+                                            b'''16
+                                            )
+
+                                            \tweak NoteHead.style #'harmonic
+                                            b'''16
+                                            (
+
+                                            \tweak NoteHead.style #'harmonic
+                                            ef'''16
+
                                             \revert Staff.Stem.stemlet-length
-                                            <cs''' g'''>8.
+                                            \tweak NoteHead.style #'harmonic
+                                            g''16
                                             ]
-                                            ~
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        b'16
+                                        )
+                                        [
+
+                                        \tweak NoteHead.style #'harmonic
+                                        c''16
+                                        (
+
+                                        \tweak NoteHead.style #'harmonic
+                                        af''16
+
+                                        \revert Staff.Stem.stemlet-length
+                                        \tweak NoteHead.style #'harmonic
+                                        e'''16
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        \tweak NoteHead.style #'harmonic
+                                        c''''16
+                                        )
+                                        [
+
+                                        \tweak NoteHead.style #'harmonic
+                                        c''''16
+                                        (
+
+                                        \tweak NoteHead.style #'harmonic
+                                        e'''16
+
+                                        \revert Staff.Stem.stemlet-length
+                                        \tweak NoteHead.style #'harmonic
+                                        af''16
+                                        ]
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak NoteHead.style #'harmonic
+                                            c''16
+                                            )
+                                            [
+
+                                            d''16
+                                            (
+
+                                            \tweak NoteHead.style #'harmonic
+                                            bf''16
+
+                                            \tweak NoteHead.style #'harmonic
+                                            fs'''16
+
+                                            \tweak NoteHead.style #'harmonic
+                                            d''''16
+                                            )
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak NoteHead.style #'harmonic
+                                            d''''16
+                                            ]
+                                            (
 
                                         }
 
@@ -412,55 +704,108 @@
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 8]
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        <cs''' g'''>16
+                                        \tweak NoteHead.style #'harmonic
+                                        fs'''16
                                         [
 
-                                        \revert Staff.Stem.stemlet-length
-                                        <cs''' g'''>8.
-                                        ]
-                                        ~
+                                        \tweak NoteHead.style #'harmonic
+                                        bf''16
 
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        <cs''' g'''>16
-                                        [
+                                        d''16
+                                        )
 
                                         \revert Staff.Stem.stemlet-length
-                                        <cs''' g'''>8.
+                                        ef''16
                                         ]
-                                        ~
-
-                                        \times 2/3
-                                        {
-
-                                            <cs''' g'''>16
-
-                                            <bf' f''>4
-
-                                            <bf' f''>16
-                                            ~
-
-                                        }
-
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        <bf' f''>8.
-                                        [
-
-                                        \revert Staff.Stem.stemlet-length
-                                        <cs''' g'''>16
-                                        ]
-                                        ~
+                                        (
 
                                         \times 4/5
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            <cs''' g'''>8.
+                                            \tweak NoteHead.style #'harmonic
+                                            b''16
                                             [
 
+                                            \tweak NoteHead.style #'harmonic
+                                            g'''16
+
+                                            \tweak NoteHead.style #'harmonic
+                                            ef''''16
+                                            )
+
+                                            \tweak NoteHead.style #'harmonic
+                                            ef''''16
+                                            (
+
                                             \revert Staff.Stem.stemlet-length
-                                            <cs''' g'''>8
+                                            \tweak NoteHead.style #'harmonic
+                                            g'''16
                                             ]
-                                            ~
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        \tweak NoteHead.style #'harmonic
+                                        b''16
+                                        [
+
+                                        ef''16
+                                        )
+
+                                        \tweak NoteHead.style #'harmonic
+                                        c''16
+                                        (
+
+                                        \revert Staff.Stem.stemlet-length
+                                        \tweak NoteHead.style #'harmonic
+                                        af''16
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        \tweak NoteHead.style #'harmonic
+                                        e'''16
+                                        [
+
+                                        \tweak NoteHead.style #'harmonic
+                                        c''''16
+                                        )
+
+                                        \tweak NoteHead.style #'harmonic
+                                        c''''16
+                                        (
+
+                                        \revert Staff.Stem.stemlet-length
+                                        \tweak NoteHead.style #'harmonic
+                                        e'''16
+                                        ]
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak NoteHead.style #'harmonic
+                                            af''16
+                                            [
+
+                                            \tweak NoteHead.style #'harmonic
+                                            c''16
+                                            )
+
+                                            e''16
+                                            (
+
+                                            \tweak NoteHead.style #'harmonic
+                                            c'''16
+
+                                            \tweak NoteHead.style #'harmonic
+                                            af'''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak NoteHead.style #'harmonic
+                                            e''''16
+                                            )
+                                            ]
 
                                         }
 
@@ -468,35 +813,85 @@
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 9]
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        <cs''' g'''>8
+                                        \tweak NoteHead.style #'harmonic
+                                        e''''16
                                         [
+                                        (
+
+                                        \tweak NoteHead.style #'harmonic
+                                        af'''16
+
+                                        \tweak NoteHead.style #'harmonic
+                                        c'''16
 
                                         \revert Staff.Stem.stemlet-length
-                                        <cs''' g'''>8
+                                        e''16
+                                        )
                                         ]
-                                        ~
 
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        <cs''' g'''>8
-                                        [
-
-                                        \revert Staff.Stem.stemlet-length
-                                        <bf' f''>8
-                                        ]
-                                        ~
-
-                                        \times 2/3
+                                        \times 4/5
                                         {
 
-                                            <bf' f''>8
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            f''16
+                                            [
+                                            (
 
-                                            <bf' f''>4
+                                            \tweak NoteHead.style #'harmonic
+                                            cs'''16
+
+                                            \tweak NoteHead.style #'harmonic
+                                            a'''16
+
+                                            \tweak NoteHead.style #'harmonic
+                                            f''''16
+                                            )
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak NoteHead.style #'harmonic
+                                            f''''16
+                                            ]
+                                            (
 
                                         }
 
-                                        <cs''' g'''>4
-                                          %! MATERIAL_COLOR
-                                        \stopStaffHighlight
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        \tweak NoteHead.style #'harmonic
+                                        a'''16
+                                        [
+
+                                        \tweak NoteHead.style #'harmonic
+                                        cs'''16
+
+                                        f''16
+                                        )
+
+                                        \revert Staff.Stem.stemlet-length
+                                        \tweak NoteHead.style #'harmonic
+                                        af''16
+                                        ]
+                                        (
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        \tweak NoteHead.style #'harmonic
+                                        e'''16
+                                        [
+
+                                        \tweak NoteHead.style #'harmonic
+                                        c''''16
+
+                                        \tweak NoteHead.style #'harmonic
+                                        af''''16
+                                        )
+
+                                        \revert Staff.Stem.stemlet-length
+                                        \tweak NoteHead.style #'harmonic
+                                        af''''16
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(3)
+                                          %! baca.hairpin()
+                                        \f
+                                        ]
 
                                         \tweak edge-height #'(0.7 . 0)
                                         \times 2/3
@@ -506,10 +901,12 @@
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 10]
                                             \harmonicsOn
-                                              %! MATERIAL_COLOR
-                                            \staffHighlight #(rgb-color 1 0.2 0.2)
                                             \override Staff.Stem.stemlet-length = 0.75
                                             c'16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \p
                                             [
                                             (
                                               %! SPANNER_START
@@ -568,17 +965,45 @@
                                               %! baca.PiecewiseCommand._call(2)
                                               %! baca.text_spanner()
                                             \startTextSpanTwo
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak staff-padding 6
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \abjad-dashed-line-with-hook
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-left-text "clt."
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \startTextSpanThree
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \<
 
                                             cs'16
 
                                             d'16
 
                                             ef'16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \f
                                             )
                                               %! SPANNER_STOP
                                               %! baca.PiecewiseCommand._call(3)
                                               %! baca.text_spanner()
                                             \stopTextSpanOne
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \>
 
                                             cs'16
                                             (
@@ -614,6 +1039,10 @@
                                             d'16
 
                                             ef'16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \p
 
                                             \revert Staff.Stem.stemlet-length
                                             e'16
@@ -623,33 +1052,49 @@
                                               %! baca.text_spanner()
                                             \stopTextSpanOne
                                               %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(4)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanThree
+                                              %! SPANNER_STOP
                                               %! baca.PiecewiseCommand._call(3)
                                               %! baca.text_spanner()
                                             \stopTextSpanTwo
                                             ]
                                             \harmonicsOff
-                                              %! MATERIAL_COLOR
-                                            \stopStaffHighlight
 
                                         }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 11]
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 0.961 0.961 0.406)
                                         <bf' f''>2.
-                                          %! MATERIAL_COLOR
-                                        \stopStaffHighlight
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \ff
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        - \tweak to-barline ##t
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        - \tweak circled-tip ##t
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \>
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 12]
                                         \half-harmonic
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 1 0.2 0.2)
                                         \override Staff.Stem.stemlet-length = 0.75
                                         c'16
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \p
                                         [
                                         (
                                           %! SPANNER_START
@@ -663,7 +1108,7 @@
                                           %! SPANNER_START
                                           %! baca.PiecewiseCommand._call(2)
                                           %! baca.text_spanner()
-                                        - \tweak staff-padding 2
+                                        - \tweak staff-padding 3.25
                                           %! SPANNER_START
                                           %! baca.PiecewiseCommand._call(2)
                                           %! baca.text_spanner()
@@ -691,7 +1136,7 @@
                                           %! SPANNER_START
                                           %! baca.PiecewiseCommand._call(2)
                                           %! baca.text_spanner()
-                                        - \tweak staff-padding 4
+                                        - \tweak staff-padding 5.25
                                           %! SPANNER_START
                                           %! baca.PiecewiseCommand._call(2)
                                           %! baca.text_spanner()
@@ -708,6 +1153,26 @@
                                           %! baca.PiecewiseCommand._call(2)
                                           %! baca.text_spanner()
                                         \startTextSpanTwo
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak staff-padding 7.25
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-dashed-line-with-hook
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "1/2 clt."
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpanThree
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \<
 
                                         cs'16
 
@@ -740,7 +1205,7 @@
                                               %! SPANNER_START
                                               %! baca.PiecewiseCommand._call(2)
                                               %! baca.text_spanner()
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 3.25
                                               %! SPANNER_START
                                               %! baca.PiecewiseCommand._call(2)
                                               %! baca.text_spanner()
@@ -761,6 +1226,14 @@
                                             d'16
 
                                             ef'16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \f
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \>
 
                                             e'16
                                             )
@@ -782,7 +1255,7 @@
                                               %! SPANNER_START
                                               %! baca.PiecewiseCommand._call(2)
                                               %! baca.text_spanner()
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 3.25
                                               %! SPANNER_START
                                               %! baca.PiecewiseCommand._call(2)
                                               %! baca.text_spanner()
@@ -818,6 +1291,10 @@
                                         \stopTextSpanOne
 
                                         d'16
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \p
                                         (
                                           %! SPANNER_START
                                           %! baca.PiecewiseCommand._call(2)
@@ -830,7 +1307,7 @@
                                           %! SPANNER_START
                                           %! baca.PiecewiseCommand._call(2)
                                           %! baca.text_spanner()
-                                        - \tweak staff-padding 2
+                                        - \tweak staff-padding 3.25
                                           %! SPANNER_START
                                           %! baca.PiecewiseCommand._call(2)
                                           %! baca.text_spanner()
@@ -847,6 +1324,10 @@
                                           %! baca.PiecewiseCommand._call(2)
                                           %! baca.text_spanner()
                                         \startTextSpanOne
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \<
 
                                         \revert Staff.Stem.stemlet-length
                                         ef'16
@@ -876,7 +1357,7 @@
                                           %! SPANNER_START
                                           %! baca.PiecewiseCommand._call(2)
                                           %! baca.text_spanner()
-                                        - \tweak staff-padding 2
+                                        - \tweak staff-padding 3.25
                                           %! SPANNER_START
                                           %! baca.PiecewiseCommand._call(2)
                                           %! baca.text_spanner()
@@ -897,6 +1378,14 @@
                                         fs'16
 
                                         g'16
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \f
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \>
 
                                         \revert Staff.Stem.stemlet-length
                                         af'16
@@ -928,7 +1417,7 @@
                                               %! SPANNER_START
                                               %! baca.PiecewiseCommand._call(2)
                                               %! baca.text_spanner()
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 3.25
                                               %! SPANNER_START
                                               %! baca.PiecewiseCommand._call(2)
                                               %! baca.text_spanner()
@@ -959,6 +1448,10 @@
 
                                             \revert Staff.Stem.stemlet-length
                                             f'16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \p
                                             ]
                                             (
                                               %! SPANNER_START
@@ -972,7 +1465,7 @@
                                               %! SPANNER_START
                                               %! baca.PiecewiseCommand._call(2)
                                               %! baca.text_spanner()
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 3.25
                                               %! SPANNER_START
                                               %! baca.PiecewiseCommand._call(2)
                                               %! baca.text_spanner()
@@ -989,6 +1482,10 @@
                                               %! baca.PiecewiseCommand._call(2)
                                               %! baca.text_spanner()
                                             \startTextSpanOne
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \<
 
                                         }
 
@@ -1020,7 +1517,7 @@
                                           %! SPANNER_START
                                           %! baca.PiecewiseCommand._call(2)
                                           %! baca.text_spanner()
-                                        - \tweak staff-padding 2
+                                        - \tweak staff-padding 3.25
                                           %! SPANNER_START
                                           %! baca.PiecewiseCommand._call(2)
                                           %! baca.text_spanner()
@@ -1047,6 +1544,14 @@
                                             [
 
                                             a'32
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \f
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \>
 
                                             bf'32
                                             )
@@ -1068,7 +1573,7 @@
                                               %! SPANNER_START
                                               %! baca.PiecewiseCommand._call(2)
                                               %! baca.text_spanner()
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 3.25
                                               %! SPANNER_START
                                               %! baca.PiecewiseCommand._call(2)
                                               %! baca.text_spanner()
@@ -1103,6 +1608,10 @@
 
                                         \override Staff.Stem.stemlet-length = 0.75
                                         a'16
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \p
                                         [
                                         (
                                           %! SPANNER_START
@@ -1116,7 +1625,7 @@
                                           %! SPANNER_START
                                           %! baca.PiecewiseCommand._call(2)
                                           %! baca.text_spanner()
-                                        - \tweak staff-padding 2
+                                        - \tweak staff-padding 3.25
                                           %! SPANNER_START
                                           %! baca.PiecewiseCommand._call(2)
                                           %! baca.text_spanner()
@@ -1133,6 +1642,10 @@
                                           %! baca.PiecewiseCommand._call(2)
                                           %! baca.text_spanner()
                                         \startTextSpanOne
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \<
 
                                         bf'16
 
@@ -1168,7 +1681,7 @@
                                               %! SPANNER_START
                                               %! baca.PiecewiseCommand._call(2)
                                               %! baca.text_spanner()
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 3.25
                                               %! SPANNER_START
                                               %! baca.PiecewiseCommand._call(2)
                                               %! baca.text_spanner()
@@ -1189,6 +1702,14 @@
                                             a'16
 
                                             bf'16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \f
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \>
 
                                             b'16
                                             )
@@ -1210,7 +1731,7 @@
                                               %! SPANNER_START
                                               %! baca.PiecewiseCommand._call(2)
                                               %! baca.text_spanner()
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 3.25
                                               %! SPANNER_START
                                               %! baca.PiecewiseCommand._call(2)
                                               %! baca.text_spanner()
@@ -1246,6 +1767,10 @@
                                         \stopTextSpanOne
 
                                         b'16
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \p
                                         (
                                           %! SPANNER_START
                                           %! baca.PiecewiseCommand._call(2)
@@ -1258,7 +1783,7 @@
                                           %! SPANNER_START
                                           %! baca.PiecewiseCommand._call(2)
                                           %! baca.text_spanner()
-                                        - \tweak staff-padding 2
+                                        - \tweak staff-padding 3.25
                                           %! SPANNER_START
                                           %! baca.PiecewiseCommand._call(2)
                                           %! baca.text_spanner()
@@ -1275,6 +1800,10 @@
                                           %! baca.PiecewiseCommand._call(2)
                                           %! baca.text_spanner()
                                         \startTextSpanOne
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \<
 
                                         \revert Staff.Stem.stemlet-length
                                         c''16
@@ -1304,7 +1833,7 @@
                                           %! SPANNER_START
                                           %! baca.PiecewiseCommand._call(2)
                                           %! baca.text_spanner()
-                                        - \tweak staff-padding 2
+                                        - \tweak staff-padding 3.25
                                           %! SPANNER_START
                                           %! baca.PiecewiseCommand._call(2)
                                           %! baca.text_spanner()
@@ -1331,7 +1860,15 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             c''16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \f
                                             [
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \>
 
                                             cs''16
                                             )
@@ -1353,7 +1890,7 @@
                                               %! SPANNER_START
                                               %! baca.PiecewiseCommand._call(2)
                                               %! baca.text_spanner()
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 3.25
                                               %! SPANNER_START
                                               %! baca.PiecewiseCommand._call(2)
                                               %! baca.text_spanner()
@@ -1391,6 +1928,10 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             c''16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \p
                                             [
                                             (
                                               %! SPANNER_START
@@ -1404,7 +1945,7 @@
                                               %! SPANNER_START
                                               %! baca.PiecewiseCommand._call(2)
                                               %! baca.text_spanner()
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 3.25
                                               %! SPANNER_START
                                               %! baca.PiecewiseCommand._call(2)
                                               %! baca.text_spanner()
@@ -1421,6 +1962,10 @@
                                               %! baca.PiecewiseCommand._call(2)
                                               %! baca.text_spanner()
                                             \startTextSpanOne
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \<
 
                                             cs''16
 
@@ -1448,7 +1993,7 @@
                                               %! SPANNER_START
                                               %! baca.PiecewiseCommand._call(2)
                                               %! baca.text_spanner()
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 3.25
                                               %! SPANNER_START
                                               %! baca.PiecewiseCommand._call(2)
                                               %! baca.text_spanner()
@@ -1476,6 +2021,14 @@
                                         [
 
                                         ef''16
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \f
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \>
 
                                         e''16
                                         )
@@ -1499,7 +2052,7 @@
                                           %! SPANNER_START
                                           %! baca.PiecewiseCommand._call(2)
                                           %! baca.text_spanner()
-                                        - \tweak staff-padding 2
+                                        - \tweak staff-padding 3.25
                                           %! SPANNER_START
                                           %! baca.PiecewiseCommand._call(2)
                                           %! baca.text_spanner()
@@ -1535,6 +2088,10 @@
                                             \stopTextSpanOne
 
                                             d''32
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \p
                                             (
                                               %! SPANNER_START
                                               %! baca.PiecewiseCommand._call(2)
@@ -1547,7 +2104,7 @@
                                               %! SPANNER_START
                                               %! baca.PiecewiseCommand._call(2)
                                               %! baca.text_spanner()
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 3.25
                                               %! SPANNER_START
                                               %! baca.PiecewiseCommand._call(2)
                                               %! baca.text_spanner()
@@ -1564,6 +2121,10 @@
                                               %! baca.PiecewiseCommand._call(2)
                                               %! baca.text_spanner()
                                             \startTextSpanOne
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \<
 
                                             ef''32
 
@@ -1595,7 +2156,7 @@
                                           %! SPANNER_START
                                           %! baca.PiecewiseCommand._call(2)
                                           %! baca.text_spanner()
-                                        - \tweak staff-padding 2
+                                        - \tweak staff-padding 3.25
                                           %! SPANNER_START
                                           %! baca.PiecewiseCommand._call(2)
                                           %! baca.text_spanner()
@@ -1616,6 +2177,14 @@
                                         fs''16
 
                                         g''16
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \f
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \>
 
                                         \revert Staff.Stem.stemlet-length
                                         af''16
@@ -1644,7 +2213,7 @@
                                               %! SPANNER_START
                                               %! baca.PiecewiseCommand._call(2)
                                               %! baca.text_spanner()
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 3.25
                                               %! SPANNER_START
                                               %! baca.PiecewiseCommand._call(2)
                                               %! baca.text_spanner()
@@ -1674,6 +2243,10 @@
                                             \stopTextSpanOne
 
                                             f''16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \p
                                             (
                                               %! SPANNER_START
                                               %! baca.PiecewiseCommand._call(2)
@@ -1686,7 +2259,7 @@
                                               %! SPANNER_START
                                               %! baca.PiecewiseCommand._call(2)
                                               %! baca.text_spanner()
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 3.25
                                               %! SPANNER_START
                                               %! baca.PiecewiseCommand._call(2)
                                               %! baca.text_spanner()
@@ -1712,14 +2285,16 @@
                                               %! baca.text_spanner()
                                             \stopTextSpanOne
                                               %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(4)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanThree
+                                              %! SPANNER_STOP
                                               %! baca.PiecewiseCommand._call(3)
                                               %! baca.text_spanner()
                                             \stopTextSpanTwo
                                             ]
                                             \bar "||"
                                             \revert-noteheads
-                                              %! MATERIAL_COLOR
-                                            \stopStaffHighlight
 
                                         }
 
@@ -1738,108 +2313,777 @@
                                     \context Voice = "violin 2 voice"
                                     {
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 1]
-                                          %! applying staff names and clefs
-                                        \set Staff.instrumentName = \markup { \hcenter-in #14 "Violin II" }
-                                          %! applying staff names and clefs
-                                        \set Staff.shortInstrumentName = \markup { \hcenter-in #12 "vn. II" }
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 0.961 0.961 0.406)
-                                        <a gs'>4
+                                        \times 2/3
+                                        {
 
-                                        <ef'' d'''>4
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 1]
+                                              %! applying staff names and clefs
+                                            \set Staff.instrumentName = \markup { \hcenter-in #14 "Violin II" }
+                                              %! applying staff names and clefs
+                                            \set Staff.shortInstrumentName = \markup { \hcenter-in #12 "vn. II" }
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak NoteHead.style #'harmonic
+                                            ef'16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \p
+                                            [
+                                            (
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \<
 
-                                        <a gs'>4
+                                            \tweak NoteHead.style #'harmonic
+                                            c''16
 
-                                        <ef'' d'''>4
+                                            \tweak NoteHead.style #'harmonic
+                                            a''16
+
+                                            \tweak NoteHead.style #'harmonic
+                                            fs'''16
+                                            )
+
+                                            \tweak NoteHead.style #'harmonic
+                                            fs'''16
+                                            (
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak NoteHead.style #'harmonic
+                                            a''16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak NoteHead.style #'harmonic
+                                            c''16
+                                            [
+
+                                            \tweak NoteHead.style #'harmonic
+                                            ef'16
+                                            )
+
+                                            ef'16
+                                            (
+
+                                            \tweak NoteHead.style #'harmonic
+                                            c''16
+
+                                            \tweak NoteHead.style #'harmonic
+                                            a''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak NoteHead.style #'harmonic
+                                            fs'''16
+                                            )
+                                            ]
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        \tweak NoteHead.style #'harmonic
+                                        fs'''16
+                                        [
+                                        (
+
+                                        \tweak NoteHead.style #'harmonic
+                                        a''16
+
+                                        \tweak NoteHead.style #'harmonic
+                                        c''16
+
+                                        \revert Staff.Stem.stemlet-length
+                                        ef'16
+                                        )
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        \tweak NoteHead.style #'harmonic
+                                        af'''16
+                                        [
+                                        (
+
+                                        \tweak NoteHead.style #'harmonic
+                                        b''16
+
+                                        \tweak NoteHead.style #'harmonic
+                                        d''16
+
+                                        \revert Staff.Stem.stemlet-length
+                                        f'16
+                                        )
+                                        ]
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 2]
-                                        <a gs'>4
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        f'16
+                                        [
+                                        (
 
-                                        <ef'' d'''>4
+                                        \tweak NoteHead.style #'harmonic
+                                        d''16
 
-                                        <a gs'>4
+                                        \tweak NoteHead.style #'harmonic
+                                        b''16
 
-                                        <ef'' d'''>8
+                                        \revert Staff.Stem.stemlet-length
+                                        \tweak NoteHead.style #'harmonic
+                                        af'''16
+                                        )
+                                        ]
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak NoteHead.style #'harmonic
+                                            f'16
+                                            [
+                                            (
+
+                                            \tweak NoteHead.style #'harmonic
+                                            d''16
+
+                                            \tweak NoteHead.style #'harmonic
+                                            b''16
+
+                                            \tweak NoteHead.style #'harmonic
+                                            af'''16
+                                            )
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak NoteHead.style #'harmonic
+                                            af'''16
+                                            ]
+                                            (
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak NoteHead.style #'harmonic
+                                            b''16
+                                            [
+
+                                            \tweak NoteHead.style #'harmonic
+                                            d''16
+
+                                            \tweak NoteHead.style #'harmonic
+                                            f'16
+                                            )
+
+                                            f'16
+                                            (
+
+                                            \tweak NoteHead.style #'harmonic
+                                            d''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak NoteHead.style #'harmonic
+                                            b''16
+                                            ]
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        \tweak NoteHead.style #'harmonic
+                                        af'''16
+                                        )
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        \tweak NoteHead.style #'harmonic
+                                        af'''16
+                                        ]
+                                        (
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 3]
-                                        <a gs'>4
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        \tweak NoteHead.style #'harmonic
+                                        b''16
+                                        [
 
-                                        <ef'' d'''>4
+                                        \tweak NoteHead.style #'harmonic
+                                        d''16
 
-                                        <a gs'>4
+                                        f'16
+                                        )
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 4]
-                                        <ef'' d'''>4
+                                        \revert Staff.Stem.stemlet-length
+                                        \tweak NoteHead.style #'harmonic
+                                        bf'''16
+                                        ]
+                                        (
 
-                                        <a gs'>4
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        \tweak NoteHead.style #'harmonic
+                                        cs'''16
+                                        [
 
-                                        <ef'' d'''>8
+                                        \tweak NoteHead.style #'harmonic
+                                        e''16
+
+                                        g'16
+                                        )
+
+                                        \revert Staff.Stem.stemlet-length
+                                        g'16
+                                        ]
+                                        (
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        \tweak NoteHead.style #'harmonic
+                                        e''16
+                                        [
+
+                                        \tweak NoteHead.style #'harmonic
+                                        cs'''16
+
+                                        \tweak NoteHead.style #'harmonic
+                                        bf'''16
+                                        )
+
+                                        \revert Staff.Stem.stemlet-length
+                                        \tweak NoteHead.style #'harmonic
+                                        fs'16
+                                        ]
+                                        (
+
+                                        \times 4/5
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 4]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak NoteHead.style #'harmonic
+                                            ef''16
+                                            [
+
+                                            \tweak NoteHead.style #'harmonic
+                                            c'''16
+
+                                            \tweak NoteHead.style #'harmonic
+                                            a'''16
+                                            )
+
+                                            \tweak NoteHead.style #'harmonic
+                                            a'''16
+                                            (
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak NoteHead.style #'harmonic
+                                            c'''16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak NoteHead.style #'harmonic
+                                            ef''16
+                                            [
+
+                                            \tweak NoteHead.style #'harmonic
+                                            fs'16
+                                            )
+
+                                            fs'16
+                                            (
+
+                                            \tweak NoteHead.style #'harmonic
+                                            ef''16
+
+                                            \tweak NoteHead.style #'harmonic
+                                            c'''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak NoteHead.style #'harmonic
+                                            a'''16
+                                            )
+                                            ]
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        \tweak NoteHead.style #'harmonic
+                                        a'''16
+                                        [
+                                        (
+
+                                        \revert Staff.Stem.stemlet-length
+                                        \tweak NoteHead.style #'harmonic
+                                        c'''16
+                                        ]
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 5]
-                                        <a gs'>4
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        \tweak NoteHead.style #'harmonic
+                                        ef''16
+                                        [
 
-                                        <ef'' d'''>4
+                                        fs'16
+                                        )
+
+                                        \tweak NoteHead.style #'harmonic
+                                        b'''16
+                                        (
+
+                                        \revert Staff.Stem.stemlet-length
+                                        \tweak NoteHead.style #'harmonic
+                                        d'''16
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        \tweak NoteHead.style #'harmonic
+                                        f''16
+                                        [
+
+                                        af'16
+                                        )
+
+                                        af'16
+                                        (
+
+                                        \revert Staff.Stem.stemlet-length
+                                        \tweak NoteHead.style #'harmonic
+                                        f''16
+                                        ]
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 6]
-                                        <a gs'>4
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        \tweak NoteHead.style #'harmonic
+                                        d'''16
+                                        [
 
-                                        <ef'' d'''>4
+                                        \tweak NoteHead.style #'harmonic
+                                        b'''16
+                                        )
 
-                                        <a gs'>4
+                                        \tweak NoteHead.style #'harmonic
+                                        e'16
+                                        (
 
-                                        <ef'' d'''>4
+                                        \revert Staff.Stem.stemlet-length
+                                        \tweak NoteHead.style #'harmonic
+                                        cs''16
+                                        ]
 
-                                        <a gs'>8
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak NoteHead.style #'harmonic
+                                            bf''16
+                                            [
+
+                                            \tweak NoteHead.style #'harmonic
+                                            g'''16
+                                            )
+
+                                            \tweak NoteHead.style #'harmonic
+                                            g'''16
+                                            (
+
+                                            \tweak NoteHead.style #'harmonic
+                                            bf''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak NoteHead.style #'harmonic
+                                            cs''16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak NoteHead.style #'harmonic
+                                            e'16
+                                            )
+                                            [
+
+                                            e'16
+                                            (
+
+                                            \tweak NoteHead.style #'harmonic
+                                            cs''16
+
+                                            \tweak NoteHead.style #'harmonic
+                                            bf''16
+
+                                            \tweak NoteHead.style #'harmonic
+                                            g'''16
+                                            )
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak NoteHead.style #'harmonic
+                                            g'''16
+                                            ]
+                                            (
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak NoteHead.style #'harmonic
+                                            bf''16
+                                            [
+
+                                            \tweak NoteHead.style #'harmonic
+                                            cs''16
+
+                                            e'16
+                                            )
+
+                                            \tweak NoteHead.style #'harmonic
+                                            a'''16
+                                            (
+
+                                            \tweak NoteHead.style #'harmonic
+                                            c'''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak NoteHead.style #'harmonic
+                                            ef''16
+                                            ]
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        fs'16
+                                        )
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        fs'16
+                                        ]
+                                        (
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 7]
-                                        <ef'' d'''>4
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        \tweak NoteHead.style #'harmonic
+                                        ef''16
+                                        [
 
-                                        <a gs'>4
+                                        \tweak NoteHead.style #'harmonic
+                                        c'''16
 
-                                        <ef'' d'''>4
+                                        \tweak NoteHead.style #'harmonic
+                                        a'''16
+                                        )
 
-                                        <a gs'>4
+                                        \revert Staff.Stem.stemlet-length
+                                        \tweak NoteHead.style #'harmonic
+                                        fs'16
+                                        ]
+                                        (
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 8]
-                                        <ef'' d'''>4
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        \tweak NoteHead.style #'harmonic
+                                        ef''16
+                                        [
 
-                                        <a gs'>4
+                                        \tweak NoteHead.style #'harmonic
+                                        c'''16
 
-                                        <ef'' d'''>4
+                                        \tweak NoteHead.style #'harmonic
+                                        a'''16
+                                        )
 
-                                        <a gs'>4
+                                        \revert Staff.Stem.stemlet-length
+                                        \tweak NoteHead.style #'harmonic
+                                        a'''16
+                                        ]
+                                        (
 
-                                        <ef'' d'''>4
+                                        \times 4/5
+                                        {
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 9]
-                                        <a gs'>4
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak NoteHead.style #'harmonic
+                                            c'''16
+                                            [
 
-                                        <ef'' d'''>4
+                                            \tweak NoteHead.style #'harmonic
+                                            ef''16
 
-                                        <a gs'>4
+                                            \tweak NoteHead.style #'harmonic
+                                            fs'16
+                                            )
 
-                                        <ef'' d'''>4
-                                          %! MATERIAL_COLOR
-                                        \stopStaffHighlight
+                                            fs'16
+                                            (
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak NoteHead.style #'harmonic
+                                            ef''16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak NoteHead.style #'harmonic
+                                            c'''16
+                                            [
+
+                                            \tweak NoteHead.style #'harmonic
+                                            a'''16
+                                            )
+
+                                            \tweak NoteHead.style #'harmonic
+                                            a'''16
+                                            (
+
+                                            \tweak NoteHead.style #'harmonic
+                                            c'''16
+
+                                            \tweak NoteHead.style #'harmonic
+                                            ef''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            fs'16
+                                            )
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 8]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak NoteHead.style #'harmonic
+                                            b'''16
+                                            [
+                                            (
+
+                                            \tweak NoteHead.style #'harmonic
+                                            d'''16
+
+                                            \tweak NoteHead.style #'harmonic
+                                            f''16
+
+                                            af'16
+                                            )
+
+                                            af'16
+                                            (
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak NoteHead.style #'harmonic
+                                            f''16
+                                            ]
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        \tweak NoteHead.style #'harmonic
+                                        d'''16
+                                        [
+
+                                        \tweak NoteHead.style #'harmonic
+                                        b'''16
+                                        )
+
+                                        \tweak NoteHead.style #'harmonic
+                                        g'16
+                                        (
+
+                                        \revert Staff.Stem.stemlet-length
+                                        \tweak NoteHead.style #'harmonic
+                                        e''16
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        \tweak NoteHead.style #'harmonic
+                                        cs'''16
+                                        [
+
+                                        \tweak NoteHead.style #'harmonic
+                                        bf'''16
+                                        )
+
+                                        \tweak NoteHead.style #'harmonic
+                                        bf'''16
+                                        (
+
+                                        \revert Staff.Stem.stemlet-length
+                                        \tweak NoteHead.style #'harmonic
+                                        cs'''16
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        \tweak NoteHead.style #'harmonic
+                                        e''16
+                                        [
+
+                                        \tweak NoteHead.style #'harmonic
+                                        g'16
+                                        )
+
+                                        g'16
+                                        (
+
+                                        \revert Staff.Stem.stemlet-length
+                                        \tweak NoteHead.style #'harmonic
+                                        e''16
+                                        ]
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak NoteHead.style #'harmonic
+                                            cs'''16
+                                            [
+
+                                            \tweak NoteHead.style #'harmonic
+                                            bf'''16
+                                            )
+
+                                            \tweak NoteHead.style #'harmonic
+                                            bf'''16
+                                            (
+
+                                            \tweak NoteHead.style #'harmonic
+                                            cs'''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak NoteHead.style #'harmonic
+                                            e''16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 9]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            g'16
+                                            )
+                                            [
+
+                                            \tweak NoteHead.style #'harmonic
+                                            c''''16
+                                            (
+
+                                            \tweak NoteHead.style #'harmonic
+                                            ef'''16
+
+                                            \tweak NoteHead.style #'harmonic
+                                            fs''16
+
+                                            a'16
+                                            )
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a'16
+                                            ]
+                                            (
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak NoteHead.style #'harmonic
+                                            fs''16
+                                            [
+
+                                            \tweak NoteHead.style #'harmonic
+                                            ef'''16
+
+                                            \tweak NoteHead.style #'harmonic
+                                            c''''16
+                                            )
+
+                                            \tweak NoteHead.style #'harmonic
+                                            f'16
+                                            (
+
+                                            \tweak NoteHead.style #'harmonic
+                                            d''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak NoteHead.style #'harmonic
+                                            b''16
+                                            ]
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        \tweak NoteHead.style #'harmonic
+                                        af'''16
+                                        )
+                                        [
+
+                                        \tweak NoteHead.style #'harmonic
+                                        af'''16
+                                        (
+
+                                        \tweak NoteHead.style #'harmonic
+                                        b''16
+
+                                        \revert Staff.Stem.stemlet-length
+                                        \tweak NoteHead.style #'harmonic
+                                        d''16
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        \tweak NoteHead.style #'harmonic
+                                        f'16
+                                        )
+                                        [
+
+                                        f'16
+                                        (
+
+                                        \tweak NoteHead.style #'harmonic
+                                        d''16
+
+                                        \revert Staff.Stem.stemlet-length
+                                        \tweak NoteHead.style #'harmonic
+                                        b''16
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(3)
+                                          %! baca.hairpin()
+                                        \f
+                                        )
+                                        ]
 
                                         \tweak edge-height #'(0.7 . 0)
                                         \times 2/3
@@ -1849,10 +3093,12 @@
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 10]
                                             \half-harmonic
-                                              %! MATERIAL_COLOR
-                                            \staffHighlight #(rgb-color 1 0.2 0.2)
                                             \override Staff.Stem.stemlet-length = 0.75
                                             c'16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \p
                                             [
                                               %! SPANNER_START
                                               %! baca.PiecewiseCommand._call(2)
@@ -1893,7 +3139,7 @@
                                               %! SPANNER_START
                                               %! baca.PiecewiseCommand._call(2)
                                               %! baca.text_spanner()
-                                            - \tweak staff-padding 5
+                                            - \tweak staff-padding 4
                                               %! SPANNER_START
                                               %! baca.PiecewiseCommand._call(2)
                                               %! baca.text_spanner()
@@ -1905,11 +3151,31 @@
                                               %! SPANNER_START
                                               %! baca.PiecewiseCommand._call(2)
                                               %! baca.text_spanner()
-                                            - \baca-text-spanner-right-markup \markup { \fraction 1 2 scr. }
+                                            - \baca-text-spanner-right-markup \markup { 1/2 scr. }
                                               %! SPANNER_START
                                               %! baca.PiecewiseCommand._call(2)
                                               %! baca.text_spanner()
                                             \startTextSpanTwo
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak staff-padding 6
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \abjad-dashed-line-with-hook
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-left-text "clt."
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \startTextSpanThree
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \<
                                             ^ (
 
                                             cs'16
@@ -1917,6 +3183,14 @@
                                             d'16
 
                                             ef'16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \f
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \>
 
                                             e'16
                                             )
@@ -1957,6 +3231,10 @@
                                             ^ (
 
                                             d'16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \p
 
                                             \revert Staff.Stem.stemlet-length
                                             ef'16
@@ -1966,33 +3244,49 @@
                                               %! baca.text_spanner()
                                             \stopTextSpanOne
                                               %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(4)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanThree
+                                              %! SPANNER_STOP
                                               %! baca.PiecewiseCommand._call(3)
                                               %! baca.text_spanner()
                                             \stopTextSpanTwo
                                             ]
                                             \revert-noteheads
-                                              %! MATERIAL_COLOR
-                                            \stopStaffHighlight
 
                                         }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 11]
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 0.961 0.961 0.406)
                                         <ef'' d'''>2.
-                                          %! MATERIAL_COLOR
-                                        \stopStaffHighlight
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \ff
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        - \tweak to-barline ##t
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        - \tweak circled-tip ##t
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \>
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 12]
                                         \harmonicsOn
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 1 0.2 0.2)
                                         \override Staff.Stem.stemlet-length = 0.75
                                         cs'16
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \p
                                         [
                                         (
                                           %! SPANNER_START
@@ -2051,6 +3345,26 @@
                                           %! baca.PiecewiseCommand._call(2)
                                           %! baca.text_spanner()
                                         \startTextSpanTwo
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak staff-padding 6
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-dashed-line-with-hook
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "1/2 clt."
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpanThree
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \<
 
                                         d'16
 
@@ -2102,11 +3416,19 @@
                                             [
 
                                             d'16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \f
                                             )
                                               %! SPANNER_STOP
                                               %! baca.PiecewiseCommand._call(3)
                                               %! baca.text_spanner()
                                             \stopTextSpanOne
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \>
 
                                             d'16
                                             (
@@ -2180,6 +3502,14 @@
                                             \startTextSpanOne
 
                                             cs'16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \p
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \<
 
                                             d'16
                                             )
@@ -2235,6 +3565,10 @@
                                         [
 
                                         d'16
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \f
                                         (
                                           %! SPANNER_START
                                           %! baca.PiecewiseCommand._call(2)
@@ -2264,6 +3598,10 @@
                                           %! baca.PiecewiseCommand._call(2)
                                           %! baca.text_spanner()
                                         \startTextSpanOne
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \>
 
                                         ef'16
 
@@ -2317,12 +3655,20 @@
                                             % [violin 2 voice measure 13]
                                             \override Staff.Stem.stemlet-length = 0.75
                                             ef'16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \p
                                             )
                                               %! SPANNER_STOP
                                               %! baca.PiecewiseCommand._call(3)
                                               %! baca.text_spanner()
                                             \stopTextSpanOne
                                             [
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \<
 
                                             ef'16
                                             (
@@ -2396,6 +3742,14 @@
                                             \startTextSpanOne
 
                                             d'16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \f
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \>
 
                                             ef'16
                                             )
@@ -2453,6 +3807,10 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             ef'16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \p
                                             [
                                             (
                                               %! SPANNER_START
@@ -2483,6 +3841,10 @@
                                               %! baca.PiecewiseCommand._call(2)
                                               %! baca.text_spanner()
                                             \startTextSpanOne
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \<
 
                                             e'16
 
@@ -2532,12 +3894,20 @@
 
                                         \override Staff.Stem.stemlet-length = 0.75
                                         e'16
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \f
                                         )
                                           %! SPANNER_STOP
                                           %! baca.PiecewiseCommand._call(3)
                                           %! baca.text_spanner()
                                         \stopTextSpanOne
                                         [
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \>
 
                                         e'16
                                         (
@@ -2621,6 +3991,14 @@
                                             \startTextSpanOne
 
                                             ef'16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \p
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \<
 
                                             e'16
                                             )
@@ -2670,6 +4048,10 @@
                                             \stopTextSpanOne
 
                                             e'16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \f
                                             (
                                               %! SPANNER_START
                                               %! baca.PiecewiseCommand._call(2)
@@ -2699,6 +4081,10 @@
                                               %! baca.PiecewiseCommand._call(2)
                                               %! baca.text_spanner()
                                             \startTextSpanOne
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \>
 
                                             f'16
 
@@ -2748,12 +4134,20 @@
 
                                         \override Staff.Stem.stemlet-length = 0.75
                                         f'16
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \p
                                         )
                                           %! SPANNER_STOP
                                           %! baca.PiecewiseCommand._call(3)
                                           %! baca.text_spanner()
                                         \stopTextSpanOne
                                         [
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \<
 
                                         f'16
                                         (
@@ -2834,6 +4228,14 @@
                                             \startTextSpanOne
 
                                             e'16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \f
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \>
 
                                             f'16
                                             )
@@ -2888,6 +4290,10 @@
 
                                         \override Staff.Stem.stemlet-length = 0.75
                                         f'16
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \p
                                         [
                                         (
                                           %! SPANNER_START
@@ -2918,6 +4324,10 @@
                                           %! baca.PiecewiseCommand._call(2)
                                           %! baca.text_spanner()
                                         \startTextSpanOne
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \<
 
                                         fs'16
 
@@ -2969,11 +4379,19 @@
                                         [
 
                                         fs'16
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \f
                                         )
                                           %! SPANNER_STOP
                                           %! baca.PiecewiseCommand._call(3)
                                           %! baca.text_spanner()
                                         \stopTextSpanOne
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \>
 
                                         fs'16
                                         (
@@ -3051,6 +4469,14 @@
                                         \startTextSpanOne
 
                                         f'16
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \p
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \<
 
                                         \revert Staff.Stem.stemlet-length
                                         fs'16
@@ -3107,6 +4533,10 @@
                                             \stopTextSpanOne
 
                                             fs'16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \f
                                             (
                                               %! SPANNER_START
                                               %! baca.PiecewiseCommand._call(2)
@@ -3136,6 +4566,10 @@
                                               %! baca.PiecewiseCommand._call(2)
                                               %! baca.text_spanner()
                                             \startTextSpanOne
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \>
 
                                             g'16
 
@@ -3189,6 +4623,10 @@
                                             fs'16
 
                                             g'16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \p
                                             )
                                               %! SPANNER_STOP
                                               %! baca.PiecewiseCommand._call(3)
@@ -3234,14 +4672,16 @@
                                               %! baca.text_spanner()
                                             \stopTextSpanOne
                                               %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(4)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanThree
+                                              %! SPANNER_STOP
                                               %! baca.PiecewiseCommand._call(3)
                                               %! baca.text_spanner()
                                             \stopTextSpanTwo
                                             ]
                                             \bar "||"
                                             \harmonicsOff
-                                              %! MATERIAL_COLOR
-                                            \stopStaffHighlight
 
                                         }
 
@@ -3267,236 +4707,556 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 1]
+                                \fancy-gliss
+                                   #'(
+                                      (0 0 0.5 3 1 0)
+                                      (1 0 1.5 -3 2 0)
+                                      (2 0 2.5 2 3 0)
+                                      (3 0 3.5 -2 4 0)
+                                      (4 0 4.5 4 5 0)
+                                      (5 0 5.5 -4 6 0)
+                                      (6 0 6.5 2 7 0)
+                                      (7 0 7.5 -2 8 0)
+                                      (8 0 8.5 1 9 0)
+                                      (9 0 9.5 -1 10 0)
+                                 )
+                                 #0.5
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup { \hcenter-in #14 "Viola" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup { \hcenter-in #12 "va." }
-                                  %! MATERIAL_COLOR
-                                \staffHighlight #(rgb-color 0.961 0.961 0.406)
                                 \clef "alto"
-                                <fs' c''>4
+                                \tweak NoteHead.style #'harmonic
+                                g'2
+                                - \accent
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \p
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \<
+                                \glissando
 
-                                <fs' c''>4
+                                \times 2/3
+                                {
 
-                                <fs' as'>4
+                                    \scaleDurations #'(1 . 1) {
+                                    \slashedGrace {
 
-                                <e b>4
+                                        cs'16
+
+                                    }
+                                    }
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    \tweak NoteHead.style #'harmonic
+                                    d'8
+                                    [
+
+                                    \scaleDurations #'(1 . 1) {
+                                    \slashedGrace {
+
+                                        c'16
+
+                                    }
+                                    }
+
+                                    \tweak NoteHead.style #'harmonic
+                                    cs'8
+
+                                    \scaleDurations #'(1 . 1) {
+                                    \slashedGrace {
+
+                                        d'16
+
+                                    }
+                                    }
+
+                                    \revert Staff.Stem.stemlet-length
+                                    \tweak NoteHead.style #'harmonic
+                                    ef'8
+                                    ]
+
+                                }
+
+                                \tweak NoteHead.style #'harmonic
+                                c''4
+                                - \accent
+                                ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 2]
-                                <e b>4
+                                \fancy-gliss
+                                   #'(
+                                      (0 0 0.5 3 1 0)
+                                      (1 0 1.5 -3 2 0)
+                                      (2 0 2.5 2 3 0)
+                                      (3 0 3.5 -2 4 0)
+                                      (4 0 4.5 4 5 0)
+                                      (5 0 5.5 -4 6 0)
+                                      (6 0 6.5 2 7 0)
+                                      (7 0 7.5 -2 8 0)
+                                      (8 0 8.5 1 9 0)
+                                      (9 0 9.5 -1 10 0)
+                                 )
+                                 #0.5
+                                \tweak NoteHead.style #'harmonic
+                                c''8
+                                \glissando
 
-                                <fs' c''>8
-                                ~
-
-                                \override Staff.Stem.stemlet-length = 0.75
-                                <fs' c''>8
-                                [
-
-                                \revert Staff.Stem.stemlet-length
-                                <fs' c''>8
-                                ]
-                                ~
-
-                                \override Staff.Stem.stemlet-length = 0.75
-                                <fs' c''>8
-                                [
-
-                                \revert Staff.Stem.stemlet-length
-                                <fs' as'>8
-                                ]
-                                ~
+                                \fancy-gliss
+                                   #'(
+                                      (0 0 0.5 3 1 0)
+                                      (1 0 1.5 -3 2 0)
+                                      (2 0 2.5 2 3 0)
+                                      (3 0 3.5 -2 4 0)
+                                      (4 0 4.5 4 5 0)
+                                      (5 0 5.5 -4 6 0)
+                                      (6 0 6.5 2 7 0)
+                                      (7 0 7.5 -2 8 0)
+                                      (8 0 8.5 1 9 0)
+                                      (9 0 9.5 -1 10 0)
+                                 )
+                                 #0.5
+                                \tweak NoteHead.style #'harmonic
+                                a'2.
+                                - \accent
+                                \glissando
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 3]
-                                \override Staff.Stem.stemlet-length = 0.75
-                                <fs' as'>8
-                                [
-
-                                \revert Staff.Stem.stemlet-length
-                                <e b>8
-                                ]
+                                \tweak NoteHead.style #'harmonic
+                                e'4
+                                - \accent
                                 ~
 
+                                \times 2/3
+                                {
+
+                                    \fancy-gliss
+                                       #'(
+                                          (0 0 0.5 3 1 0)
+                                          (1 0 1.5 -3 2 0)
+                                          (2 0 2.5 2 3 0)
+                                          (3 0 3.5 -2 4 0)
+                                          (4 0 4.5 4 5 0)
+                                          (5 0 5.5 -4 6 0)
+                                          (6 0 6.5 2 7 0)
+                                          (7 0 7.5 -2 8 0)
+                                          (8 0 8.5 1 9 0)
+                                          (9 0 9.5 -1 10 0)
+                                     )
+                                     #0.5
+                                    \tweak NoteHead.style #'harmonic
+                                    e'4
+                                    \glissando
+
+                                    \scaleDurations #'(1 . 1) {
+                                    \slashedGrace {
+
+                                        bf16
+
+                                    }
+                                    }
+
+                                    \tweak NoteHead.style #'harmonic
+                                    b8
+
+                                }
+
+                                \scaleDurations #'(1 . 1) {
+                                \slashedGrace {
+
+                                    a16
+
+                                }
+                                }
+
                                 \override Staff.Stem.stemlet-length = 0.75
-                                <e b>8
+                                \tweak NoteHead.style #'harmonic
+                                bf8
                                 [
 
-                                \revert Staff.Stem.stemlet-length
-                                <e b>8
-                                ]
-                                ~
+                                \scaleDurations #'(1 . 1) {
+                                \slashedGrace {
 
-                                \override Staff.Stem.stemlet-length = 0.75
-                                <e b>8
-                                [
+                                    b16
+
+                                }
+                                }
 
                                 \revert Staff.Stem.stemlet-length
-                                <fs' c''>8
+                                \tweak NoteHead.style #'harmonic
+                                c'8
                                 ]
-                                ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 4]
-                                <fs' c''>8
+                                \tweak NoteHead.style #'harmonic
+                                a'4
+                                - \accent
+                                ~
 
-                                <fs' c''>4
+                                \times 2/3
+                                {
 
-                                <fs' as'>4
+                                    \fancy-gliss
+                                       #'(
+                                          (0 0 0.5 3 1 0)
+                                          (1 0 1.5 -3 2 0)
+                                          (2 0 2.5 2 3 0)
+                                          (3 0 3.5 -2 4 0)
+                                          (4 0 4.5 4 5 0)
+                                          (5 0 5.5 -4 6 0)
+                                          (6 0 6.5 2 7 0)
+                                          (7 0 7.5 -2 8 0)
+                                          (8 0 8.5 1 9 0)
+                                          (9 0 9.5 -1 10 0)
+                                     )
+                                     #0.5
+                                    \tweak NoteHead.style #'harmonic
+                                    a'8
+                                    \glissando
+
+                                    \tweak NoteHead.style #'harmonic
+                                    fs'4
+                                    - \accent
+                                    ~
+
+                                }
+
+                                \tweak NoteHead.style #'harmonic
+                                fs'8
+                                ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 5]
-                                <e b>4
-
-                                <e b>4
+                                \fancy-gliss
+                                   #'(
+                                      (0 0 0.5 3 1 0)
+                                      (1 0 1.5 -3 2 0)
+                                      (2 0 2.5 2 3 0)
+                                      (3 0 3.5 -2 4 0)
+                                      (4 0 4.5 4 5 0)
+                                      (5 0 5.5 -4 6 0)
+                                      (6 0 6.5 2 7 0)
+                                      (7 0 7.5 -2 8 0)
+                                      (8 0 8.5 1 9 0)
+                                      (9 0 9.5 -1 10 0)
+                                 )
+                                 #0.5
+                                \tweak NoteHead.style #'harmonic
+                                fs'2
+                                \glissando
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 6]
-                                <fs' c''>4
+                                \fancy-gliss
+                                   #'(
+                                      (0 0 0.5 3 1 0)
+                                      (1 0 1.5 -3 2 0)
+                                      (2 0 2.5 2 3 0)
+                                      (3 0 3.5 -2 4 0)
+                                      (4 0 4.5 4 5 0)
+                                      (5 0 5.5 -4 6 0)
+                                      (6 0 6.5 2 7 0)
+                                      (7 0 7.5 -2 8 0)
+                                      (8 0 8.5 1 9 0)
+                                      (9 0 9.5 -1 10 0)
+                                 )
+                                 #0.5
+                                \tweak NoteHead.style #'harmonic
+                                cs'4.
+                                - \accent
+                                \glissando
 
-                                <fs' c''>8
-                                ~
+                                \scaleDurations #'(1 . 1) {
+                                \slashedGrace {
 
-                                <fs' c''>8
+                                    g16
 
-                                <fs' as'>4
+                                }
+                                }
 
-                                <e b>4
+                                \override Staff.Stem.stemlet-length = 0.75
+                                \tweak NoteHead.style #'harmonic
+                                af8
+                                [
 
-                                <e b>8
+                                \scaleDurations #'(1 . 1) {
+                                \slashedGrace {
+
+                                    fs16
+
+                                }
+                                }
+
+                                \tweak NoteHead.style #'harmonic
+                                g8
+
+                                \scaleDurations #'(1 . 1) {
+                                \slashedGrace {
+
+                                    af16
+
+                                }
+                                }
+
+                                \revert Staff.Stem.stemlet-length
+                                \tweak NoteHead.style #'harmonic
+                                a8
+                                ]
+
+                                \fancy-gliss
+                                   #'(
+                                      (0 0 0.5 3 1 0)
+                                      (1 0 1.5 -3 2 0)
+                                      (2 0 2.5 2 3 0)
+                                      (3 0 3.5 -2 4 0)
+                                      (4 0 4.5 4 5 0)
+                                      (5 0 5.5 -4 6 0)
+                                      (6 0 6.5 2 7 0)
+                                      (7 0 7.5 -2 8 0)
+                                      (8 0 8.5 1 9 0)
+                                      (9 0 9.5 -1 10 0)
+                                 )
+                                 #0.5
+                                \tweak NoteHead.style #'harmonic
+                                fs'4
+                                - \accent
+                                \glissando
+
+                                \tweak NoteHead.style #'harmonic
+                                ef'8
+                                - \accent
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 7]
-                                \override Staff.Stem.stemlet-length = 0.75
-                                <e b>8
-                                [
-
-                                \revert Staff.Stem.stemlet-length
-                                <fs' c''>8
-                                ]
+                                \tweak NoteHead.style #'harmonic
+                                ef'2
                                 ~
 
-                                \override Staff.Stem.stemlet-length = 0.75
-                                <fs' c''>8
-                                [
+                                \times 2/3
+                                {
 
-                                \revert Staff.Stem.stemlet-length
-                                <fs' c''>8
-                                ]
-                                ~
+                                    \fancy-gliss
+                                       #'(
+                                          (0 0 0.5 3 1 0)
+                                          (1 0 1.5 -3 2 0)
+                                          (2 0 2.5 2 3 0)
+                                          (3 0 3.5 -2 4 0)
+                                          (4 0 4.5 4 5 0)
+                                          (5 0 5.5 -4 6 0)
+                                          (6 0 6.5 2 7 0)
+                                          (7 0 7.5 -2 8 0)
+                                          (8 0 8.5 1 9 0)
+                                          (9 0 9.5 -1 10 0)
+                                     )
+                                     #0.5
+                                    \tweak NoteHead.style #'harmonic
+                                    ef'4
+                                    \glissando
 
-                                \override Staff.Stem.stemlet-length = 0.75
-                                <fs' c''>8
-                                [
+                                    \tweak NoteHead.style #'harmonic
+                                    bf8
+                                    - \accent
+                                    ~
 
-                                \revert Staff.Stem.stemlet-length
-                                <fs' as'>8
-                                ]
-                                ~
+                                }
 
-                                \override Staff.Stem.stemlet-length = 0.75
-                                <fs' as'>8
-                                [
-
-                                \revert Staff.Stem.stemlet-length
-                                <e b>8
-                                ]
+                                \tweak NoteHead.style #'harmonic
+                                bf4
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 8]
+                                \fancy-gliss
+                                   #'(
+                                      (0 0 0.5 3 1 0)
+                                      (1 0 1.5 -3 2 0)
+                                      (2 0 2.5 2 3 0)
+                                      (3 0 3.5 -2 4 0)
+                                      (4 0 4.5 4 5 0)
+                                      (5 0 5.5 -4 6 0)
+                                      (6 0 6.5 2 7 0)
+                                      (7 0 7.5 -2 8 0)
+                                      (8 0 8.5 1 9 0)
+                                      (9 0 9.5 -1 10 0)
+                                 )
+                                 #0.5
                                 \override Staff.Stem.stemlet-length = 0.75
-                                <e b>8
+                                \tweak NoteHead.style #'harmonic
+                                bf8
                                 [
+                                \glissando
+
+                                \scaleDurations #'(1 . 1) {
+                                \slashedGrace {
+
+                                    e16
+
+                                }
+                                }
 
                                 \revert Staff.Stem.stemlet-length
-                                <e b>8
+                                \tweak NoteHead.style #'harmonic
+                                f8
                                 ]
-                                ~
 
-                                \override Staff.Stem.stemlet-length = 0.75
-                                <e b>8
-                                [
+                                \times 2/3
+                                {
 
-                                \revert Staff.Stem.stemlet-length
-                                <fs' c''>8
-                                ]
-                                ~
+                                    \scaleDurations #'(1 . 1) {
+                                    \slashedGrace {
 
-                                \override Staff.Stem.stemlet-length = 0.75
-                                <fs' c''>8
-                                [
+                                        ef16
 
-                                \revert Staff.Stem.stemlet-length
-                                <fs' c''>8
-                                ]
-                                ~
+                                    }
+                                    }
 
-                                \override Staff.Stem.stemlet-length = 0.75
-                                <fs' c''>8
-                                [
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    \tweak NoteHead.style #'harmonic
+                                    e8
+                                    [
 
-                                \revert Staff.Stem.stemlet-length
-                                <fs' as'>8
-                                ]
-                                ~
+                                    \scaleDurations #'(1 . 1) {
+                                    \slashedGrace {
 
-                                \override Staff.Stem.stemlet-length = 0.75
-                                <fs' as'>8
-                                [
+                                        f16
 
-                                \revert Staff.Stem.stemlet-length
-                                <e b>8
-                                ]
+                                    }
+                                    }
+
+                                    \tweak NoteHead.style #'harmonic
+                                    fs8
+
+                                    \revert Staff.Stem.stemlet-length
+                                    \tweak NoteHead.style #'harmonic
+                                    ef'8
+                                    - \accent
+                                    ]
+                                    ~
+
+                                }
+
+                                \fancy-gliss
+                                   #'(
+                                      (0 0 0.5 3 1 0)
+                                      (1 0 1.5 -3 2 0)
+                                      (2 0 2.5 2 3 0)
+                                      (3 0 3.5 -2 4 0)
+                                      (4 0 4.5 4 5 0)
+                                      (5 0 5.5 -4 6 0)
+                                      (6 0 6.5 2 7 0)
+                                      (7 0 7.5 -2 8 0)
+                                      (8 0 8.5 1 9 0)
+                                      (9 0 9.5 -1 10 0)
+                                 )
+                                 #0.5
+                                \tweak NoteHead.style #'harmonic
+                                ef'4
+                                \glissando
+
+                                \tweak NoteHead.style #'harmonic
+                                c'2
+                                - \accent
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 9]
-                                \override Staff.Stem.stemlet-length = 0.75
-                                <e b>8
-                                [
+                                \fancy-gliss
+                                   #'(
+                                      (0 0 0.5 3 1 0)
+                                      (1 0 1.5 -3 2 0)
+                                      (2 0 2.5 2 3 0)
+                                      (3 0 3.5 -2 4 0)
+                                      (4 0 4.5 4 5 0)
+                                      (5 0 5.5 -4 6 0)
+                                      (6 0 6.5 2 7 0)
+                                      (7 0 7.5 -2 8 0)
+                                      (8 0 8.5 1 9 0)
+                                      (9 0 9.5 -1 10 0)
+                                 )
+                                 #0.5
+                                \tweak NoteHead.style #'harmonic
+                                c'4
+                                \glissando
 
-                                \revert Staff.Stem.stemlet-length
-                                <e b>8
-                                ]
-                                ~
+                                \fancy-gliss
+                                   #'(
+                                      (0 0 0.5 3 1 0)
+                                      (1 0 1.5 -3 2 0)
+                                      (2 0 2.5 2 3 0)
+                                      (3 0 3.5 -2 4 0)
+                                      (4 0 4.5 4 5 0)
+                                      (5 0 5.5 -4 6 0)
+                                      (6 0 6.5 2 7 0)
+                                      (7 0 7.5 -2 8 0)
+                                      (8 0 8.5 1 9 0)
+                                      (9 0 9.5 -1 10 0)
+                                 )
+                                 #0.5
+                                \tweak NoteHead.style #'harmonic
+                                g2
+                                - \accent
+                                \glissando
 
-                                \override Staff.Stem.stemlet-length = 0.75
-                                <e b>8
-                                [
+                                \times 2/3
+                                {
 
-                                \revert Staff.Stem.stemlet-length
-                                <fs' c''>8
-                                ]
-                                ~
+                                    \scaleDurations #'(1 . 1) {
+                                    \slashedGrace {
 
-                                \override Staff.Stem.stemlet-length = 0.75
-                                <fs' c''>8
-                                [
+                                        cs16
 
-                                \revert Staff.Stem.stemlet-length
-                                <fs' c''>8
-                                ]
-                                ~
+                                    }
+                                    }
 
-                                \override Staff.Stem.stemlet-length = 0.75
-                                <fs' c''>8
-                                [
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    \tweak NoteHead.style #'harmonic
+                                    d8
+                                    [
 
-                                \revert Staff.Stem.stemlet-length
-                                <fs' as'>8
-                                ]
-                                  %! MATERIAL_COLOR
-                                \stopStaffHighlight
+                                    \scaleDurations #'(1 . 1) {
+                                    \slashedGrace {
+
+                                        c16
+
+                                    }
+                                    }
+
+                                    \tweak NoteHead.style #'harmonic
+                                    cs8
+
+                                    \scaleDurations #'(1 . 1) {
+                                    \slashedGrace {
+
+                                        d16
+
+                                    }
+                                    }
+
+                                    \revert Staff.Stem.stemlet-length
+                                    \tweak NoteHead.style #'harmonic
+                                    ef8
+                                      %! SPANNER_STOP
+                                      %! baca.PiecewiseCommand._call(3)
+                                      %! baca.hairpin()
+                                    \f
+                                    ]
+
+                                }
 
                                 \tweak edge-height #'(0.7 . 0)
                                 \times 2/3
@@ -3506,10 +5266,12 @@
                                       %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 10]
                                     \harmonicsOn
-                                      %! MATERIAL_COLOR
-                                    \staffHighlight #(rgb-color 1 0.2 0.2)
                                     \override Staff.Stem.stemlet-length = 0.75
                                     fs16
+                                      %! SPANNER_STOP
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \p
                                     [
                                       %! SPANNER_START
                                       %! baca.PiecewiseCommand._call(2)
@@ -3567,6 +5329,26 @@
                                       %! baca.PiecewiseCommand._call(2)
                                       %! baca.text_spanner()
                                     \startTextSpanTwo
+                                      %! SPANNER_START
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.text_spanner()
+                                    - \tweak staff-padding 6
+                                      %! SPANNER_START
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.text_spanner()
+                                    - \abjad-dashed-line-with-hook
+                                      %! SPANNER_START
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.text_spanner()
+                                    - \baca-text-spanner-left-text "clt."
+                                      %! SPANNER_START
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.text_spanner()
+                                    \startTextSpanThree
+                                      %! SPANNER_START
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \<
                                     ^ (
 
                                     f16
@@ -3574,6 +5356,14 @@
                                     e16
 
                                     ef16
+                                      %! SPANNER_STOP
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \f
+                                      %! SPANNER_START
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \>
 
                                     d16
 
@@ -3585,6 +5375,10 @@
                                     \stopTextSpanOne
 
                                     af16
+                                      %! SPANNER_STOP
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \p
                                       %! SPANNER_START
                                       %! baca.PiecewiseCommand._call(2)
                                       %! baca.text_spanner()
@@ -3623,22 +5417,38 @@
                                       %! baca.text_spanner()
                                     \stopTextSpanOne
                                       %! SPANNER_STOP
+                                      %! baca.PiecewiseCommand._call(4)
+                                      %! baca.text_spanner()
+                                    \stopTextSpanThree
+                                      %! SPANNER_STOP
                                       %! baca.PiecewiseCommand._call(3)
                                       %! baca.text_spanner()
                                     \stopTextSpanTwo
                                     ]
                                     \harmonicsOff
-                                      %! MATERIAL_COLOR
-                                    \stopStaffHighlight
 
                                 }
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 11]
-                                  %! MATERIAL_COLOR
-                                \staffHighlight #(rgb-color 0.961 0.961 0.406)
                                 <e b>2.
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \ff
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                - \tweak to-barline ##t
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                - \tweak circled-tip ##t
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \>
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
@@ -3648,17 +5458,21 @@
                                 ~
 
                                 <e b>4.
-                                  %! MATERIAL_COLOR
-                                \stopStaffHighlight
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(3)
+                                  %! baca.hairpin()
+                                \!
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 13]
                                 \half-harmonic
-                                  %! MATERIAL_COLOR
-                                \staffHighlight #(rgb-color 1 0.2 0.2)
                                 \override Staff.Stem.stemlet-length = 0.75
                                 fs16
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \p
                                 [
                                 (
                                   %! SPANNER_START
@@ -3717,6 +5531,26 @@
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.text_spanner()
                                 \startTextSpanTwo
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.text_spanner()
+                                - \tweak staff-padding 6
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.text_spanner()
+                                - \abjad-dashed-line-with-hook
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.text_spanner()
+                                - \baca-text-spanner-left-text "1/2 clt."
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.text_spanner()
+                                \startTextSpanThree
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \<
 
                                 f16
 
@@ -3731,7 +5565,15 @@
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     d16
+                                      %! SPANNER_STOP
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \f
                                     [
+                                      %! SPANNER_START
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \>
 
                                     cs16
                                     )
@@ -3774,6 +5616,14 @@
                                     g16
 
                                     fs16
+                                      %! SPANNER_STOP
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \p
+                                      %! SPANNER_START
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \<
 
                                     \revert Staff.Stem.stemlet-length
                                     f16
@@ -3797,6 +5647,10 @@
                                 \stopTextSpanTwo
 
                                 g16
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \f
                                 (
                                   %! SPANNER_START
                                   %! baca.PiecewiseCommand._call(2)
@@ -3854,6 +5708,10 @@
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.text_spanner()
                                 \startTextSpanTwo
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \>
 
                                 \revert Staff.Stem.stemlet-length
                                 fs16
@@ -3866,6 +5724,14 @@
                                 e16
 
                                 ef16
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \p
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \<
 
                                 \revert Staff.Stem.stemlet-length
                                 d16
@@ -3918,6 +5784,14 @@
                                     f16
 
                                     e16
+                                      %! SPANNER_STOP
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \f
+                                      %! SPANNER_START
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \>
 
                                     ef16
 
@@ -3943,6 +5817,10 @@
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     a16
+                                      %! SPANNER_STOP
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \p
                                     [
                                     (
                                       %! SPANNER_START
@@ -4001,6 +5879,10 @@
                                       %! baca.PiecewiseCommand._call(2)
                                       %! baca.text_spanner()
                                     \startTextSpanTwo
+                                      %! SPANNER_START
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \<
 
                                     af16
 
@@ -4010,7 +5892,15 @@
 
                                     \revert Staff.Stem.stemlet-length
                                     f16
+                                      %! SPANNER_STOP
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \f
                                     ]
+                                      %! SPANNER_START
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \>
 
                                 }
 
@@ -4058,7 +5948,15 @@
 
                                 \revert Staff.Stem.stemlet-length
                                 f16
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \p
                                 ]
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \<
 
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 8/7
@@ -4082,6 +5980,10 @@
                                     \stopTextSpanTwo
 
                                     af32
+                                      %! SPANNER_STOP
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \f
                                     (
                                       %! SPANNER_START
                                       %! baca.PiecewiseCommand._call(2)
@@ -4139,6 +6041,10 @@
                                       %! baca.PiecewiseCommand._call(2)
                                       %! baca.text_spanner()
                                     \startTextSpanTwo
+                                      %! SPANNER_START
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \>
 
                                     g32
 
@@ -4152,7 +6058,15 @@
 
                                 \override Staff.Stem.stemlet-length = 0.75
                                 e16
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \p
                                 [
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \<
 
                                 ef16
                                 )
@@ -4204,7 +6118,15 @@
                                     % [viola voice measure 15]
                                     \override Staff.Stem.stemlet-length = 0.75
                                     af16
+                                      %! SPANNER_STOP
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \f
                                     [
+                                      %! SPANNER_START
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \>
 
                                     g16
 
@@ -4222,6 +6144,10 @@
                                     \stopTextSpanTwo
 
                                     a16
+                                      %! SPANNER_STOP
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \p
                                     (
                                       %! SPANNER_START
                                       %! baca.PiecewiseCommand._call(2)
@@ -4279,6 +6205,10 @@
                                       %! baca.PiecewiseCommand._call(2)
                                       %! baca.text_spanner()
                                     \startTextSpanTwo
+                                      %! SPANNER_START
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \<
 
                                     \revert Staff.Stem.stemlet-length
                                     af16
@@ -4293,6 +6223,14 @@
                                 fs16
 
                                 f16
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \f
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \>
 
                                 \revert Staff.Stem.stemlet-length
                                 e16
@@ -4339,6 +6277,14 @@
                                 g16
 
                                 fs16
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \p
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \<
 
                                 \revert Staff.Stem.stemlet-length
                                 f16
@@ -4363,6 +6309,10 @@
                                     \stopTextSpanTwo
 
                                     b16
+                                      %! SPANNER_STOP
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \f
                                     (
                                       %! SPANNER_START
                                       %! baca.PiecewiseCommand._call(2)
@@ -4433,14 +6383,16 @@
                                       %! baca.text_spanner()
                                     \stopTextSpanOne
                                       %! SPANNER_STOP
+                                      %! baca.PiecewiseCommand._call(4)
+                                      %! baca.text_spanner()
+                                    \stopTextSpanThree
+                                      %! SPANNER_STOP
                                       %! baca.PiecewiseCommand._call(3)
                                       %! baca.text_spanner()
                                     \stopTextSpanTwo
                                     ]
                                     \bar "||"
                                     \revert-noteheads
-                                      %! MATERIAL_COLOR
-                                    \stopStaffHighlight
 
                                 }
 
@@ -4466,10 +6418,16 @@
                                 \set Staff.instrumentName = \markup { \hcenter-in #14 "Violoncello" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup { \hcenter-in #12 "vc." }
-                                  %! MATERIAL_COLOR
-                                \staffHighlight #(rgb-color 0.961 0.961 0.406)
                                 \clef "bass"
                                 <c, b,>1
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \sfp
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \<
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
@@ -4527,8 +6485,10 @@
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 9]
                                 <c, b,>1
-                                  %! MATERIAL_COLOR
-                                \stopStaffHighlight
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(3)
+                                  %! baca.hairpin()
+                                \f
 
                                 \tweak edge-height #'(0.7 . 0)
                                 \times 2/3
@@ -4538,10 +6498,12 @@
                                       %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 10]
                                     \harmonicsOn
-                                      %! MATERIAL_COLOR
-                                    \staffHighlight #(rgb-color 1 0.2 0.2)
                                     \override Staff.Stem.stemlet-length = 0.75
                                     f16
+                                      %! SPANNER_STOP
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \p
                                     [
                                     (
                                       %! SPANNER_START
@@ -4600,12 +6562,40 @@
                                       %! baca.PiecewiseCommand._call(2)
                                       %! baca.text_spanner()
                                     \startTextSpanTwo
+                                      %! SPANNER_START
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.text_spanner()
+                                    - \tweak staff-padding 6
+                                      %! SPANNER_START
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.text_spanner()
+                                    - \abjad-dashed-line-with-hook
+                                      %! SPANNER_START
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.text_spanner()
+                                    - \baca-text-spanner-left-text "clt."
+                                      %! SPANNER_START
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.text_spanner()
+                                    \startTextSpanThree
+                                      %! SPANNER_START
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \<
 
                                     e16
 
                                     ef16
 
                                     d16
+                                      %! SPANNER_STOP
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \f
+                                      %! SPANNER_START
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \>
 
                                     cs16
                                     )
@@ -4646,6 +6636,10 @@
                                     \startTextSpanOne
 
                                     f16
+                                      %! SPANNER_STOP
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \p
 
                                     \revert Staff.Stem.stemlet-length
                                     e16
@@ -4655,22 +6649,38 @@
                                       %! baca.text_spanner()
                                     \stopTextSpanOne
                                       %! SPANNER_STOP
+                                      %! baca.PiecewiseCommand._call(4)
+                                      %! baca.text_spanner()
+                                    \stopTextSpanThree
+                                      %! SPANNER_STOP
                                       %! baca.PiecewiseCommand._call(3)
                                       %! baca.text_spanner()
                                     \stopTextSpanTwo
                                     ]
                                     \harmonicsOff
-                                      %! MATERIAL_COLOR
-                                    \stopStaffHighlight
 
                                 }
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 11]
-                                  %! MATERIAL_COLOR
-                                \staffHighlight #(rgb-color 0.961 0.961 0.406)
                                 <a g'>2.
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \ff
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                - \tweak to-barline ##t
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                - \tweak circled-tip ##t
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \>
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
@@ -4695,17 +6705,21 @@
                                 ~
 
                                 <a g'>2
-                                  %! MATERIAL_COLOR
-                                \stopStaffHighlight
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(3)
+                                  %! baca.hairpin()
+                                \!
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 15]
                                 \half-harmonic
-                                  %! MATERIAL_COLOR
-                                \staffHighlight #(rgb-color 1 0.2 0.2)
                                 \override Staff.Stem.stemlet-length = 0.75
                                 f16
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \p
                                 [
                                 (
                                   %! SPANNER_START
@@ -4764,6 +6778,26 @@
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.text_spanner()
                                 \startTextSpanTwo
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.text_spanner()
+                                - \tweak staff-padding 6
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.text_spanner()
+                                - \abjad-dashed-line-with-hook
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.text_spanner()
+                                - \baca-text-spanner-left-text "1/2 clt."
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.text_spanner()
+                                \startTextSpanThree
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \<
 
                                 e16
 
@@ -4771,7 +6805,15 @@
 
                                 \revert Staff.Stem.stemlet-length
                                 d16
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \f
                                 ]
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \>
 
                                 \times 4/5
                                 {
@@ -4817,12 +6859,24 @@
                                     \startTextSpanTwo
 
                                     f16
+                                      %! SPANNER_STOP
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \p
+                                      %! SPANNER_START
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \<
 
                                     e16
 
                                     ef16
 
                                     d16
+                                      %! SPANNER_STOP
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \f
                                     )
                                       %! SPANNER_STOP
                                       %! baca.PiecewiseCommand._call(3)
@@ -4832,6 +6886,10 @@
                                       %! baca.PiecewiseCommand._call(3)
                                       %! baca.text_spanner()
                                     \stopTextSpanTwo
+                                      %! SPANNER_START
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \>
 
                                     ef16
                                     (
@@ -4895,6 +6953,14 @@
                                     d16
 
                                     cs16
+                                      %! SPANNER_STOP
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \p
+                                      %! SPANNER_START
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \<
 
                                     \revert Staff.Stem.stemlet-length
                                     c16
@@ -4912,6 +6978,10 @@
                                 [
 
                                 d16
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \f
                                 (
                                   %! SPANNER_START
                                   %! baca.PiecewiseCommand._call(2)
@@ -4952,14 +7022,16 @@
                                   %! baca.text_spanner()
                                 \stopTextSpanOne
                                   %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(4)
+                                  %! baca.text_spanner()
+                                \stopTextSpanThree
+                                  %! SPANNER_STOP
                                   %! baca.PiecewiseCommand._call(3)
                                   %! baca.text_spanner()
                                 \stopTextSpanTwo
                                 ]
                                 \bar "||"
                                 \revert-noteheads
-                                  %! MATERIAL_COLOR
-                                \stopStaffHighlight
 
                             }
 

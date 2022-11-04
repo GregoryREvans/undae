@@ -32,7 +32,13 @@ maker = evans.SegmentMaker(
             ),
             evans.force_accidentals,
             abjad.Clef("treble"),
-            undae.A_color,
+            abjad.Dynamic("mp"),
+            abjad.StartHairpin("<"),
+            evans.Attachment(
+                abjad.Dynamic("mf"),
+                selector=lambda _: abjad.select.leaf(abjad.select.logical_tie(_, 1), 0),
+            ),
+            # undae.A_color,
         ),
         evans.MusicCommand(
             [("violin 1 voice", [14])],
@@ -40,7 +46,8 @@ maker = evans.SegmentMaker(
             evans.PitchHandler(["d,,,"]),
             evans.PitchHandler(["21/1"], as_ratios=True),
             evans.force_accidentals,
-            undae.A_color,
+            abjad.Dynamic("mf"),
+            # undae.A_color,
         ),
         evans.MusicCommand(
             [("violin 2 voice", [_ for _ in range(9)])],
@@ -51,7 +58,15 @@ maker = evans.SegmentMaker(
             ),
             evans.force_accidentals,
             abjad.Clef("treble"),
-            undae.A_color,
+            abjad.Dynamic("mp"),
+            abjad.StartHairpin("<"),
+            evans.Attachment(
+                abjad.Dynamic("mf"),
+                selector=lambda _: abjad.select.leaf(
+                    abjad.select.logical_tie(_, 1, pitched=True), 0
+                ),
+            ),
+            # undae.A_color,
         ),
         evans.MusicCommand(
             [("violin 2 voice", [14, 15, 16, 17])],
@@ -59,7 +74,8 @@ maker = evans.SegmentMaker(
             evans.PitchHandler(["d,,,"]),
             evans.PitchHandler(["18/1", "17/1", "16/1"], as_ratios=True),
             evans.force_accidentals,
-            undae.A_color,
+            abjad.Dynamic("mf"),
+            # undae.A_color,
         ),
         evans.MusicCommand(
             [("viola voice", [_ for _ in range(7)])],
@@ -70,7 +86,15 @@ maker = evans.SegmentMaker(
             ),
             evans.force_accidentals,
             abjad.Clef("alto"),
-            undae.A_color,
+            abjad.Dynamic("mp"),
+            abjad.StartHairpin("<"),
+            evans.Attachment(
+                abjad.Dynamic("mf"),
+                selector=lambda _: abjad.select.leaf(
+                    abjad.select.logical_tie(_, 1, pitched=True), 0
+                ),
+            ),
+            # undae.A_color,
         ),
         evans.MusicCommand(
             [("viola voice", [10])],
@@ -78,7 +102,8 @@ maker = evans.SegmentMaker(
             evans.PitchHandler(["d,,,"]),
             evans.PitchHandler(["14/1"], as_ratios=True),
             evans.force_accidentals,
-            undae.A_color,
+            abjad.Dynamic("mf"),
+            # undae.A_color,
         ),
         evans.MusicCommand(
             [("viola voice", [12, 13, 14, 15, 16, 17])],
@@ -86,7 +111,8 @@ maker = evans.SegmentMaker(
             evans.PitchHandler(["d,,,"]),
             evans.PitchHandler(["9/1", "14/1", "10/1", "9/1"], as_ratios=True),
             evans.force_accidentals,
-            undae.A_color,
+            abjad.Dynamic("mf"),
+            # undae.A_color,
         ),
         evans.MusicCommand(
             [("cello voice", [_ for _ in range(8)])],
@@ -95,7 +121,15 @@ maker = evans.SegmentMaker(
             evans.PitchHandler(["35/1", "26/1", "30/1", "12/1"], as_ratios=True),
             evans.force_accidentals,
             abjad.Clef("treble"),
-            undae.A_color,
+            abjad.Dynamic("mp"),
+            abjad.StartHairpin("<"),
+            evans.Attachment(
+                abjad.Dynamic("mf"),
+                selector=lambda _: abjad.select.leaf(
+                    abjad.select.logical_tie(_, 1, pitched=True), 0
+                ),
+            ),
+            # undae.A_color,
         ),
         evans.MusicCommand(
             [("cello voice", [12, 13, 14, 15, 16, 17])],
@@ -103,8 +137,8 @@ maker = evans.SegmentMaker(
             evans.PitchHandler(["d,,,"]),
             evans.PitchHandler(["6/1", "7/1", "5/1"], as_ratios=True),
             evans.force_accidentals,
-            abjad.Clef("bass"),
-            undae.A_color,
+            abjad.Dynamic("mf"),
+            # undae.A_color,
         ),
         evans.call(
             "score",
@@ -114,7 +148,7 @@ maker = evans.SegmentMaker(
         evans.MusicCommand(
             [("violin 1 voice", [12, 13])],
             evans.talea([11, 9, 10, 8], 8, rewrite=-1),
-            evans.PitchHandler([0, 2, 2.5, 3, 1.5, -3.5, -3, 1, 0.5]),
+            evans.loop([0, 2, 3, -3, -2], [-1, -2]),
             lambda _: abjad.glissando(_),
             evans.bcp(["0/6", "1/6", "2/6", "1/6", "3/6", "2/6"], padding=2.5),
             evans.vibrato_spanner(
@@ -129,12 +163,14 @@ maker = evans.SegmentMaker(
                 abjad.LilyPondLiteral(r"\revert-noteheads", site="after"),
                 selector=lambda _: abjad.select.leaf(_, -1),
             ),
-            undae.C_color,
+            abjad.Dynamic("sf"),
+            abjad.StartHairpin(">"),
+            # undae.C_color,
         ),
         evans.MusicCommand(
             [("violin 1 voice", [15, 16, 17])],
             evans.talea([11, 9, 10, 8], 8, rewrite=-1),
-            evans.PitchHandler([0, 2, 2.5, 3, 1.5, -3.5, -3, 1, 0.5]),
+            evans.loop([0, 2, 3, -3, -2], [-1, -2]),
             lambda _: abjad.glissando(_),
             evans.bcp(["0/6", "1/6", "2/6", "1/6", "3/6", "2/6"], padding=2.5),
             # evans.vibrato_spanner(
@@ -149,12 +185,18 @@ maker = evans.SegmentMaker(
                 abjad.LilyPondLiteral(r"\revert-noteheads", site="after"),
                 selector=lambda _: abjad.select.leaf(_, -1),
             ),
-            undae.C_color,
+            abjad.Dynamic("sf"),
+            abjad.StartHairpin(">"),
+            evans.Attachment(
+                abjad.Dynamic("mf"),
+                selector=lambda _: abjad.select.leaf(_, -1),
+            ),
+            # undae.C_color,
         ),
         evans.MusicCommand(
             [("violin 2 voice", [9, 10, 11, 12, 13])],
             evans.talea([11, 9, 10, 8], 8, rewrite=-1),
-            evans.PitchHandler([0, 2, 2.5, 3, 1.5, -3.5, -3, 1, 0.5]),
+            evans.loop([_ - 1 for _ in [0, 2, 3, -3, -2]], [-1, -2]),
             lambda _: abjad.glissando(_),
             evans.bcp(["0/7", "1/7", "2/7", "1/7", "3/7", "2/7"], padding=2.5),
             evans.vibrato_spanner(
@@ -169,12 +211,14 @@ maker = evans.SegmentMaker(
                 abjad.LilyPondLiteral(r"\revert-noteheads", site="after"),
                 selector=lambda _: abjad.select.leaf(_, -1),
             ),
-            undae.C_color,
+            abjad.Dynamic("sf"),
+            abjad.StartHairpin(">"),
+            # undae.C_color,
         ),
         evans.MusicCommand(
             [("viola voice", [7, 8, 9])],
             evans.talea([11, 9, 10, 8], 8, rewrite=-1),
-            evans.PitchHandler([0, 2, 2.5, 3, 1.5, -3.5, -3, 1, 0.5]),
+            evans.loop([_ - 10 for _ in [0, 2, 3, -3, -2]], [-1, -2]),
             lambda _: abjad.glissando(_),
             evans.bcp(["0/8", "1/8", "2/8", "1/8", "3/8", "2/8"], padding=2.5),
             evans.vibrato_spanner(
@@ -189,12 +233,14 @@ maker = evans.SegmentMaker(
                 abjad.LilyPondLiteral(r"\revert-noteheads", site="after"),
                 selector=lambda _: abjad.select.leaf(_, -1),
             ),
-            undae.C_color,
+            abjad.Dynamic("sf"),
+            abjad.StartHairpin(">"),
+            # undae.C_color,
         ),
         evans.MusicCommand(
             [("viola voice", [11])],
             evans.talea([11, 9, 10, 8], 8, rewrite=-1),
-            evans.PitchHandler([0, 2, 2.5, 3, 1.5, -3.5, -3, 1, 0.5]),
+            evans.loop([_ - 11 for _ in [0, 2, 3, -3, -2]], [-1, -2]),
             lambda _: abjad.glissando(_),
             evans.bcp(["0/8", "1/8", "2/8", "1/8", "3/8", "2/8"], padding=2.5),
             evans.vibrato_spanner(
@@ -209,12 +255,14 @@ maker = evans.SegmentMaker(
                 abjad.LilyPondLiteral(r"\revert-noteheads", site="after"),
                 selector=lambda _: abjad.select.leaf(_, -1),
             ),
-            undae.C_color,
+            abjad.Dynamic("sf"),
+            abjad.StartHairpin(">"),
+            # undae.C_color,
         ),
         evans.MusicCommand(
             [("cello voice", [8, 9, 10, 11])],
             evans.talea([11, 9, 10, 8], 8, rewrite=-1),
-            evans.PitchHandler([0, 2, 2.5, 3, 1.5, -3.5, -3, 1, 0.5]),
+            evans.loop([_ - 13 for _ in [0, 2, 3, -3, -2]], [-1, -2]),
             lambda _: abjad.glissando(_),
             evans.bcp(["0/9", "1/9", "2/9", "1/9", "3/9", "2/9"], padding=2.5),
             evans.vibrato_spanner(
@@ -229,7 +277,10 @@ maker = evans.SegmentMaker(
                 abjad.LilyPondLiteral(r"\revert-noteheads", site="after"),
                 selector=lambda _: abjad.select.leaf(_, -1),
             ),
-            undae.C_color,
+            abjad.Dynamic("sf"),
+            abjad.StartHairpin(">"),
+            abjad.Clef("bass"),
+            # undae.C_color,
         ),
         evans.call(
             "score",

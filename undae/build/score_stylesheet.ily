@@ -52,7 +52,9 @@
             \fontsize #1
             \line {
                 o r \hspace #1.75
-                L y k a i a \hspace #1.75
+				\override #'(font-name . "Palatino")
+                Λ Y K A I A \hspace #1.75
+				\override #'(font-name . "Bell MT Regular")
                 i n \hspace #1.75
 				t h e \hspace #1.75
 				e r g
@@ -168,9 +170,9 @@
 		\shape #'((-2 . 0) (-1 . 0) (-0.5 . 0) (0 . 0)) RepeatTie
 		\override RepeatTie.X-extent = ##f
 		%{ \override SpacingSpanner.spacing-increment = 1.25 %}
-		\override SpacingSpanner.strict-grace-spacing = ##t % trevor
-		\override SpacingSpanner.strict-note-spacing = ##t % trevor
-		\override SpacingSpanner.uniform-stretching = ##t % trevor
+		%{ \override SpacingSpanner.strict-grace-spacing = ##t % trevor %}
+		%{ \override SpacingSpanner.strict-note-spacing = ##t % trevor %}
+		%{ \override SpacingSpanner.uniform-stretching = ##t % trevor %}
 		\override StaffGrouper.staff-staff-spacing = #'((basic-distance . 0) (minimum-distance . 20) (padding . 0))
 		\override StaffGrouper.staffgroup-staff-spacing = #'((basic-distance . 0) (minimum-distance . 20) (padding . 0))
 		\override Stem.stemlet-length = #1.15

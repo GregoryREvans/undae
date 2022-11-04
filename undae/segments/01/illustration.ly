@@ -188,8 +188,6 @@
                                         \set Staff.instrumentName = \markup { \hcenter-in #14 "Violin I" }
                                           %! applying staff names and clefs
                                         \set Staff.shortInstrumentName = \markup { \hcenter-in #12 "vn. I" }
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 0.6 0.6 1)
                                         \clef "treble^8"
                                         \tweak Accidental.stencil #ly:text-interface::print
                                         \tweak Accidental.text \markup { \abjad-natural  }
@@ -421,8 +419,6 @@
                                           %! baca.hairpin()
                                         \ff
                                         \bar "||"
-                                          %! MATERIAL_COLOR
-                                        \stopStaffHighlight
 
                                     }
 
@@ -446,8 +442,6 @@
                                         \set Staff.instrumentName = \markup { \hcenter-in #14 "Violin II" }
                                           %! applying staff names and clefs
                                         \set Staff.shortInstrumentName = \markup { \hcenter-in #12 "vn. II" }
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 0.6 0.6 1)
                                         \clef "treble^8"
                                         r2
 
@@ -653,8 +647,6 @@
                                           %! baca.hairpin()
                                         \ff
                                         \bar "||"
-                                          %! MATERIAL_COLOR
-                                        \stopStaffHighlight
 
                                     }
 
@@ -682,8 +674,6 @@
                                 \set Staff.instrumentName = \markup { \hcenter-in #14 "Viola" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup { \hcenter-in #12 "va." }
-                                  %! MATERIAL_COLOR
-                                \staffHighlight #(rgb-color 0.6 0.6 1)
                                 \clef "treble^8"
                                 r1
 
@@ -958,8 +948,6 @@
                                   %! baca.hairpin()
                                 \ff
                                 \bar "||"
-                                  %! MATERIAL_COLOR
-                                \stopStaffHighlight
 
                             }
 
@@ -983,8 +971,6 @@
                                 \set Staff.instrumentName = \markup { \hcenter-in #14 "Violoncello" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup { \hcenter-in #12 "vc." }
-                                  %! MATERIAL_COLOR
-                                \staffHighlight #(rgb-color 0.6 0.6 1)
                                 \clef "treble^8"
                                 r1
 
@@ -1203,8 +1189,6 @@
                                   %! baca.hairpin()
                                 \ff
                                 \bar "||"
-                                  %! MATERIAL_COLOR
-                                \stopStaffHighlight
 
                             }
 

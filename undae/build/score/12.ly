@@ -67,6 +67,22 @@
                   %! scaling time signatures
                 \time 4/4
                 s1 * 1
+                  %! SPANNER_START
+                  %! baca.PiecewiseCommand._call(2)
+                  %! baca.text_spanner()
+                - \tweak staff-padding 4
+                  %! SPANNER_START
+                  %! baca.PiecewiseCommand._call(2)
+                  %! baca.text_spanner()
+                - \abjad-dashed-line-with-hook
+                  %! SPANNER_START
+                  %! baca.PiecewiseCommand._call(2)
+                  %! baca.text_spanner()
+                - \baca-text-spanner-left-text "rall."
+                  %! SPANNER_START
+                  %! baca.PiecewiseCommand._call(2)
+                  %! baca.text_spanner()
+                \startTextSpanOne
 
                   %! COMMENT_MEASURE_NUMBERS
                   %! evans.SegmentMaker.comment_measure_numbers()
@@ -85,8 +101,11 @@
 
                 \once \override Rest.transparent = ##t
                 r1 * 1/8
-                ^ \markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.uverylongfermata"
-                \bar "|."
+                ^ \markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
+                  %! SPANNER_STOP
+                  %! baca.PiecewiseCommand._call(4)
+                  %! baca.text_spanner()
+                \stopTextSpanOne
 
             }
 
@@ -118,13 +137,19 @@
                                         \set Staff.instrumentName = \markup { \hcenter-in #14 "Violin I" }
                                           %! applying staff names and clefs
                                         \set Staff.shortInstrumentName = \markup { \hcenter-in #12 "vn. I" }
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 0.6 0.6 1)
                                         \clef "treble"
                                         bf4
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \mp
                                         \tweak color #red
                                         _ \markup \center-align 232.3
                                         ^ \markup \center-align { \center-column { "-6" } }
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \<
                                         ~
 
                                         \override Staff.Stem.stemlet-length = 0.75
@@ -313,11 +338,13 @@
                                         c''4
 
                                         b'2.
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(3)
+                                          %! baca.hairpin()
+                                        \f
                                         \tweak color #red
                                         _ \markup \center-align 489.4
                                         ^ \markup \center-align { \center-column { "-16" } }
-                                          %! MATERIAL_COLOR
-                                        \stopStaffHighlight
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -325,6 +352,7 @@
                                         \once \override MultiMeasureRest.transparent = ##t
                                         \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                         R1 * 1/4
+                                        \bar "||"
                                         \stopStaff \startStaff
 
                                     }
@@ -349,13 +377,19 @@
                                         \set Staff.instrumentName = \markup { \hcenter-in #14 "Violin II" }
                                           %! applying staff names and clefs
                                         \set Staff.shortInstrumentName = \markup { \hcenter-in #12 "vn. II" }
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 0.6 0.6 1)
                                         \clef "treble"
                                         a'2
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \mp
                                         \tweak color #red
                                         _ \markup \center-align 440.0
                                         ^ \markup \center-align { \center-column { "+0" } }
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \<
 
                                         ef'2
                                         \tweak color #red
@@ -536,11 +570,13 @@
                                         ^ \markup \center-align { \center-column { "-22" } }
 
                                         af2
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(3)
+                                          %! baca.hairpin()
+                                        \f
                                         \tweak color #red
                                         _ \markup \center-align 208.8
                                         ^ \markup \center-align { \center-column { "+10" } }
-                                          %! MATERIAL_COLOR
-                                        \stopStaffHighlight
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -548,6 +584,7 @@
                                         \once \override MultiMeasureRest.transparent = ##t
                                         \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                         R1 * 1/4
+                                        \bar "||"
                                         \stopStaff \startStaff
 
                                     }
@@ -576,13 +613,19 @@
                                 \set Staff.instrumentName = \markup { \hcenter-in #14 "Viola" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup { \hcenter-in #12 "va." }
-                                  %! MATERIAL_COLOR
-                                \staffHighlight #(rgb-color 0.6 0.6 1)
                                 \clef "alto"
                                 cs2.
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \mp
                                 \tweak color #red
                                 _ \markup \center-align 136.4
                                 ^ \markup \center-align { \center-column { "-28" } }
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \<
 
                                 d4
                                 \tweak color #red
@@ -759,8 +802,10 @@
                                 ~
 
                                 ef2
-                                  %! MATERIAL_COLOR
-                                \stopStaffHighlight
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(3)
+                                  %! baca.hairpin()
+                                \f
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
@@ -768,6 +813,7 @@
                                 \once \override MultiMeasureRest.transparent = ##t
                                 \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                 R1 * 1/4
+                                \bar "||"
                                 \stopStaff \startStaff
 
                             }
@@ -792,13 +838,19 @@
                                 \set Staff.instrumentName = \markup { \hcenter-in #14 "Violoncello" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup { \hcenter-in #12 "vc." }
-                                  %! MATERIAL_COLOR
-                                \staffHighlight #(rgb-color 0.6 0.6 1)
                                 \clef "bass"
                                 b,2
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \mp
                                 \tweak color #red
                                 _ \markup \center-align 122.6
                                 ^ \markup \center-align { \center-column { "-12" } }
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \<
 
                                 a,2
                                 \tweak color #red
@@ -949,11 +1001,13 @@
                                 g,2.
 
                                 b,4
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(3)
+                                  %! baca.hairpin()
+                                \f
                                 \tweak color #red
                                 _ \markup \center-align 122.6
                                 ^ \markup \center-align { \center-column { "-12" } }
-                                  %! MATERIAL_COLOR
-                                \stopStaffHighlight
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
@@ -961,7 +1015,7 @@
                                 \once \override MultiMeasureRest.transparent = ##t
                                 \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                 R1 * 1/4
-                                _ \colophon
+                                \bar "||"
                                 \stopStaff \startStaff
 
                             }

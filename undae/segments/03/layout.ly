@@ -58,9 +58,11 @@
             \evans-new-spacing-section #1 #38
             s1 * 5/4
             \noBreak
-            \evans-new-spacing-section #1 #38
+            \evans-new-spacing-section #35 #912
             s1 * 1
-            \noBreak
+            \break
+            \evans-lbsd #20 #'(19 20 20 20)
+            \evans-system-X-offset #1
             \pageBreak
         }
     }

@@ -14,7 +14,25 @@ met_66 = abjad.MetronomeMark((1, 4), 66)
 
 met_40 = abjad.MetronomeMark((1, 4), 40)
 
+met_30 = abjad.MetronomeMark((1, 4), 30)
+
 # markup met
+
+met_30_mark = abjad.MetronomeMark.make_tempo_equation_markup((1, 4), 30)
+
+mark_30 = abjad.LilyPondLiteral(
+    [
+        r"^ \markup {",
+        r"  \raise #6 \with-dimensions-from \null",
+        # r"  \override #'(font-size . 5.5)", # score
+        r"  \override #'(font-size . 3)",  # parts
+        r"  \concat {",
+        f"      {met_30_mark.string[8:]}",
+        r"  }",
+        r"}",
+    ],
+    site="after",
+)
 
 met_40_mark = abjad.MetronomeMark.make_tempo_equation_markup((1, 4), 40)
 
@@ -916,3 +934,21 @@ def substitute_time_signatures(leaves, new_signatures):
 
 def replace_sigs(new_sigs):
     return lambda _: substitute_time_signatures(_, new_sigs)
+
+
+def add_fancy_glisses(indices=[0]):
+    def returned_function(selections):
+        ties = abjad.select.logical_ties(selections, grace=False)
+        targets = abjad.select.get(ties, indices)
+        final_targets = [abjad.select.leaf(_, -1) for _ in targets]
+        for target in final_targets:
+            abjad.attach(
+                abjad.Glissando(),
+                target,
+            )
+            abjad.attach(
+                evans.make_fancy_gliss(3, 2, 4, 2, 1, right_padding=0.5),
+                target,
+            )
+
+    return returned_function

@@ -58,7 +58,7 @@ maker = evans.SegmentMaker(
                 lambda _: baca.hairpin(_, "mf < ff"),
                 selector=lambda _: abjad.select.leaves(_, pitched=True)[-2:],
             ),
-            undae.A_color,
+            # undae.A_color,
             abjad.Clef("treble^8"),
             evans.Attachment(
                 abjad.Clef("treble"),
@@ -88,7 +88,7 @@ maker = evans.SegmentMaker(
                 lambda _: baca.hairpin(_, "mf < ff"),
                 selector=lambda _: abjad.select.leaves(_, pitched=True)[-2:],
             ),
-            undae.A_color,
+            # undae.A_color,
             evans.Attachment(
                 abjad.Clef("treble^8"),
                 selector=lambda _: abjad.select.leaf(_, 0),
@@ -121,7 +121,7 @@ maker = evans.SegmentMaker(
                 lambda _: baca.hairpin(_, "mf < ff"),
                 selector=lambda _: abjad.select.leaves(_, pitched=True)[-2:],
             ),
-            undae.A_color,
+            # undae.A_color,
             evans.Attachment(
                 abjad.Clef("treble^8"),
                 selector=lambda _: abjad.select.leaf(_, 0),
@@ -165,7 +165,7 @@ maker = evans.SegmentMaker(
                 lambda _: baca.hairpin(_, "mf < ff"),
                 selector=lambda _: abjad.select.leaves(_, pitched=True)[-2:],
             ),
-            undae.A_color,
+            # undae.A_color,
             evans.Attachment(
                 abjad.Clef("treble^8"),
                 selector=lambda _: abjad.select.leaf(_, 0),

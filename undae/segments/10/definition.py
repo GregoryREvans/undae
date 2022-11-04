@@ -40,29 +40,115 @@ maker = evans.SegmentMaker(
                 selector=lambda _: abjad.select.leaf(_, -1),
             ),
             evans.slur([4, 3]),
-            undae.D_color,
+            evans.hairpin("p < f > pp <| ff", [4, 5]),
+            # undae.D_color,
         ),
         evans.MusicCommand(
             ("violin 1 voice", [_ for _ in range(4, 9)]),
-            undae.E_rhythm(
-                stage=1,
-                long_rotation=-2,
-                short_rotation=1,
-                rotation=1,
-                preprocessor=evans.make_preprocessor(
-                    quarters=True,
-                    fuse_counts=[4, 1, 1, 3, 1, 2, 2, 1],
-                    split_at_measure_boundaries=True,
-                ),
+            evans.make_rtm(
+                [
+                    "(1 (-2 (1 (1 1 1 1)) -1))",
+                    "(1 (-3 (1 (-1 1)) (1 (1 1 1)) (2 (1 1 1))))",
+                    "(1 (-1 (1 (1 1 1 1)) -1))",
+                    "(1 (-3 (1 (1 1 1 1)) -1))",
+                    "(1 (-1 (1 (1 1 1))))",
+                ],
+                treat_tuplets=True,
                 rewrite=-1,
             ),
             undae.potamia_pitches(transposition=1, columns=True, retrograde=True),
-            undae.E_color,
+            evans.Callable(
+                evans.slur(),
+                lambda _: abjad.select.run(_, 0),
+            ),
+            evans.Attachment(
+                abjad.Markup(r"\markup gett."),
+                direction=abjad.UP,
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 0), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurDashed", site="before"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 0), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurSolid", site="after"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 0), -1),
+            ),
+            evans.Callable(
+                evans.slur(),
+                lambda _: abjad.select.run(_, 1),
+            ),
+            evans.Attachment(
+                abjad.Markup(r"\markup gett."),
+                direction=abjad.UP,
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 1), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurDashed", site="before"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 1), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurSolid", site="after"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 1), -1),
+            ),
+            evans.Callable(
+                evans.slur(),
+                lambda _: abjad.select.run(_, 2),
+            ),
+            evans.Attachment(
+                abjad.Markup(r"\markup gett."),
+                direction=abjad.UP,
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 2), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurDashed", site="before"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 2), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurSolid", site="after"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 2), -1),
+            ),
+            evans.Callable(
+                evans.slur(),
+                lambda _: abjad.select.run(_, 3),
+            ),
+            evans.Attachment(
+                abjad.Markup(r"\markup gett."),
+                direction=abjad.UP,
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 3), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurDashed", site="before"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 3), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurSolid", site="after"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 3), -1),
+            ),
+            evans.Callable(
+                evans.slur(),
+                lambda _: abjad.select.run(_, 4),
+            ),
+            evans.Attachment(
+                abjad.Markup(r"\markup gett."),
+                direction=abjad.UP,
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 4), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurDashed", site="before"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 4), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurSolid", site="after"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 4), -1),
+            ),
+            abjad.Dynamic("mp"),
+            # undae.E_color,
         ),
         evans.MusicCommand(
             ("violin 1 voice", [_ for _ in range(11, 14)]),
             evans.talea([11, 9, 10, 8], 8, rewrite=-1),
-            evans.PitchHandler([0, 2, 2.5, 3, 1.5, -3.5, -3, 1, 0.5]),
+            evans.loop([_ + 2 for _ in [0, 2, 3, -3, 1]], [-2, -1]),
             evans.bcp(["0/9", "1/9", "2/9", "1/9", "3/9", "2/9"], padding=2.5),
             # evans.vibrato_spanner(
             #     peaks=[0, 1, 4, 2, 6, 5],
@@ -76,40 +162,115 @@ maker = evans.SegmentMaker(
                 abjad.LilyPondLiteral(r"\revert-noteheads", site="after"),
                 selector=lambda _: abjad.select.leaf(_, -1),
             ),
-            undae.C_color,
+            evans.hairpin("p < f > p > pp", [2]),
+            # undae.C_color,
         ),
         evans.MusicCommand(
             ("violin 2 voice", [_ for _ in range(5)]),
             evans.talea(
-                [4],
-                16,
-                extra_counts=[2, 3, 1, 0],
-                preprocessor=evans.make_preprocessor(quarters=True),
+                [1],
+                32,
+                # preprocessor=evans.make_preprocessor(quarters=True),
             ),
-            evans.PitchHandler([["a", "gs'"]]),
-            undae.B_color,
+            evans.loop([2, 10, 18, 26, 26, 18, 10, 2], [1, 3, -2, 1, 2, 1, -3, 4]),
+            evans.slur([4]),
+            abjad.Dynamic("f"),
+            abjad.LilyPondLiteral(r"\harmonicsOn", site="before"),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\harmonicsOff", site="after"),
+                selector=lambda _: abjad.select.leaf(_, -1),
+            ),
+            abjad.Dynamic("f"),
+            # undae.B_color,
         ),
         evans.MusicCommand(
             ("violin 2 voice", [_ for _ in range(5, 9)]),
-            undae.E_rhythm(
-                stage=1,
-                long_rotation=-4,
-                short_rotation=2,
-                rotation=-2,
-                preprocessor=evans.make_preprocessor(
-                    quarters=True,
-                    fuse_counts=[4, 1, 1, 3, 1, 2, 2, 1],
-                    split_at_measure_boundaries=True,
-                ),
+            evans.make_rtm(
+                [
+                    "(1 (-3 (1 (-1 1)) (1 (1 1 1)) (2 (1 1 1))))",
+                    "(1 (-1 (1 (1 1 1 1)) -1))",
+                    "(1 (-3 (1 (1 1 1 1)) -1))",
+                    "(1 (-1 (1 (1 1 1))))",
+                ],
+                treat_tuplets=True,
                 rewrite=-1,
             ),
             undae.potamia_pitches(transposition=2, columns=False, retrograde=True),
-            undae.E_color,
+            evans.Callable(
+                evans.slur(),
+                lambda _: abjad.select.run(_, 0),
+            ),
+            evans.Attachment(
+                abjad.Markup(r"\markup gett."),
+                direction=abjad.UP,
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 0), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurDashed", site="before"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 0), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurSolid", site="after"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 0), -1),
+            ),
+            evans.Callable(
+                evans.slur(),
+                lambda _: abjad.select.run(_, 1),
+            ),
+            evans.Attachment(
+                abjad.Markup(r"\markup gett."),
+                direction=abjad.UP,
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 1), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurDashed", site="before"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 1), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurSolid", site="after"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 1), -1),
+            ),
+            evans.Callable(
+                evans.slur(),
+                lambda _: abjad.select.run(_, 2),
+            ),
+            evans.Attachment(
+                abjad.Markup(r"\markup gett."),
+                direction=abjad.UP,
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 2), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurDashed", site="before"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 2), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurSolid", site="after"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 2), -1),
+            ),
+            evans.Callable(
+                evans.slur(),
+                lambda _: abjad.select.run(_, 3),
+            ),
+            evans.Attachment(
+                abjad.Markup(r"\markup gett."),
+                direction=abjad.UP,
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 3), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurDashed", site="before"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 3), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurSolid", site="after"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 3), -1),
+            ),
+            abjad.Dynamic("mp"),
+            # undae.E_color,
         ),
         evans.MusicCommand(
             ("violin 2 voice", [_ for _ in range(11, 14)]),
             evans.talea([11, 9, 10, 8], 8, rewrite=-1),
-            evans.PitchHandler([0, 2, 2.5, 3, 1.5, -3.5, -3, 1, 0.5]),
+            evans.loop([_ + 1 for _ in [0, 2, 3, -3, 1]], [-2, -1]),
             evans.bcp(["0/9", "1/9", "2/9", "1/9", "3/9", "2/9"], padding=2.5),
             # evans.vibrato_spanner(
             #     peaks=[0, 1, 4, 2, 6, 5],
@@ -123,7 +284,8 @@ maker = evans.SegmentMaker(
                 abjad.LilyPondLiteral(r"\revert-noteheads", site="after"),
                 selector=lambda _: abjad.select.leaf(_, -1),
             ),
-            undae.C_color,
+            evans.hairpin("p < f > p > pp", [2]),
+            # undae.C_color,
         ),
         evans.MusicCommand(
             ("viola voice", [_ for _ in range(4)]),
@@ -143,13 +305,14 @@ maker = evans.SegmentMaker(
                 selector=lambda _: abjad.select.leaf(_, -1),
             ),
             evans.slur([8, 3]),
+            evans.hairpin("p < f > pp <| ff", [8, 5]),
             abjad.Clef("alto"),
-            undae.D_color,
+            # undae.D_color,
         ),
         evans.MusicCommand(
             ("viola voice", [_ for _ in range(4, 8)]),
             evans.talea([11, 9, 10, 8], 8, rewrite=-1),
-            evans.PitchHandler([0, 2, 2.5, 3, 1.5, -3.5, -3, 1, 0.5]),
+            evans.loop([_ - 2 for _ in [0, 2, 3, -3, 1]], [-2, -1]),
             evans.bcp(["0/9", "1/9", "2/9", "1/9", "3/9", "2/9"], padding=2.5),
             evans.vibrato_spanner(
                 peaks=[0, 1, 4, 2, 6, 5],
@@ -163,29 +326,173 @@ maker = evans.SegmentMaker(
                 abjad.LilyPondLiteral(r"\revert-noteheads", site="after"),
                 selector=lambda _: abjad.select.leaf(_, -1),
             ),
-            undae.C_color,
+            evans.hairpin("p < f > p > pp", [2]),
+            # undae.C_color,
         ),
         evans.MusicCommand(
             ("viola voice", [_ for _ in range(8, 13)]),
-            undae.E_rhythm(
-                stage=1,
-                long_rotation=-6,
-                short_rotation=3,
-                rotation=3,
-                preprocessor=evans.make_preprocessor(
-                    quarters=True,
-                    fuse_counts=[1, 1, 3, 1, 2, 2, 1, 4],
-                    split_at_measure_boundaries=True,
-                ),
-                rewrite=-1,
-            ),
+            evans.talea([-6, 1, 1, 1, 1, -2, 1, 1, 1, 1, 1], 16, rewrite=-1),
             undae.potamia_pitches(transposition=-1, columns=True, retrograde=False),
-            undae.E_color,
+            evans.Callable(
+                evans.slur(),
+                lambda _: abjad.select.run(_, 0),
+            ),
+            evans.Attachment(
+                abjad.Markup(r"\markup gett."),
+                direction=abjad.UP,
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 0), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurDashed", site="before"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 0), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurSolid", site="after"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 0), -1),
+            ),
+            evans.Callable(
+                evans.slur(),
+                lambda _: abjad.select.run(_, 1),
+            ),
+            evans.Attachment(
+                abjad.Markup(r"\markup gett."),
+                direction=abjad.UP,
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 1), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurDashed", site="before"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 1), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurSolid", site="after"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 1), -1),
+            ),
+            evans.Callable(
+                evans.slur(),
+                lambda _: abjad.select.run(_, 2),
+            ),
+            evans.Attachment(
+                abjad.Markup(r"\markup gett."),
+                direction=abjad.UP,
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 2), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurDashed", site="before"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 2), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurSolid", site="after"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 2), -1),
+            ),
+            evans.Callable(
+                evans.slur(),
+                lambda _: abjad.select.run(_, 3),
+            ),
+            evans.Attachment(
+                abjad.Markup(r"\markup gett."),
+                direction=abjad.UP,
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 3), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurDashed", site="before"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 3), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurSolid", site="after"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 3), -1),
+            ),
+            evans.Callable(
+                evans.slur(),
+                lambda _: abjad.select.run(_, 4),
+            ),
+            evans.Attachment(
+                abjad.Markup(r"\markup gett."),
+                direction=abjad.UP,
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 4), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurDashed", site="before"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 4), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurSolid", site="after"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 4), -1),
+            ),
+            evans.Callable(
+                evans.slur(),
+                lambda _: abjad.select.run(_, 5),
+            ),
+            evans.Attachment(
+                abjad.Markup(r"\markup gett."),
+                direction=abjad.UP,
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 5), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurDashed", site="before"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 5), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurSolid", site="after"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 5), -1),
+            ),
+            evans.Callable(
+                evans.slur(),
+                lambda _: abjad.select.run(_, 6),
+            ),
+            evans.Attachment(
+                abjad.Markup(r"\markup gett."),
+                direction=abjad.UP,
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 6), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurDashed", site="before"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 6), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurSolid", site="after"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 6), -1),
+            ),
+            evans.Callable(
+                evans.slur(),
+                lambda _: abjad.select.run(_, 7),
+            ),
+            evans.Attachment(
+                abjad.Markup(r"\markup gett."),
+                direction=abjad.UP,
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 7), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurDashed", site="before"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 7), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurSolid", site="after"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 7), -1),
+            ),
+            evans.Callable(
+                evans.slur(),
+                lambda _: abjad.select.run(_, 8),
+            ),
+            evans.Attachment(
+                abjad.Markup(r"\markup gett."),
+                direction=abjad.UP,
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 8), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurDashed", site="before"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 8), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurSolid", site="after"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 8), -1),
+            ),
+            abjad.Dynamic("mp"),
+            # undae.E_color,
         ),
         evans.MusicCommand(
             ("viola voice", [13]),
             evans.talea([11, 9, 10, 8], 8, rewrite=-1),
-            evans.PitchHandler([0, 2, 2.5, 3, 1.5, -3.5, -3, 1, 0.5]),
+            evans.loop([_ - 4 for _ in [0, 2, 3, -3, 1]], [-2, -1]),
             evans.bcp(["0/9", "1/9", "2/9", "1/9", "3/9", "2/9"], padding=2.5),
             # evans.vibrato_spanner(
             #     peaks=[0, 1, 4, 2, 6, 5],
@@ -199,23 +506,96 @@ maker = evans.SegmentMaker(
                 abjad.LilyPondLiteral(r"\revert-noteheads", site="after"),
                 selector=lambda _: abjad.select.leaf(_, -1),
             ),
-            undae.C_color,
+            evans.hairpin("p < f > p > pp", [2]),
+            # undae.C_color,
         ),
         evans.MusicCommand(
             ("cello voice", [_ for _ in range(6)]),
             evans.talea(
-                [2],
-                8,
-                preprocessor=evans.make_preprocessor(quarters=True),
+                [
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    2,
+                    2,
+                    2,
+                    2,
+                    2,
+                    2,
+                    2,
+                    2,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                ],
+                32,
+                # preprocessor=evans.make_preprocessor(quarters=True),
             ),
-            evans.PitchHandler([["c,", "b,"]]),
+            evans.loop(
+                [
+                    _ - 23
+                    for _ in [
+                        3,
+                        12,
+                        21,
+                        30,
+                        30,
+                        21,
+                        12,
+                        3,
+                        3,
+                        12,
+                        21,
+                        30,
+                        30,
+                        21,
+                        12,
+                        3,
+                        32,
+                        23,
+                        14,
+                        5,
+                        5,
+                        14,
+                        23,
+                        32,
+                    ]
+                ],
+                [2, 1, -2],
+            ),
+            evans.slur([4]),
+            abjad.Dynamic("f"),
+            abjad.LilyPondLiteral(r"\harmonicsOn", site="before"),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\harmonicsOff", site="after"),
+                selector=lambda _: abjad.select.leaf(_, -1),
+            ),
+            abjad.Dynamic("f"),
             abjad.Clef("bass"),
-            undae.B_color,
+            # undae.B_color,
         ),
         evans.MusicCommand(
             ("cello voice", [6, 7]),
             evans.talea([11, 9, 10, 8], 8, rewrite=-1),
-            evans.PitchHandler([0, 2, 2.5, 3, 1.5, -3.5, -3, 1, 0.5]),
+            evans.loop([_ - 8 for _ in [0, 2, 3, -3, 1]], [-2, -1]),
             evans.bcp(["0/9", "1/9", "2/9", "1/9", "3/9", "2/9"], padding=2.5),
             evans.vibrato_spanner(
                 peaks=[0, 1, 4, 2, 6, 5],
@@ -229,29 +609,173 @@ maker = evans.SegmentMaker(
                 abjad.LilyPondLiteral(r"\revert-noteheads", site="after"),
                 selector=lambda _: abjad.select.leaf(_, -1),
             ),
-            undae.C_color,
+            evans.hairpin("p < f > p > pp", [2]),
+            # undae.C_color,
         ),
         evans.MusicCommand(
             ("cello voice", [_ for _ in range(8, 13)]),
-            undae.E_rhythm(
-                stage=1,
-                long_rotation=-8,
-                short_rotation=4,
-                rotation=-4,
-                preprocessor=evans.make_preprocessor(
-                    quarters=True,
-                    fuse_counts=[1, 3, 1, 2, 2, 1, 4, 1],
-                    split_at_measure_boundaries=True,
-                ),
-                rewrite=-1,
+            evans.talea([-6, 1, 1, 1, 1, -2, 1, 1, 1, 1, 1], 16, rewrite=-1),
+            undae.potamia_pitches(transposition=-2, columns=False, retrograde=False),
+            evans.Callable(
+                evans.slur(),
+                lambda _: abjad.select.run(_, 0),
             ),
-            undae.E_color,
+            evans.Attachment(
+                abjad.Markup(r"\markup gett."),
+                direction=abjad.UP,
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 0), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurDashed", site="before"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 0), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurSolid", site="after"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 0), -1),
+            ),
+            evans.Callable(
+                evans.slur(),
+                lambda _: abjad.select.run(_, 1),
+            ),
+            evans.Attachment(
+                abjad.Markup(r"\markup gett."),
+                direction=abjad.UP,
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 1), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurDashed", site="before"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 1), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurSolid", site="after"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 1), -1),
+            ),
+            evans.Callable(
+                evans.slur(),
+                lambda _: abjad.select.run(_, 2),
+            ),
+            evans.Attachment(
+                abjad.Markup(r"\markup gett."),
+                direction=abjad.UP,
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 2), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurDashed", site="before"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 2), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurSolid", site="after"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 2), -1),
+            ),
+            evans.Callable(
+                evans.slur(),
+                lambda _: abjad.select.run(_, 3),
+            ),
+            evans.Attachment(
+                abjad.Markup(r"\markup gett."),
+                direction=abjad.UP,
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 3), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurDashed", site="before"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 3), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurSolid", site="after"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 3), -1),
+            ),
+            evans.Callable(
+                evans.slur(),
+                lambda _: abjad.select.run(_, 4),
+            ),
+            evans.Attachment(
+                abjad.Markup(r"\markup gett."),
+                direction=abjad.UP,
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 4), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurDashed", site="before"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 4), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurSolid", site="after"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 4), -1),
+            ),
+            evans.Callable(
+                evans.slur(),
+                lambda _: abjad.select.run(_, 5),
+            ),
+            evans.Attachment(
+                abjad.Markup(r"\markup gett."),
+                direction=abjad.UP,
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 5), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurDashed", site="before"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 5), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurSolid", site="after"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 5), -1),
+            ),
+            evans.Callable(
+                evans.slur(),
+                lambda _: abjad.select.run(_, 6),
+            ),
+            evans.Attachment(
+                abjad.Markup(r"\markup gett."),
+                direction=abjad.UP,
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 6), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurDashed", site="before"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 6), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurSolid", site="after"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 6), -1),
+            ),
+            evans.Callable(
+                evans.slur(),
+                lambda _: abjad.select.run(_, 7),
+            ),
+            evans.Attachment(
+                abjad.Markup(r"\markup gett."),
+                direction=abjad.UP,
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 7), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurDashed", site="before"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 7), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurSolid", site="after"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 7), -1),
+            ),
+            evans.Callable(
+                evans.slur(),
+                lambda _: abjad.select.run(_, 8),
+            ),
+            evans.Attachment(
+                abjad.Markup(r"\markup gett."),
+                direction=abjad.UP,
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 8), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurDashed", site="before"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 8), 0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurSolid", site="after"),
+                selector=lambda _: abjad.select.leaf(abjad.select.run(_, 8), -1),
+            ),
+            abjad.Dynamic("mp"),
+            # undae.E_color,
         ),
-        undae.potamia_pitches(transposition=-2, columns=False, retrograde=False),
         evans.MusicCommand(
             ("cello voice", [13]),
             evans.talea([11, 9, 10, 8], 8, rewrite=-1),
-            evans.PitchHandler([0, 2, 2.5, 3, 1.5, -3.5, -3, 1, 0.5]),
+            evans.loop([_ - 16 for _ in [0, 2, 3, -3, 1]], [-2, -1]),
             evans.bcp(["0/9", "1/9", "2/9", "1/9", "3/9", "2/9"], padding=2.5),
             # evans.vibrato_spanner(
             #     peaks=[0, 1, 4, 2, 6, 5],
@@ -265,7 +789,8 @@ maker = evans.SegmentMaker(
                 abjad.LilyPondLiteral(r"\revert-noteheads", site="after"),
                 selector=lambda _: abjad.select.leaf(_, -1),
             ),
-            undae.C_color,
+            evans.hairpin("p < f > p > pp", [3]),
+            # undae.C_color,
         ),
         evans.call(
             "score",

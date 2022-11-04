@@ -227,6 +227,20 @@ reduced_signatures_12 = evans.reduce_fermata_measures(
 )
 
 ##
+## 13 ##
+##
+
+signatures_13 = [abjad.TimeSignature((4, 4)) for _ in range(11)]
+
+signatures_13.append(abjad.TimeSignature((1, 4)))  # for ending skip
+
+fermata_measures_13 = [10]
+
+reduced_signatures_13 = evans.reduce_fermata_measures(
+    signatures_13, fermata_measures_13
+)
+
+##
 ## total ##
 ##
 
@@ -244,5 +258,6 @@ all_signatures = evans.join_time_signature_lists(
         reduced_signatures_10,
         reduced_signatures_11,
         reduced_signatures_12,
+        reduced_signatures_13,
     ]
 )

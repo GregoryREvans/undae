@@ -25,20 +25,111 @@ maker = evans.SegmentMaker(
     commands=[
         evans.MusicCommand(
             [("violin 1 voice", [_ for _ in range(4)])],
-            undae.E_rhythm(
-                stage=1,
-                long_rotation=-1,
-                short_rotation=1,
-                rotation=0,
-                preprocessor=evans.make_preprocessor(
-                    quarters=True,
-                    fuse_counts=[2, 2, 1, 4, 1, 1, 3, 1],
-                    split_at_measure_boundaries=True,
+            evans.RhythmHandler(
+                evans.make_rtm(
+                    [
+                        "(1 (-1 2 2 1 1 -1))",
+                        "(1 (-1 2 1 1 -1))",
+                        "(1 (-1 2))",
+                        "(1 (-1 1 1 2))",
+                    ],
+                    treat_tuplets=True,
+                    preprocessor=evans.make_preprocessor(
+                        quarters=True, fuse_counts=[3], split_at_measure_boundaries=True
+                    ),
                 ),
-                rewrite=-2,
+                forget=False,
             ),
             undae.potamia_pitches(transposition=1, columns=False, retrograde=False),
-            undae.E_color,
+            evans.Callable(
+                evans.text_span(["clt."], "=|", padding=6, id=1),
+                selector=lambda _: abjad.select.get(
+                    abjad.select.leaves(_, pitched=True), [0, 1, 2, 3]
+                ),
+            ),
+            evans.Callable(
+                evans.text_span(["T", "P"], "=>", padding=4, id=2),
+                selector=lambda _: abjad.select.get(
+                    abjad.select.leaves(_, pitched=True), [0, 1, 2, 3]
+                ),
+            ),
+            evans.Callable(
+                evans.ArticulationHandler(["tremolo"], articulation_boolean_vector=[1]),
+                selector=lambda _: abjad.select.get(
+                    abjad.select.leaves(_, pitched=True), [0, 1, 2, 3]
+                ),
+            ),
+            evans.Attachment(
+                abjad.Glissando(),
+                selector=lambda _: abjad.select.leaf(_, 4, pitched=True),
+            ),
+            evans.Attachment(
+                evans.make_fancy_gliss(1, 2, 6, 3, 1, 6, 5, 2, 3, 1, right_padding=1.5),
+                selector=lambda _: abjad.select.leaf(_, 4, pitched=True),
+            ),
+            evans.Callable(
+                evans.text_span(["clb."], "=|", padding=2, id=1),
+                selector=lambda _: abjad.select.get(
+                    abjad.select.leaves(_, pitched=True), [5, 6]
+                ),
+            ),
+            evans.Attachment(
+                abjad.Articulation("snappizzicato"),
+                selector=lambda _: abjad.select.leaf(_, 7, pitched=True),
+            ),
+            evans.Callable(
+                evans.slur(),
+                selector=lambda _: abjad.select.get(
+                    abjad.select.leaves(_, pitched=True), [8, 9, 10]
+                ),
+            ),
+            evans.Attachment(
+                abjad.Markup(r"\markup gett."),
+                selector=lambda _: abjad.select.leaf(_, 8, pitched=True),
+                direction=abjad.UP,
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurDashed", site="before"),
+                selector=lambda _: abjad.select.leaf(_, 8, pitched=True),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurSolid", site="before"),
+                selector=lambda _: abjad.select.leaf(_, 10, pitched=True),
+            ),
+            evans.Callable(
+                evans.text_span(["clt."], "=|", padding=6, id=1),
+                selector=lambda _: abjad.select.get(
+                    abjad.select.leaves(_, pitched=True), [11, 12, 13, 14]
+                ),
+            ),
+            evans.Callable(
+                evans.text_span(["T", "P"], "=>", padding=4, id=2),
+                selector=lambda _: abjad.select.get(
+                    abjad.select.leaves(_, pitched=True), [11, 12, 13, 14]
+                ),
+            ),
+            evans.Attachment(
+                abjad.Glissando(),
+                selector=lambda _: abjad.select.leaf(_, 15, pitched=True),
+            ),
+            evans.Attachment(
+                evans.make_fancy_gliss(1, 2, 6, 3, 1, 6, 5, 2, 3, 1, right_padding=1.5),
+                selector=lambda _: abjad.select.leaf(_, 15, pitched=True),
+            ),
+            evans.Callable(
+                evans.text_span(["clb."], "=|", padding=2, id=1),
+                selector=lambda _: abjad.select.get(
+                    abjad.select.leaves(_, pitched=True), [16, 17]
+                ),
+            ),
+            evans.Callable(
+                evans.ArticulationHandler(["tremolo"], articulation_boolean_vector=[1]),
+                selector=lambda _: abjad.select.get(
+                    abjad.select.leaves(_, pitched=True), [11, 12, 13, 14]
+                ),
+            ),
+            lambda _: baca.hairpin(_, "p < ff"),
+            # undae.E_color,
         ),
         evans.MusicCommand(
             [("violin 1 voice", [_ for _ in range(4, 7)])],
@@ -48,24 +139,8 @@ maker = evans.SegmentMaker(
             ),
             evans.clean_cent_markup,
             evans.annotate_hertz,
-            undae.A_color,
-        ),
-        evans.MusicCommand(
-            [("violin 2 voice", [0])],
-            undae.E_rhythm(
-                stage=1,
-                long_rotation=-2,
-                short_rotation=2,
-                rotation=0,
-                preprocessor=evans.make_preprocessor(
-                    quarters=True,
-                    fuse_counts=[2, 1, 4, 1, 1, 3, 1, 2],
-                    split_at_measure_boundaries=True,
-                ),
-                rewrite=-2,
-            ),
-            undae.potamia_pitches(transposition=2, columns=True, retrograde=False),
-            undae.E_color,
+            abjad.Dynamic("mf"),
+            # undae.A_color,
         ),
         evans.MusicCommand(
             [("violin 2 voice", [1])],
@@ -73,24 +148,132 @@ maker = evans.SegmentMaker(
             evans.PitchHandler([evans.ETPitch("a'", "7/4", 9, -1)]),
             evans.clean_cent_markup,
             evans.annotate_hertz,
-            undae.A_color,
+            abjad.Dynamic("mf"),
+            # undae.A_color,
         ),
         evans.MusicCommand(
             [("violin 2 voice", [_ for _ in range(2, 6)])],
-            undae.E_rhythm(
-                stage=1,
-                long_rotation=-2,
-                short_rotation=2,
-                rotation=0,
-                preprocessor=evans.make_preprocessor(
-                    quarters=True,
-                    fuse_counts=[2, 1, 4, 1, 1, 3, 1, 2],
-                    split_at_measure_boundaries=True,
+            evans.RhythmHandler(
+                evans.make_rtm(
+                    [
+                        "(1 (-1 2))",
+                        "(1 (-1 1 1 2))",
+                        "(1 (-1 2 2 1 1 -1))",
+                        "(1 (-1 2 1 1 -1))",
+                    ],
+                    treat_tuplets=True,
+                    preprocessor=evans.make_preprocessor(
+                        quarters=True, fuse_counts=[3], split_at_measure_boundaries=True
+                    ),
+                    # rewrite=-1,
                 ),
-                rewrite=-2,
+                forget=False,
             ),
             undae.potamia_pitches(transposition=-1, columns=False, retrograde=True),
-            undae.E_color,
+            evans.Attachment(
+                abjad.Articulation("snappizzicato"),
+                selector=lambda _: abjad.select.leaf(_, 0, pitched=True),
+            ),
+            evans.Attachment(
+                abjad.Articulation("snappizzicato"),
+                selector=lambda _: abjad.select.leaf(_, 11, pitched=True),
+            ),
+            evans.Callable(
+                evans.text_span(["clt."], "=|", padding=6, id=1),
+                selector=lambda _: abjad.select.get(
+                    abjad.select.leaves(_, pitched=True), [4, 5, 6, 7]
+                ),
+            ),
+            evans.Callable(
+                evans.text_span(["T", "P"], "=>", padding=4, id=2),
+                selector=lambda _: abjad.select.get(
+                    abjad.select.leaves(_, pitched=True), [4, 5, 6, 7]
+                ),
+            ),
+            evans.Callable(
+                evans.ArticulationHandler(["tremolo"], articulation_boolean_vector=[1]),
+                selector=lambda _: abjad.select.get(
+                    abjad.select.leaves(_, pitched=True), [4, 5, 6, 7]
+                ),
+            ),
+            evans.Callable(
+                evans.text_span(["clt."], "=|", padding=6, id=1),
+                selector=lambda _: abjad.select.get(
+                    abjad.select.leaves(_, pitched=True), [15, 16, 17, 18]
+                ),
+            ),
+            evans.Callable(
+                evans.text_span(["T", "P"], "=>", padding=4, id=2),
+                selector=lambda _: abjad.select.get(
+                    abjad.select.leaves(_, pitched=True), [15, 16, 17, 18]
+                ),
+            ),
+            evans.Callable(
+                evans.ArticulationHandler(["tremolo"], articulation_boolean_vector=[1]),
+                selector=lambda _: abjad.select.get(
+                    abjad.select.leaves(_, pitched=True), [15, 16, 17, 18]
+                ),
+            ),
+            evans.Callable(
+                evans.text_span(["clb."], "=|", padding=2, id=1),
+                selector=lambda _: abjad.select.get(
+                    abjad.select.leaves(_, pitched=True), [8, 9, 10]
+                ),
+            ),
+            evans.Attachment(
+                abjad.Glissando(),
+                selector=lambda _: abjad.select.leaf(_, 19, pitched=True),
+            ),
+            evans.Attachment(
+                evans.make_fancy_gliss(1, 2, 6, 3, 1, 6, 5, 2, 3, 1, right_padding=1.5),
+                selector=lambda _: abjad.select.leaf(_, 19, pitched=True),
+            ),
+            evans.Callable(
+                evans.text_span(["clb."], "=|", padding=2, id=1),
+                selector=lambda _: abjad.select.get(
+                    abjad.select.leaves(_, pitched=True), [20, 21]
+                ),
+            ),
+            evans.Callable(
+                evans.slur(),
+                selector=lambda _: abjad.select.get(
+                    abjad.select.leaves(_, pitched=True), [1, 2, 3]
+                ),
+            ),
+            evans.Attachment(
+                abjad.Markup(r"\markup gett."),
+                selector=lambda _: abjad.select.leaf(_, 1, pitched=True),
+                direction=abjad.UP,
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurDashed", site="before"),
+                selector=lambda _: abjad.select.leaf(_, 1, pitched=True),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurSolid", site="before"),
+                selector=lambda _: abjad.select.leaf(_, 3, pitched=True),
+            ),
+            evans.Callable(
+                evans.slur(),
+                selector=lambda _: abjad.select.get(
+                    abjad.select.leaves(_, pitched=True), [12, 13, 14]
+                ),
+            ),
+            evans.Attachment(
+                abjad.Markup(r"\markup gett."),
+                selector=lambda _: abjad.select.leaf(_, 12, pitched=True),
+                direction=abjad.UP,
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurDashed", site="before"),
+                selector=lambda _: abjad.select.leaf(_, 12, pitched=True),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurSolid", site="before"),
+                selector=lambda _: abjad.select.leaf(_, 14, pitched=True),
+            ),
+            lambda _: baca.hairpin(_, "p < ff"),
+            # undae.E_color,
         ),
         evans.MusicCommand(
             [("violin 2 voice", [6])],
@@ -100,24 +283,139 @@ maker = evans.SegmentMaker(
             ),
             evans.clean_cent_markup,
             evans.annotate_hertz,
-            undae.A_color,
+            abjad.Dynamic("mf"),
+            # undae.A_color,
         ),
         evans.MusicCommand(
             [("viola voice", [_ for _ in range(5)])],
-            undae.E_rhythm(
-                stage=1,
-                long_rotation=-3,
-                short_rotation=3,
-                rotation=0,
-                preprocessor=evans.make_preprocessor(
-                    quarters=True,
-                    fuse_counts=[2, 1, 4, 1, 1, 3, 1, 2],
-                    split_at_measure_boundaries=True,
+            evans.RhythmHandler(
+                evans.make_rtm(
+                    [
+                        "(1 (-1 2 2 1 1 -1))",
+                        "(1 (-1 2 1 1 -1))",
+                        "(1 (-1 2))",
+                        "(1 (-1 1 1 2))",
+                    ],
+                    treat_tuplets=True,
+                    preprocessor=evans.make_preprocessor(
+                        quarters=True, fuse_counts=[3], split_at_measure_boundaries=True
+                    ),
                 ),
-                rewrite=-2,
+                forget=False,
             ),
             undae.potamia_pitches(transposition=-2, columns=True, retrograde=True),
-            undae.E_color,
+            evans.Callable(
+                evans.text_span(["clt."], "=|", padding=6, id=1),
+                selector=lambda _: abjad.select.get(
+                    abjad.select.leaves(_, pitched=True), [0, 1, 2, 3]
+                ),
+            ),
+            evans.Callable(
+                evans.text_span(["T", "P"], "=>", padding=4, id=2),
+                selector=lambda _: abjad.select.get(
+                    abjad.select.leaves(_, pitched=True), [0, 1, 2, 3]
+                ),
+            ),
+            evans.Callable(
+                evans.ArticulationHandler(["tremolo"], articulation_boolean_vector=[1]),
+                selector=lambda _: abjad.select.get(
+                    abjad.select.leaves(_, pitched=True), [0, 1, 2, 3]
+                ),
+            ),
+            evans.Attachment(
+                abjad.Glissando(),
+                selector=lambda _: abjad.select.leaf(_, 4, pitched=True),
+            ),
+            evans.Attachment(
+                evans.make_fancy_gliss(1, 2, 6, 3, 1, 6, 5, 2, 3, 1, right_padding=1.5),
+                selector=lambda _: abjad.select.leaf(_, 4, pitched=True),
+            ),
+            evans.Callable(
+                evans.text_span(["clb."], "=|", padding=2, id=1),
+                selector=lambda _: abjad.select.get(
+                    abjad.select.leaves(_, pitched=True), [5, 6]
+                ),
+            ),
+            evans.Attachment(
+                abjad.Articulation("snappizzicato"),
+                selector=lambda _: abjad.select.leaf(_, 7, pitched=True),
+            ),
+            evans.Callable(
+                evans.slur(),
+                selector=lambda _: abjad.select.get(
+                    abjad.select.leaves(_, pitched=True), [8, 9, 10]
+                ),
+            ),
+            evans.Attachment(
+                abjad.Markup(r"\markup gett."),
+                selector=lambda _: abjad.select.leaf(_, 8, pitched=True),
+                direction=abjad.UP,
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurDashed", site="before"),
+                selector=lambda _: abjad.select.leaf(_, 8, pitched=True),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurSolid", site="before"),
+                selector=lambda _: abjad.select.leaf(_, 10, pitched=True),
+            ),
+            evans.Callable(
+                evans.text_span(["clt."], "=|", padding=6, id=1),
+                selector=lambda _: abjad.select.get(
+                    abjad.select.leaves(_, pitched=True), [11, 12, 13, 14]
+                ),
+            ),
+            evans.Callable(
+                evans.text_span(["T", "P"], "=>", padding=4, id=2),
+                selector=lambda _: abjad.select.get(
+                    abjad.select.leaves(_, pitched=True), [11, 12, 13, 14]
+                ),
+            ),
+            evans.Attachment(
+                abjad.Glissando(),
+                selector=lambda _: abjad.select.leaf(_, 15, pitched=True),
+            ),
+            evans.Attachment(
+                evans.make_fancy_gliss(1, 2, 6, 3, 1, 6, 5, 2, 3, 1, right_padding=1.5),
+                selector=lambda _: abjad.select.leaf(_, 15, pitched=True),
+            ),
+            evans.Callable(
+                evans.text_span(["clb."], "=|", padding=2, id=1),
+                selector=lambda _: abjad.select.get(
+                    abjad.select.leaves(_, pitched=True), [16, 17]
+                ),
+            ),
+            evans.Callable(
+                evans.ArticulationHandler(["tremolo"], articulation_boolean_vector=[1]),
+                selector=lambda _: abjad.select.get(
+                    abjad.select.leaves(_, pitched=True), [11, 12, 13, 14]
+                ),
+            ),
+            evans.Attachment(
+                abjad.Articulation("snappizzicato"),
+                selector=lambda _: abjad.select.leaf(_, 18, pitched=True),
+            ),
+            evans.Callable(
+                evans.slur(),
+                selector=lambda _: abjad.select.get(
+                    abjad.select.leaves(_, pitched=True), [19, 20, 21]
+                ),
+            ),
+            evans.Attachment(
+                abjad.Markup(r"\markup gett."),
+                selector=lambda _: abjad.select.leaf(_, 19, pitched=True),
+                direction=abjad.UP,
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurDashed", site="before"),
+                selector=lambda _: abjad.select.leaf(_, 19, pitched=True),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurSolid", site="before"),
+                selector=lambda _: abjad.select.leaf(_, 20, pitched=True),
+            ),
+            lambda _: baca.hairpin(_, "p < ff"),
+            # undae.E_color,
         ),
         evans.MusicCommand(
             [("viola voice", [_ for _ in range(5, 7)])],
@@ -127,24 +425,113 @@ maker = evans.SegmentMaker(
             ),
             evans.clean_cent_markup,
             evans.annotate_hertz,
-            undae.A_color,
+            abjad.Dynamic("mf"),
+            # undae.A_color,
         ),
         evans.MusicCommand(
             [("cello voice", [_ for _ in range(4)])],
-            undae.E_rhythm(
-                stage=1,
-                long_rotation=-4,
-                short_rotation=4,
-                rotation=0,
-                preprocessor=evans.make_preprocessor(
-                    quarters=True,
-                    fuse_counts=[1, 4, 1, 1, 3, 1, 2, 2],
-                    split_at_measure_boundaries=True,
+            evans.RhythmHandler(
+                evans.make_rtm(
+                    [
+                        "(1 (-1 1 1 2))",
+                        "(1 (-1 2 2 1 1 -1))",
+                        "(1 (-1 2 1 1 -1))",
+                        "(1 (-1 2))",
+                    ],
+                    treat_tuplets=True,
+                    preprocessor=evans.make_preprocessor(
+                        quarters=True, fuse_counts=[3], split_at_measure_boundaries=True
+                    ),
                 ),
-                rewrite=-2,
+                forget=False,
             ),
             undae.potamia_pitches(transposition=-6, columns=True, retrograde=False),
-            undae.E_color,
+            evans.Callable(
+                evans.slur(),
+                selector=lambda _: abjad.select.get(
+                    abjad.select.leaves(_, pitched=True), [0, 1, 2]
+                ),
+            ),
+            evans.Attachment(
+                abjad.Markup(r"\markup gett."),
+                selector=lambda _: abjad.select.leaf(_, 0, pitched=True),
+                direction=abjad.UP,
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurDashed", site="before"),
+                selector=lambda _: abjad.select.leaf(_, 0, pitched=True),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurSolid", site="before"),
+                selector=lambda _: abjad.select.leaf(_, 2, pitched=True),
+            ),
+            evans.Callable(
+                evans.slur(),
+                selector=lambda _: abjad.select.get(
+                    abjad.select.leaves(_, pitched=True), [11, 12, 13]
+                ),
+            ),
+            evans.Attachment(
+                abjad.Markup(r"\markup gett."),
+                selector=lambda _: abjad.select.leaf(_, 11, pitched=True),
+                direction=abjad.UP,
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurDashed", site="before"),
+                selector=lambda _: abjad.select.leaf(_, 11, pitched=True),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\slurSolid", site="before"),
+                selector=lambda _: abjad.select.leaf(_, 13, pitched=True),
+            ),
+            evans.Callable(
+                evans.text_span(["clt."], "=|", padding=6, id=1),
+                selector=lambda _: abjad.select.get(
+                    abjad.select.leaves(_, pitched=True), [3, 4, 5, 6]
+                ),
+            ),
+            evans.Callable(
+                evans.text_span(["T", "P"], "=>", padding=4, id=2),
+                selector=lambda _: abjad.select.get(
+                    abjad.select.leaves(_, pitched=True), [3, 4, 5, 6]
+                ),
+            ),
+            evans.Callable(
+                evans.ArticulationHandler(["tremolo"], articulation_boolean_vector=[1]),
+                selector=lambda _: abjad.select.get(
+                    abjad.select.leaves(_, pitched=True), [3, 4, 5, 6]
+                ),
+            ),
+            evans.Callable(
+                evans.text_span(["clt."], "=|", padding=6, id=1),
+                selector=lambda _: abjad.select.get(
+                    abjad.select.leaves(_, pitched=True), [14, 15, 16, 17]
+                ),
+            ),
+            evans.Callable(
+                evans.text_span(["T", "P"], "=>", padding=4, id=2),
+                selector=lambda _: abjad.select.get(
+                    abjad.select.leaves(_, pitched=True), [14, 15, 16, 17]
+                ),
+            ),
+            evans.Callable(
+                evans.ArticulationHandler(["tremolo"], articulation_boolean_vector=[1]),
+                selector=lambda _: abjad.select.get(
+                    abjad.select.leaves(_, pitched=True), [14, 15, 16, 17]
+                ),
+            ),
+            evans.Callable(
+                evans.text_span(["clb."], "=|", padding=2, id=1),
+                selector=lambda _: abjad.select.get(
+                    abjad.select.leaves(_, pitched=True), [7, 8, 9]
+                ),
+            ),
+            evans.Attachment(
+                abjad.Articulation("snappizzicato"),
+                selector=lambda _: abjad.select.leaf(_, 10, pitched=True),
+            ),
+            lambda _: baca.hairpin(_, "p < ff"),
+            # undae.E_color,
         ),
         evans.MusicCommand(
             [("cello voice", [_ for _ in range(4, 7)])],
@@ -154,7 +541,8 @@ maker = evans.SegmentMaker(
             ),
             evans.clean_cent_markup,
             evans.annotate_hertz,
-            undae.A_color,
+            abjad.Dynamic("mf"),
+            # undae.A_color,
         ),
         evans.call(
             "score",

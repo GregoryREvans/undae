@@ -51,22 +51,24 @@ def E_rhythm(
             forget=False,
         )
         handler_4 = evans.RhythmHandler(
-            evans.even_division(
-                [16], extra_counts=[0, 2, 0, 1, 3, 2], treat_tuplets=treat_tuplets
-            )
+            evans.even_division([16], extra_counts=[2], treat_tuplets=treat_tuplets)
         )
         handler_5 = evans.RhythmHandler(
-            evans.even_division(
-                [8], extra_counts=[2, 3, 1, 0, 2, 0], treat_tuplets=treat_tuplets
-            )
+            evans.make_rtm(
+                # ["(1 (-1 1 1 1 1 1 1))", "(1 (1 1 -3 -2))", "(1 (-3 1 1))", "(1 (1 1 1 1))"],
+                [
+                    "(1 ((1 (-1 1 1 1 1 1 1)) (1 (1 1 -1 1 1 -1)) 1))",
+                    "(1 ((1 (-1 1 -1 1 1)) (1 (1 1 1 1)) 1))",
+                ],
+                treat_tuplets=treat_tuplets,
+            ),
+            forget=False,
         )
 
-        long_handlers = evans.Sequence(
-            [handler_1, evans.make_tied_notes(), handler_5]
-        ).rotate(long_rotation)
-        short_handlers = evans.Sequence(
-            [handler_2, evans.make_tied_notes(), handler_3, handler_4]
-        ).rotate(short_rotation)
+        long_handlers = evans.Sequence([handler_1, handler_5]).rotate(long_rotation)
+        short_handlers = evans.Sequence([handler_2, handler_3]).rotate(  # also had 4
+            short_rotation
+        )
 
         cyc_long = evans.CyclicList(long_handlers, forget=False)
         cyc_short = evans.CyclicList(short_handlers, forget=False)
@@ -84,19 +86,34 @@ def E_rhythm(
                 partitions = seq.partition_by_predicate_list(predicates)
             if predicates[0](partitions[0][0]):
                 maker = evans.CyclicList([cyc_short, cyc_long], forget=False)
+                # marks = evans.CyclicList([abjad.Markup(r"\markup SHORT"), abjad.Markup(r"\markup LONG")], forget=False)
+                # prints = evans.CyclicList(["SHORT\n", "LONG\n"], forget=False)
             else:
                 maker = evans.CyclicList([cyc_long, cyc_short], forget=False)
+                # marks = evans.CyclicList([abjad.Markup(r"\markup LONG"), abjad.Markup(r"\markup SHORT")], forget=False)
+                # prints = evans.CyclicList(["LONG\n", "SHORT\n"], forget=False)
             container = abjad.Container()
             for partition in partitions:
                 maker_group = maker(r=1)[0]
-                for division in partition:
-                    maker_ = maker_group(r=1)[0]
-                    nested_music = maker_([division])
-                    for component in nested_music:
-                        if isinstance(component, list):
-                            container.extend(component)
-                        else:
-                            container.append(component)
+                # print(partition)
+                # print(prints(r=1)[0])
+                maker_ = maker_group(r=1)[0]
+                nested_music = maker_(partition)
+                # abjad.attach(marks(r=1)[0], abjad.select.leaf(nested_music, 0), direction=abjad.UP)
+                for component in nested_music:
+                    if isinstance(component, list):
+                        container.extend(component)
+                    else:
+                        container.append(component)
+                # for division in partition:
+                #     maker_ = maker_group(r=1)[0]
+                #     nested_music = maker_([division])
+                #     abjad.attach(marks(r=1)[0], abjad.select.leaf(nested_music, 0), direction=abjad.UP)
+                #     for component in nested_music:
+                #         if isinstance(component, list):
+                #             container.extend(component)
+                #         else:
+                #             container.append(component)
             if rewrite is not None:
                 meter_command = evans.RewriteMeterCommand(boundary_depth=rewrite)
                 metered_staff = rmakers.wrap_in_time_signature_staff(
@@ -111,5 +128,9 @@ def E_rhythm(
 
         return handler_function
 
+    if stage == 2:
+
+        return None
+
     else:
-        raise Exception(f"No stage {stage}. Use 1.")
+        raise Exception(f"No stage {stage}. Use 1 or 2.")
